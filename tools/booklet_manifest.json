@@ -1,0 +1,1134 @@
+{
+ "source": "HiMCM award-winning paper collection 2014-2024 (Sike edition, 2973 pages); pages 1-5 are front matter and excluded",
+ "award_source": "COMAP HiMCM results releases 2014-2024 (sources/results/)",
+ "problems": {
+  "2024A": "To Play or not to Play: Modeling Future Olympic Games",
+  "2024B": "Examining the Environmental Impact of High-Powered Computing",
+  "2023A": "Dandelions: Friend? Foe? Both? Neither?",
+  "2023B": "Charging Ahead with E-buses",
+  "2022A": "The Need for Bees (and not just for honey)",
+  "2022B": "CO2 and Global Warming",
+  "2021A": "Storing the Sun",
+  "2021B": "Tackling the Drought",
+  "2020A": "The Best Summer Job",
+  "2020B": "Funding Biodiversity Conservation",
+  "2019A": "Charge!",
+  "2019B": "Bottle Battles",
+  "2018A": "Roller Coaster",
+  "2018B": "Cozy Smart House",
+  "2017A": "Drone Clusters as Sky Light Displays",
+  "2017B": "Ski Slope",
+  "2016A": "Swim, Bike, and Run",
+  "2016B": "Shop and Ship",
+  "2015A": "Preventing Road Rage",
+  "2015B": "City Crime and Safety",
+  "2014A": "Unloading Commuter Trains",
+  "2014B": "The Next Plague?"
+ },
+ "papers": [
+  {
+   "id": "2024A-14995",
+   "year": 2024,
+   "problem": "A",
+   "team": "14995",
+   "award": "Outstanding",
+   "booklet_pages": [
+    6,
+    30
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2024A-15041",
+   "year": 2024,
+   "problem": "A",
+   "team": "15041",
+   "award": "Outstanding",
+   "booklet_pages": [
+    31,
+    58
+   ],
+   "pages": 28
+  },
+  {
+   "id": "2024A-15504",
+   "year": 2024,
+   "problem": "A",
+   "team": "15504",
+   "award": "Outstanding",
+   "booklet_pages": [
+    59,
+    83
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2024A-15926",
+   "year": 2024,
+   "problem": "A",
+   "team": "15926",
+   "award": "Outstanding",
+   "booklet_pages": [
+    84,
+    108
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2024A-16159",
+   "year": 2024,
+   "problem": "A",
+   "team": "16159",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    109,
+    133
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2024B-15022",
+   "year": 2024,
+   "problem": "B",
+   "team": "15022",
+   "award": "Outstanding",
+   "booklet_pages": [
+    134,
+    159
+   ],
+   "pages": 26
+  },
+  {
+   "id": "2024B-15502",
+   "year": 2024,
+   "problem": "B",
+   "team": "15502",
+   "award": "Outstanding",
+   "booklet_pages": [
+    160,
+    184
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2024B-16226",
+   "year": 2024,
+   "problem": "B",
+   "team": "16226",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    185,
+    209
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023A-13643",
+   "year": 2023,
+   "problem": "A",
+   "team": "13643",
+   "award": "Outstanding",
+   "booklet_pages": [
+    210,
+    234
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023A-13719",
+   "year": 2023,
+   "problem": "A",
+   "team": "13719",
+   "award": "Outstanding",
+   "booklet_pages": [
+    235,
+    258
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2023A-14076",
+   "year": 2023,
+   "problem": "A",
+   "team": "14076",
+   "award": "Outstanding",
+   "booklet_pages": [
+    259,
+    283
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023A-14140",
+   "year": 2023,
+   "problem": "A",
+   "team": "14140",
+   "award": "Outstanding",
+   "booklet_pages": [
+    284,
+    310
+   ],
+   "pages": 27
+  },
+  {
+   "id": "2023A-14632",
+   "year": 2023,
+   "problem": "A",
+   "team": "14632",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    311,
+    335
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023B-13694",
+   "year": 2023,
+   "problem": "B",
+   "team": "13694",
+   "award": "Outstanding",
+   "booklet_pages": [
+    336,
+    360
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023B-13904",
+   "year": 2023,
+   "problem": "B",
+   "team": "13904",
+   "award": "Outstanding",
+   "booklet_pages": [
+    361,
+    385
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2023B-14087",
+   "year": 2023,
+   "problem": "B",
+   "team": "14087",
+   "award": "Outstanding",
+   "booklet_pages": [
+    386,
+    409
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2023B-14323",
+   "year": 2023,
+   "problem": "B",
+   "team": "14323",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    410,
+    434
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022A-12600",
+   "year": 2022,
+   "problem": "A",
+   "team": "12600",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    435,
+    459
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022A-12821",
+   "year": 2022,
+   "problem": "A",
+   "team": "12821",
+   "award": "Outstanding",
+   "booklet_pages": [
+    460,
+    484
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022A-13014",
+   "year": 2022,
+   "problem": "A",
+   "team": "13014",
+   "award": "Outstanding",
+   "booklet_pages": [
+    485,
+    509
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022A-13405",
+   "year": 2022,
+   "problem": "A",
+   "team": "13405",
+   "award": "Outstanding",
+   "booklet_pages": [
+    510,
+    534
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022B-12465",
+   "year": 2022,
+   "problem": "B",
+   "team": "12465",
+   "award": "Outstanding",
+   "booklet_pages": [
+    535,
+    557
+   ],
+   "pages": 23
+  },
+  {
+   "id": "2022B-12646",
+   "year": 2022,
+   "problem": "B",
+   "team": "12646",
+   "award": "Outstanding",
+   "booklet_pages": [
+    558,
+    581
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2022B-12678",
+   "year": 2022,
+   "problem": "B",
+   "team": "12678",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    582,
+    606
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2022B-12911",
+   "year": 2022,
+   "problem": "B",
+   "team": "12911",
+   "award": "Outstanding",
+   "booklet_pages": [
+    607,
+    630
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2022B-13010",
+   "year": 2022,
+   "problem": "B",
+   "team": "13010",
+   "award": "Outstanding",
+   "booklet_pages": [
+    631,
+    652
+   ],
+   "pages": 22
+  },
+  {
+   "id": "2021A-11462",
+   "year": 2021,
+   "problem": "A",
+   "team": "11462",
+   "award": "Outstanding",
+   "booklet_pages": [
+    653,
+    677
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2021A-11900",
+   "year": 2021,
+   "problem": "A",
+   "team": "11900",
+   "award": "Outstanding",
+   "booklet_pages": [
+    678,
+    702
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2021A-11931",
+   "year": 2021,
+   "problem": "A",
+   "team": "11931",
+   "award": "Outstanding",
+   "booklet_pages": [
+    703,
+    727
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2021B-11552",
+   "year": 2021,
+   "problem": "B",
+   "team": "11552",
+   "award": "Outstanding",
+   "booklet_pages": [
+    728,
+    752
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2021B-11576",
+   "year": 2021,
+   "problem": "B",
+   "team": "11576",
+   "award": "Outstanding",
+   "booklet_pages": [
+    753,
+    776
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2021B-11823",
+   "year": 2021,
+   "problem": "B",
+   "team": "11823",
+   "award": "Outstanding",
+   "booklet_pages": [
+    777,
+    809
+   ],
+   "pages": 33
+  },
+  {
+   "id": "2021B-11898",
+   "year": 2021,
+   "problem": "B",
+   "team": "11898",
+   "award": "Outstanding",
+   "booklet_pages": [
+    810,
+    834
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2021B-12384",
+   "year": 2021,
+   "problem": "B",
+   "team": "12384",
+   "award": "Outstanding",
+   "booklet_pages": [
+    835,
+    859
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2020A-10549",
+   "year": 2020,
+   "problem": "A",
+   "team": "10549",
+   "award": "Outstanding",
+   "booklet_pages": [
+    860,
+    884
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2020A-10550",
+   "year": 2020,
+   "problem": "A",
+   "team": "10550",
+   "award": "Outstanding",
+   "booklet_pages": [
+    885,
+    909
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2020A-10656",
+   "year": 2020,
+   "problem": "A",
+   "team": "10656",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    910,
+    933
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2020A-10701",
+   "year": 2020,
+   "problem": "A",
+   "team": "10701",
+   "award": "Outstanding",
+   "booklet_pages": [
+    934,
+    960
+   ],
+   "pages": 27
+  },
+  {
+   "id": "2020A-11135",
+   "year": 2020,
+   "problem": "A",
+   "team": "11135",
+   "award": "Outstanding",
+   "booklet_pages": [
+    961,
+    985
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2020B-10839",
+   "year": 2020,
+   "problem": "B",
+   "team": "10839",
+   "award": "Outstanding",
+   "booklet_pages": [
+    986,
+    1008
+   ],
+   "pages": 23
+  },
+  {
+   "id": "2020B-10876",
+   "year": 2020,
+   "problem": "B",
+   "team": "10876",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1009,
+    1032
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2020B-10997",
+   "year": 2020,
+   "problem": "B",
+   "team": "10997",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    1033,
+    1057
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2019A-9564",
+   "year": 2019,
+   "problem": "A",
+   "team": "9564",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1058,
+    1094
+   ],
+   "pages": 37
+  },
+  {
+   "id": "2019A-9824",
+   "year": 2019,
+   "problem": "A",
+   "team": "9824",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1095,
+    1125
+   ],
+   "pages": 31
+  },
+  {
+   "id": "2019A-9844",
+   "year": 2019,
+   "problem": "A",
+   "team": "9844",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1126,
+    1153
+   ],
+   "pages": 28
+  },
+  {
+   "id": "2019A-10057",
+   "year": 2019,
+   "problem": "A",
+   "team": "10057",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    1154,
+    1192
+   ],
+   "pages": 39
+  },
+  {
+   "id": "2019A-10174",
+   "year": 2019,
+   "problem": "A",
+   "team": "10174",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1193,
+    1245
+   ],
+   "pages": 53
+  },
+  {
+   "id": "2019B-9548",
+   "year": 2019,
+   "problem": "B",
+   "team": "9548",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1246,
+    1269
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2019B-9869",
+   "year": 2019,
+   "problem": "B",
+   "team": "9869",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1270,
+    1295
+   ],
+   "pages": 26
+  },
+  {
+   "id": "2019B-10337",
+   "year": 2019,
+   "problem": "B",
+   "team": "10337",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    1296,
+    1322
+   ],
+   "pages": 27
+  },
+  {
+   "id": "2019B-10407",
+   "year": 2019,
+   "problem": "B",
+   "team": "10407",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1323,
+    1346
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2018A-8554",
+   "year": 2018,
+   "problem": "A",
+   "team": "8554",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1347,
+    1371
+   ],
+   "pages": 25
+  },
+  {
+   "id": "2018A-8700",
+   "year": 2018,
+   "problem": "A",
+   "team": "8700",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1372,
+    1421
+   ],
+   "pages": 50
+  },
+  {
+   "id": "2018A-8744",
+   "year": 2018,
+   "problem": "A",
+   "team": "8744",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1422,
+    1470
+   ],
+   "pages": 49
+  },
+  {
+   "id": "2018A-8874",
+   "year": 2018,
+   "problem": "A",
+   "team": "8874",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1471,
+    1510
+   ],
+   "pages": 40
+  },
+  {
+   "id": "2018A-8992",
+   "year": 2018,
+   "problem": "A",
+   "team": "8992",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    1511,
+    1548
+   ],
+   "pages": 38
+  },
+  {
+   "id": "2018B-8506",
+   "year": 2018,
+   "problem": "B",
+   "team": "8506",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1549,
+    1615
+   ],
+   "pages": 67
+  },
+  {
+   "id": "2018B-9247",
+   "year": 2018,
+   "problem": "B",
+   "team": "9247",
+   "award": "Outstanding (NCTM award)",
+   "booklet_pages": [
+    1616,
+    1637
+   ],
+   "pages": 22
+  },
+  {
+   "id": "2017A-7359",
+   "year": 2017,
+   "problem": "A",
+   "team": "7359",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1638,
+    1678
+   ],
+   "pages": 41
+  },
+  {
+   "id": "2017A-7879",
+   "year": 2017,
+   "problem": "A",
+   "team": "7879",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1679,
+    1720
+   ],
+   "pages": 42
+  },
+  {
+   "id": "2017A-8028",
+   "year": 2017,
+   "problem": "A",
+   "team": "8028",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1721,
+    1760
+   ],
+   "pages": 40
+  },
+  {
+   "id": "2017A-8040",
+   "year": 2017,
+   "problem": "A",
+   "team": "8040",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1761,
+    1800
+   ],
+   "pages": 40
+  },
+  {
+   "id": "2017A-8393",
+   "year": 2017,
+   "problem": "A",
+   "team": "8393",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1801,
+    1836
+   ],
+   "pages": 36
+  },
+  {
+   "id": "2017B-8121",
+   "year": 2017,
+   "problem": "B",
+   "team": "8121",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1837,
+    1862
+   ],
+   "pages": 26
+  },
+  {
+   "id": "2017B-8124",
+   "year": 2017,
+   "problem": "B",
+   "team": "8124",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1863,
+    1890
+   ],
+   "pages": 28
+  },
+  {
+   "id": "2017B-8201",
+   "year": 2017,
+   "problem": "B",
+   "team": "8201",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1891,
+    1927
+   ],
+   "pages": 37
+  },
+  {
+   "id": "2016A-6453",
+   "year": 2016,
+   "problem": "A",
+   "team": "6453",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1928,
+    1960
+   ],
+   "pages": 33
+  },
+  {
+   "id": "2016A-6770",
+   "year": 2016,
+   "problem": "A",
+   "team": "6770",
+   "award": "Outstanding",
+   "booklet_pages": [
+    1961,
+    2000
+   ],
+   "pages": 40
+  },
+  {
+   "id": "2016A-7054",
+   "year": 2016,
+   "problem": "A",
+   "team": "7054",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2001,
+    2045
+   ],
+   "pages": 45
+  },
+  {
+   "id": "2016A-7055",
+   "year": 2016,
+   "problem": "A",
+   "team": "7055",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2046,
+    2082
+   ],
+   "pages": 37
+  },
+  {
+   "id": "2016B-6475",
+   "year": 2016,
+   "problem": "B",
+   "team": "6475",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2083,
+    2110
+   ],
+   "pages": 28
+  },
+  {
+   "id": "2016B-6829",
+   "year": 2016,
+   "problem": "B",
+   "team": "6829",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2111,
+    2163
+   ],
+   "pages": 53
+  },
+  {
+   "id": "2016B-7037",
+   "year": 2016,
+   "problem": "B",
+   "team": "7037",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2164,
+    2193
+   ],
+   "pages": 30
+  },
+  {
+   "id": "2016B-7057",
+   "year": 2016,
+   "problem": "B",
+   "team": "7057",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2194,
+    2217
+   ],
+   "pages": 24
+  },
+  {
+   "id": "2016B-7211",
+   "year": 2016,
+   "problem": "B",
+   "team": "7211",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2218,
+    2282
+   ],
+   "pages": 65
+  },
+  {
+   "id": "2015A-6057",
+   "year": 2015,
+   "problem": "A",
+   "team": "6057",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2283,
+    2316
+   ],
+   "pages": 34
+  },
+  {
+   "id": "2015A-6080",
+   "year": 2015,
+   "problem": "A",
+   "team": "6080",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2317,
+    2349
+   ],
+   "pages": 33
+  },
+  {
+   "id": "2015A-6083",
+   "year": 2015,
+   "problem": "A",
+   "team": "6083",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2350,
+    2372
+   ],
+   "pages": 23
+  },
+  {
+   "id": "2015A-6117",
+   "year": 2015,
+   "problem": "A",
+   "team": "6117",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2373,
+    2487
+   ],
+   "pages": 115
+  },
+  {
+   "id": "2015B-5473",
+   "year": 2015,
+   "problem": "B",
+   "team": "5473",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2488,
+    2533
+   ],
+   "pages": 46
+  },
+  {
+   "id": "2015B-5967",
+   "year": 2015,
+   "problem": "B",
+   "team": "5967",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2534,
+    2568
+   ],
+   "pages": 35
+  },
+  {
+   "id": "2015B-6018",
+   "year": 2015,
+   "problem": "B",
+   "team": "6018",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2569,
+    2626
+   ],
+   "pages": 58
+  },
+  {
+   "id": "2015B-6129",
+   "year": 2015,
+   "problem": "B",
+   "team": "6129",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2627,
+    2671
+   ],
+   "pages": 45
+  },
+  {
+   "id": "2014A-4671",
+   "year": 2014,
+   "problem": "A",
+   "team": "4671",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2672,
+    2712
+   ],
+   "pages": 41
+  },
+  {
+   "id": "2014A-4813",
+   "year": 2014,
+   "problem": "A",
+   "team": "4813",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2713,
+    2747
+   ],
+   "pages": 35
+  },
+  {
+   "id": "2014A-4823",
+   "year": 2014,
+   "problem": "A",
+   "team": "4823",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2748,
+    2789
+   ],
+   "pages": 42
+  },
+  {
+   "id": "2014A-5086",
+   "year": 2014,
+   "problem": "A",
+   "team": "5086",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2790,
+    2812
+   ],
+   "pages": 23
+  },
+  {
+   "id": "2014A-5089",
+   "year": 2014,
+   "problem": "A",
+   "team": "5089",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2813,
+    2832
+   ],
+   "pages": 20
+  },
+  {
+   "id": "2014B-4637",
+   "year": 2014,
+   "problem": "B",
+   "team": "4637",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2833,
+    2887
+   ],
+   "pages": 55
+  },
+  {
+   "id": "2014B-4880",
+   "year": 2014,
+   "problem": "B",
+   "team": "4880",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2888,
+    2932
+   ],
+   "pages": 45
+  },
+  {
+   "id": "2014B-5295",
+   "year": 2014,
+   "problem": "B",
+   "team": "5295",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2933,
+    2949
+   ],
+   "pages": 17
+  },
+  {
+   "id": "2014B-5325",
+   "year": 2014,
+   "problem": "B",
+   "team": "5325",
+   "award": "Outstanding",
+   "booklet_pages": [
+    2950,
+    2973
+   ],
+   "pages": 24
+  }
+ ]
+}
