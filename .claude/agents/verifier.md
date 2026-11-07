@@ -5,6 +5,7 @@ tools: Read, Grep, Glob, Bash
 disallowedTools: Write, Edit, NotebookEdit, Agent
 model: opus
 effort: medium
+background: false
 omitClaudeMd: true
 maxTurns: 40
 ---

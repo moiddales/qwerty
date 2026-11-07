@@ -75,6 +75,27 @@ bash tests/test_hooks.sh
 2. 输入 `/agents`，确认 `Explore`、`callsites`、`tests` 显示为 haiku，`verifier` 显示为 opus。
 3. 布置一个跨文件的任务，观察流程：先写 `.claude/plan.md` → 用 verifier 审计划 → 等你说开始 → 写代码 → 跑测试 → 用 verifier 审 diff → 回答"Did I miss anything?" → 汇报。
 
+### 在 Claude Code 云端环境（claude.ai/code）使用
+
+不用额外配置。云端会话启动时会克隆仓库，项目里的 `CLAUDE.md`、`.claude/settings.json`、`.claude/agents/` 和 `.claude/hooks/` 都会照常加载。容器里自带 `python3` 和 `git`。
+
+2026-11-07 在云端容器里用 Claude Code 2.1.319 做过端到端实测（新开会话，`claude -p`）：
+
+| 检查项 | 结果 |
+|---|---|
+| 主模型取自项目 settings | ✅ 主会话跑在 Sonnet 5.5 上 |
+| `Explore` 覆盖内置版本 | ✅ 这个 subagent 的工具调用跑在 Haiku 5.5 上 |
+| advisor | ✅ 会话里出现了一次服务端 `advisor` 调用（返回内容是加密的，只能看到调用本身） |
+| SessionStart 记录起点 | ✅ 生成了 `.claude/state/base-<session>` 文件 |
+| 同一错误第二次 | ✅ 第一次没有输出；第二次（数字不同）注入了 "Repeated failure #2" 提醒 |
+| Stop 拦截 | ✅ 写入 60 行后第一次尝试结束被拦下 → 主会话调用 `verifier`（Opus 5.5）→ 再次结束时放行 |
+| verifier 在前台运行 | ✅ 加上 `background: false` 后，审查结论在主会话结束前就返回了 |
+| 小改动可以拒绝审查 | ✅ 被拦截后，模型按 CLAUDE.md 判定为小改动、说明理由后结束；`stop_hook_active` 保证不会卡死 |
+
+三次测试共花费约 0.63 美元，其中第一次完整流程约 0.40 美元（Opus 约 0.26，Sonnet 约 0.13，Haiku 不到 0.01）。
+
+注意：这套配置会对**所有**在云端打开这个仓库的会话生效，包括主模型被固定为 Sonnet。审查拦截只看本次会话对话记录里的编辑。
+
 ## 已知局限（如实说明）
 
 - **CLAUDE.md 是软规则，advisor 的时机由模型决定。** 官方原话是 "model-driven rather than rule-based"，也没有任何设置能强制调用 advisor。hook 只保证了"重复失败会被提醒"和"大改动没审查不能直接收工"这两件事（后者的范围见下面几条）。
