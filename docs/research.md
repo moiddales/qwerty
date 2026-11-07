@@ -84,7 +84,7 @@
 | 官方文档 / AlessandroAnnini | `model: sonnet` + `advisorModel: opus`；写一个 Haiku 版 `Explore` 覆盖内置版本；`omitClaudeMd`；`effort: low` |
 | pilotfish | 新上下文的 Opus verifier；三种结论 + P0–P4 分级；按风险触发；用 `disallowedTools` 做能力约束 |
 | addyosmani/agent-skills 和 Addy 的文章 | 以"推翻"为目标；只给成品和约定、不给过程；列出"测试没证明什么"；变异式检查；最后问一句 "Did I miss anything?"；汇报时先给出实际命令和输出 |
-| ECC | 用 Stop hook 做确定性门禁，并靠 `stop_hook_active` 保证最多拦一次 |
+| ECC | 用 Stop hook 做确定性门禁，并靠 `stop_hook_active` 保证最多拦一次（本方案另加了 SessionStart 记录会话起点，避免先 commit 绕过检查，这一点是自己补的） |
 | 推文 | 三个时刻：计划定稿前、同一错误第二次、完成前 |
 
 ### 有意没有采用的

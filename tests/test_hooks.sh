@@ -44,9 +44,34 @@ check "verifier after last edit -> allow"               ""                      
 check "edit after verifier -> block"                    '"decision": "block"'       "$(stop t3.jsonl)"
 check "stop_hook_active -> never block twice"           ""                          "$(stop t3.jsonl true)"
 check "no edits this session -> allow"                  ""                          "$(stop t4.jsonl)"
-seq 1 5 > big.txt; rm -f t2.jsonl t3.jsonl t4.jsonl
+seq 1 5 > big.txt; rm -f t2.jsonl t3.jsonl t4.jsonl t5.jsonl t6.jsonl t7.jsonl
 check "small diff -> allow"                             ""                          "$(stop t1.jsonl)"
 check "garbage input fails open"                        ""                          "$(echo nope | rg)"
+
+# --- session_base.py (SessionStart) + review_gate against the session's start commit ---
+sb() { python3 -I "$H/session_base.py"; }
+base_sha="$(git rev-parse HEAD)"
+echo '{"session_id":"s9"}' | sb
+check "session_base records the start commit"           "$base_sha"                 "$(cat .claude/state/base-s9 2>/dev/null)"
+git -c user.email=t@t -c user.name=t commit -q --allow-empty -m later
+echo '{"session_id":"s9"}' | sb
+check "resume keeps the original base"                  "$base_sha"                 "$(cat .claude/state/base-s9 2>/dev/null)"
+seq 1 60 > feature.txt && git add feature.txt && git -c user.email=t@t -c user.name=t commit -q -m feature
+stop9() { printf '{"session_id":"s9","transcript_path":"%s/%s","stop_hook_active":false}' "$T" "$1" | rg; }
+check "edit -> commit -> stop still blocks"             '"decision": "block"'       "$(stop9 t1.jsonl)"
+check "without a recorded base, a commit hides it"      ""                          "$(stop t1.jsonl)"
+{ tool Bash '{"command":"cat > feature.txt <<EOF"}'; } > t5.jsonl
+check "Bash heredoc edit, no verifier -> block"         '"decision": "block"'       "$(stop9 t5.jsonl)"
+{ tool Bash '{"command":"npm test 2>&1 | tail -5"}'; tool Bash '{"command":"git diff HEAD"}'; } > t6.jsonl
+check "read-only Bash only -> allow"                    ""                          "$(stop9 t6.jsonl)"
+{ tool Bash '{"command":"sed -i s/1/2/ feature.txt"}'; tool Agent '{"subagent_type":"verifier"}'; } > t7.jsonl
+check "Bash edit then verifier -> allow"                ""                          "$(stop9 t7.jsonl)"
+
+# --- empty repository (no commits yet) ---
+E="$T/empty" && mkdir -p "$E" && git -C "$E" init -q && seq 1 60 > "$E/a.txt"
+echo '{"session_id":"e1"}' | CLAUDE_PROJECT_DIR="$E" python3 -I "$H/session_base.py"
+check "empty repo -> base is the empty tree"            "4b825dc642cb6eb9a060e54bf8d69288fbee4904" "$(cat "$E/.claude/state/base-e1" 2>/dev/null)"
+check "empty repo, untracked 60 lines -> block"         '"decision": "block"'       "$(printf '{"session_id":"e1","transcript_path":"%s/t1.jsonl"}' "$T" | CLAUDE_PROJECT_DIR="$E" python3 -I "$H/review_gate.py")"
 
 echo "passed=$pass failed=$fail"
 [ "$fail" -eq 0 ]
