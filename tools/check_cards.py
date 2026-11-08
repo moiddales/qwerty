@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 SKILL = Path(__file__).resolve().parent.parent / "himcm-modeling"
+REPO = SKILL.parent
 
 FAMILIES = {
     "evaluation-mcdm", "statistics-regression", "time-series-forecasting", "differential-equations",
@@ -83,6 +84,73 @@ def in_order_with_gaps(q, f, max_gap=8):
     return False
 
 
+_FULLTEXT = {}
+
+
+def _fulltext(pid):
+    if pid not in _FULLTEXT:
+        f = SKILL / "corpus" / "papers" / f"{pid}.md"
+        if not f.exists():
+            _FULLTEXT[pid] = None
+        else:
+            t = f.read_text(encoding="utf-8")
+            _FULLTEXT[pid] = (norm(re.sub(r"^## Page \d+$", "", t, flags=re.M)), words_of(t),
+                              re.split(r"^## Page \d+$", t, flags=re.M)[1:])
+    return _FULLTEXT[pid]
+
+
+def quote_status(q, cited, pid):
+    """'ok', 'image' (cited page has no extractable text), 'missing', or 'nopaper'."""
+    ft = _fulltext(pid)
+    if ft is None:
+        return "nopaper"
+    nfull, fwords, page_texts = ft
+    if 1 <= cited <= len(page_texts) and len(page_texts[cited - 1].split()) < 40:
+        return "image"
+    if len(q.split()) < 6:
+        return "ok"
+    if norm(q.replace("…", " ").replace("...", " ")) in nfull:
+        return "ok"
+    pieces = [norm(p) for p in re.split(r"\.\.\.|…|\[[^\]]*\]", q) if len(p.split()) >= 4]
+    if pieces and all(p in nfull for p in pieces):
+        return "ok"
+    if in_order_with_gaps(words_of(q), fwords):  # table layout / page break / header
+        return "ok"
+    return "missing"
+
+
+PAPER_ID = re.compile(r"\b(20[12]\d[AB]-\d{4,5})\b")
+
+
+def check_guide(path):
+    """Guides, SKILL.md and README files: cited paper ids exist, quotes attributed as
+    "..." (ID, p. N) are verbatim, cited pages are in range, relative links resolve."""
+    errs, warns = [], []
+    body = path.read_text(encoding="utf-8")
+    for pid in sorted(set(PAPER_ID.findall(body))):
+        if _fulltext(pid) is None:
+            errs.append(f"unknown paper id: {pid}")
+    for m in re.finditer(r"[\"“]([^\"“”\n]{20,400})[\"”][\s,.;:]*\((20[12]\d[AB]-\d{4,5}),\s*pp?\.\s*(\d+)", body):
+        status = quote_status(m.group(1), int(m.group(3)), m.group(2))
+        if status == "image":
+            warns.append(f"quote from an image-only page ({m.group(2)} p. {m.group(3)}), not machine-checkable")
+        elif status == "missing":
+            errs.append(f"quote not found in {m.group(2)}: \"{m.group(1)[:80]}\"")
+    for m in re.finditer(r"(20[12]\d[AB]-\d{4,5})[^)\n]{0,40}?\bpp?\.\s*(\d+)(?:\s*[-–]\s*(\d+))?", body):
+        ft = _fulltext(m.group(1))
+        if ft:
+            for g in m.groups()[1:]:
+                if g and int(g) > len(ft[2]):
+                    errs.append(f"page out of range: {m.group(0)} (paper has {len(ft[2])})")
+    for m in re.finditer(r"\]\(([^)#\s]+)(?:#[^)]*)?\)", body):
+        target = m.group(1)
+        if "://" in target:
+            continue
+        if not (path.parent / target).resolve().exists():
+            errs.append(f"broken link: {target}")
+    return errs, warns
+
+
 def check_paper(path):
     errs, warns = [], []
     text = path.read_text(encoding="utf-8")
@@ -110,27 +178,14 @@ def check_paper(path):
         for g in m.groups():
             if g and int(g) > npages:
                 errs.append(f"page citation out of range: {m.group(0)} (paper has {npages})")
-    nfull = norm(re.sub(r"^## Page \d+$", "", ftext, flags=re.M))
-    fwords = words_of(ftext)
     page_texts = re.split(r"^## Page \d+$", ftext, flags=re.M)[1:]
     # Quotations cited to a page: "..." (p. N) or "..." (pp. N-M), straight or curly quotes.
     for m in re.finditer(r"[\"“]([^\"“”\n]{20,400})[\"”][\s,.;:]*\(?\s*pp?\.\s*(\d+)", body):
-        q = m.group(1)
-        cited = int(m.group(2))
-        if 1 <= cited <= len(page_texts) and len(page_texts[cited - 1].split()) < 40:
-            warns.append(f"quote from an image-only page (p. {cited}), not machine-checkable: \"{q[:60]}\"")
-            continue
-        if len(q.split()) < 6:
-            continue
-        nq = norm(q.replace("…", " ").replace("...", " "))
-        if nq in nfull:
-            continue
-        pieces = [norm(p) for p in re.split(r"\.\.\.|…|\[[^\]]*\]", q) if len(p.split()) >= 4]
-        if pieces and all(p in nfull for p in pieces):
-            continue
-        if in_order_with_gaps(words_of(q), fwords):  # table layout / page break / header
-            continue
-        errs.append(f"quote not found verbatim: \"{q[:90]}\"")
+        status = quote_status(m.group(1), int(m.group(2)), path.stem)
+        if status == "image":
+            warns.append(f"quote from an image-only page (p. {m.group(2)}), not machine-checkable: \"{m.group(1)[:60]}\"")
+        elif status == "missing":
+            errs.append(f"quote not found verbatim: \"{m.group(1)[:90]}\"")
     words = len(body.split())
     if words < 600:
         warns.append(f"short card ({words} words)")
@@ -158,12 +213,20 @@ def check_problem(path):
 def main():
     ids = set(sys.argv[1:])
     failed = 0
-    for path in sorted((SKILL / "papers").glob("*.md")) + sorted((SKILL / "problems").glob("*.md")):
-        if ids and path.stem not in ids:
+    guides = sorted((SKILL / "guides").rglob("*.md")) + [SKILL / "SKILL.md", REPO / "README.md", REPO / "CONTRIBUTING.md"]
+    for path in sorted((SKILL / "papers").glob("*.md")) + sorted((SKILL / "problems").glob("*.md")) + guides:
+        if ids and path.stem not in ids or not path.exists():
             continue
-        errs, warns = (check_paper if path.parent.name == "papers" else check_problem)(path)
+        if path.parent.name == "papers":
+            errs, warns = check_paper(path)
+        elif path.parent.name == "problems":
+            errs, warns = check_problem(path)
+            e2, w2 = check_guide(path)
+            errs, warns = errs + [e for e in e2 if not e.startswith("page out of range")], warns + w2
+        else:
+            errs, warns = check_guide(path)
         if errs or warns:
-            print(f"{path.parent.name}/{path.name}")
+            print(path.relative_to(REPO))
             for e in errs:
                 print("  ERROR", e)
             for w in warns:

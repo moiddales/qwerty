@@ -28,7 +28,7 @@ Use these when the task is to **choose the best plan under constraints**: fund p
 - **Find what makes timing matter.** 2020B-10876 linked delay to falling feasibility, which gave the schedule its real trade-off (pp. 8–10).
 - **Design for a stated worst case** when sizing (the longest night plus a cloudy day in 2021A-11462).
 - **Show a toy example** of the algorithm before the full problem (2020B-10876's four-project demo, pp. 11–12).
-- **Give the decision-maker scenarios**: constant, growing and optimized budgets, and a quantified answer to "how much more should we raise?" (2020B-10876, pp. 13–17).
+- **Give the decision-maker scenarios**: constant, growing and optimized budgets, and a quantified answer to how much more money to raise (2020B-10876, pp. 13–17).
 - **Handle outliers openly.** 2020B-10876 explained why one project could not fit a flat budget and when it could (pp. 13–14).
 - **Respect the decision-maker's practical limits.** 2021B-11576 spread facility construction over years because building everything at once "will create a huge budget gap" (p. 20).
 - **Check what the objective rewards.** A sum of benefit/cost ratios favors cheap projects; compare with total benefit under the budget (see the note in 2020B-10876).

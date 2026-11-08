@@ -98,7 +98,7 @@ def main():
     for p in man["papers"]:
         k = f"{p['year']}{p['problem']}"
         counts[k] = counts.get(k, 0) + 1
-    for year in range(2014, 2026):
+    for year in sorted(int(d.name) for d in SRC.iterdir() if d.name.isdigit()):
         web = SRC / str(year) / f"{year}_HiMCM_Problems_webpage.txt"
         if web.exists():
             raw = web.read_text(encoding="utf-8")
