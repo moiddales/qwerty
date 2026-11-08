@@ -35,13 +35,30 @@ def pdf_text(pdf: Path) -> str:
     return clean_page(res.stdout)
 
 
+# Attachments whose file names do not say which problem they belong to.
+ATTACHMENT_PROBLEM = {
+    "2015_My_City_Crime_Data.xlsx": "B",
+    "HiMCM_TriDataSet.xlsx": "A",
+    "Sales_Tax_Rate.pdf": "B",
+    "COMAP_RollerCoasterData_2018.xlsx": "A",
+    "2021_HiMCM_LakeMead_LowHighElevationData.xlsx": "B",
+    "2021_HiMCM_LakeMead_MonthlyElevationData.xlsx": "B",
+    "2022_HiMCM_Data.xlsx": "B",
+    "HiMCM_Olympic_Data.xlsx": "A",
+}
+
+
 def attachments(year: int, letter: str):
     files = []
     for f in sorted((SRC / str(year)).iterdir()):
         n = f.name
         if n.endswith("_webpage.txt") or re.search(r"Problem_[AB]\.pdf$", n):
             continue
-        if re.search(r"Problem_([AB])", n) and f"Problem_{letter}" not in n:
+        m = re.search(r"Problem_([AB])", n)
+        owner = m.group(1) if m else ATTACHMENT_PROBLEM.get(n)
+        if owner is None:
+            raise SystemExit(f"attachment {n}: add it to ATTACHMENT_PROBLEM")
+        if owner != letter:
             continue
         files.append(f"sources/problems/{year}/{n}")
     return files
