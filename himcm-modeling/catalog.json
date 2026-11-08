@@ -1,0 +1,857 @@
+{
+ "problems": [],
+ "papers": [
+  {
+   "id": "2017A-7359",
+   "year": 2017,
+   "problem": "A",
+   "problem_title": "Drone Clusters as Sky Light Displays",
+   "team": "7359",
+   "award": "Outstanding",
+   "paper_title": "Drone Clusters as Sky Light Displays",
+   "pages": 41,
+   "fulltext": "corpus/papers/2017A-7359.md",
+   "pdf": "sources/papers/2017A-7359.pdf",
+   "model_families": [
+    "physics-geometry",
+    "optimization-heuristic",
+    "simulation-agent-cellular",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "parametric coordinate geometry of Ferris wheel parts",
+    "rigid-body plane rotation",
+    "multi-link skeleton kinematics with rotation matrices",
+    "skin attachment points following skeleton",
+    "3D rotation matrix for wing flapping",
+    "image preprocessing (binarize",
+    "filter",
+    "boundary tracing",
+    "subsampling)",
+    "dense scatter diffusion algorithm (law-of-cosines non-collision argument)",
+    "greedy farthest-first point matching",
+    "staggered departure delays for simultaneous arrival",
+    "trapezoidal velocity profile timing",
+    "rental cost estimate"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "memo to the Mayor"
+   ],
+   "data_sources": [
+    "Intel Shooting Star drone specifications",
+    "assumed rental price per drone",
+    "assumed/estimated values"
+   ],
+   "tags": [
+    "drone light show",
+    "rigid vs non-rigid motion",
+    "skeleton animation",
+    "formation transition",
+    "collision avoidance",
+    "launch scheduling",
+    "parameter tables"
+   ],
+   "card": "papers/2017A-7359.md"
+  },
+  {
+   "id": "2018B-8506",
+   "year": 2018,
+   "problem": "B",
+   "problem_title": "Cozy Smart House",
+   "team": "8506",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 67,
+   "fulltext": "corpus/papers/2018B-8506.md",
+   "pdf": "sources/papers/2018B-8506.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "physics-geometry",
+    "differential-equations",
+    "probability-stochastic",
+    "simulation-monte-carlo",
+    "optimization-heuristic",
+    "graph-network"
+   ],
+   "models": [
+    "autocorrelation-based period detection",
+    "adaptive weighted-average temperature forecast with trend and drift correction",
+    "Gaussian satisfaction function",
+    "COP from reversed Rankine cycle (HFC-134a enthalpy table)",
+    "room-wall-environment coupled heat ODEs",
+    "weighted-sum utility function (comfort vs power)",
+    "Monte Carlo Tree Search over daily temperature curve",
+    "empirical probability mass function of return time",
+    "Buck equation humidity constraint",
+    "zone adjacency graph with row-stochastic interdependency matrix",
+    "product of satisfaction functions for shared rooms"
+   ],
+   "tools": [
+    "Python",
+    "pandas",
+    "NumPy",
+    "Ruby"
+   ],
+   "deliverables": [
+    "one-page news release (product launch of 'ThermostaX')"
+   ],
+   "data_sources": [
+    "self-generated thermostat set-point data sets (student",
+    "retired man; 15-minute blocks)",
+    "DuPont HFC-134a thermodynamic tables",
+    "Engineering Toolbox and other material/comfort constants",
+    "Nest white paper and Ecobee published savings figures",
+    "literature-based allergen temperature/humidity ranges"
+   ],
+   "tags": [
+    "smart thermostat",
+    "schedule periodicity",
+    "autocorrelation",
+    "Monte Carlo Tree Search",
+    "comfort-energy trade-off",
+    "return-time probability",
+    "multi-zone heat transfer",
+    "synthetic test data"
+   ],
+   "card": "papers/2018B-8506.md"
+  },
+  {
+   "id": "2019B-9548",
+   "year": 2019,
+   "problem": "B",
+   "problem_title": "Bottle Battles",
+   "team": "9548",
+   "award": "Outstanding",
+   "paper_title": "The Bottle Outbreak",
+   "pages": 24,
+   "fulltext": "corpus/papers/2019B-9548.md",
+   "pdf": "sources/papers/2019B-9548.pdf",
+   "model_families": [
+    "differential-equations",
+    "compartment-population",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "competitive Lotka-Volterra equations (2",
+    "3 and 5 competitors)",
+    "lower-bound modified Lotka-Volterra",
+    "numerical time-stepping of market shares",
+    "before/after equilibrium comparison",
+    "linear impact formulas (plastic mass",
+    "carbon footprint",
+    "tax",
+    "jobs",
+    "budget",
+    "sugar intake)"
+   ],
+   "tools": [],
+   "deliverables": [
+    "newspaper article"
+   ],
+   "data_sources": [
+    "background statistics on US bottled water market",
+    "Pacific Institute bottled-water energy paper (Gleick 2009)",
+    "diffen.com bottled vs tap water",
+    "Fortune Business Insights functional water market report",
+    "assumed/estimated values"
+   ],
+   "tags": [
+    "market competition",
+    "Lotka-Volterra",
+    "species analogy",
+    "policy shock",
+    "before-after equilibrium",
+    "impact categories",
+    "airport vs city"
+   ],
+   "card": "papers/2019B-9548.md"
+  },
+  {
+   "id": "2020A-10549",
+   "year": 2020,
+   "problem": "A",
+   "problem_title": "The Best Summer Job",
+   "team": "10549",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2020A-10549.md",
+   "pdf": "sources/papers/2020A-10549.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "machine-learning"
+   ],
+   "models": [
+    "AHP (1-9 scale",
+    "eigenvector weights",
+    "CI/CR consistency test)",
+    "entropy weight method",
+    "least-squares combination of AHP and entropy weights",
+    "weighted-sum job score",
+    "k-means clustering with SSE elbow",
+    "cosine-angle consistency-repair algorithm for inconsistent AHP matrices"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "one-page news-style article with app mock-up (placed after the summary sheet)"
+   ],
+   "data_sources": [
+    "Investopedia",
+    "Indeed",
+    "ZipRecruiter",
+    "Payscale",
+    "Pew Research Center",
+    "team-assigned 1-5 scores for risk",
+    "ability",
+    "relevance"
+   ],
+   "tags": [
+    "summer job recommender",
+    "AHP plus entropy",
+    "subjective-objective weight combination",
+    "k-means shortlist",
+    "AHP consistency repair",
+    "fictional personas",
+    "COVID-19 risk",
+    "app mock-up"
+   ],
+   "card": "papers/2020A-10549.md"
+  },
+  {
+   "id": "2020B-10839",
+   "year": 2020,
+   "problem": "B",
+   "problem_title": "Funding Biodiversity Conservation",
+   "team": "10839",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 23,
+   "fulltext": "corpus/papers/2020B-10839.md",
+   "pdf": "sources/papers/2020B-10839.pdf",
+   "model_families": [
+    "simulation-monte-carlo",
+    "optimization-heuristic",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "random-search 'Stochastic Model' over project start years",
+    "time-decaying multiplicative benefit score",
+    "exponential growth of threatened level",
+    "feasibility-adjusted cost (cost / feasibility of success)",
+    "benefit-benchmark filter + score = adjusted total cost x SD of yearly cost"
+   ],
+   "tools": [
+    "Python",
+    "NumPy",
+    "pandas",
+    "Numba",
+    "Plotly",
+    "Jupyter Notebook",
+    "Excel"
+   ],
+   "deliverables": [
+    "one-page memo to the FRPCE Board",
+    "Excel file of the three best funding schedules generated by the code"
+   ],
+   "data_sources": [
+    "COMAP-provided threatened plants data (Attachment B)",
+    "assumed/estimated values"
+   ],
+   "tags": [
+    "project scheduling",
+    "start-year randomization",
+    "benefit threshold filter",
+    "budget smoothing",
+    "standard deviation of annual cost",
+    "user-adjustable parameters",
+    "feasibility decay"
+   ],
+   "card": "papers/2020B-10839.md"
+  },
+  {
+   "id": "2021A-11462",
+   "year": 2021,
+   "problem": "A",
+   "problem_title": "Storing the Sun",
+   "team": "11462",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021A-11462.md",
+   "pdf": "sources/papers/2021A-11462.pdf",
+   "model_families": [
+    "physics-geometry",
+    "economics-cost-benefit",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "appliance-level energy budget (constant vs. nonconstant loads)",
+    "worst-case cloudy-day energy requirement E_cloudy = E_d + 2E_n",
+    "NOAA sunrise-hour-angle formula for longest night",
+    "wall/window/roof conductive heat-loss model for HVAC energy",
+    "piecewise lighting-demand function of occupants and floor area",
+    "ceiling-function battery-count sizing (series/parallel matrix)",
+    "minimum total system cost comparison across batteries"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "news article"
+   ],
+   "data_sources": [
+    "COMAP-provided battery table",
+    "manufacturer/retailer battery datasheets (Enphase",
+    "Fortress Power",
+    "VMAXTANKS)",
+    "appliance Energy Guide labels and product pages",
+    "NOAA solar position equations",
+    "U.S. EIA",
+    "Penn State EGEE 102 heat-loss notes",
+    "assumed/estimated coefficients"
+   ],
+   "tags": [
+    "off-grid solar",
+    "battery sizing",
+    "worst-case design",
+    "night length",
+    "HVAC heat loss",
+    "cost minimization",
+    "Python calculator",
+    "market benchmark check"
+   ],
+   "card": "papers/2021A-11462.md"
+  },
+  {
+   "id": "2021B-11552",
+   "year": 2021,
+   "problem": "B",
+   "problem_title": "Tackling the Drought",
+   "team": "11552",
+   "award": "Outstanding",
+   "paper_title": "Tackling the Drought",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021B-11552.md",
+   "pdf": "sources/papers/2021B-11552.pdf",
+   "model_families": [
+    "physics-geometry",
+    "statistics-regression",
+    "time-series-forecasting"
+   ],
+   "models": [
+    "water-balance (inflow-outflow-loss) decomposition",
+    "river cross-section flow integral",
+    "dimensional analysis / similarity scaling for flow",
+    "Penman equation and Linacre simplified lake-evaporation formula",
+    "micro-element (slender-cuboid) volume summation",
+    "OLS linear and multiple linear regression V~A·E",
+    "V~A+E",
+    "threshold-below-mean drought criterion",
+    "Bollinger Bands drought criterion (moving average ± β·std)",
+    "ARMA(2",
+    "4) short-term model",
+    "ARIMA long-term model on 2005-2021",
+    "recovery-rate index RR = WR/WD"
+   ],
+   "tools": [
+    "FLUENT (illustrative CFD mesh)"
+   ],
+   "deliverables": [
+    "one-page news report (placed as Section 1)"
+   ],
+   "data_sources": [
+    "COMAP-provided Lake Mead monthly and high/low elevation data",
+    "Table 1 elevation-area-volume values",
+    "literature formulas (Penman",
+    "Linacre 1977)",
+    "California recycled-water share (~7%) as illustration"
+   ],
+   "tags": [
+    "Bollinger Bands",
+    "drought definition",
+    "two drought criteria",
+    "ARIMA",
+    "hyperparameter sensitivity",
+    "water balance",
+    "evaporation formula",
+    "Lake Mead"
+   ],
+   "card": "papers/2021B-11552.md"
+  },
+  {
+   "id": "2021B-11576",
+   "year": 2021,
+   "problem": "B",
+   "problem_title": "Tackling the Drought",
+   "team": "11576",
+   "award": "Outstanding",
+   "paper_title": "The Recognition, Prediction and Countermeasure for the Drought in Lake Mead",
+   "pages": 24,
+   "fulltext": "corpus/papers/2021B-11576.md",
+   "pdf": "sources/papers/2021B-11576.pdf",
+   "model_families": [
+    "statistics-regression",
+    "physics-geometry",
+    "time-series-forecasting",
+    "optimization-math-programming",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "annual water-budget balance V(t) = V(t−1) + inflow − outflow − loss",
+    "Pearson correlation matrix of budget factors",
+    "quadratic area–elevation fit integrated to cubic volume–elevation (least squares)",
+    "policy-threshold drought criterion (1115 ft)",
+    "drought-period indices: duration",
+    "average elevation",
+    "fluctuation (std)",
+    "ARIMA on most recent drought",
+    "Trend-Seasonal-ARIMA decomposition (moving-average trend + seasonal means + ARIMA on irregular term)",
+    "integer programming for wastewater facility mix (branch and bound)",
+    "one-factor sensitivity on expected wastewater volume"
+   ],
+   "tools": [
+    "MATLAB R2020a",
+    "LaTeX",
+    "Xmind Zen"
+   ],
+   "deliverables": [
+    "one-page designed news article / poster ('Outstanding Lake Mead Rescue Plan')",
+    "10-year facility construction and budget schedule"
+   ],
+   "data_sources": [
+    "COMAP-provided Lake Mead elevation data",
+    "Bureau of Reclamation (water budget",
+    "2007 Interim Guidelines FEIS)",
+    "Barnett and Pierce 2009",
+    "Healy et al. 2007 (USGS water budgets)",
+    "Singh et al. 2016",
+    "Hernández-Chover et al. 2018 (wastewater plant cost/capacity)",
+    "Nevada wastewater facility counts 2004/2012/2018",
+    "EPA needs estimate for Nevada"
+   ],
+   "tags": [
+    "water budget",
+    "policy threshold",
+    "drought characterization",
+    "seasonal decomposition",
+    "ARIMA",
+    "integer programming",
+    "phased budget",
+    "Lake Mead"
+   ],
+   "card": "papers/2021B-11576.md"
+  },
+  {
+   "id": "2021B-11823",
+   "year": 2021,
+   "problem": "B",
+   "problem_title": "Tackling the Drought",
+   "team": "11823",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 33,
+   "fulltext": "corpus/papers/2021B-11823.md",
+   "pdf": "sources/papers/2021B-11823.pdf",
+   "model_families": [
+    "physics-geometry",
+    "statistics-regression",
+    "time-series-forecasting",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "water balance F(t+Δt) = F(t) + inflow − outflow − loss",
+    "frustum-of-cone volume formula with percentage-error check",
+    "quadratic polynomial fit of volume vs elevation (averaged 1935/2010 capacity tables)",
+    "IQR outlier cleaning",
+    "percentage-deviation drought index Ik with five severity classes",
+    "ARMA with ADF stationarity test",
+    "AIC/BIC/HQ order selection",
+    "in-sample RMSE",
+    "back-test 1935–2010 → 2011–2021",
+    "recycling Score index and tiered cost function",
+    "constrained optimization by city type (water-starved / capital-starved)",
+    "COBYLA",
+    "two-factor 3-D sensitivity surface"
+   ],
+   "tools": [
+    "Python",
+    "pandas",
+    "statsmodels",
+    "SciPy",
+    "matplotlib",
+    "seaborn"
+   ],
+   "deliverables": [
+    "one-page newspaper-style article ('Droughts of Lake Mead')",
+    "city-type-specific recycling scheme with Boulder case study"
+   ],
+   "data_sources": [
+    "COMAP-provided Lake Mead elevation data",
+    "National Park Service capacity tables (1935 and 2010)",
+    "Climate Hot Map (evaporation ~3%/yr)",
+    "Paul Lutus water-level analysis",
+    "per-capita water use and wastewater figures (Britannica",
+    "Ecoseptic)",
+    "FRED / city websites for the case-study city"
+   ],
+   "tags": [
+    "drought index",
+    "elevation-to-volume conversion",
+    "outlier cleaning",
+    "ARMA",
+    "back-testing",
+    "city typology",
+    "recycling score",
+    "Lake Mead"
+   ],
+   "card": "papers/2021B-11823.md"
+  },
+  {
+   "id": "2022B-12465",
+   "year": 2022,
+   "problem": "B",
+   "problem_title": "CO2 and Global Warming",
+   "team": "12465",
+   "award": "Outstanding",
+   "paper_title": "Solution for Problem B of HiMCM 2022",
+   "pages": 23,
+   "fulltext": "corpus/papers/2022B-12465.md",
+   "pdf": "sources/papers/2022B-12465.pdf",
+   "model_families": [
+    "time-series-forecasting",
+    "statistics-regression",
+    "simulation-monte-carlo"
+   ],
+   "models": [
+    "10-year running averages",
+    "modified Mann-Kendall trend test for autocorrelated data",
+    "linear / quadratic / exponential regression in time",
+    "10-fold forward-chaining (time-series) cross-validation",
+    "STL decomposition and periodogram (spectral analysis)",
+    "Holt-Winters exponential smoothing without seasonality (Holt's linear trend)",
+    "moving block bootstrap with bagging (100 runs) for residuals",
+    "log-CO2 linear regression with ARIMA(6",
+    "1",
+    "0) errors",
+    "train/test scenario back-testing"
+   ],
+   "tools": [
+    "R"
+   ],
+   "deliverables": [
+    "one-page non-technical article for Scientific Today"
+   ],
+   "data_sources": [
+    "COMAP-provided CO2 Data Set 1 (NOAA Mauna Loa)",
+    "COMAP-provided Temps Data Set 2 (NASA GISTEMP)",
+    "NOAA GML trends page (to check the data definition)"
+   ],
+   "tags": [
+    "time-series cross-validation",
+    "hybrid trend-plus-residual model",
+    "bootstrap uncertainty bands",
+    "logarithmic CO2 forcing",
+    "back-testing scenarios",
+    "data-error correction",
+    "autocorrelation-aware testing"
+   ],
+   "card": "papers/2022B-12465.md"
+  },
+  {
+   "id": "2023A-13643",
+   "year": 2023,
+   "problem": "A",
+   "problem_title": "Dandelions: Friend? Foe? Both? Neither?",
+   "team": "13643",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023A-13643.md",
+   "pdf": "sources/papers/2023A-13643.pdf",
+   "model_families": [
+    "simulation-monte-carlo",
+    "simulation-agent-cellular",
+    "probability-stochastic",
+    "evaluation-mcdm",
+    "statistics-regression"
+   ],
+   "models": [
+    "Monte Carlo simulation tracking every individual plant",
+    "stage-based life-cycle state machine (seed",
+    "developing",
+    "dispersal",
+    "inter-dispersal",
+    "hold",
+    "dormancy)",
+    "sinusoidal annual temperature curve fitted to mean and SD",
+    "two-mechanism seed dispersal: horizontal-wind constant-velocity distance vs exponential updraft long-distance",
+    "adaptation factor from temperature and humidity ranks",
+    "AHP with consistency test (18 attributes)",
+    "global vs local impact factor as weighted sum",
+    "descriptive statistics of simulation outputs"
+   ],
+   "tools": [],
+   "deliverables": [
+    "closing article 'Our Vigorous Friend' (not required by the problem)"
+   ],
+   "data_sources": [
+    "usa.com climate data for six US states",
+    "USDA PLANTS Database (scraped with a web crawler)",
+    "US Register of Introduced and Invasive Species (US-RIIS)",
+    "published dandelion biology and dispersal literature (e.g. Tackenberg et al. 2003",
+    "Stewart-Wade et al. 2002)"
+   ],
+   "tags": [
+    "seed dispersal",
+    "life-cycle stages",
+    "updraft long-distance dispersal",
+    "optimal starting month",
+    "AHP attribute scoring",
+    "global vs local impact factor",
+    "large-scale ranking of 226 species",
+    "invasive species"
+   ],
+   "card": "papers/2023A-13643.md"
+  },
+  {
+   "id": "2023A-13719",
+   "year": 2023,
+   "problem": "A",
+   "problem_title": "Dandelions: Friend? Foe? Both? Neither?",
+   "team": "13719",
+   "award": "Outstanding",
+   "paper_title": "Every Single One Matters",
+   "pages": 24,
+   "fulltext": "corpus/papers/2023A-13719.md",
+   "pdf": "sources/papers/2023A-13719.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "probability-stochastic",
+    "statistics-regression",
+    "physics-geometry",
+    "evaluation-mcdm",
+    "spatial-geographic"
+   ],
+   "models": [
+    "cellular automata simulation (1 m² cells",
+    "daily step)",
+    "temperature-dependent germination curve (scaled normal CDF",
+    "µ(T) and σ(T) fitted as quadratics)",
+    "accumulated-growth index with tanh response functions for temperature",
+    "humidity",
+    "solar radiation",
+    "soil pH",
+    "mechanistic wind-dispersal distance formula (Nathan et al. 2001) with friction velocity",
+    "Analytic Network Process (Super Decisions)",
+    "TOPSIS with ideal solutions fitted on a training species",
+    "partial dependency sensitivity analysis",
+    "correlation of coverage with climate variables across 14 sites"
+   ],
+   "tools": [
+    "Python",
+    "SciPy",
+    "Google Earth Engine",
+    "Super Decisions"
+   ],
+   "deliverables": [],
+   "data_sources": [
+    "ERA5-Land (via Google Earth Engine)",
+    "GLDAS-2.1",
+    "MERRA-2",
+    "OpenLandMap soil pH",
+    "MODIS NDVI/EVI",
+    "ERGo topographic indices",
+    "CGLS land cover",
+    "OECD biodiversity data",
+    "World Bank (HDI",
+    "agriculture value",
+    "forest cover)",
+    "PubMed article counts",
+    "Hoya et al. 2007 germination data"
+   ],
+   "tags": [
+    "satellite and reanalysis data",
+    "cellular automata",
+    "germination curve fitting",
+    "wind dispersal physics",
+    "ANP vs AHP",
+    "TOPSIS train/test split",
+    "14 global locations",
+    "coverage rate"
+   ],
+   "card": "papers/2023A-13719.md"
+  },
+  {
+   "id": "2023B-13694",
+   "year": 2023,
+   "problem": "B",
+   "problem_title": "Charging Ahead with E-buses",
+   "team": "13694",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023B-13694.md",
+   "pdf": "sources/papers/2023B-13694.pdf",
+   "model_families": [
+    "physics-geometry",
+    "economics-cost-benefit",
+    "optimization-math-programming",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "life-cycle assessment (cradle-to-grave + well-to-wheel) per bus type",
+    "grid-mix-weighted electricity emission factor",
+    "life-cycle cost model per bus with subsidy fraction S%",
+    "usage vs instantaneous (one-time) emissions/costs and break-even projection",
+    "exhaustive depth-first-search enumeration of 10-year replacement schedules under a carry-over yearly budget",
+    "min-max normalized weighted index of total cost and total emissions"
+   ],
+   "tools": [],
+   "deliverables": [
+    "letter to Vancouver transportation officials"
+   ],
+   "data_sources": [
+    "GREET 2022 (Argonne)",
+    "Zhao et al. 2021 bus LCA",
+    "Canada Energy Regulator BC grid mix",
+    "BC Hydro / FortisBC / Shell Canada local energy prices",
+    "FTA useful-life report",
+    "EIA Annual Energy Outlook 2023",
+    "BloombergNEF battery prices",
+    "manufacturer specification sheets",
+    "Sierra Club MBTA report",
+    "ICCT São Paulo report"
+   ],
+   "tags": [
+    "life-cycle assessment",
+    "bottom-up per-bus model",
+    "grid mix",
+    "trolleybus",
+    "recycling credit",
+    "exhaustive search",
+    "budget constraint",
+    "waterfall charts"
+   ],
+   "card": "papers/2023B-13694.md"
+  },
+  {
+   "id": "2024B-15022",
+   "year": 2024,
+   "problem": "B",
+   "problem_title": "Examining the Environmental Impact of High-Powered Computing",
+   "team": "15022",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 26,
+   "fulltext": "corpus/papers/2024B-15022.md",
+   "pdf": "sources/papers/2024B-15022.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "top-down decomposition: HPC energy = crypto-mining energy + HPC share of data-centre energy",
+    "logarithmic regression of energy on utilization-adjusted computing power (piecewise",
+    "pre/post 2018)",
+    "country-level energy-mix carbon accounting with fossil/renewable/nuclear emission factors",
+    "fitted exponential-plus-linear time function for emissions (Multi-factor Dynamic Prediction",
+    "MFD-HPC)",
+    "linear trend of renewable share",
+    "partial-derivative sensitivity analysis",
+    "weighted environmental impact index (log carbon + water + e-waste)",
+    "constraint-based policy extension (caps on carbon",
+    "energy",
+    "water",
+    "e-waste)"
+   ],
+   "tools": [],
+   "deliverables": [
+    "letter to the UN Advisory Board on AI"
+   ],
+   "data_sources": [
+    "IEA data-centre energy data",
+    "Cambridge Bitcoin Electricity Consumption Index (CCAF)",
+    "TOP500",
+    "U.S. EIA country energy mixes",
+    "IEA emission factors",
+    "IEA / UNFCCC / IPCC / BP global CO2 totals"
+   ],
+   "tags": [
+    "HPC energy",
+    "carbon accounting",
+    "energy mix",
+    "crypto mining",
+    "renewable share scenarios",
+    "water usage",
+    "e-waste",
+    "model extension by constraints"
+   ],
+   "card": "papers/2024B-15022.md"
+  },
+  {
+   "id": "2024B-15502",
+   "year": 2024,
+   "problem": "B",
+   "problem_title": "Examining the Environmental Impact of High-Powered Computing",
+   "team": "15502",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024B-15502.md",
+   "pdf": "sources/papers/2024B-15502.pdf",
+   "model_families": [
+    "time-series-forecasting",
+    "differential-equations",
+    "physics-geometry",
+    "statistics-regression"
+   ],
+   "models": [
+    "bottom-up energy model allocating societal computing demand to TOP500 machines (MPP vs cluster) with PUE and average utilization",
+    "two-way parameter grids (PUE x demand",
+    "AUR x demand)",
+    "seven-source carbon accounting with load-dependent fossil emission correction (cubic polynomial)",
+    "levelized life-cycle emissions for wind/solar/hydro/nuclear",
+    "grey model GM(1",
+    "1)",
+    "logistic (SI-type) ODE for average utilization rate",
+    "ARIMA forecasts of electricity generation by source",
+    "renewable x nuclear share grid (heatmap) of 2030 emissions",
+    "distribution-network circuit model (KCL",
+    "voltage-drop limit) for community energy access"
+   ],
+   "tools": [],
+   "deliverables": [
+    "letter to the UN Advisory Board on AI"
+   ],
+   "data_sources": [
+    "TOP500 (June 2024)",
+    "China Computing Power Development Report 2024",
+    "Huawei PUE data",
+    "Statistical Review of World Energy 2024 (via KPMG)",
+    "IPCC AR5 Annex III and Our World in Data emission factors",
+    "Tsinghua Global Computing Index",
+    "Microsoft Project Natick / Subsea Cloud (for recommendations)"
+   ],
+   "tags": [
+    "HPC energy",
+    "bottom-up estimation",
+    "PUE",
+    "utilization rate",
+    "energy mix forecasting",
+    "life-cycle emissions",
+    "grid voltage constraint",
+    "energy equity",
+    "offshore data centres"
+   ],
+   "card": "papers/2024B-15502.md"
+  }
+ ]
+}
