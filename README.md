@@ -36,7 +36,7 @@ CLAUDE.md                         主会话规则：分派、计划审查、重�
 .claude/monitor/team_monitor.py   单独窗口里的命令行仪表盘（只读 transcript）
 .claude/monitor/open.sh           在 tmux 分屏 / macOS 新窗口中打开 monitor
 tests/test_hooks.sh               24 个场景的 hook 回归测试
-tests/test_monitor.py             52 个场景的 monitor 测试（含真实会话样本、Ctrl-C 恢复屏幕）
+tests/test_monitor.py             54 个场景的 monitor 测试（含真实会话样本、Ctrl-C 恢复屏幕）
 docs/research.md                  推文溯源、官方文档要点、7 个仓库对比
 ```
 
@@ -148,7 +148,7 @@ python3 .claude/monitor/team_monitor.py --project /path/to/project
 
 **局限：**
 - transcript 格式不是公开接口。解析规则是按 Claude Code 2.1.319 的实际输出写的，未来版本可能变化。遇到认不出的行会跳过，不会报错。
-- 判断"测试命令"和"测试失败"靠正则匹配。能识别 npm/pnpm/yarn/bun test、jest、vitest、mocha、pytest（包括 `uv run`）、tox、`python3 xxx_test.py`、go test、cargo test、make test，以及 `*test*.sh`。非零退出一律算失败；退出码为 0 时（比如输出被管道接到 tail），只认**行首**的失败标记和汇总行（`FAIL …`、`FAILED …`、`Tests: 1 failed`、`== 2 failed …`、`failed=1`、行首的 Traceback）。测试名称里出现的 "1 failed" 不算。识别不了的测试命令，SHIP 也就感知不到它的失败。
+- 判断"测试命令"和"测试失败"靠正则匹配。能识别 npm/pnpm/yarn/bun test、jest、vitest、mocha、pytest（包括 `uv run`）、tox、`python3 xxx_test.py`、go test、cargo test、make test，以及 `*test*.sh`。非零退出一律算失败；退出码为 0 时（比如输出被管道接到 tail），只认**行首**的失败标记和汇总行（`FAIL …`、`FAILED …`、`Tests: 1 failed`、`== 2 failed …`、`failed=1`、Traceback、TAP 的 `not ok`）。测试名称里出现的 "1 failed" 不算。识别不了的测试命令，SHIP 也就感知不到它的失败。
 - 云端网页和手机 App 没有可供你操作的终端，所以 monitor 只能在本地使用。云端会话可以用 `--html` 导出一帧来查看。
 - 字符画要求终端把方框字符按单宽显示。如果终端开启了"中文环境下模糊宽度字符按双宽显示"，排版会错位。
 

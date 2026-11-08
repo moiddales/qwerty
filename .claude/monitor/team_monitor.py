@@ -68,7 +68,7 @@ FAIL_RE = re.compile(
     r"|^[\s=]*(?:Tests?:\s*|Test Suites:\s*)?[1-9]\d*\s+(?:failed|failing)\b"  # jest/pytest/mocha summaries
     r"|^[\s=]*\d+\s+passed,\s*[1-9]\d*\s+failed\b"
     r"|(?<![\w'\"])failed=[1-9]"                              # this repo's own suites
-    r"|^Traceback \(most recent call last\)|^npm ERR!")
+    r"|^\s*Traceback \(most recent call last\)|^npm ERR!|^not ok\b")
 VERDICT_RE = re.compile(r"^[\s*_`>]*VERDICT:[\s*_`]*(CONFIRMED|REFUTED|INCONCLUSIVE)[\s*_`.]*$", re.M)
 TAG_RE = {k: re.compile(rf"<{k}>(.*?)</{k}>", re.S) for k in ("tool-use-id", "status", "result")}
 

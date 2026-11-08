@@ -142,6 +142,9 @@ for cmd in ("uv run pytest -q", "npx playwright test", "make -C build test", "to
     check(f"test runner detected: {cmd}", v["tests_fail"] == 1)
 v = T().bash("t", "npm test", "warning: 3 errors suppressed\nFound 2 errors in docs\n1 error generated\nTests: 9 passed").view()
 check("'N errors' noise in a zero-exit run is not a test failure", v["tests_pass"] == 1 and v["tests_fail"] == 0)
+for out in ("  Traceback (most recent call last):\n    x", "ok 1 - a\nnot ok 2 - b"):
+    v = T().bash("t", "npm test | tail", out).view()
+    check(f"zero-exit failure marker: {out.split(chr(10))[0].strip()[:20]!r}", v["tests_fail"] == 1)
 v = T().bash("a", "npm run dev", "[Request interrupted by user for tool use]", True).bash("b", "npm run dev", "[Request interrupted by user for tool use]", True).view()
 check("two interrupts are not 'same error ×2' (matches the hook)", not v["cp"][1]["on"])
 
