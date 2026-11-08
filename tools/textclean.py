@@ -52,7 +52,8 @@ _BRACKETS = {
     0xF8FB: "⎦", 0xF8FC: "⎫", 0xF8FD: "⎬", 0xF8FE: "⎭",
 }
 
-_LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "st", "ﬆ": "st"}
+_LIGATURES = {"ﬀ": "ff", "↵": "ff",  # ↵: some LaTeX fonts map the ff ligature to U+21B5
+                "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi", "ﬄ": "ffl", "ﬅ": "st", "ﬆ": "st"}
 
 # Wingdings-style bullets that share code points with Symbol letters.
 _BULLET_AT_LINE_START = re.compile(r"^(\s*)[](?=\s)", re.M)
