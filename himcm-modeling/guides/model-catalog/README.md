@@ -28,6 +28,9 @@ Then justify the choice in the paper in one or two sentences: why this method fi
 | Spread, movement or random events in space and time | Monte Carlo, agent-based models, cellular automata, stage matrices, random walks | [simulation-and-stochastic.md](simulation-and-stochastic.md) |
 | Allocate a budget or schedule projects | Integer programming, enumeration, greedy decoding with random or heuristic search | [optimization-and-scheduling.md](optimization-and-scheduling.md) |
 | Size a system to meet a need | Worst-case requirement plus cost minimization over the number of units | [optimization-and-scheduling.md](optimization-and-scheduling.md) |
+| Routes, tours or coverage of a building or network; assigning people to tasks | Graph models (shortest paths, tours, vehicle routing), assignment, discrete-event or agent-based simulation of the process; *mostly outside the corpus* | [optimization-and-scheduling.md](optimization-and-scheduling.md), [simulation-and-stochastic.md](simulation-and-stochastic.md) |
+| Choose a location or site | Multi-criteria evaluation of candidates; *outside the corpus:* facility-location models | [evaluation-and-decision.md](evaluation-and-decision.md), [optimization-and-scheduling.md](optimization-and-scheduling.md) |
+| Footprint of an activity (emissions, energy, water, waste) | Activity data × emission factors, life-cycle boundaries, scenarios | [mechanistic-models.md](mechanistic-models.md) |
 | A physical, economic or population mechanism | Balance equations, physical laws, geometry, differential equations, competition models, life-cycle accounting | [mechanistic-models.md](mechanistic-models.md) |
 | Estimate a quantity nobody publishes | Top-down proxy and bottom-up build, cross-checked against each other or an external figure | [mechanistic-models.md](mechanistic-models.md) |
 

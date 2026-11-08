@@ -44,4 +44,7 @@ Not seen in the carded papers, but often suitable:
 - **Goal programming** when there are targets to reach rather than quantities to maximize.
 - **Genetic algorithms and simulated annealing** for large combinatorial problems, with convergence plots and several runs from different starts.
 - **Network flow and shortest-path models** (Dijkstra, minimum-cost flow) for routing, evacuation and logistics.
+- **Routing and tour problems**: the traveling salesman and vehicle routing problems for visiting every room, site or customer, solved exactly for small cases and by nearest-neighbor plus 2-opt improvement or similar heuristics for larger ones. Split the work among several agents (responders, vehicles) with a partition-then-route approach, and compare with a lower bound.
+- **Assignment problems** (Hungarian algorithm, integer programming) for matching people to tasks or areas.
+- **Facility-location models** (p-median, coverage) for choosing sites that serve demand at least cost or distance.
 - **Robust optimization or scenario-based optimization** when parameters are uncertain: choose the plan that performs acceptably across scenarios.
