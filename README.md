@@ -30,10 +30,13 @@ CLAUDE.md                         主会话规则：分派、计划审查、重�
 .claude/agents/tests.md           Haiku · 跑测试，原样返回命令、退出码、失败输出
 .claude/agents/verifier.md        Opus · 新上下文，以推翻为目标的审查
 .claude/hooks/repeat_failure.py   PostToolUseFailure(Bash)：同一错误第二次出现时提醒
-.claude/hooks/session_base.py     SessionStart：记录会话开始时的 commit
+.claude/hooks/session_base.py     SessionStart：记录会话开始时的 commit 和 transcript 路径
 .claude/hooks/review_gate.py      Stop：相对会话起点 ≥40 行改动，且最后一次编辑（含 Bash 写文件）后没跑 verifier → 拦截一次
 .claude/.gitignore                忽略 hook 状态和每次任务的 plan.md
-tests/test_hooks.sh               21 个场景的 hook 回归测试
+.claude/monitor/team_monitor.py   单独窗口里的命令行仪表盘（只读 transcript）
+.claude/monitor/open.sh           在 tmux 分屏 / macOS 新窗口中打开 monitor
+tests/test_hooks.sh               24 个场景的 hook 回归测试
+tests/test_monitor.py             41 个场景的 monitor 测试（含真实会话样本、Ctrl-C 恢复屏幕）
 docs/research.md                  推文溯源、官方文档要点、7 个仓库对比
 ```
 
@@ -95,6 +98,59 @@ bash tests/test_hooks.sh
 三次测试共花费约 0.63 美元，其中第一次完整流程约 0.40 美元（Opus 约 0.26，Sonnet 约 0.13，Haiku 不到 0.01）。
 
 注意：这套配置会对**所有**在云端打开这个仓库的会话生效，包括主模型被固定为 Sonnet。审查拦截只看本次会话对话记录里的编辑。
+
+## Team Monitor：在单独窗口里实时查看三模型协作
+
+![team monitor：演示数据，完整流程结束、SHIP 已亮](docs/monitor-preview.png)
+
+这是一个命令行风格的实时仪表盘，在**单独的终端窗口**里运行，跟着当前的 Claude Code 会话刷新。版式参照了那些推文里的示意图：Opus 检查点卡、Sonnet 主会话框、三张 Haiku 卡、REVIEW 框、SHIP 状态、会话日志，以及底部状态行。区别在于，**实时模式下的每个数字都来自会话自己的 transcript**：
+
+| 面板元素 | 数据来源 |
+|---|---|
+| 主模型 / 子 agent 模型 | assistant 消息里的 `model`、Agent 结果里的 `resolvedModel` |
+| Haiku 卡片的 running / done / fail | Agent 调用，以及它的结果或后台完成通知（三种载体都会解析，并按 tool-use-id 去重） |
+| 三个检查点、WAKES n/3 | verifier 调用相对第一次和最后一次编辑的先后；同一失败出现 ×2。编辑和重复失败的定义直接复用 `review_gate.py` / `repeat_failure.py` |
+| CAUGHT | verifier 的 `VERDICT: REFUTED` 次数（只认整行匹配，模板里那行说明不算） |
+| SHIP | 有改动 + 最新结论为 CONFIRMED + 结论在最后一次编辑之后 + 之后没有红的测试 |
+| 成本 | transcript 里的 `cost-state`（按模型拆分） |
+
+条形图**只表示状态**：运行中显示为一段流动的色块，完成显示为满格绿色，失败显示为满格红色。Claude Code 不提供子 agent 的真实进度，所以这里不显示百分比。
+
+### 打开方式
+
+```bash
+.claude/monitor/open.sh
+```
+
+在 tmux 里会向右分出一个 102 列宽的窗格；在 macOS 上会新开一个 Terminal 窗口；其他环境会打印出要在第二个终端里运行的命令：
+
+```bash
+python3 .claude/monitor/team_monitor.py --project /path/to/project
+```
+
+终端至少要有 100 列宽。按 Ctrl-C 退出，屏幕会恢复原样。其他用法：
+
+| 参数 | 作用 |
+|---|---|
+| `--demo` | 循环播放一段示例会话，标题栏标着 `● DEMO` |
+| `--session ID` / `--transcript FILE` | 指定要跟随的会话；默认跟随最新的会话 |
+| `--once` | 只打印一帧就退出 |
+| `--html FILE` | 导出一帧 HTML（预览图就是这样生成的） |
+| `--no-color` | 输出不带颜色 |
+
+**怎么找到会话：** `session_base.py` 在 SessionStart 时写入 `.claude/state/session-<id>.json`，里面记着 transcript 的路径。如果没有这个文件，就退回到 `~/.claude/projects/<项目路径>/` 下最新的 `*.jsonl`。
+
+**只读，不花钱：** monitor 不改任何文件，不联网，也不调用模型。只用 Python 标准库。
+
+更多截图：
+- [审查进行中（演示数据）](docs/monitor-preview-reviewing.png)
+- [一次真实会话（`tests/fixtures/real-session.jsonl`）](docs/monitor-real-session.png)
+
+**局限：**
+- transcript 格式不是公开接口。解析规则是按 Claude Code 2.1.319 的实际输出写的，未来版本可能变化。遇到认不出的行会跳过，不会报错。
+- 判断"测试命令"和"测试失败"靠正则匹配：命令要像测试命令；失败要满足非零退出、行首 `FAIL`、`FAILED`、`N failed`（且不是 `failed=0`）、Traceback 等条件之一。
+- 云端网页和手机 App 没有可供你操作的终端，所以 monitor 只能在本地使用。云端会话可以用 `--html` 导出一帧来查看。
+- 字符画要求终端把方框字符按单宽显示。如果终端开启了"中文环境下模糊宽度字符按双宽显示"，排版会错位。
 
 ## 已知局限（如实说明）
 

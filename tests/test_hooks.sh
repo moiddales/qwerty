@@ -67,6 +67,11 @@ check "read-only Bash only -> allow"                    ""                      
 { tool Bash '{"command":"sed -i s/1/2/ feature.txt"}'; tool Agent '{"subagent_type":"verifier"}'; } > t7.jsonl
 check "Bash edit then verifier -> allow"                ""                          "$(stop9 t7.jsonl)"
 
+check "session_base prints nothing (SessionStart stdout reaches the model)" "" "$(printf '{"session_id":"s10","transcript_path":"/x/t.jsonl"}' | sb)"
+check "session_base writes the transcript pointer"      '"transcript_path": "/x/t.jsonl"' "$(cat .claude/state/session-s10.json 2>/dev/null)"
+printf '{"session_id":"s10","transcript_path":"/x/t2.jsonl"}' | sb
+check "pointer is refreshed on resume"                  '"transcript_path": "/x/t2.jsonl"' "$(cat .claude/state/session-s10.json 2>/dev/null)"
+
 # --- empty repository (no commits yet) ---
 E="$T/empty" && mkdir -p "$E" && git -C "$E" init -q && seq 1 60 > "$E/a.txt"
 echo '{"session_id":"e1"}' | CLAUDE_PROJECT_DIR="$E" python3 -I "$H/session_base.py"
