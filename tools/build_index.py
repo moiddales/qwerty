@@ -110,8 +110,42 @@ def main():
     lines += ["", "## Problem types", "", "| Problem | Title | Types |", "|---|---|---|"]
     for pr in sorted(problems, key=lambda x: x["id"], reverse=True):
         lines.append(f"| [{pr['id']}](problems/{pr['id']}.md) | {pr.get('title', '')} | {', '.join(pr.get('problem_type') or [])} |")
+    # Every paper in the corpus, including those with no card yet (full text is always available).
+    manifest = SKILL.parent / "tools" / "booklet_manifest.json"
+    extra = []
+    if manifest.exists():
+        man = json.loads(manifest.read_text(encoding="utf-8"))
+        titles = dict(man.get("problems", {}))
+        carded = {p["id"] for p in papers}
+        for f in sorted((SKILL / "corpus" / "papers").glob("*.md")):
+            fm, _ = front_matter(f.read_text(encoding="utf-8"))
+            if fm and fm.get("id") and fm["id"] not in {m["id"] for m in man["papers"]}:
+                extra.append(fm)  # papers added later with tools/ingest.py
+        rows = [(m["id"], m["year"], m["problem"], m.get("award", "")) for m in man["papers"]]
+        rows += [(e["id"], e.get("year", ""), e.get("problem", ""), e.get("award", "").strip('"')) for e in extra]
+        lines += [
+            "",
+            "## All papers in the corpus",
+            "",
+            f"{len(rows)} papers. Every paper has a page-marked full text in `corpus/papers/` and the original PDF "
+            "in `sources/papers/` (repository root). Papers without a card can still be read and cited directly.",
+            "",
+            "| Problem | Title | Paper | Award | Card | Full text |",
+            "|---|---|---|---|---|---|",
+        ]
+        for pid, year, prob, award in sorted(rows, key=lambda r: (-int(r[1] or 0), r[2], r[0])):
+            key = f"{year}{prob}"
+            card = f"[card](papers/{pid}.md)" if pid in carded else "-"
+            lines.append(f"| {key} | {titles.get(key, '')} | {pid} | {award} | {card} | "
+                         f"[text](corpus/papers/{pid}.md) |")
+        lines += ["", "## Official problem statements", "", "| Problem | Title | Statement | Problem card |", "|---|---|---|---|"]
+        for f in sorted((SKILL / "corpus" / "problems").glob("*.md"), reverse=True):
+            fm, _ = front_matter(f.read_text(encoding="utf-8"))
+            pid = f.stem
+            card = f"[card](problems/{pid}.md)" if pid in prob_meta else "-"
+            lines.append(f"| {pid} | {(fm or {}).get('title', '').strip(chr(34))} | [statement](corpus/problems/{f.name}) | {card} |")
     (SKILL / "catalog.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"catalog: {len(papers)} papers, {len(problems)} problems")
+    print(f"catalog: {len(papers)} paper cards, {len(problems)} problem cards")
 
 
 if __name__ == "__main__":

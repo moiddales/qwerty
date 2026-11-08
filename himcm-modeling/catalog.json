@@ -1,5 +1,136 @@
 {
- "problems": [],
+ "problems": [
+  {
+   "id": "2018A",
+   "year": "2018",
+   "problem": "A",
+   "title": "Roller Coaster",
+   "statement": "corpus/problems/2018A.md",
+   "papers": [
+    "2018A-8554",
+    "2018A-8700",
+    "2018A-8744",
+    "2018A-8874",
+    "2018A-8992"
+   ],
+   "problem_type": [
+    "multi-criteria ranking",
+    "objective index construction",
+    "missing-data imputation",
+    "personalized recommendation / app design",
+    "comparison with external rankings"
+   ],
+   "card": "problems/2018A.md"
+  },
+  {
+   "id": "2020A",
+   "year": "2020",
+   "problem": "A",
+   "title": "The Best Summer Job",
+   "statement": "corpus/problems/2020A.md",
+   "papers": [
+    "2020A-10549",
+    "2020A-10550",
+    "2020A-10656",
+    "2020A-10701",
+    "2020A-11135"
+   ],
+   "problem_type": [
+    "personalized multi-criteria choice",
+    "recommendation system design",
+    "persona-based testing",
+    "user-facing presentation (app / webpage)"
+   ],
+   "card": "problems/2020A.md"
+  },
+  {
+   "id": "2021A",
+   "year": "2021",
+   "problem": "A",
+   "title": "Storing the Sun",
+   "statement": "corpus/problems/2021A.md",
+   "papers": [
+    "2021A-11462",
+    "2021A-11900",
+    "2021A-11931"
+   ],
+   "problem_type": [
+    "product selection / multi-criteria choice",
+    "system sizing",
+    "energy demand estimation",
+    "model generalization to user profiles",
+    "emerging-technology assessment"
+   ],
+   "card": "problems/2021A.md"
+  },
+  {
+   "id": "2021B",
+   "year": "2021",
+   "problem": "B",
+   "title": "Tackling the Drought",
+   "statement": "corpus/problems/2021B.md",
+   "papers": [
+    "2021B-11552",
+    "2021B-11576",
+    "2021B-11823",
+    "2021B-11898",
+    "2021B-12384"
+   ],
+   "problem_type": [
+    "reservoir water balance",
+    "geometric volume estimation",
+    "time-series forecasting",
+    "event (drought) definition from data",
+    "policy and infrastructure planning",
+    "non-technical communication"
+   ],
+   "card": "problems/2021B.md"
+  },
+  {
+   "id": "2023A",
+   "year": "2023",
+   "problem": "A",
+   "title": "Dandelions: Friend? Foe? Both? Neither?",
+   "statement": "corpus/problems/2023A.md",
+   "papers": [
+    "2023A-13643",
+    "2023A-13719",
+    "2023A-14076",
+    "2023A-14140",
+    "2023A-14632"
+   ],
+   "problem_type": [
+    "spatial population spread",
+    "stochastic simulation",
+    "climate-dependent biological growth",
+    "composite index construction",
+    "invasive species impact assessment",
+    "harm–benefit trade-off"
+   ],
+   "card": "problems/2023A.md"
+  },
+  {
+   "id": "2024B",
+   "year": "2024",
+   "problem": "B",
+   "title": "Examining the Environmental Impact of High-Powered Computing",
+   "statement": "corpus/problems/2024B.md",
+   "papers": [
+    "2024B-15022",
+    "2024B-15502",
+    "2024B-16226"
+   ],
+   "problem_type": [
+    "global energy and emissions estimation under data scarcity",
+    "energy-mix carbon accounting",
+    "scenario forecasting to 2030",
+    "environmental impact extension (multi-impact)",
+    "policy recommendation and policy-in-model",
+    "advocacy letter"
+   ],
+   "card": "problems/2024B.md"
+  }
+ ],
  "papers": [
   {
    "id": "2017A-7359",
@@ -55,6 +186,290 @@
     "parameter tables"
    ],
    "card": "papers/2017A-7359.md"
+  },
+  {
+   "id": "2018A-8554",
+   "year": 2018,
+   "problem": "A",
+   "problem_title": "Roller Coaster",
+   "team": "8554",
+   "award": "Outstanding",
+   "paper_title": "Get Ready for Scream",
+   "pages": 25,
+   "fulltext": "corpus/papers/2018A-8554.md",
+   "pdf": "sources/papers/2018A-8554.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression"
+   ],
+   "models": [
+    "nearest-neighbour donor imputation (normalized height/length distance)",
+    "hierarchical cluster analysis for within-cluster imputation",
+    "entropy weight method (two layers)",
+    "five sub-indices: ups-and-downs",
+    "vertigo",
+    "sustainability",
+    "stimulation",
+    "nostalgia",
+    "preference-coefficient weighted sum for personalization",
+    "min-max normalization",
+    "ordinal quantification of type and construction"
+   ],
+   "tools": [],
+   "deliverables": [
+    "one-page news release ('Rank it! Go to it! Ride it!') for app Rank&Roll",
+    "app concept with option design and UI mock-ups"
+   ],
+   "data_sources": [
+    "COMAP-provided roller coaster data",
+    "internet look-ups to correct erroneous type entries",
+    "Ranker crowd ranking",
+    "The Top Tens ranking"
+   ],
+   "tags": [
+    "roller coaster ranking",
+    "missing data imputation",
+    "cluster analysis",
+    "entropy weight",
+    "two-layer index system",
+    "personalized ranking",
+    "subsample robustness check",
+    "usability criteria"
+   ],
+   "card": "papers/2018A-8554.md"
+  },
+  {
+   "id": "2018A-8700",
+   "year": 2018,
+   "problem": "A",
+   "problem_title": "Roller Coaster",
+   "team": "8700",
+   "award": "Outstanding",
+   "paper_title": "From Rollercoaster's Indicators to \\\"RollerOutstander\\",
+   "pages": 50,
+   "fulltext": "corpus/papers/2018A-8700.md",
+   "pdf": "sources/papers/2018A-8700.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "machine-learning",
+    "statistics-regression"
+   ],
+   "models": [
+    "BP neural network imputation",
+    "Z-score outlier detection",
+    "min-max normalization",
+    "grey relational analysis for indicator screening",
+    "entropy weight method",
+    "type weight multiplier vector",
+    "PCA (dimensionality check)",
+    "single-indicator perturbation sensitivity",
+    "fuzzy comprehensive evaluation (app filtering)",
+    "item-based collaborative filtering",
+    "tag-based recommendation",
+    "recall/precision/coverage/diversity metrics"
+   ],
+   "tools": [
+    "Python",
+    "Excel",
+    "Word",
+    "Xmind Zen"
+   ],
+   "deliverables": [
+    "news release with Top 10 table",
+    "full-page app poster",
+    "app concept with six-screen UI prototype and user case"
+   ],
+   "data_sources": [
+    "COMAP-provided roller coaster data",
+    "University of Buffalo student ranking",
+    "ranker.com",
+    "Roller Coaster DataBase record holders"
+   ],
+   "tags": [
+    "roller coaster ranking",
+    "neural-network imputation",
+    "grey relational screening",
+    "entropy weight",
+    "recommender system",
+    "collaborative filtering",
+    "radar chart comparison",
+    "ranking bias analysis"
+   ],
+   "card": "papers/2018A-8700.md"
+  },
+  {
+   "id": "2018A-8744",
+   "year": 2018,
+   "problem": "A",
+   "problem_title": "Roller Coaster",
+   "team": "8744",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 49,
+   "fulltext": "corpus/papers/2018A-8744.md",
+   "pdf": "sources/papers/2018A-8744.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "probability-stochastic",
+    "other"
+   ],
+   "models": [
+    "Pearson correlation analysis",
+    "mean imputation",
+    "linear regression imputation",
+    "Box-Cox transformation + normal CDF percentile scaling",
+    "additive Thrill Index",
+    "inversion frequency (inversions per second)",
+    "extended Borda count for coaster type",
+    "logistic discomfort functions for G-force and inversion frequency",
+    "Comprehensive Index = Thrill − Discomfort",
+    "AHP pairwise comparison with consistency ratio",
+    "online survey to derive default weights"
+   ],
+   "tools": [
+    "Python",
+    "pandas",
+    "seaborn",
+    "NumPy"
+   ],
+   "deliverables": [
+    "press release for app 'Roller Ranker",
+    "app prototype (three-tier customization)"
+   ],
+   "data_sources": [
+    "COMAP-provided roller coaster data",
+    "Reddit and CoasterForce type polls (46 answers)",
+    "team online survey (62 responses",
+    "21 pairwise questions)",
+    "medical literature on G tolerance and rotation",
+    "ranker.com",
+    "enthusiast blog (Shannon George)"
+   ],
+   "tags": [
+    "roller coaster ranking",
+    "thrill vs discomfort",
+    "logistic penalty",
+    "Box-Cox",
+    "Borda count",
+    "AHP consistency",
+    "survey-based weights",
+    "personalization tiers"
+   ],
+   "card": "papers/2018A-8744.md"
+  },
+  {
+   "id": "2018A-8874",
+   "year": 2018,
+   "problem": "A",
+   "problem_title": "Roller Coaster",
+   "team": "8874",
+   "award": "Outstanding",
+   "paper_title": "How to evaluate various kinds of roller coaster for customers?",
+   "pages": 40,
+   "fulltext": "corpus/papers/2018A-8874.md",
+   "pdf": "sources/papers/2018A-8874.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "physics-geometry",
+    "optimization-math-programming",
+    "statistics-regression"
+   ],
+   "models": [
+    "energy conservation v = sqrt(2gh) for speed/drop filling",
+    "centripetal-force model for G-force with linear regression of radius on height",
+    "EM algorithm imputation (SPSS)",
+    "Logarithmic Fuzzy Preference Programming (LFPP) with triangular fuzzy numbers",
+    "entropy weight method",
+    "subjective–objective weight blending (0.8 LFPP / 0.2 entropy in code)",
+    "three-criterion hierarchy: excitement",
+    "safety",
+    "innovativeness",
+    "z-score standardization with ±1 truncation",
+    "weight-perturbation sensitivity (×1.2",
+    "×1.5)",
+    "head–tail consistency index",
+    "Kendall tau distance (defined)"
+   ],
+   "tools": [
+    "MATLAB",
+    "IBM SPSS Statistics 25"
+   ],
+   "deliverables": [
+    "news release 'A New Era for Ranking' (front pages)",
+    "app concept FUN ROLLER with mock-up screens"
+   ],
+   "data_sources": [
+    "COMAP-provided roller coaster data",
+    "team questionnaire on factor importance",
+    "Coaster Buzz ranking",
+    "Wikipedia 2018 roller coaster rankings (steel and wood)"
+   ],
+   "tags": [
+    "roller coaster ranking",
+    "fuzzy AHP",
+    "LFPP",
+    "subjective-objective weighting",
+    "physics-based imputation",
+    "ranking comparison",
+    "diagnosing model artefacts",
+    "feature-rich app"
+   ],
+   "card": "papers/2018A-8874.md"
+  },
+  {
+   "id": "2018A-8992",
+   "year": 2018,
+   "problem": "A",
+   "problem_title": "Roller Coaster",
+   "team": "8992",
+   "award": "Outstanding (NCTM award)",
+   "paper_title": "Personalizing Rollercoasters: Mathematical Models for the Ranking of Rollercoasters Worldwide",
+   "pages": 38,
+   "fulltext": "corpus/papers/2018A-8992.md",
+   "pdf": "sources/papers/2018A-8992.pdf",
+   "model_families": [
+    "statistics-regression",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "Linear Iterative Imputation (backward-eliminated linear regressions",
+    "5% level",
+    "ordered chain)",
+    "correlation-matrix check before/after imputation",
+    "z-score standardization",
+    "General Rollercoaster Ranking (GRR): grouped linear rating with group weights",
+    "construction correction using regression coefficients",
+    "Personalized Rollercoaster Ranking (PRR): 3x3 AHP principal eigenvector",
+    "one-at-a-time weight sensitivity"
+   ],
+   "tools": [
+    "R",
+    "tidyverse",
+    "ggplot2",
+    "corrplot"
+   ],
+   "deliverables": [
+    "news release 'New Way to find your favorite Rollercoaster!",
+    "app concept with flowchart and three mock-up screens"
+   ],
+   "data_sources": [
+    "COMAP-provided roller coaster data",
+    "Coasterbuzz user ratings",
+    "Lifed.com expert ranking",
+    "Xinhua News (for one removed coaster)"
+   ],
+   "tags": [
+    "roller coaster ranking",
+    "regression imputation",
+    "variable grouping",
+    "dimensionality reduction for UX",
+    "AHP personalization",
+    "steel vs wood correction",
+    "sensitivity analysis",
+    "two user types"
+   ],
+   "card": "papers/2018A-8992.md"
   },
   {
    "id": "2018B-8506",
@@ -225,6 +640,210 @@
    "card": "papers/2020A-10549.md"
   },
   {
+   "id": "2020A-10550",
+   "year": 2020,
+   "problem": "A",
+   "problem_title": "The Best Summer Job",
+   "team": "10550",
+   "award": "Outstanding",
+   "paper_title": "Solution for Problem A of HiMCM 2020",
+   "pages": 25,
+   "fulltext": "corpus/papers/2020A-10550.md",
+   "pdf": "sources/papers/2020A-10550.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "simulation-monte-carlo"
+   ],
+   "models": [
+    "Analytic Network Process (ANP) with 4 criteria clusters and 15 criteria",
+    "Saaty pairwise comparison and eigenvector weights",
+    "CR consistency check",
+    "cluster-weights matrix and weighted supermatrix",
+    "limiting supermatrix by repeated powering",
+    "Monte Carlo generation of fictional student profiles",
+    "pre-filtering of infeasible jobs"
+   ],
+   "tools": [
+    "web crawlers (scrapy",
+    "pyspider) mentioned for job-data collection"
+   ],
+   "deliverables": [
+    "mobile app design with five screen mock-ups"
+   ],
+   "data_sources": [
+    "studentjob.co.uk (10 real job postings)",
+    "Myers-Briggs 16 personality types",
+    "Statista (mobile device count)",
+    "team-judged comparison values"
+   ],
+   "tags": [
+    "ANP supermatrix",
+    "interdependent criteria",
+    "user-job matching",
+    "questionnaire to weights",
+    "random persona generation",
+    "cluster-weight sensitivity",
+    "mobile app mock-up",
+    "full ranking output"
+   ],
+   "card": "papers/2020A-10550.md"
+  },
+  {
+   "id": "2020A-10656",
+   "year": 2020,
+   "problem": "A",
+   "problem_title": "The Best Summer Job",
+   "team": "10656",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 24,
+   "fulltext": "corpus/papers/2020A-10656.md",
+   "pdf": "sources/papers/2020A-10656.pdf",
+   "model_families": [
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "multiplicative scoring formula (product of six factor terms)",
+    "step-function hard constraints built from |x+1/2|/(x+1/2)",
+    "exponential-decay penalties for wage and hours shortfall",
+    "binary interest-vector matching",
+    "separate three-term model for unpaid internships",
+    "top-10 ranking output",
+    "one-at-a-time input sensitivity"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "website questionnaire layout (\\\"Find your Future\\\")"
+   ],
+   "data_sources": [
+    "BLS Occupational Outlook Handbook",
+    "O*NET Online",
+    "OwlGuru entry-level wages",
+    "OSHA COVID-19 workplace guidance",
+    "U.S. DOL child labor rules (FLSA)",
+    "BLS teen summer employment article",
+    "NYT top internship fields"
+   ],
+   "tags": [
+    "multiplicative score",
+    "hard constraints as zero factors",
+    "COVID-19 exposure risk",
+    "child labor law age gates",
+    "interest bit-string matching",
+    "unpaid internships extension",
+    "radar chart comparison",
+    "website questionnaire"
+   ],
+   "card": "papers/2020A-10656.md"
+  },
+  {
+   "id": "2020A-10701",
+   "year": 2020,
+   "problem": "A",
+   "problem_title": "The Best Summer Job",
+   "team": "10701",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 27,
+   "fulltext": "corpus/papers/2020A-10701.md",
+   "pdf": "sources/papers/2020A-10701.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "probability-stochastic"
+   ],
+   "models": [
+    "AHP (criteria weights and sub-index weights from the student's judgment matrices)",
+    "TOPSIS ranking",
+    "hierarchical (systematic) cluster analysis with dendrogram",
+    "constructed indices: salary (net of commute and meal costs",
+    "expected overtime pay)",
+    "time (recreation vs schedule conflict)",
+    "knowledge",
+    "environment",
+    "intensity",
+    "expected-value treatment of probabilistic overtime"
+   ],
+   "tools": [],
+   "deliverables": [
+    "app design \\\"Job Finder\\\" / \\\"Summer Job Explorer\\\" with cover poster and screen mock-ups",
+    "summer job survey form"
+   ],
+   "data_sources": [
+    "31-job table in Appendix A titled 'Fictional Job Data' (source not stated)",
+    "team-assigned qualitative 1-5 scores for knowledge and environment",
+    "assumed values for commuting and meal costs"
+   ],
+   "tags": [
+    "TOPSIS",
+    "AHP weights",
+    "hierarchical clustering for diversity",
+    "net salary after costs",
+    "schedule conflict",
+    "expected overtime",
+    "recreation time budget",
+    "app design"
+   ],
+   "card": "papers/2020A-10701.md"
+  },
+  {
+   "id": "2020A-11135",
+   "year": 2020,
+   "problem": "A",
+   "problem_title": "The Best Summer Job",
+   "team": "11135",
+   "award": "Outstanding",
+   "paper_title": "Multiple Criteria-Based Job Recommendation Model",
+   "pages": 25,
+   "fulltext": "corpus/papers/2020A-11135.md",
+   "pdf": "sources/papers/2020A-11135.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "economics-cost-benefit",
+    "decision-game-theory"
+   ],
+   "models": [
+    "decision tree filter for prerequisites and work-from-home preference",
+    "AHP (column-normalization approximation of weights",
+    "CI/CR check)",
+    "most-inconsistent-comparison detection ε_ij = a_ij·p_j/p_i",
+    "Box-Cox transformation + z-score + min-max normalization",
+    "Gaussian preference-range index for social interaction and physical activity",
+    "multiplicative flexibility score",
+    "benefit/cost ratio (AHP score ÷ normalized weekly hours)",
+    "one-weight-at-a-time AHP sensitivity (Absolute-Top factor)",
+    "lexicographic tiebreaker baseline model"
+   ],
+   "tools": [],
+   "deliverables": [
+    "\\\"Job-O-Matic\\\" app design with five screens",
+    "including a what-if weight slider"
+   ],
+   "data_sources": [
+    "national median entry-level wages from online labor statistics sources",
+    "Indeed / Zippia / Monster high-school job lists",
+    "Pew Research Center (smartphone ownership)",
+    "Yerkes-Dodson law (psychology reference)",
+    "team-assigned 1-9 scales for flexibility",
+    "social interaction",
+    "physical activity"
+   ],
+   "tags": [
+    "two-level recommendation (category vs specific job)",
+    "preference range as normal curve",
+    "Box-Cox normalization",
+    "benefit-cost ratio",
+    "inconsistency feedback to user",
+    "baseline model comparison",
+    "AHP sensitivity",
+    "child labor hours"
+   ],
+   "card": "papers/2020A-11135.md"
+  },
+  {
    "id": "2020B-10839",
    "year": 2020,
    "problem": "B",
@@ -274,6 +893,59 @@
     "feasibility decay"
    ],
    "card": "papers/2020B-10839.md"
+  },
+  {
+   "id": "2020B-10876",
+   "year": 2020,
+   "problem": "B",
+   "problem_title": "Funding Biodiversity Conservation",
+   "team": "10876",
+   "award": "Outstanding",
+   "paper_title": "Limited Budget, Unlimited Future",
+   "pages": 24,
+   "fulltext": "corpus/papers/2020B-10876.md",
+   "pdf": "sources/papers/2020B-10876.pdf",
+   "model_families": [
+    "optimization-math-programming",
+    "optimization-heuristic",
+    "simulation-monte-carlo",
+    "compartment-population",
+    "statistics-regression"
+   ],
+   "models": [
+    "integrated cost-effectiveness objective sum(B_i S_i(k_i) / P_i)",
+    "annual budget-limit constraint",
+    "feasibility of success vs population size S = a ln N + b (fitted)",
+    "exponential population decline N = N0 e^(rt)",
+    "r = -0.02",
+    "priority-order decoding (greedy earliest start under budget)",
+    "Monte Carlo random search over priority permutations",
+    "sensitivity analysis on r",
+    "budget level and budget growth"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "one-page memo to the FRPCE Board"
+   ],
+   "data_sources": [
+    "COMAP threatened-plant dataset",
+    "FRPCE / Fish & Wildlife Foundation of Florida 2019 annual report",
+    "Munzbergova (2006) survival vs population size",
+    "50/500 minimum viable population rule",
+    "Disanthus population study (2% annual decline)"
+   ],
+   "tags": [
+    "project scheduling",
+    "budget-constrained portfolio",
+    "delay penalty",
+    "cost effectiveness",
+    "random-key search",
+    "timetable heatmap",
+    "marginal benefit of budget"
+   ],
+   "card": "papers/2020B-10876.md"
   },
   {
    "id": "2021A-11462",
@@ -328,6 +1000,99 @@
     "market benchmark check"
    ],
    "card": "papers/2021A-11462.md"
+  },
+  {
+   "id": "2021A-11900",
+   "year": 2021,
+   "problem": "A",
+   "problem_title": "Storing the Sun",
+   "team": "11900",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021A-11900.md",
+   "pdf": "sources/papers/2021A-11900.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "physics-geometry"
+   ],
+   "models": [
+    "AHP (eight sub-criteria",
+    "Saaty column-normalization)",
+    "entropy weight method (tested",
+    "then set aside)",
+    "AHP-EWM combined weighting (tested)",
+    "location-specific AHP weight sets",
+    "volume x energy-density capacity estimate for a concrete battery"
+   ],
+   "tools": [],
+   "deliverables": [
+    "one-page news article"
+   ],
+   "data_sources": [
+    "COMAP battery table",
+    "US EIA household size and electricity use",
+    "online residential electrical load calculator",
+    "World Bank GDP per capita",
+    "Zhang & Tang (2021) concrete battery paper",
+    "HUD foundation requirements"
+   ],
+   "tags": [
+    "battery selection",
+    "off-grid solar",
+    "location-dependent weights",
+    "consistency check",
+    "method comparison",
+    "news article"
+   ],
+   "card": "papers/2021A-11900.md"
+  },
+  {
+   "id": "2021A-11931",
+   "year": 2021,
+   "problem": "A",
+   "problem_title": "Storing the Sun",
+   "team": "11931",
+   "award": "Outstanding",
+   "paper_title": "Shedding Light on a Battery of Batteries",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021A-11931.md",
+   "pdf": "sources/papers/2021A-11931.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "optimization-math-programming",
+    "physics-geometry"
+   ],
+   "models": [
+    "disparity (requirement-gap) scoring model",
+    "energy balance with autonomy days",
+    "depth of discharge",
+    "efficiency and capacity fade",
+    "piecewise squared/cubic penalty functions with calibrated rate constants",
+    "enumeration of battery count n to minimize weighted disparity",
+    "user-weighted aggregation (1-9 importance scale)",
+    "one-at-a-time sensitivity analysis (+/-10%)"
+   ],
+   "tools": [],
+   "deliverables": [
+    "one-page news article"
+   ],
+   "data_sources": [
+    "manufacturer specification sheets for 16 batteries",
+    "appliance power list (Draft Logic)",
+    "Zhang & Tang (2021) concrete battery paper",
+    "assumed homeowner requirements"
+   ],
+   "tags": [
+    "requirement matching",
+    "penalty functions",
+    "appliance-level demand",
+    "days of autonomy",
+    "necessary vs optional loads",
+    "battery count optimization",
+    "sensitivity analysis"
+   ],
+   "card": "papers/2021A-11931.md"
   },
   {
    "id": "2021B-11552",
@@ -514,6 +1279,124 @@
    "card": "papers/2021B-11823.md"
   },
   {
+   "id": "2021B-11898",
+   "year": 2021,
+   "problem": "B",
+   "problem_title": "Tackling the Drought",
+   "team": "11898",
+   "award": "Outstanding",
+   "paper_title": "Saving Lake Mead: Recycling Wastewater Does Wonders",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021B-11898.md",
+   "pdf": "sources/papers/2021B-11898.pdf",
+   "model_families": [
+    "statistics-regression",
+    "physics-geometry",
+    "time-series-forecasting",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "Dalton evaporation law (qualitative link of evaporation to wind and temperature)",
+    "wind-vector decomposition toward the inflow direction",
+    "min-max normalized multiple linear regression of monthly elevation on temperature",
+    "precipitation",
+    "wind",
+    "frustum (upper lake) + triangular cones / quadrangular prisms (lower lake) volume decomposition",
+    "two-condition drought criterion (below 1085 ft AND below 3-month moving mean)",
+    "weighted moving average (3/2/1) with bias correction (Model A)",
+    "adaptive filtering (LMS-style weight updates) + sine-function seasonal fit (Model B)",
+    "AHP with Saaty 1-9 scale",
+    "lag-length sensitivity (N = 3 vs 5)"
+   ],
+   "tools": [
+    "Python",
+    "statsmodels",
+    "NumPy",
+    "pandas",
+    "SciPy",
+    "matplotlib"
+   ],
+   "deliverables": [
+    "one-page news release (placed as Section 1)",
+    "wastewater treatment process design",
+    "impact measures (environment",
+    "economy",
+    "society)"
+   ],
+   "data_sources": [
+    "COMAP-provided Lake Mead elevation data",
+    "meteoblue ERA5 daily weather for Lake Mead NRA (2019)",
+    "National Weather Service drought definitions",
+    "USA Today 2015 (1085 ft warning level)",
+    "National Park Service"
+   ],
+   "tags": [
+    "meteorological vs hydrological drought",
+    "combined drought criterion",
+    "weighted moving average",
+    "adaptive filtering",
+    "seasonal sine fit",
+    "AHP",
+    "wind vector",
+    "Lake Mead"
+   ],
+   "card": "papers/2021B-11898.md"
+  },
+  {
+   "id": "2021B-12384",
+   "year": 2021,
+   "problem": "B",
+   "problem_title": "Tackling the Drought",
+   "team": "12384",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2021B-12384.md",
+   "pdf": "sources/papers/2021B-12384.pdf",
+   "model_families": [
+    "physics-geometry",
+    "statistics-regression",
+    "time-series-forecasting"
+   ],
+   "models": [
+    "bathymetric survey (echo sounding + GPS) as data source",
+    "pixel-count / Riemann-sum surface area",
+    "stacked-frustum lake volume (Taube method)",
+    "lake water-balance ODE dV/dt = P − E + R + D + Qin − Qout − Qgwd + Qgwr (after Guinaldo et al. MLake)",
+    "Mann-Kendall trend tests",
+    "year-over-year percent-change drought criterion with median baseline from 1952–1959 and 9-month minimum",
+    "cumulative percent-change transform N(t)",
+    "linear regression + sinusoidal residual model",
+    "back-transformed to monthly and annual levels",
+    "program-effectiveness metrics (Arias 2011)"
+   ],
+   "tools": [],
+   "deliverables": [
+    "one-page magazine-style article ('A Recycling Plan to Save Lake Mead Before It Drys Up')",
+    "federal two-pronged reclamation plan with resource-flow diagram",
+    "set of impact metrics"
+   ],
+   "data_sources": [
+    "COMAP-provided Lake Mead monthly and high/low elevation data",
+    "USGS / NOAA bathymetry descriptions",
+    "Taube 2000 (Michigan DNR lake-volume manual)",
+    "Guinaldo et al. 2021 (MLake model)",
+    "National Drought Mitigation Center drought types",
+    "Arias 2011 recycled-water program metrics"
+   ],
+   "tags": [
+    "bathymetry",
+    "frustum summation",
+    "Mann-Kendall",
+    "drought baseline",
+    "data transformation",
+    "sinusoidal residuals",
+    "program evaluation metrics",
+    "Lake Mead"
+   ],
+   "card": "papers/2021B-12384.md"
+  },
+  {
    "id": "2022B-12465",
    "year": 2022,
    "problem": "B",
@@ -689,6 +1572,177 @@
    "card": "papers/2023A-13719.md"
   },
   {
+   "id": "2023A-14076",
+   "year": 2023,
+   "problem": "A",
+   "problem_title": "Dandelions: Friend? Foe? Both? Neither?",
+   "team": "14076",
+   "award": "Outstanding",
+   "paper_title": "Dandelions: Friend? Foe? Both? Neither? (cover title, same as the problem title)",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023A-14076.md",
+   "pdf": "sources/papers/2023A-14076.pdf",
+   "model_families": [
+    "compartment-population",
+    "simulation-monte-carlo",
+    "probability-stochastic",
+    "statistics-regression",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "Leslie (stage-transition) matrix with 4 monthly states",
+    "discrete-time population projection s_n = T^n s_0",
+    "gamma-distributed dispersal distance calibrated to a published percentile",
+    "uniform vs normal (prevailing-wind) dispersal direction",
+    "Monte Carlo spatial simulation (200",
+    "000 repetitions)",
+    "chi-square goodness-of-fit test with method-of-moments gamma fit",
+    "rubric-based weighted impact score (7 criteria",
+    "points out of 100)"
+   ],
+   "tools": [],
+   "deliverables": [],
+   "data_sources": [
+    "published dandelion biology (Stewart-Wade et al. 2002; Honek et al. 2005)",
+    "Tackenberg et al. 2003 dispersal percentiles",
+    "Seale et al. 2019 wet-condition dispersal",
+    "climate-data.org monthly temperature/rainfall (Rio de Janeiro",
+    "Mumbai)",
+    "meteoblue wind archive",
+    "Randall et al. 2008 invasive species assessment protocol (as inspiration)",
+    "Wikipedia and extension pages for species facts"
+   ],
+   "tags": [
+    "Leslie matrix",
+    "gamma distribution",
+    "goodness-of-fit test",
+    "prevailing wind",
+    "wet vs dry season",
+    "scoring rubric with descriptors",
+    "non-invasive control species",
+    "invasive species"
+   ],
+   "card": "papers/2023A-14076.md"
+  },
+  {
+   "id": "2023A-14140",
+   "year": 2023,
+   "problem": "A",
+   "problem_title": "Dandelions: Friend? Foe? Both? Neither?",
+   "team": "14140",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 27,
+   "fulltext": "corpus/papers/2023A-14140.md",
+   "pdf": "sources/papers/2023A-14140.pdf",
+   "model_families": [
+    "simulation-monte-carlo",
+    "probability-stochastic",
+    "differential-equations",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "negative exponential dispersal kernel (baseline)",
+    "Lévy flight random walk (100 steps per seed",
+    "Lévy distribution µ=0",
+    "c=1)",
+    "logistic density-dependent death rate D(ρ) with baseline A",
+    "piecewise quadratic baseline mortality vs temperature and temperature–precipitation ratio",
+    "grid-based local density (0.5 m² cells) with daily-updated mortality",
+    "AHP two-level hierarchy with consistency ratio",
+    "entropy weight method",
+    "AHP–EWM weight blending by least-squares deviation",
+    "GISS-style 0–5 impact grading"
+   ],
+   "tools": [],
+   "deliverables": [],
+   "data_sources": [
+    "gardening/extension web sources for dandelion germination",
+    "optimal temperature and water needs",
+    "climate-type averages from National Geographic",
+    "Caltech lecture notes and other educational sources",
+    "Generic Impact Scoring System (Nentwig et al. 2016) grading scale",
+    "assumed/estimated values (seed counts",
+    "criterion scores)"
+   ],
+   "tags": [
+    "Lévy flight",
+    "density-dependent mortality",
+    "model refinement sequence",
+    "four climate types",
+    "AHP plus entropy weights",
+    "risk classification thresholds",
+    "invasive species"
+   ],
+   "card": "papers/2023A-14140.md"
+  },
+  {
+   "id": "2023A-14632",
+   "year": 2023,
+   "problem": "A",
+   "problem_title": "Dandelions: Friend? Foe? Both? Neither?",
+   "team": "14632",
+   "award": "Outstanding (NCTM award)",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023A-14632.md",
+   "pdf": "sources/papers/2023A-14632.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "probability-stochastic",
+    "simulation-monte-carlo",
+    "compartment-population",
+    "differential-equations",
+    "statistics-regression",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "Seed Agent Model (agent-based",
+    "daily step)",
+    "Brownian-motion seed dispersal with Poisson number of moves (wind-dependent mean) and normal step sizes",
+    "exponential death dates (Type III survivorship) for seeds and plants",
+    "growth rate from temperature",
+    "light and soil-nutrient index functions",
+    "Monte Carlo ±10% hyperparameter sampling with RMSE-based sensitivity radar chart",
+    "generalized Lotka–Volterra competition system (3 native + 1 foreign species)",
+    "logistic growth regression for spreadability",
+    "Gordon–Schaefer bioeconomic profit (MR = MC)",
+    "Sen's welfare function with Gini coefficient",
+    "two-dimensional ecological vs economic trade-off score (Data-Score-Divide framework)"
+   ],
+   "tools": [
+    "Python",
+    "NumPy",
+    "SciPy"
+   ],
+   "deliverables": [],
+   "data_sources": [
+    "NOAA NOWData and local climate sites (temperature",
+    "sunshine",
+    "wind)",
+    "soil potassium/nitrogen surveys",
+    "Cornell CALS and other extension sources on dandelion biology",
+    "Gini coefficients (Statista",
+    "24/7 Wall St",
+    "World Bank)",
+    "online prices for dandelion greens and English ivy",
+    "assumed/estimated values (interaction matrices",
+    "growth rates",
+    "per-person benefits)"
+   ],
+   "tags": [
+    "agent-based model",
+    "Brownian motion",
+    "survivorship curve",
+    "hyperparameter calibration by region",
+    "Lotka-Volterra",
+    "bioeconomics",
+    "cost-benefit trade-off",
+    "invasive classification"
+   ],
+   "card": "papers/2023A-14632.md"
+  },
+  {
    "id": "2023B-13694",
    "year": 2023,
    "problem": "B",
@@ -852,6 +1906,65 @@
     "offshore data centres"
    ],
    "card": "papers/2024B-15502.md"
+  },
+  {
+   "id": "2024B-16226",
+   "year": 2024,
+   "problem": "B",
+   "problem_title": "Examining the Environmental Impact of High-Powered Computing",
+   "team": "16226",
+   "award": "Outstanding (NCTM award)",
+   "paper_title": "Let's Build a Green HPC Together!",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024B-16226.md",
+   "pdf": "sources/papers/2024B-16226.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "time-series-forecasting"
+   ],
+   "models": [
+    "facility-level full-load and average-utilization energy formulas",
+    "six-category energy structure model (electricity",
+    "water",
+    "chemical fuel",
+    "building",
+    "manufacturing",
+    "waste)",
+    "emission-factor carbon accounting per category with life-cycle amortization of manufacturing",
+    "weighted Environmental Impact Index (EII: climate",
+    "ecosystem",
+    "air quality)",
+    "exponential HPC growth with efficiency-adjusted energy demand",
+    "two-scenario simulation (fossil-dominant vs renewable increase) to 2030",
+    "dynamic energy-mix shares R(t)+F(t)+N(t)=1 with linear renewable ramps",
+    "water-consumption factor model and extended EII (carbon + water",
+    "normalized to baselines)"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "letter to the UN Advisory Board on AI"
+   ],
+   "data_sources": [
+    "U.S. EIA state electricity and energy data",
+    "Statistical Review of World Energy 2023 (KPMG)",
+    "Chinese news and industry sources on Tianhe-1",
+    "Sunway TaihuLight",
+    "Shenzhen centre",
+    "assumed/estimated values"
+   ],
+   "tags": [
+    "HPC energy",
+    "carbon accounting",
+    "environmental impact index",
+    "scenario simulation",
+    "water usage",
+    "energy mix",
+    "policy simulation",
+    "facility case studies"
+   ],
+   "card": "papers/2024B-16226.md"
   }
  ]
 }
