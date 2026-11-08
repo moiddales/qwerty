@@ -11,9 +11,10 @@ CMD="python3 $(q "$DIR/team_monitor.py")--project $(q "$PROJECT")"
 CMD="${CMD% }"
 if [ -n "${TMUX:-}" ]; then
   tmux split-window -h -l 102 "$CMD" 2>/dev/null || tmux split-window -h "$CMD"
-elif [ "$(uname)" = "Darwin" ] && command -v osascript >/dev/null; then
-  osascript -e "tell application \"Terminal\" to do script \"${CMD//\"/\\\"}\"" \
-            -e 'tell application "Terminal" to activate' >/dev/null
+elif [ "$(uname)" = "Darwin" ] && command -v open >/dev/null; then
+  # A .command file avoids quoting the command into AppleScript (paths with spaces).
+  F="$(mktemp -t team-monitor).command"
+  printf '#!/bin/bash\nexec %s\n' "$CMD" > "$F" && chmod +x "$F" && open -a Terminal "$F"
 else
   echo "Run this in a second terminal (100+ columns wide):"
   echo "  $CMD"

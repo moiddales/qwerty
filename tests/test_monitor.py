@@ -6,6 +6,7 @@ Synthetic transcripts use the entry shapes observed in a real Claude Code
 path-scrubbed copy of one real nested session.
 """
 import importlib.util, json, os, pty, re, select, signal, subprocess, sys, tempfile, time
+sys.dont_write_bytecode = True
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MON = os.path.join(ROOT, ".claude", "monitor", "team_monitor.py")
@@ -125,6 +126,24 @@ v = T().bash("t", "bash tests/test_hooks.sh", "ok - a\nFAIL - big diff\ndone").v
 check("line-start FAIL marker counts as fail", v["tests_fail"] == 1)
 v = T().bash("t", "git diff HEAD", "").view()
 check("non-test command is not a test run", v["tests_pass"] + v["tests_fail"] == 0)
+
+# ---- regressions from the diff review -------------------------------------------
+v = T().edit("e").agent("v", "verifier", OK).bash("t", "python3 tests/test_monitor.py", "Exit code 1\nFAIL - x\npassed=40 failed=1", True).view()
+check("this repo's own monitor suite failing -> tests red", not v["ship"] and v["why"] == "tests red", v["why"])
+hooks_out = subprocess.run(["bash", os.path.join(ROOT, "tests", "test_hooks.sh")], capture_output=True, text=True).stdout
+mon_out = ("ok   - summary 'Tests:       1 failed,' is a fail\nok   - summary '== 2 failed, 10 passed' is a fail\n"
+           "ok   - line-start FAIL marker counts as fail\nok   - real fixture: advisor 1, same error ×2\npassed=41 failed=0")
+v = T().edit("e").agent("v", "verifier", OK).bash("t", "python3 tests/test_monitor.py && bash tests/test_hooks.sh", mon_out + "\n" + hooks_out).view()
+check("all-green chained run of both suites (real hooks output) counts as pass", v["ship"] and v["tests_pass"] == 1, (v["why"], hooks_out[-60:]))
+v = T().edit("e").bash("t", "npm test", "Exit code 1\nFAIL a", True).agent("v", "verifier", OK).view()
+check("a red run before the verdict does not block SHIP", v["ship"], v["why"])
+for cmd in ("uv run pytest -q", "npx playwright test", "make -C build test", "tox -e py313", "python3 -m pytest", "go test ./..."):
+    v = T().bash("t", cmd, "Exit code 1\nboom", True).view()
+    check(f"test runner detected: {cmd}", v["tests_fail"] == 1)
+v = T().bash("t", "npm test", "warning: 3 errors suppressed\nFound 2 errors in docs\n1 error generated\nTests: 9 passed").view()
+check("'N errors' noise in a zero-exit run is not a test failure", v["tests_pass"] == 1 and v["tests_fail"] == 0)
+v = T().bash("a", "npm run dev", "[Request interrupted by user for tool use]", True).bash("b", "npm run dev", "[Request interrupted by user for tool use]", True).view()
+check("two interrupts are not 'same error ×2' (matches the hook)", not v["cp"][1]["on"])
 
 # ---- robustness + rendering -----------------------------------------------------
 with tempfile.TemporaryDirectory() as d:

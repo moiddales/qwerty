@@ -36,7 +36,7 @@ CLAUDE.md                         主会话规则：分派、计划审查、重�
 .claude/monitor/team_monitor.py   单独窗口里的命令行仪表盘（只读 transcript）
 .claude/monitor/open.sh           在 tmux 分屏 / macOS 新窗口中打开 monitor
 tests/test_hooks.sh               24 个场景的 hook 回归测试
-tests/test_monitor.py             41 个场景的 monitor 测试（含真实会话样本、Ctrl-C 恢复屏幕）
+tests/test_monitor.py             52 个场景的 monitor 测试（含真实会话样本、Ctrl-C 恢复屏幕）
 docs/research.md                  推文溯源、官方文档要点、7 个仓库对比
 ```
 
@@ -122,7 +122,7 @@ bash tests/test_hooks.sh
 .claude/monitor/open.sh
 ```
 
-在 tmux 里会向右分出一个 102 列宽的窗格；在 macOS 上会新开一个 Terminal 窗口；其他环境会打印出要在第二个终端里运行的命令：
+在 tmux 里会向右分出一个 102 列宽的窗格；在 macOS 上会生成一个临时的 `.command` 文件，用它新开一个 Terminal 窗口，路径里带空格也能用；其他环境会打印出要在第二个终端里运行的命令：
 
 ```bash
 python3 .claude/monitor/team_monitor.py --project /path/to/project
@@ -140,7 +140,7 @@ python3 .claude/monitor/team_monitor.py --project /path/to/project
 
 **怎么找到会话：** `session_base.py` 在 SessionStart 时写入 `.claude/state/session-<id>.json`，里面记着 transcript 的路径。如果没有这个文件，就退回到 `~/.claude/projects/<项目路径>/` 下最新的 `*.jsonl`。
 
-**只读，不花钱：** monitor 不改任何文件，不联网，也不调用模型。只用 Python 标准库。
+**只读，不花钱：** monitor 不改任何文件（加载 hook 模块时也不会生成 `__pycache__`），不联网，也不调用模型。只用 Python 标准库。
 
 更多截图：
 - [审查进行中（演示数据）](docs/monitor-preview-reviewing.png)
@@ -148,7 +148,7 @@ python3 .claude/monitor/team_monitor.py --project /path/to/project
 
 **局限：**
 - transcript 格式不是公开接口。解析规则是按 Claude Code 2.1.319 的实际输出写的，未来版本可能变化。遇到认不出的行会跳过，不会报错。
-- 判断"测试命令"和"测试失败"靠正则匹配：命令要像测试命令；失败要满足非零退出、行首 `FAIL`、`FAILED`、`N failed`（且不是 `failed=0`）、Traceback 等条件之一。
+- 判断"测试命令"和"测试失败"靠正则匹配。能识别 npm/pnpm/yarn/bun test、jest、vitest、mocha、pytest（包括 `uv run`）、tox、`python3 xxx_test.py`、go test、cargo test、make test，以及 `*test*.sh`。非零退出一律算失败；退出码为 0 时（比如输出被管道接到 tail），只认**行首**的失败标记和汇总行（`FAIL …`、`FAILED …`、`Tests: 1 failed`、`== 2 failed …`、`failed=1`、行首的 Traceback）。测试名称里出现的 "1 failed" 不算。识别不了的测试命令，SHIP 也就感知不到它的失败。
 - 云端网页和手机 App 没有可供你操作的终端，所以 monitor 只能在本地使用。云端会话可以用 `--html` 导出一帧来查看。
 - 字符画要求终端把方框字符按单宽显示。如果终端开启了"中文环境下模糊宽度字符按双宽显示"，排版会错位。
 

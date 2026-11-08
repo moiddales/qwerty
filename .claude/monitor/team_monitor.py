@@ -34,6 +34,7 @@ HOOKS = os.path.normpath(os.path.join(HERE, "..", "hooks"))
 # disagrees with what review_gate.py / repeat_failure.py enforce.
 
 def _load_hook(name: str):
+    sys.dont_write_bytecode = True  # read-only: don't leave __pycache__ in .claude/hooks
     try:
         spec = importlib.util.spec_from_file_location(f"_hook_{name}", os.path.join(HOOKS, f"{name}.py"))
         mod = importlib.util.module_from_spec(spec)
@@ -50,14 +51,24 @@ norm = getattr(_rf, "norm", lambda s: re.sub(r"\d+", "<n>", s[-2000:]).strip())
 AGENT_TOOLS = {"Agent", "Task"}
 CARDS = [("tests", "tests", "runs tests"), ("Explore", "search", "maps the repo"), ("callsites", "grep", "finds call sites")]
 
+# Test runner as a command word (also after &&, ;, |, or a leading VAR=x).
 TEST_RE = re.compile(
-    r"(?:^|&&|;|\|\|?|\()\s*(?:\w+=\S*\s+)*(?:"
-    r"(?:npm|pnpm|yarn|bun)\s+(?:run\s+)?test\b|npx\s+(?:jest|vitest|mocha)\b|(?:jest|vitest|mocha|pytest|py\.test)\b"
-    r"|python3?\s+(?:-\w+\s+)*-m\s+(?:pytest|unittest)\b|go\s+test\b|cargo\s+test\b|make\s+(?:test|check)\b"
+    r"(?:^|&&|;|\|\|?|\()\s*(?:\w+=\S*\s+)*(?:(?:uv|poetry|pdm|hatch)\s+run\s+)?(?:"
+    r"(?:npm|pnpm|yarn|bun)\s+(?:run\s+)?test\b|npx\s+(?:jest|vitest|mocha|playwright\s+test)\b"
+    r"|(?:jest|vitest|mocha|pytest|py\.test|tox|nox)\b"
+    r"|python3?\s+(?:-\w+\s+)*(?:-m\s+(?:pytest|unittest)\b|\S*test\S*\.py\b)"
+    r"|go\s+test\b|cargo\s+test\b|make\s+(?:-C\s+\S+\s+)?(?:test|check)\b"
     r"|(?:bash|sh)\s+\S*test\S*\.sh\b|\./\S*test\S*\.sh\b)")
+# Failure markers for runs that exited 0 (e.g. piped into tail). Anchored to
+# line starts / summary lines so test *names* that mention "1 failed" or
+# "FAIL" mid-line do not count. A non-zero exit is always a failure.
 FAIL_RE = re.compile(
-    r"(?m)^\s*FAIL\b|\bFAILED\b|(?<![=\w.])[1-9]\d*\s+(?:failed|failing|errors?)\b|\bfailed=[1-9]|"
-    r"Traceback \(most recent call last\)|AssertionError|npm ERR!")
+    r"(?m)^\s*(?:---\s*)?FAIL(?:ED)?\b"                       # jest/vitest "FAIL x", go "--- FAIL", pytest "FAILED x"
+    r"|test result: FAILED"                                     # cargo
+    r"|^[\s=]*(?:Tests?:\s*|Test Suites:\s*)?[1-9]\d*\s+(?:failed|failing)\b"  # jest/pytest/mocha summaries
+    r"|^[\s=]*\d+\s+passed,\s*[1-9]\d*\s+failed\b"
+    r"|(?<![\w'\"])failed=[1-9]"                              # this repo's own suites
+    r"|^Traceback \(most recent call last\)|^npm ERR!")
 VERDICT_RE = re.compile(r"^[\s*_`>]*VERDICT:[\s*_`]*(CONFIRMED|REFUTED|INCONCLUSIVE)[\s*_`.]*$", re.M)
 TAG_RE = {k: re.compile(rf"<{k}>(.*?)</{k}>", re.S) for k in ("tool-use-id", "status", "result")}
 
@@ -269,7 +280,7 @@ class State:
         elif failed:
             first = next((l for l in text.splitlines()[1:] if l.strip()), text.splitlines()[0] if text else "")
             self._log(ts, "main", f"bash failed · {first.strip()[:40]}", "lead", "red")
-        if failed:
+        if failed and "interrupted by user" not in text:  # the hook skips is_interrupt failures too
             key = (cmd.split(" ")[0] if cmd else "") + "|" + norm(text)
             self.fail_keys[key] = self.fail_keys.get(key, 0) + 1
             if self.fail_keys[key] == 2:
