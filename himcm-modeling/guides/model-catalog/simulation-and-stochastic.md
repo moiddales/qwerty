@@ -1,6 +1,6 @@
 # Simulation and stochastic models
 
-Use these when **randomness, space or individual behavior** matters and a closed-form answer is hard: plant spread (2023A), drone light shows (2017A), random search over schedules (2020B), generating test personas (2020A), thermostat control (2018B).
+Use these when **randomness, space or individual behavior** matters and a closed-form answer is hard: plant spread (2023A), drone light shows (2017A), train and traffic flow (2014A, 2015A), epidemic spread (2014B), random search over schedules (2020B), generating test personas (2020A), or thermostat control (2018B).
 
 ## Methods used in the corpus
 
@@ -17,6 +17,8 @@ Use these when **randomness, space or individual behavior** matters and a closed
 | Monte Carlo sensitivity | Sample parameters within ±10% and summarize output change | 2023A-14632 (RMSE radar chart) | Report which parameters matter most |
 | Empirical probability distributions | Probability of an event from observed frequencies | 2018B-8506 (return-time pmf) | Sample size |
 | Expected values for probabilistic factors | Replace a random quantity with its expectation | [2020A-10701](../../papers/2020A-10701.md) (overtime) | Fine for averages; not for risk |
+| Queueing and cellular-flow simulation | Represent arrivals, service capacity and local movement explicitly | [2014A-4671](../../papers/2014A-4671.md), [2015A-6080](../../papers/2015A-6080.md) | Calibrate arrival, speed and reaction assumptions; report the bottleneck metric |
+| Epidemic compartment simulation | Track susceptible, exposed, infected, recovered or dead states under uncertain parameters | [2014B-4637](../../papers/2014B-4637.md), [2014B-4880](../../papers/2014B-4880.md) | Separate biological uncertainty from Monte Carlo error and show intervention scenarios |
 
 ## Good practice seen in the corpus
 

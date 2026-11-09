@@ -1,6 +1,6 @@
 # Optimization and scheduling
 
-Use these when the task is to **choose the best plan under constraints**: fund projects over years with a budget (2020B), replace a bus fleet (2023B), pick a battery system size (2021A), choose a mix of treatment facilities (2021B), plan drone paths without collisions (2017A).
+Use these when the task is to **choose the best plan under constraints**: fund projects over years with a budget (2020B), replace a bus fleet (2023B), pick a battery system size (2021A), choose a mix of treatment facilities (2021B), place warehouses for coverage (2016B), or plan drone paths without collisions (2017A).
 
 ## The basic recipe
 
@@ -22,6 +22,8 @@ Use these when the task is to **choose the best plan under constraints**: fund p
 | Random search with filtering and ranking | [2020B-10839](../../papers/2020B-10839.md) | Justify how objectives are combined into one score |
 | Monte Carlo Tree Search | [2018B-8506](../../papers/2018B-8506.md) (daily temperature plan) | Explain the search space; 2018B-8506 argued its size was manageable (p. 16) |
 | Greedy matching and geometric construction | [2017A-7359](../../papers/2017A-7359.md) (farthest-first point matching, staggered departures) | Present heuristic guarantees as heuristics, backed by simulation |
+| Set cover and facility coverage | [2016B-6475](../../papers/2016B-6475.md), [2016B-7057](../../papers/2016B-7057.md) (warehouse locations covering states or population under tax trade-offs) | State the coverage unit; check sampled map data and compare a heuristic with an exact small case |
+| Queueing-assisted capacity design | [2014A-4671](../../papers/2014A-4671.md) (stair count and width) | Keep arrival and service rates separate; test when the bottleneck changes |
 
 ## Good practice seen in the corpus
 

@@ -32,6 +32,11 @@ Ask what kind of problem this is underneath the story. Strong papers often refra
 
 - **Choice among options** (summer jobs, batteries, coasters) → multi-criteria evaluation. Decide which criteria are hard constraints and which are trade-offs (2020A-10656 multiplied 0/1 gates with soft penalties, pp. 7–10).
 - **Allocation over time under a budget** (2020B conservation funding, 2023B e-bus transition) → scheduling or optimization. 2020B-10876 saw that delay is costly because feasibility falls while a species waits, which is what makes the schedule matter (pp. 3, 8–10).
+- **Flow through a bottleneck** (commuter-train unloading, road merges) → queueing or microscopic simulation. 2014A-4671 paired a transparent queueing baseline with a cellular automaton so staircase width and placement could be tested against congestion (pp. 8–25).
+- **Spread through contacts** (an unknown epidemic) → compartment states plus stochastic scenarios. 2014B-4637 varied latent, contact, recovery and mortality parameters instead of presenting one deterministic outbreak path (pp. 8–31).
+- **Cover a demand set with facilities** (warehouse placement) → a coverage matrix or graph, then exact or heuristic set cover. 2016B-6475 solved a minimum-warehouse baseline before adding tax and clothing-tax trade-offs (pp. 4–22).
+- **Choose a spatial design from terrain and routes** (ski resorts) → GIS-derived features, a network or raster representation, and a separate service simulation. 2017B-8124 combined fall-line extraction, solar aspect and lift queues rather than reducing the mountain to one score (pp. 5–24).
+- **Select a portfolio of events or policies** (future Olympic programs) → multi-criteria ranking with explicit indicator direction, then weight or scenario robustness. 2024A-14995 used combined weighting and Monte Carlo TOPSIS to show which rankings persisted under perturbed weights (pp. 5–21).
 - **Change over time** (CO2, lake level, market share) → regression, time series or differential equations. Ask whether the system has a mechanism (a water budget, a market equilibrium) or only a trend.
 - **Spread in space and time** (dandelions, drones) → simulation with explicit rules. Separate "how many" from "where" (2023A-14076 used a Leslie matrix for numbers and Monte Carlo for positions, p. 8).
 - **Covering a space or network** (sweeping a building, visiting sites, routing vehicles) → a graph of locations with travel times, then routing or assignment, often checked by simulating the process. The carded papers have few examples (2017A-7359 planned collision-free drone paths), so use the [model catalog](model-catalog/README.md) and its outside-the-corpus methods.
@@ -66,6 +71,8 @@ In this corpus, novelty rarely meant an exotic method. It usually meant **one we
 - **Real users make mistakes**: an algorithm that repairs or points to inconsistent AHP judgments (2020A-10549, 2020A-11135).
 - **Learning the user's own routine** instead of assuming a 5+2 week (2018B-8506, p. 7).
 - **Delay has a price** in a funding schedule (2020B-10876).
+- **Solve the simple operational baseline first**, then add a second objective. 2016B-6475 first minimized the number of warehouses needed for one-day coverage, then examined tax and clothing-tax effects (pp. 4–22).
+- **Make uncertainty part of the answer** when the data are sparse. 2014B teams used parameter ranges and repeated outbreak simulations; 2024A-14995 used Monte Carlo weights to show ranking volatility (2014B-4637, pp. 8–31; 2024A-14995, pp. 18–21).
 - **A community's right to energy** as the socioeconomic extension (2024B-15502, p. 19).
 - **Two kinds of user**: a general ranking and a personal one on a shared base (2018A-8992).
 

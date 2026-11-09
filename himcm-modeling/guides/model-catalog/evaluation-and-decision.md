@@ -1,6 +1,6 @@
 # Evaluation and multi-criteria decision models
 
-Use these when the task is to **rank, choose or score** options against several criteria: summer jobs (2020A), batteries (2021A), roller coasters (2018A), the impact of invasive plants (2023A), project priorities.
+Use these when the task is to **rank, choose or score** options against several criteria: summer jobs (2020A), batteries (2021A), roller coasters (2018A), the impact of invasive plants (2023A), project priorities, Olympic events (2024A), or ski-resort alternatives (2017B).
 
 ## The basic pipeline
 
@@ -30,6 +30,8 @@ Use these when the task is to **rank, choose or score** options against several 
 | Rubric scoring | Point levels with descriptors for each criterion | [2023A-14076](../../papers/2023A-14076.md) | Justify maxima; show each option's score as an explicit sum |
 | Clustering of results | Return a shortlist or a diverse set instead of one winner | 2020A-10549 (k-means), 2020A-10701 (hierarchical) | Explain why a set is more useful than a single answer |
 | Two-dimensional score | Keep harm and benefit as a pair rather than one number | [2023A-14632](../../papers/2023A-14632.md) | The dividing line needs a reason and a sensitivity test |
+| Combined weighting with Monte Carlo TOPSIS | Blend expert and data-derived weights, then repeat the ranking under perturbed weights | [2024A-14995](../../papers/2024A-14995.md) | Report ranking stability and show which indicators drive reversals |
+| Spatial multi-criteria design | Combine terrain, access, safety and service criteria while retaining a map or network | [2017B-8121](../../papers/2017B-8121.md), [2017B-8124](../../papers/2017B-8124.md) | Do not hide spatial feasibility inside one score; map the selected design |
 
 ## Good practice seen in the corpus
 

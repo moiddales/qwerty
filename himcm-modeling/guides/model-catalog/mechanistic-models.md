@@ -18,6 +18,8 @@ Use these when you can **write down how the system works**: water in and out of 
 | Carbon accounting by energy mix | Country or source emission factors ([2024B-15022](../../papers/2024B-15022.md), 2024B-15502, [2024B-16226](../../papers/2024B-16226.md)) | Keep units (kg, t, Mt) consistent |
 | Proxy and bottom-up estimation | Top-down proxy (2024B-15022) and bottom-up from machine specifications with PUE and utilization (2024B-15502) | State the proxy as an assumption; cross-check |
 | Economic models | Bioeconomic profit and welfare (2023A-14632); expected cost adjusted for failure risk (2020B-10839) | Many assumed parameters |
+| Compartment epidemic models | SIR/SEIR/SIRD states with intervention flows ([2014B-4637](../../papers/2014B-4637.md), [2014B-4880](../../papers/2014B-4880.md)) | Keep contact, latent, recovery and mortality parameters distinct; vary them together |
+| Pollinator life-cycle and resource-flow models | Stage populations, food resources and spatial hive movement ([2022A-12600](../../papers/2022A-12600.md)) | Check collapse boundaries and recalibrate when crop or farm geometry changes |
 
 ## Good practice seen in the corpus
 

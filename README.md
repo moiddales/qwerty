@@ -45,8 +45,8 @@ Paper ids have the form `<YEAR><PROBLEM>-<TEAM>`, for example `2021B-11576`. A p
 ## Status
 
 - Full texts and PDFs: all 92 papers. Official statements: all problems 2014-2025 (attachments for 2017B and 2020B could not be recovered; see their statement files).
-- Analysis cards: 33 paper cards and 6 problem cards (2018A, 2020A, 2021A, 2021B, 2023A, 2024B). The other papers can be read in full text and carded later; see [CONTRIBUTING.md](CONTRIBUTING.md).
-- The guides are built mainly from the carded papers.
+- Analysis cards: all 92 paper cards and 22 problem cards covering every 2014–2024 problem represented in the corpus. The 2025 statements are included as current problem references; no 2025 Outstanding-paper corpus is included.
+- The guides are built from the complete 2014–2024 card set and remain extensible through [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Tools
 

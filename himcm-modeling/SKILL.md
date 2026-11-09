@@ -20,7 +20,7 @@ These rules matter more than anything in the guides.
 3. **Outstanding does not mean flawless.** Judges reward the overall quality of a paper. Many winning papers contain an unjustified constant, an over-long extrapolation or a formula that does not match the code. Each paper card ends with "Notes for reuse", which flags the few issues that would mislead someone copying the paper. Borrow the ideas, check the details, and never reuse a past paper's numbers without checking their source.
 4. **Do not copy text or results.** Learn the techniques and the structure. Write your own words, build your own model and compute your own results. Cite any source you use.
 5. **Simple and well-argued beats complex and unexplained.** In this corpus, a clear definition of "best", stated assumptions with reasons, one worked example and honest sensitivity analysis count for more than the number of methods stacked together.
-6. **Coverage is partial.** All 92 papers have full texts, but 33 papers and 6 problems have analysis cards so far (see [catalog.md](catalog.md)). The guides are built mostly from the carded papers. For a problem type the cards do not cover, read the uncarded full texts directly.
+6. **Coverage.** All 92 papers have full texts and analysis cards, and all 22 problems from 2014–2024 represented in the corpus have problem cards (see [catalog.md](catalog.md)). The 2025 statements are included as current references, but there is no 2025 Outstanding-paper corpus in this repository. Read the full texts when a card does not contain the detail you need.
 
 ## What is in the knowledge base
 

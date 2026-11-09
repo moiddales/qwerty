@@ -1,6 +1,165 @@
 {
  "problems": [
   {
+   "id": "2014A",
+   "year": "2014",
+   "problem": "A",
+   "title": "Unloading Commuter Trains",
+   "statement": "corpus/problems/2014A.md",
+   "papers": [
+    "2014A-4671",
+    "2014A-4813",
+    "2014A-4823",
+    "2014A-5086",
+    "2014A-5089"
+   ],
+   "problem_type": [
+    "queueing",
+    "pedestrian-flow simulation",
+    "station-layout optimization"
+   ],
+   "card": "problems/2014A.md"
+  },
+  {
+   "id": "2014B",
+   "year": "2014",
+   "problem": "B",
+   "title": "The Next Plague?",
+   "statement": "corpus/problems/2014B.md",
+   "papers": [
+    "2014B-4637",
+    "2014B-4880",
+    "2014B-5295",
+    "2014B-5325"
+   ],
+   "problem_type": [
+    "compartment epidemic models",
+    "stochastic simulation",
+    "resource allocation",
+    "decision thresholds"
+   ],
+   "card": "problems/2014B.md"
+  },
+  {
+   "id": "2015A",
+   "year": "2015",
+   "problem": "A",
+   "title": "Preventing Road Rage",
+   "statement": "corpus/problems/2015A.md",
+   "papers": [
+    "2015A-6057",
+    "2015A-6080",
+    "2015A-6083",
+    "2015A-6117"
+   ],
+   "problem_type": [
+    "traffic-flow simulation",
+    "queueing",
+    "fairness metrics",
+    "microscopic vehicle models"
+   ],
+   "card": "problems/2015A.md"
+  },
+  {
+   "id": "2015B",
+   "year": "2015",
+   "problem": "B",
+   "title": "City Crime and Safety",
+   "statement": "corpus/problems/2015B.md",
+   "papers": [
+    "2015B-5473",
+    "2015B-5967",
+    "2015B-6018",
+    "2015B-6129"
+   ],
+   "problem_type": [
+    "multi-criteria safety indices",
+    "statistical benchmarking",
+    "spatial analysis"
+   ],
+   "card": "problems/2015B.md"
+  },
+  {
+   "id": "2016A",
+   "year": "2016",
+   "problem": "A",
+   "title": "Swim, Bike, and Run",
+   "statement": "corpus/problems/2016A.md",
+   "papers": [
+    "2016A-6453",
+    "2016A-6770",
+    "2016A-7054",
+    "2016A-7055"
+   ],
+   "problem_type": [
+    "wave scheduling",
+    "agent simulation",
+    "clustering",
+    "multi-criteria optimization"
+   ],
+   "card": "problems/2016A.md"
+  },
+  {
+   "id": "2016B",
+   "year": "2016",
+   "problem": "B",
+   "title": "Shop and Ship",
+   "statement": "corpus/problems/2016B.md",
+   "papers": [
+    "2016B-6475",
+    "2016B-6829",
+    "2016B-7037",
+    "2016B-7057",
+    "2016B-7211"
+   ],
+   "problem_type": [
+    "set cover",
+    "geographic networks",
+    "heuristic and genetic optimization",
+    "tax trade-offs"
+   ],
+   "card": "problems/2016B.md"
+  },
+  {
+   "id": "2017A",
+   "year": "2017",
+   "problem": "A",
+   "title": "Drone Clusters as Sky Light Displays",
+   "statement": "corpus/problems/2017A.md",
+   "papers": [
+    "2017A-7879",
+    "2017A-8028",
+    "2017A-8040",
+    "2017A-8393"
+   ],
+   "problem_type": [
+    "3-D geometry",
+    "path matching",
+    "collision avoidance",
+    "packing and cost"
+   ],
+   "card": "problems/2017A.md"
+  },
+  {
+   "id": "2017B",
+   "year": "2017",
+   "problem": "B",
+   "title": "Ski Slope",
+   "statement": "corpus/problems/2017B.md",
+   "papers": [
+    "2017B-8121",
+    "2017B-8124",
+    "2017B-8201"
+   ],
+   "problem_type": [
+    "GIS terrain analysis",
+    "multi-criteria ranking",
+    "0-1 route optimization",
+    "queue simulation"
+   ],
+   "card": "problems/2017B.md"
+  },
+  {
    "id": "2018A",
    "year": "2018",
    "problem": "A",
@@ -23,6 +182,68 @@
    "card": "problems/2018A.md"
   },
   {
+   "id": "2018B",
+   "year": "2018",
+   "problem": "B",
+   "title": "Cozy Smart House",
+   "statement": "corpus/problems/2018B.md",
+   "papers": [
+    "2018B-9247"
+   ],
+   "problem_type": [
+    "event prediction",
+    "thermal response regression",
+    "humidity control",
+    "multi-zone scheduling"
+   ],
+   "card": "problems/2018B.md"
+  },
+  {
+   "id": "2019A",
+   "year": "2019",
+   "problem": "A",
+   "title": "Charge!",
+   "statement": "corpus/problems/2019A.md",
+   "papers": [
+    "2019A-9564",
+    "2019A-9824",
+    "2019A-9844",
+    "2019A-10057",
+    "2019A-10174"
+   ],
+   "problem_type": [
+    "energy-demand forecasting",
+    "queueing and simulation",
+    "cost-benefit analysis",
+    "agent-based public-space modeling",
+    "infrastructure planning",
+    "non-technical communication"
+   ],
+   "card": "problems/2019A.md"
+  },
+  {
+   "id": "2019B",
+   "year": "2019",
+   "problem": "B",
+   "title": "Bottle Battles",
+   "statement": "corpus/problems/2019B.md",
+   "papers": [
+    "2019B-9548",
+    "2019B-9869",
+    "2019B-10337",
+    "2019B-10407"
+   ],
+   "problem_type": [
+    "policy impact assessment",
+    "consumer substitution",
+    "lifecycle energy and waste accounting",
+    "multi-criteria evaluation",
+    "survey and scenario design",
+    "non-technical communication"
+   ],
+   "card": "problems/2019B.md"
+  },
+  {
    "id": "2020A",
    "year": "2020",
    "problem": "A",
@@ -42,6 +263,27 @@
     "user-facing presentation (app / webpage)"
    ],
    "card": "problems/2020A.md"
+  },
+  {
+   "id": "2020B",
+   "year": "2020",
+   "problem": "B",
+   "title": "Funding Biodiversity Conservation",
+   "statement": "corpus/problems/2020B.md",
+   "papers": [
+    "2020B-10839",
+    "2020B-10876",
+    "2020B-10997"
+   ],
+   "problem_type": [
+    "long-horizon project scheduling",
+    "budget-constrained portfolio",
+    "population and feasibility modeling",
+    "multi-criteria decision analysis",
+    "stochastic and heuristic optimization",
+    "non-technical memo"
+   ],
+   "card": "problems/2020B.md"
   },
   {
    "id": "2021A",
@@ -87,6 +329,45 @@
    "card": "problems/2021B.md"
   },
   {
+   "id": "2022A",
+   "year": "2022",
+   "problem": "A",
+   "title": "The Need for Bees (and not just for honey)",
+   "statement": "corpus/problems/2022A.md",
+   "papers": [
+    "2022A-12600",
+    "2022A-12821",
+    "2022A-13014",
+    "2022A-13405"
+   ],
+   "problem_type": [
+    "compartment population dynamics",
+    "seasonal and disease modeling",
+    "pollination and hive deployment"
+   ],
+   "card": "problems/2022A.md"
+  },
+  {
+   "id": "2022B",
+   "year": "2022",
+   "problem": "B",
+   "title": "CO2 and Global Warming",
+   "statement": "corpus/problems/2022B.md",
+   "papers": [
+    "2022B-12465",
+    "2022B-12646",
+    "2022B-12678",
+    "2022B-12911",
+    "2022B-13010"
+   ],
+   "problem_type": [
+    "CO2 forecasting",
+    "temperature relationship",
+    "carbon policy scenarios"
+   ],
+   "card": "problems/2022B.md"
+  },
+  {
    "id": "2023A",
    "year": "2023",
    "problem": "A",
@@ -108,6 +389,45 @@
     "harm–benefit trade-off"
    ],
    "card": "problems/2023A.md"
+  },
+  {
+   "id": "2023B",
+   "year": "2023",
+   "problem": "B",
+   "title": "Charging Ahead with E-buses",
+   "statement": "corpus/problems/2023B.md",
+   "papers": [
+    "2023B-13694",
+    "2023B-13904",
+    "2023B-14087",
+    "2023B-14323"
+   ],
+   "problem_type": [
+    "life-cycle emissions",
+    "fleet finance and transition planning",
+    "route and charging optimization"
+   ],
+   "card": "problems/2023B.md"
+  },
+  {
+   "id": "2024A",
+   "year": "2024",
+   "problem": "A",
+   "title": "To Play or not to Play: Modeling Future Olympic Games",
+   "statement": "corpus/problems/2024A.md",
+   "papers": [
+    "2024A-14995",
+    "2024A-15041",
+    "2024A-15504",
+    "2024A-15926",
+    "2024A-16159"
+   ],
+   "problem_type": [
+    "multi-criteria event selection",
+    "IOC criteria and indicators",
+    "probabilistic inclusion and sensitivity"
+   ],
+   "card": "problems/2024A.md"
   },
   {
    "id": "2024B",
@@ -132,6 +452,1008 @@
   }
  ],
  "papers": [
+  {
+   "id": "2014A-4671",
+   "year": 2014,
+   "problem": "A",
+   "problem_title": "Unloading Commuter Trains",
+   "team": "4671",
+   "award": "Outstanding",
+   "paper_title": "Redesign Staircases to Optimize Trains’ Unloading Time",
+   "pages": 41,
+   "fulltext": "corpus/papers/2014A-4671.md",
+   "pdf": "sources/papers/2014A-4671.pdf",
+   "model_families": [
+    "queueing",
+    "simulation-agent-cellular",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "d/d/s queueing model",
+    "cellular automaton",
+    "A* path finding",
+    "parameter sweep"
+   ],
+   "tools": [
+    "JavaScript",
+    "spreadsheet"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "train/station dimensions from prompt",
+    "published pedestrian speed-density relation",
+    "synthetic passenger scenarios"
+   ],
+   "tags": [
+    "train unloading",
+    "staircase capacity",
+    "cellular automaton"
+   ],
+   "card": "papers/2014A-4671.md"
+  },
+  {
+   "id": "2014A-4813",
+   "year": 2014,
+   "problem": "A",
+   "problem_title": "Unloading Commuter Trains",
+   "team": "4813",
+   "award": "Outstanding",
+   "paper_title": "Choo-choo Unloading Commuter Trains",
+   "pages": 35,
+   "fulltext": "corpus/papers/2014A-4813.md",
+   "pdf": "sources/papers/2014A-4813.pdf",
+   "model_families": [
+    "queueing",
+    "optimization-math-programming",
+    "physics-geometry"
+   ],
+   "models": [
+    "distance-over-speed travel model",
+    "queue-rate comparison",
+    "stair placement optimization",
+    "capacity threshold analysis"
+   ],
+   "tools": [
+    "Excel",
+    "calculus/algebra"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "prompt dimensions",
+    "standard train-seat dimensions",
+    "assumed walking and stair speeds"
+   ],
+   "tags": [
+    "commuter trains",
+    "queue threshold",
+    "stair layout"
+   ],
+   "card": "papers/2014A-4813.md"
+  },
+  {
+   "id": "2014A-4823",
+   "year": 2014,
+   "problem": "A",
+   "problem_title": "Unloading Commuter Trains",
+   "team": "4823",
+   "award": "Outstanding",
+   "paper_title": "Efficient Exiting of a Train Station",
+   "pages": 42,
+   "fulltext": "corpus/papers/2014A-4823.md",
+   "pdf": "sources/papers/2014A-4823.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "optimization-heuristic",
+    "physics-geometry"
+   ],
+   "models": [
+    "discrete-event passenger simulation",
+    "randomized walking-time model",
+    "stair-placement search",
+    "capacity sensitivity"
+   ],
+   "tools": [
+    "Java",
+    "MATLAB"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "M8 train specifications",
+    "Grand Central observations",
+    "prompt dimensions"
+   ],
+   "tags": [
+    "train station",
+    "discrete simulation",
+    "stair placement"
+   ],
+   "card": "papers/2014A-4823.md"
+  },
+  {
+   "id": "2014A-5086",
+   "year": 2014,
+   "problem": "A",
+   "problem_title": "Unloading Commuter Trains",
+   "team": "5086",
+   "award": "Outstanding",
+   "paper_title": "Train Stations and Staircase Congestion",
+   "pages": 23,
+   "fulltext": "corpus/papers/2014A-5086.md",
+   "pdf": "sources/papers/2014A-5086.pdf",
+   "model_families": [
+    "queueing",
+    "simulation-agent-cellular",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "analytic unloading-time formula",
+    "queue capacity model",
+    "agent simulation",
+    "scenario comparison"
+   ],
+   "tools": [
+    "Java",
+    "Excel"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "prompt train dimensions",
+    "standard walking speeds",
+    "synthetic 600-passenger train"
+   ],
+   "tags": [
+    "stair width",
+    "queue bottleneck",
+    "station design"
+   ],
+   "card": "papers/2014A-5086.md"
+  },
+  {
+   "id": "2014A-5089",
+   "year": 2014,
+   "problem": "A",
+   "problem_title": "Unloading Commuter Trains",
+   "team": "5089",
+   "award": "Outstanding",
+   "paper_title": "Configuring Staircases for Passenger Safety and Flow",
+   "pages": 20,
+   "fulltext": "corpus/papers/2014A-5089.md",
+   "pdf": "sources/papers/2014A-5089.pdf",
+   "model_families": [
+    "probability-stochastic",
+    "queueing",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "normal walking-speed model",
+    "arrival-time distribution",
+    "stair queue simulation",
+    "multi-objective layout search"
+   ],
+   "tools": [
+    "R",
+    "Excel"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "standard staircase dimensions",
+    "assumed normal walking speeds",
+    "synthetic full-train passengers"
+   ],
+   "tags": [
+    "arrival-time distribution",
+    "fan effect",
+    "safety"
+   ],
+   "card": "papers/2014A-5089.md"
+  },
+  {
+   "id": "2014B-4637",
+   "year": 2014,
+   "problem": "B",
+   "problem_title": "The Next Plague?",
+   "team": "4637",
+   "award": "Outstanding",
+   "paper_title": "Modeling an Unknown Epidemic",
+   "pages": 55,
+   "fulltext": "corpus/papers/2014B-4637.md",
+   "pdf": "sources/papers/2014B-4637.pdf",
+   "model_families": [
+    "compartment-population",
+    "probability-stochastic",
+    "simulation-monte-carlo"
+   ],
+   "models": [
+    "SIR/SEIR compartments",
+    "rumor-spreading infection probability",
+    "Monte Carlo simulation",
+    "scenario classification"
+   ],
+   "tools": [
+    "Java",
+    " spreadsheet"
+   ],
+   "deliverables": [
+    "one-page synopsis for local news"
+   ],
+   "data_sources": [
+    "prompt village counts",
+    "Ebola/public-health literature and assumed ranges"
+   ],
+   "tags": [
+    "epidemic; SIR; Monte Carlo"
+   ],
+   "card": "papers/2014B-4637.md"
+  },
+  {
+   "id": "2014B-4880",
+   "year": 2014,
+   "problem": "B",
+   "problem_title": "The Next Plague?",
+   "team": "4880",
+   "award": "Outstanding",
+   "paper_title": "SEIR Epidemic and Aid Allocation",
+   "pages": 45,
+   "fulltext": "corpus/papers/2014B-4880.md",
+   "pdf": "sources/papers/2014B-4880.pdf",
+   "model_families": [
+    "compartment-population",
+    "optimization-math-programming",
+    "spatial-geographic"
+   ],
+   "models": [
+    "SEIR model",
+    "reproductive-number classification",
+    "resource-need score",
+    "country aid ranking"
+   ],
+   "tools": [
+    "Excel",
+    " MATLAB"
+   ],
+   "deliverables": [
+    "one-page synopsis for local news"
+   ],
+   "data_sources": [
+    "village counts",
+    "disease references",
+    "GDP and country-distance tables"
+   ],
+   "tags": [
+    "epidemic; SEIR; resource allocation"
+   ],
+   "card": "papers/2014B-4880.md"
+  },
+  {
+   "id": "2014B-5295",
+   "year": 2014,
+   "problem": "B",
+   "problem_title": "The Next Plague?",
+   "team": "5295",
+   "award": "Outstanding",
+   "paper_title": "Five-Compartment Ebola Scenario Model",
+   "pages": 17,
+   "fulltext": "corpus/papers/2014B-5295.md",
+   "pdf": "sources/papers/2014B-5295.pdf",
+   "model_families": [
+    "compartment-population",
+    "probability-stochastic",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "SIR-derived five-state difference equations",
+    "age-stratified mortality",
+    "doctor intervention scenarios",
+    "sensitivity analysis"
+   ],
+   "tools": [
+    "Excel",
+    " MATLAB"
+   ],
+   "deliverables": [
+    "letter to news agency"
+   ],
+   "data_sources": [
+    "prompt village counts",
+    "Ebola references and assumed parameters"
+   ],
+   "tags": [
+    "epidemic; SIRD; age risk"
+   ],
+   "card": "papers/2014B-5295.md"
+  },
+  {
+   "id": "2014B-5325",
+   "year": 2014,
+   "problem": "B",
+   "problem_title": "The Next Plague?",
+   "team": "5325",
+   "award": "Outstanding",
+   "paper_title": "SIR/SIRD and Decision Tree for Disease Response",
+   "pages": 24,
+   "fulltext": "corpus/papers/2014B-5325.md",
+   "pdf": "sources/papers/2014B-5325.pdf",
+   "model_families": [
+    "compartment-population",
+    "decision-game-theory",
+    "probability-stochastic"
+   ],
+   "models": [
+    "SIR model",
+    "SIRD with vaccination",
+    "severity decision tree",
+    "response thresholds"
+   ],
+   "tools": [
+    "Excel",
+    " MATLAB"
+   ],
+   "deliverables": [
+    "one-page synopsis for local news"
+   ],
+   "data_sources": [
+    "prompt village counts",
+    "vaccine efficacy assumptions and disease sources"
+   ],
+   "tags": [
+    "epidemic; SIRD; decision tree"
+   ],
+   "card": "papers/2014B-5325.md"
+  },
+  {
+   "id": "2015A-6057",
+   "year": 2015,
+   "problem": "A",
+   "problem_title": "Preventing Road Rage",
+   "team": "6057",
+   "award": "Outstanding",
+   "paper_title": "Merits of the Later Zipper Merge",
+   "pages": 34,
+   "fulltext": "corpus/papers/2015A-6057.md",
+   "pdf": "sources/papers/2015A-6057.pdf",
+   "model_families": [
+    "queueing",
+    "simulation-agent-cellular",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "two-lane merge algebra",
+    "multi-lane flow model",
+    "safe-gap calculation",
+    "sensitivity analysis"
+   ],
+   "tools": [
+    "algebra",
+    " spreadsheet"
+   ],
+   "deliverables": [
+    "letter to DMV/transport director"
+   ],
+   "data_sources": [
+    "prompt scenarios and standard vehicle dimensions"
+   ],
+   "tags": [
+    "traffic; zipper merge; fairness"
+   ],
+   "card": "papers/2015A-6057.md"
+  },
+  {
+   "id": "2015A-6080",
+   "year": 2015,
+   "problem": "A",
+   "problem_title": "Preventing Road Rage",
+   "team": "6080",
+   "award": "Outstanding",
+   "paper_title": "Stay Out of My Lane",
+   "pages": 33,
+   "fulltext": "corpus/papers/2015A-6080.md",
+   "pdf": "sources/papers/2015A-6080.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "physics-geometry",
+    "probability-stochastic"
+   ],
+   "models": [
+    "Newtonian merge model",
+    "NetLogo agent-based simulation",
+    "Rawlsian fairness metric",
+    "probability-density sign-placement model"
+   ],
+   "tools": [
+    "NetLogo",
+    " algebra",
+    " probability"
+   ],
+   "deliverables": [
+    "letter and driver-education materials"
+   ],
+   "data_sources": [
+    "prompt geometry",
+    "driving references and synthetic traffic"
+   ],
+   "tags": [
+    "traffic; agent-based model; fairness"
+   ],
+   "card": "papers/2015A-6080.md"
+  },
+  {
+   "id": "2015A-6083",
+   "year": 2015,
+   "problem": "A",
+   "problem_title": "Preventing Road Rage",
+   "team": "6083",
+   "award": "Outstanding",
+   "paper_title": "Late Merging with Speed Harmonization",
+   "pages": 23,
+   "fulltext": "corpus/papers/2015A-6083.md",
+   "pdf": "sources/papers/2015A-6083.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "physics-geometry",
+    "queueing"
+   ],
+   "models": [
+    "microscopic car-following model",
+    "speed harmonization controller",
+    "efficiency/fairness metrics"
+   ],
+   "tools": [
+    "Java-style simulation",
+    " algebra"
+   ],
+   "deliverables": [
+    "letter to Director of Transportation"
+   ],
+   "data_sources": [
+    "prompt scenarios",
+    "vehicle dimensions and reaction-time references"
+   ],
+   "tags": [
+    "traffic; speed harmonization; late merge"
+   ],
+   "card": "papers/2015A-6083.md"
+  },
+  {
+   "id": "2015A-6117",
+   "year": 2015,
+   "problem": "A",
+   "problem_title": "Preventing Road Rage",
+   "team": "6117",
+   "award": "Outstanding",
+   "paper_title": "Go With the Flow",
+   "pages": 115,
+   "fulltext": "corpus/papers/2015A-6117.md",
+   "pdf": "sources/papers/2015A-6117.pdf",
+   "model_families": [
+    "simulation-monte-carlo",
+    "queueing",
+    "physics-geometry"
+   ],
+   "models": [
+    "Monte Carlo traffic simulation",
+    "modified Darcy–Weisbach congestion flow",
+    "congestion-balancing driver policy"
+   ],
+   "tools": [
+    "Java",
+    " Monte Carlo"
+   ],
+   "deliverables": [
+    "driver-education guidelines"
+   ],
+   "data_sources": [
+    "prompt geometry and synthetic randomized traffic"
+   ],
+   "tags": [
+    "traffic; Monte Carlo; road rage"
+   ],
+   "card": "papers/2015A-6117.md"
+  },
+  {
+   "id": "2015B-5473",
+   "year": 2015,
+   "problem": "B",
+   "problem_title": "City Crime and Safety",
+   "team": "5473",
+   "award": "Outstanding",
+   "paper_title": "Fear, Cost, and Regional Safety Ratings",
+   "pages": 46,
+   "fulltext": "corpus/papers/2015B-5473.md",
+   "pdf": "sources/papers/2015B-5473.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "spatial-geographic"
+   ],
+   "models": [
+    "fear-weighted crime index",
+    "crime-cost index",
+    "regional danger score",
+    "weighted arithmetic mean"
+   ],
+   "tools": [
+    "Excel",
+    " statistics"
+   ],
+   "deliverables": [
+    "letter to Mayor"
+   ],
+   "data_sources": [
+    "My City crime spreadsheet",
+    "victimization survey and crime-cost references"
+   ],
+   "tags": [
+    "crime; safety index; spatial analysis"
+   ],
+   "card": "papers/2015B-5473.md"
+  },
+  {
+   "id": "2015B-5967",
+   "year": 2015,
+   "problem": "B",
+   "problem_title": "City Crime and Safety",
+   "team": "5967",
+   "award": "Outstanding",
+   "paper_title": "A Flexible Crime Rating",
+   "pages": 35,
+   "fulltext": "corpus/papers/2015B-5967.md",
+   "pdf": "sources/papers/2015B-5967.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "crime rating composite",
+    "severity and victimization weights",
+    "police-efficiency factor",
+    "city benchmarking"
+   ],
+   "tools": [
+    "Excel",
+    " custom code"
+   ],
+   "deliverables": [
+    "1–2 page report to Mayor"
+   ],
+   "data_sources": [
+    "My City spreadsheet",
+    "FBI/municipal comparisons and severity references"
+   ],
+   "tags": [
+    "crime; composite index; benchmarking"
+   ],
+   "card": "papers/2015B-5967.md"
+  },
+  {
+   "id": "2015B-6018",
+   "year": 2015,
+   "problem": "B",
+   "problem_title": "City Crime and Safety",
+   "team": "6018",
+   "award": "Outstanding",
+   "paper_title": "Sentence-Weighted Safety and Economic Correlation",
+   "pages": 58,
+   "fulltext": "corpus/papers/2015B-6018.md",
+   "pdf": "sources/papers/2015B-6018.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression",
+    "spatial-geographic"
+   ],
+   "models": [
+    "sentence-weighted crime score",
+    "z-score benchmarking",
+    "crime/economic correlation",
+    "district placement analysis"
+   ],
+   "tools": [
+    "Excel",
+    " statistics"
+   ],
+   "deliverables": [
+    "report to Mayor"
+   ],
+   "data_sources": [
+    "My City crime reports",
+    "FBI metropolitan data",
+    "U.S. Sentencing Commission"
+   ],
+   "tags": [
+    "crime; z-score; spatial allocation"
+   ],
+   "card": "papers/2015B-6018.md"
+  },
+  {
+   "id": "2015B-6129",
+   "year": 2015,
+   "problem": "B",
+   "problem_title": "City Crime and Safety",
+   "team": "6129",
+   "award": "Outstanding",
+   "paper_title": "Logistic Safety Index with Genetic Calibration",
+   "pages": 45,
+   "fulltext": "corpus/papers/2015B-6129.md",
+   "pdf": "sources/papers/2015B-6129.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "optimization-heuristic",
+    "statistics-regression"
+   ],
+   "models": [
+    "bounded logistic safety functions",
+    "genetic algorithm weight fit",
+    "simple and extended crime models",
+    "district comparison"
+   ],
+   "tools": [
+    "Python/Java",
+    " genetic algorithm"
+   ],
+   "deliverables": [
+    "report to Mayor"
+   ],
+   "data_sources": [
+    "My City crime data",
+    "published city rankings and punishment references"
+   ],
+   "tags": [
+    "crime; logistic index; genetic algorithm"
+   ],
+   "card": "papers/2015B-6129.md"
+  },
+  {
+   "id": "2016A-6453",
+   "year": 2016,
+   "problem": "A",
+   "problem_title": "Swim, Bike, and Run",
+   "team": "6453",
+   "award": "Outstanding",
+   "paper_title": "Clustered Triathlon Wave Scheduling",
+   "pages": 33,
+   "fulltext": "corpus/papers/2016A-6453.md",
+   "pdf": "sources/papers/2016A-6453.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "optimization-heuristic",
+    "statistics-regression"
+   ],
+   "models": [
+    "cluster analysis",
+    "genetic algorithm wave schedule",
+    "linear programming course-distance model"
+   ],
+   "tools": [
+    "MATLAB",
+    " genetic algorithm",
+    " linear programming"
+   ],
+   "deliverables": [
+    "two-page letter to Mayor"
+   ],
+   "data_sources": [
+    "HiMCM triathlon dataset and prompt constraints"
+   ],
+   "tags": [
+    "triathlon; scheduling; genetic algorithm"
+   ],
+   "card": "papers/2016A-6453.md"
+  },
+  {
+   "id": "2016A-6770",
+   "year": 2016,
+   "problem": "A",
+   "problem_title": "Swim, Bike, and Run",
+   "team": "6770",
+   "award": "Outstanding",
+   "paper_title": "24-Division Triathlon Waves",
+   "pages": 40,
+   "fulltext": "corpus/papers/2016A-6770.md",
+   "pdf": "sources/papers/2016A-6770.pdf",
+   "model_families": [
+    "statistics-regression",
+    "optimization-heuristic",
+    "simulation-agent-cellular"
+   ],
+   "models": [
+    "quartile divisioning",
+    "distance-time wave model",
+    "log-linear-exponential speed curves"
+   ],
+   "tools": [
+    "Excel",
+    " regression",
+    " simulation"
+   ],
+   "deliverables": [
+    "two-page letter to Mayor"
+   ],
+   "data_sources": [
+    "HiMCM triathlon dataset and segment-time references"
+   ],
+   "tags": [
+    "triathlon; wave starts; piecewise curves"
+   ],
+   "card": "papers/2016A-6770.md"
+  },
+  {
+   "id": "2016A-7054",
+   "year": 2016,
+   "problem": "A",
+   "problem_title": "Swim, Bike, and Run",
+   "team": "7054",
+   "award": "Outstanding",
+   "paper_title": "Wave-Packets and Three-Lane Triathlon Course",
+   "pages": 45,
+   "fulltext": "corpus/papers/2016A-7054.md",
+   "pdf": "sources/papers/2016A-7054.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "optimization-heuristic",
+    "statistics-regression"
+   ],
+   "models": [
+    "NetLogo agent-based model",
+    "quartile speed divisions",
+    "composite congestion/closure metric",
+    "wave-packet scheduling"
+   ],
+   "tools": [
+    "NetLogo",
+    " Excel"
+   ],
+   "deliverables": [
+    "two-page letter to Mayor"
+   ],
+   "data_sources": [
+    "HiMCM triathlon dataset and synthetic agent speeds"
+   ],
+   "tags": [
+    "triathlon; agent-based; congestion"
+   ],
+   "card": "papers/2016A-7054.md"
+  },
+  {
+   "id": "2016A-7055",
+   "year": 2016,
+   "problem": "A",
+   "problem_title": "Swim, Bike, and Run",
+   "team": "7055",
+   "award": "Outstanding",
+   "paper_title": "Eighteen-Division Triathlon Schedule",
+   "pages": 37,
+   "fulltext": "corpus/papers/2016A-7055.md",
+   "pdf": "sources/papers/2016A-7055.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "evaluation-mcdm",
+    "statistics-regression"
+   ],
+   "models": [
+    "NetLogo agent simulation",
+    "normal speed sampling",
+    "weighted composite schedule score",
+    "distance sensitivity"
+   ],
+   "tools": [
+    "NetLogo",
+    " Excel"
+   ],
+   "deliverables": [
+    "two-page letter to Mayor"
+   ],
+   "data_sources": [
+    "HiMCM triathlon dataset and synthetic schedule scenarios"
+   ],
+   "tags": [
+    "triathlon; normal sampling; schedule scoring"
+   ],
+   "card": "papers/2016A-7055.md"
+  },
+  {
+   "id": "2016B-6475",
+   "year": 2016,
+   "problem": "B",
+   "problem_title": "Shop and Ship",
+   "team": "6475",
+   "award": "Outstanding",
+   "paper_title": "Vector Delivery Model for Warehouse Cover",
+   "pages": 28,
+   "fulltext": "corpus/papers/2016B-6475.md",
+   "pdf": "sources/papers/2016B-6475.pdf",
+   "model_families": [
+    "optimization-math-programming",
+    "graph-network",
+    "spatial-geographic"
+   ],
+   "models": [
+    "27-by-27 coverage matrix",
+    "greedy set cover",
+    "0-1 programming",
+    "vector delivery graph"
+   ],
+   "tools": [
+    "Excel",
+    " 0-1 programming"
+   ],
+   "deliverables": [
+    "letter to company president"
+   ],
+   "data_sources": [
+    "UPS one-day map",
+    "state sales-tax table and ZIP/state geography"
+   ],
+   "tags": [
+    "warehouse; set cover; graph"
+   ],
+   "card": "papers/2016B-6475.md"
+  },
+  {
+   "id": "2016B-6829",
+   "year": 2016,
+   "problem": "B",
+   "problem_title": "Shop and Ship",
+   "team": "6829",
+   "award": "Outstanding",
+   "paper_title": "Approximation Algorithm for Shop and Ship",
+   "pages": 53,
+   "fulltext": "corpus/papers/2016B-6829.md",
+   "pdf": "sources/papers/2016B-6829.pdf",
+   "model_families": [
+    "optimization-heuristic",
+    "graph-network",
+    "spatial-geographic"
+   ],
+   "models": [
+    "web crawler and pixel extraction",
+    "set-cover approximation",
+    "tax-adjusted greedy algorithm",
+    "complexity analysis"
+   ],
+   "tools": [
+    "Python web crawler",
+    " 0-1 programming"
+   ],
+   "deliverables": [
+    "letter to company president"
+   ],
+   "data_sources": [
+    "UPS transit maps",
+    "ZIP codes",
+    "state tax tables and clothing tax"
+   ],
+   "tags": [
+    "warehouse; approximation; web extraction"
+   ],
+   "card": "papers/2016B-6829.md"
+  },
+  {
+   "id": "2016B-7037",
+   "year": 2016,
+   "problem": "B",
+   "problem_title": "Shop and Ship",
+   "team": "7037",
+   "award": "Outstanding",
+   "paper_title": "Population and Tax Ratios for Warehouse Placement",
+   "pages": 30,
+   "fulltext": "corpus/papers/2016B-7037.md",
+   "pdf": "sources/papers/2016B-7037.pdf",
+   "model_families": [
+    "optimization-math-programming",
+    "spatial-geographic",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "population coverage score",
+    "state-tax ratio",
+    "clothing-tax adjustment",
+    "quartile replacement heuristic"
+   ],
+   "tools": [
+    "Excel",
+    " custom code"
+   ],
+   "deliverables": [
+    "letter to company president"
+   ],
+   "data_sources": [
+    "UPS coverage map",
+    "state populations",
+    "sales and clothing tax rates"
+   ],
+   "tags": [
+    "warehouse; taxes; heuristic"
+   ],
+   "card": "papers/2016B-7037.md"
+  },
+  {
+   "id": "2016B-7057",
+   "year": 2016,
+   "problem": "B",
+   "problem_title": "Shop and Ship",
+   "team": "7057",
+   "award": "Outstanding",
+   "paper_title": "ZIP-Center Warehouse Plan",
+   "pages": 24,
+   "fulltext": "corpus/papers/2016B-7057.md",
+   "pdf": "sources/papers/2016B-7057.pdf",
+   "model_families": [
+    "spatial-geographic",
+    "optimization-heuristic",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "central ZIP candidate selection",
+    "roadway proximity filter",
+    "tax-liability metric",
+    "coverage/tax trade-off"
+   ],
+   "tools": [
+    "Excel",
+    " GIS/map lookup"
+   ],
+   "deliverables": [
+    "letter to company president"
+   ],
+   "data_sources": [
+    "UPS ZIP ranges",
+    "road maps",
+    "state populations and tax tables"
+   ],
+   "tags": [
+    "warehouse; ZIP codes; tax"
+   ],
+   "card": "papers/2016B-7057.md"
+  },
+  {
+   "id": "2016B-7211",
+   "year": 2016,
+   "problem": "B",
+   "problem_title": "Shop and Ship",
+   "team": "7211",
+   "award": "Outstanding",
+   "paper_title": "Genetic Warehouse Coverage and Tax Trade-offs",
+   "pages": 65,
+   "fulltext": "corpus/papers/2016B-7211.md",
+   "pdf": "sources/papers/2016B-7211.pdf",
+   "model_families": [
+    "optimization-heuristic",
+    "spatial-geographic",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "genetic algorithm set cover",
+    "population-weighted coverage",
+    "tax objective",
+    "clothing-tax scenario"
+   ],
+   "tools": [
+    "genetic algorithm",
+    " Excel"
+   ],
+   "deliverables": [
+    "letter to company president"
+   ],
+   "data_sources": [
+    "UPS transit maps",
+    "ZIP data",
+    "population and state/clothing taxes"
+   ],
+   "tags": [
+    "warehouse; genetic algorithm; Pareto trade-off"
+   ],
+   "card": "papers/2016B-7211.md"
+  },
   {
    "id": "2017A-7359",
    "year": 2017,
@@ -186,6 +1508,276 @@
     "parameter tables"
    ],
    "card": "papers/2017A-7359.md"
+  },
+  {
+   "id": "2017A-7879",
+   "year": 2017,
+   "problem": "A",
+   "problem_title": "Drone Clusters as Sky Light Displays",
+   "team": "7879",
+   "award": "Outstanding",
+   "paper_title": "Bipartite-Matched Drone Light Show",
+   "pages": 42,
+   "fulltext": "corpus/papers/2017A-7879.md",
+   "pdf": "sources/papers/2017A-7879.pdf",
+   "model_families": [
+    "physics-geometry",
+    "optimization-math-programming",
+    "simulation-agent-cellular"
+   ],
+   "models": [
+    "contour point extraction",
+    "bipartite matching",
+    "binary search on maximum travel",
+    "3-D transformation matrices"
+   ],
+   "tools": [
+    "MATLAB",
+    " bipartite matching"
+   ],
+   "deliverables": [
+    "two-page memo to Mayor"
+   ],
+   "data_sources": [
+    "display sketches",
+    "Intel safety references and FAA guidance"
+   ],
+   "tags": [
+    "drones; matching; 3-D geometry"
+   ],
+   "card": "papers/2017A-7879.md"
+  },
+  {
+   "id": "2017A-8028",
+   "year": 2017,
+   "problem": "A",
+   "problem_title": "Drone Clusters as Sky Light Displays",
+   "team": "8028",
+   "award": "Outstanding",
+   "paper_title": "Polar Grouping and Collision-Aware Drone Animation",
+   "pages": 40,
+   "fulltext": "corpus/papers/2017A-8028.md",
+   "pdf": "sources/papers/2017A-8028.pdf",
+   "model_families": [
+    "physics-geometry",
+    "optimization-heuristic",
+    "simulation-agent-cellular"
+   ],
+   "models": [
+    "3-D coordinates",
+    "polar-angle grouping",
+    "matrix transforms",
+    "multilayer/time-delay collision avoidance"
+   ],
+   "tools": [
+    "MATLAB",
+    " simulation"
+   ],
+   "deliverables": [
+    "memo to Mayor"
+   ],
+   "data_sources": [
+    "display geometry and synthetic drone coordinates"
+   ],
+   "tags": [
+    "drones; polar matching; collision avoidance"
+   ],
+   "card": "papers/2017A-8028.md"
+  },
+  {
+   "id": "2017A-8040",
+   "year": 2017,
+   "problem": "A",
+   "problem_title": "Drone Clusters as Sky Light Displays",
+   "team": "8040",
+   "award": "Outstanding",
+   "paper_title": "Geometric Ferris Wheel, Dragon and Smile",
+   "pages": 40,
+   "fulltext": "corpus/papers/2017A-8040.md",
+   "pdf": "sources/papers/2017A-8040.pdf",
+   "model_families": [
+    "physics-geometry",
+    "simulation-agent-cellular"
+   ],
+   "models": [
+    "circle/triangle geometry",
+    "sinusoidal dragon path",
+    "parabolic smile animation",
+    "coordinate transformations"
+   ],
+   "tools": [
+    "MATLAB",
+    " geometry"
+   ],
+   "deliverables": [
+    "memo to Mayor"
+   ],
+   "data_sources": [
+    "display sketches",
+    "drone spacing and FAA/safety references"
+   ],
+   "tags": [
+    "drones; geometry; animation"
+   ],
+   "card": "papers/2017A-8040.md"
+  },
+  {
+   "id": "2017A-8393",
+   "year": 2017,
+   "problem": "A",
+   "problem_title": "Drone Clusters as Sky Light Displays",
+   "team": "8393",
+   "award": "Outstanding",
+   "paper_title": "Hexagon-Packed Drone Cluster Show",
+   "pages": 36,
+   "fulltext": "corpus/papers/2017A-8393.md",
+   "pdf": "sources/papers/2017A-8393.pdf",
+   "model_families": [
+    "physics-geometry",
+    "optimization-heuristic",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "explicit drone point placement",
+    "hexagonal packing",
+    "rotation paths",
+    "cost and airspace model"
+   ],
+   "tools": [
+    "MATLAB",
+    " geometry",
+    " spreadsheet"
+   ],
+   "deliverables": [
+    "two-page letter to Mayor"
+   ],
+   "data_sources": [
+    "display sketches",
+    "Intel examples",
+    "FAA and drone-cost references"
+   ],
+   "tags": [
+    "drones; packing; cost"
+   ],
+   "card": "papers/2017A-8393.md"
+  },
+  {
+   "id": "2017B-8121",
+   "year": 2017,
+   "problem": "B",
+   "problem_title": "Ski Slope",
+   "team": "8121",
+   "award": "Outstanding",
+   "paper_title": "Trail Quality Index and Ski Resort Design",
+   "pages": 26,
+   "fulltext": "corpus/papers/2017B-8121.md",
+   "pdf": "sources/papers/2017B-8121.pdf",
+   "model_families": [
+    "physics-geometry",
+    "evaluation-mcdm",
+    "simulation-agent-cellular"
+   ],
+   "models": [
+    "trail quality index",
+    "GIS path generation",
+    "resort rating index",
+    "agent lift/queue simulation"
+   ],
+   "tools": [
+    "GIS",
+    " NetLogo",
+    " spreadsheet"
+   ],
+   "deliverables": [
+    "two-page memo to Ms. Mogul"
+   ],
+   "data_sources": [
+    "Wasatch topographic map",
+    "resort comparison table and USGS/GIS data"
+   ],
+   "tags": [
+    "ski resort; GIS; multi-criteria"
+   ],
+   "card": "papers/2017B-8121.md"
+  },
+  {
+   "id": "2017B-8124",
+   "year": 2017,
+   "problem": "B",
+   "problem_title": "Ski Slope",
+   "team": "8124",
+   "award": "Outstanding",
+   "paper_title": "0-1 Ski Route and Lift Optimization",
+   "pages": 28,
+   "fulltext": "corpus/papers/2017B-8124.md",
+   "pdf": "sources/papers/2017B-8124.pdf",
+   "model_families": [
+    "optimization-math-programming",
+    "evaluation-mcdm",
+    "spatial-geographic"
+   ],
+   "models": [
+    "13×13 binary node matrix",
+    "cluster analysis of peaks",
+    "0-1 linear programming",
+    "AHP resort ranking"
+   ],
+   "tools": [
+    "LINGO",
+    " MATLAB",
+    " AHP"
+   ],
+   "deliverables": [
+    "two-page memo to Ms. Mogul"
+   ],
+   "data_sources": [
+    "topographic map",
+    "resort comparison data and web elevation data"
+   ],
+   "tags": [
+    "ski resort; 0-1 programming; AHP"
+   ],
+   "card": "papers/2017B-8124.md"
+  },
+  {
+   "id": "2017B-8201",
+   "year": 2017,
+   "problem": "B",
+   "problem_title": "Ski Slope",
+   "team": "8201",
+   "award": "Outstanding",
+   "paper_title": "GIS Fall Lines, Solar Aspect and Lift Queues",
+   "pages": 37,
+   "fulltext": "corpus/papers/2017B-8201.md",
+   "pdf": "sources/papers/2017B-8201.pdf",
+   "model_families": [
+    "spatial-geographic",
+    "simulation-agent-cellular",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "gradient vector fields",
+    "fall-line extraction",
+    "solar-aspect filtering",
+    "agent-based lift simulation"
+   ],
+   "tools": [
+    "QGIS",
+    " Mathematica",
+    " NetLogo",
+    " SURFER"
+   ],
+   "deliverables": [
+    "two-page memo to Ms. Mogul"
+   ],
+   "data_sources": [
+    "USGS DEM/topographic data",
+    "resort comparison table and GIS maps"
+   ],
+   "tags": [
+    "ski resort; GIS; queues"
+   ],
+   "card": "papers/2017B-8201.md"
   },
   {
    "id": "2018A-8554",
@@ -535,6 +2127,380 @@
    "card": "papers/2018B-8506.md"
   },
   {
+   "id": "2018B-9247",
+   "year": 2018,
+   "problem": "B",
+   "problem_title": "Cozy Smart House",
+   "team": "9247",
+   "award": "Outstanding",
+   "paper_title": "Enthalpy Smart Home Climate Control",
+   "pages": 22,
+   "fulltext": "corpus/papers/2018B-9247.md",
+   "pdf": "sources/papers/2018B-9247.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "physics-geometry",
+    "differential-equations",
+    "probability-stochastic",
+    "graph-network"
+   ],
+   "models": [
+    "event-time prediction",
+    "sleep/wake classifier",
+    "thermal response regression",
+    "comfort/standby modes",
+    "humidity heat-index adjustment",
+    "multi-zone scheduling"
+   ],
+   "tools": [
+    "Python",
+    " regression",
+    " spreadsheet"
+   ],
+   "deliverables": [
+    "one-page news release"
+   ],
+   "data_sources": [
+    "synthetic event histories",
+    "HVAC response experiments and humidity/comfort references"
+   ],
+   "tags": [
+    "smart thermostat; event prediction; humidity"
+   ],
+   "card": "papers/2018B-9247.md"
+  },
+  {
+   "id": "2019A-10057",
+   "year": 2019,
+   "problem": "A",
+   "problem_title": "Charge!",
+   "team": "10057",
+   "award": "Outstanding",
+   "paper_title": "Charge: The Secret Costs Behind Free Energy",
+   "pages": 39,
+   "fulltext": "corpus/papers/2019A-10057.md",
+   "pdf": "sources/papers/2019A-10057.pdf",
+   "model_families": [
+    "statistics-regression",
+    "economics-cost-benefit",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "regional EV-energy accounting",
+    "polynomial and regression demand forecasts",
+    "Cobb–Douglas demographic model",
+    "Lagrange optimization",
+    "monetary",
+    "space",
+    "security and convenience cost models"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "newspaper release",
+    "multi-perspective free-energy cost model",
+    "policy optimizations"
+   ],
+   "data_sources": [
+    "2011–2018 global",
+    "China",
+    "U.S. and Europe series",
+    "EV mileage and energy data",
+    "device sales",
+    "screen time and demographic data",
+    "charging equipment and security sources"
+   ],
+   "tags": [
+    "EV energy",
+    "device charging",
+    "four cost types",
+    "Cobb–Douglas",
+    "Lagrange optimization",
+    "demographic targeting"
+   ],
+   "card": "papers/2019A-10057.md"
+  },
+  {
+   "id": "2019A-10174",
+   "year": 2019,
+   "problem": "A",
+   "problem_title": "Charge!",
+   "team": "10174",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 53,
+   "fulltext": "corpus/papers/2019A-10174.md",
+   "pdf": "sources/papers/2019A-10174.pdf",
+   "model_families": [
+    "simulation-agent-cellular",
+    "time-series-forecasting",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "time-dependent electricity-price model",
+    "NetLogo agent-based visitor/device simulation",
+    "destination-specific attendance distributions",
+    "public outlet density scenarios",
+    "EV energy and cost projection"
+   ],
+   "tools": [
+    "NetLogo",
+    "Python"
+   ],
+   "deliverables": [
+    "newspaper article",
+    "destination-specific outlet and EV projections",
+    "NetLogo and Python appendices"
+   ],
+   "data_sources": [
+    "U.S. electricity prices",
+    "destination counts and capacities",
+    "airport and railway data",
+    "device and EV charging assumptions"
+   ],
+   "tags": [
+    "agent-based model",
+    "NetLogo",
+    "outlet density",
+    "destination typology",
+    "EV projections",
+    "time-dependent cost"
+   ],
+   "card": "papers/2019A-10174.md"
+  },
+  {
+   "id": "2019A-9564",
+   "year": 2019,
+   "problem": "A",
+   "problem_title": "Charge!",
+   "team": "9564",
+   "award": "Outstanding",
+   "paper_title": "Don't charge, walk slowly!",
+   "pages": 37,
+   "fulltext": "corpus/papers/2019A-9564.md",
+   "pdf": "sources/papers/2019A-9564.pdf",
+   "model_families": [
+    "queueing",
+    "simulation-monte-carlo",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "Poisson-arrival EV queue simulation",
+    "battery-state dissatisfaction index",
+    "personal-device differential battery-flow model",
+    "impatience and mobility indices",
+    "cost optimization over charging capacity"
+   ],
+   "tools": [
+    "SimPy",
+    "Python"
+   ],
+   "deliverables": [
+    "newspaper article",
+    "EV slow/fast charging plans",
+    "personal-device outlet plan"
+   ],
+   "data_sources": [
+    "U.S. EV and device ownership trends",
+    "public-place operating and visitor assumptions",
+    "equipment prices and charging specifications"
+   ],
+   "tags": [
+    "electric vehicles",
+    "charging demand",
+    "queueing",
+    "dissatisfaction",
+    "impatience",
+    "public-space typology",
+    "cost model"
+   ],
+   "card": "papers/2019A-9564.md"
+  },
+  {
+   "id": "2019A-9824",
+   "year": 2019,
+   "problem": "A",
+   "problem_title": "Charge!",
+   "team": "9824",
+   "award": "Outstanding",
+   "paper_title": "Free Charging in Public Places",
+   "pages": 31,
+   "fulltext": "corpus/papers/2019A-9824.md",
+   "pdf": "sources/papers/2019A-9824.pdf",
+   "model_families": [
+    "statistics-regression",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "least-squares trend regression",
+    "linear and quadratic demand forecasts",
+    "charging-connection and EV-outlet cost equations",
+    "profit-offset model",
+    "scenario analysis by public-place type"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "newspaper article",
+    "cost equations for cafés",
+    "malls and schools",
+    "initiative recommendations"
+   ],
+   "data_sources": [
+    "2010–2018 phone and EV ownership data",
+    "electricity prices and charging equipment costs",
+    "representative coffee shop",
+    "mall and UCLA inputs"
+   ],
+   "tags": [
+    "charging demand",
+    "regression",
+    "electric vehicles",
+    "mobile devices",
+    "cost accounting",
+    "public-place comparison"
+   ],
+   "card": "papers/2019A-9824.md"
+  },
+  {
+   "id": "2019A-9844",
+   "year": 2019,
+   "problem": "A",
+   "problem_title": "Charge!",
+   "team": "9844",
+   "award": "Outstanding",
+   "paper_title": "Increasing Charging Electricity Demands and Reducing the Cost in Public Places",
+   "pages": 28,
+   "fulltext": "corpus/papers/2019A-9844.md",
+   "pdf": "sources/papers/2019A-9844.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "energy-demand accounting model",
+    "Bass diffusion model",
+    "charging queue-time cost",
+    "fixed and variable equipment-cost model",
+    "scenario and sensitivity analysis"
+   ],
+   "tools": [
+    "MATLAB"
+   ],
+   "deliverables": [
+    "newspaper article",
+    "four public-place cost scenarios",
+    "sensitivity analysis and recommendations"
+   ],
+   "data_sources": [
+    "2011–2018 U.S. EV",
+    "phone and battery data",
+    "electricity prices and charging equipment costs",
+    "New York JFK airport",
+    "Starbucks café",
+    "King's Plaza mall and Stanford University examples"
+   ],
+   "tags": [
+    "Bass model",
+    "demand forecast",
+    "charging queues",
+    "investment cost",
+    "time cost",
+    "public charging"
+   ],
+   "card": "papers/2019A-9844.md"
+  },
+  {
+   "id": "2019B-10337",
+   "year": 2019,
+   "problem": "B",
+   "problem_title": "Bottle Battles",
+   "team": "10337",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 27,
+   "fulltext": "corpus/papers/2019B-10337.md",
+   "pdf": "sources/papers/2019B-10337.pdf",
+   "model_families": [
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "fluid-consumption share model",
+    "locational base-rate adjustment",
+    "per-liter energy and waste accounting",
+    "three-domain impact vector",
+    "ban-change impact aggregation"
+   ],
+   "tools": [],
+   "deliverables": [
+    "survey instruments for city and airport",
+    "city and airport impact calculations",
+    "newspaper article and policy discussion"
+   ],
+   "data_sources": [
+    "city census and beverage consumption data",
+    "airport passenger and survey assumptions",
+    "energy and waste lifecycle sources"
+   ],
+   "tags": [
+    "single-serving PET",
+    "locational demand",
+    "impact vector",
+    "energy",
+    "waste",
+    "airport"
+   ],
+   "card": "papers/2019B-10337.md"
+  },
+  {
+   "id": "2019B-10407",
+   "year": 2019,
+   "problem": "B",
+   "problem_title": "Bottle Battles",
+   "team": "10407",
+   "award": "Outstanding",
+   "paper_title": "The Water Bottle Battle",
+   "pages": 24,
+   "fulltext": "corpus/papers/2019B-10407.md",
+   "pdf": "sources/papers/2019B-10407.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "national and locational beverage-intake model",
+    "cost-adjusted beverage preference rates",
+    "environment/economy/health impact vectors",
+    "overall impact aggregation",
+    "scenario model for Concord",
+    "San Francisco and SFO"
+   ],
+   "tools": [],
+   "deliverables": [
+    "newspaper article",
+    "ban-impact model",
+    "recommendations for improving the ban"
+   ],
+   "data_sources": [
+    "USDA and public-health intake studies",
+    "beverage prices and sales",
+    "airport passenger data",
+    "PET lifecycle and health sources"
+   ],
+   "tags": [
+    "bottle ban",
+    "locational base rate",
+    "impact vector",
+    "beverage substitution",
+    "airport"
+   ],
+   "card": "papers/2019B-10407.md"
+  },
+  {
    "id": "2019B-9548",
    "year": 2019,
    "problem": "B",
@@ -584,6 +2550,56 @@
     "airport vs city"
    ],
    "card": "papers/2019B-9548.md"
+  },
+  {
+   "id": "2019B-9869",
+   "year": 2019,
+   "problem": "B",
+   "problem_title": "Bottle Battles",
+   "team": "9869",
+   "award": "Outstanding",
+   "paper_title": "The Mathematical Model for The Bottle Battles",
+   "pages": 26,
+   "fulltext": "corpus/papers/2019B-9869.md",
+   "pdf": "sources/papers/2019B-9869.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "economics-cost-benefit",
+    "statistics-regression",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "beverage market-substitution model",
+    "utility and marginal-substitution curves",
+    "polynomial surface fitting",
+    "entropy-weight comprehensive evaluation",
+    "ban-policy sensitivity analysis"
+   ],
+   "tools": [
+    "Python",
+    "Excel",
+    "MATLAB"
+   ],
+   "deliverables": [
+    "newspaper article",
+    "city and airport impact model",
+    "national promotion recommendations"
+   ],
+   "data_sources": [
+    "IBWA and beverage sales reports",
+    "consumer and health sources",
+    "Concord and San Francisco series",
+    "municipal waste and energy data"
+   ],
+   "tags": [
+    "bottle ban",
+    "substitution",
+    "utility",
+    "entropy weights",
+    "policy comparison",
+    "airport"
+   ],
+   "card": "papers/2019B-9869.md"
   },
   {
    "id": "2020A-10549",
@@ -946,6 +2962,57 @@
     "marginal benefit of budget"
    ],
    "card": "papers/2020B-10876.md"
+  },
+  {
+   "id": "2020B-10997",
+   "year": 2020,
+   "problem": "B",
+   "problem_title": "Funding Biodiversity Conservation",
+   "team": "10997",
+   "award": "Outstanding",
+   "paper_title": "Untitled",
+   "pages": 25,
+   "fulltext": "corpus/papers/2020B-10997.md",
+   "pdf": "sources/papers/2020B-10997.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "optimization-math-programming",
+    "optimization-heuristic",
+    "differential-equations"
+   ],
+   "models": [
+    "logistic population decline with strong Allee effect",
+    "feasibility decay function",
+    "TOPSIS Priority Index",
+    "entropy weight method",
+    "dynamic programming plus greedy schedule",
+    "genetic algorithm schedule optimization"
+   ],
+   "tools": [
+    "Mathematica"
+   ],
+   "deliverables": [
+    "FRPCE funding schedule",
+    "one-page board memo",
+    "sensitivity analysis"
+   ],
+   "data_sources": [
+    "48-project FRPCE data set",
+    "Florida plant conservation literature",
+    "project costs",
+    "benefit",
+    "uniqueness and feasibility fields"
+   ],
+   "tags": [
+    "biodiversity",
+    "endangered plants",
+    "feasibility decay",
+    "TOPSIS",
+    "entropy weighting",
+    "dynamic programming",
+    "genetic algorithm"
+   ],
+   "card": "papers/2020B-10997.md"
   },
   {
    "id": "2021A-11462",
@@ -1397,6 +3464,181 @@
    "card": "papers/2021B-12384.md"
   },
   {
+   "id": "2022A-12600",
+   "year": 2022,
+   "problem": "A",
+   "problem_title": "The Need for Bees (and not just for honey)",
+   "team": "12600",
+   "award": "Outstanding (NCTM award)",
+   "paper_title": "Honeybee Colony Population and Hive Deployment",
+   "pages": 25,
+   "fulltext": "corpus/papers/2022A-12600.md",
+   "pdf": "sources/papers/2022A-12600.pdf",
+   "model_families": [
+    "compartment-population",
+    "differential-equations",
+    "graph-network",
+    "optimization-math-programming"
+   ],
+   "models": [
+    "Honeybee Colony Population Model (BCPM)",
+    "Simplified Colony Collapse Disorder Model (SCCDM)",
+    "Hive Deployment Model (HDM)",
+    "least-squares parameter fitting",
+    "weighted undirected graph and iterative hive-placement algorithm"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "non-technical blog"
+   ],
+   "data_sources": [
+    "published honeybee life-cycle and mortality data",
+    "plant pollination requirements"
+   ],
+   "tags": [
+    "honeybees",
+    "colony collapse disorder",
+    "pollination",
+    "seasonal differential equations",
+    "sensitivity analysis",
+    "hive placement"
+   ],
+   "card": "papers/2022A-12600.md"
+  },
+  {
+   "id": "2022A-12821",
+   "year": 2022,
+   "problem": "A",
+   "problem_title": "The Need for Bees (and not just for honey)",
+   "team": "12821",
+   "award": "Outstanding",
+   "paper_title": "Shedding Light on the Population of the Honeybee",
+   "pages": 25,
+   "fulltext": "corpus/papers/2022A-12821.md",
+   "pdf": "sources/papers/2022A-12821.pdf",
+   "model_families": [
+    "compartment-population",
+    "differential-equations",
+    "probability-stochastic"
+   ],
+   "models": [
+    "baseline honeybee population model with Allee effect",
+    "virus transmission model",
+    "seasonal lifespan and fertility model",
+    "pollination prediction model"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "infographic",
+    "public website"
+   ],
+   "data_sources": [
+    "published honeybee population",
+    "lifespan and disease parameters",
+    "crop pollination references"
+   ],
+   "tags": [
+    "honeybees",
+    "Allee effect",
+    "virus",
+    "seasonality",
+    "pollination",
+    "sensitivity analysis"
+   ],
+   "card": "papers/2022A-12821.md"
+  },
+  {
+   "id": "2022A-13014",
+   "year": 2022,
+   "problem": "A",
+   "problem_title": "The Need for Bees (and not just for honey)",
+   "team": "13014",
+   "award": "Outstanding",
+   "paper_title": "Modeling Honeybee Population and Pollination",
+   "pages": 25,
+   "fulltext": "corpus/papers/2022A-13014.md",
+   "pdf": "sources/papers/2022A-13014.pdf",
+   "model_families": [
+    "compartment-population",
+    "differential-equations",
+    "statistics-regression",
+    "spatial-geographic"
+   ],
+   "models": [
+    "worker and drone differential-equation model",
+    "Euler numerical integration",
+    "sinusoidal regression",
+    "20-acre pollination and hive-count model"
+   ],
+   "tools": [
+    "Python",
+    "scikit-learn"
+   ],
+   "deliverables": [
+    "non-technical infographic"
+   ],
+   "data_sources": [
+    "published honeybee lifespans and gestation",
+    "University of Georgia pollination guidance"
+   ],
+   "tags": [
+    "honeybees",
+    "worker and drone populations",
+    "seasonal regression",
+    "pollination",
+    "hive count"
+   ],
+   "card": "papers/2022A-13014.md"
+  },
+  {
+   "id": "2022A-13405",
+   "year": 2022,
+   "problem": "A",
+   "problem_title": "The Need for Bees (and not just for honey)",
+   "team": "13405",
+   "award": "Outstanding",
+   "paper_title": "Modeling a Honey Bee Colony",
+   "pages": 25,
+   "fulltext": "corpus/papers/2022A-13405.md",
+   "pdf": "sources/papers/2022A-13405.pdf",
+   "model_families": [
+    "compartment-population",
+    "differential-equations",
+    "simulation-monte-carlo"
+   ],
+   "models": [
+    "brood",
+    "hive-bee and forager differential equations",
+    "resource-balance equations for pollen and nectar",
+    "survival and recruitment activation functions",
+    "scenario and competition simulations"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "summary sheet"
+   ],
+   "data_sources": [
+    "published Apis mellifera life-cycle and survival parameters",
+    "almond pollination requirements"
+   ],
+   "tags": [
+    "honeybees",
+    "brood",
+    "foragers",
+    "pollen and nectar",
+    "activation functions",
+    "colony competition",
+    "almonds"
+   ],
+   "card": "papers/2022A-13405.md"
+  },
+  {
    "id": "2022B-12465",
    "year": 2022,
    "problem": "B",
@@ -1446,6 +3688,162 @@
     "autocorrelation-aware testing"
    ],
    "card": "papers/2022B-12465.md"
+  },
+  {
+   "id": "2022B-12646",
+   "year": 2022,
+   "problem": "B",
+   "problem_title": "CO2 and Global Warming",
+   "team": "12646",
+   "award": "Outstanding",
+   "paper_title": "CO2 concentration and land-ocean temperature",
+   "pages": 24,
+   "fulltext": "corpus/papers/2022B-12646.md",
+   "pdf": "sources/papers/2022B-12646.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "differential-equations"
+   ],
+   "models": [
+    "linear",
+    "quadratic",
+    "exponential and S-type fits; ARIMA(2",
+    "2",
+    "3); multivariate regression"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "non-technical article"
+   ],
+   "data_sources": [
+    "NOAA CO2 and land-ocean temperature data; radiative-forcing references"
+   ],
+   "tags": [
+    "CO2 concentration",
+    "global warming",
+    "regression",
+    "ARIMA"
+   ],
+   "card": "papers/2022B-12646.md"
+  },
+  {
+   "id": "2022B-12678",
+   "year": 2022,
+   "problem": "B",
+   "problem_title": "CO2 and Global Warming",
+   "team": "12678",
+   "award": "Outstanding",
+   "paper_title": "Carbon Emissions Models: Marvelous or Perilous?",
+   "pages": 25,
+   "fulltext": "corpus/papers/2022B-12678.md",
+   "pdf": "sources/papers/2022B-12678.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "differential-equations",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "historical linear regression; GDP/carbon-intensity model; mechanistic carbon-sink model; policy scenario simulation"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "non-technical article"
+   ],
+   "data_sources": [
+    "historical CO2 series; GDP; carbon intensity; land and ocean sink research; temperature data"
+   ],
+   "tags": [
+    "CO2",
+    "carbon sinks",
+    "GDP",
+    "carbon intensity",
+    "policy scenarios"
+   ],
+   "card": "papers/2022B-12678.md"
+  },
+  {
+   "id": "2022B-12911",
+   "year": 2022,
+   "problem": "B",
+   "problem_title": "CO2 and Global Warming",
+   "team": "12911",
+   "award": "Outstanding",
+   "paper_title": "Global Warming and Carbon Dioxide Levels",
+   "pages": 24,
+   "fulltext": "corpus/papers/2022B-12911.md",
+   "pdf": "sources/papers/2022B-12911.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting",
+    "differential-equations"
+   ],
+   "models": [
+    "Holt linear trend; ARI",
+    "IMA and ARIMA; ARIMA(3",
+    "1",
+    "3) temperature model; VAR(5) and Granger causality"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "non-technical article"
+   ],
+   "data_sources": [
+    "NOAA CO2; NASA GISS temperatures; methane",
+    "nitrous oxide and SF6 sensitivity data"
+   ],
+   "tags": [
+    "CO2",
+    "global temperature",
+    "ARIMA",
+    "VAR",
+    "Granger causality"
+   ],
+   "card": "papers/2022B-12911.md"
+  },
+  {
+   "id": "2022B-13010",
+   "year": 2022,
+   "problem": "B",
+   "problem_title": "CO2 and Global Warming",
+   "team": "13010",
+   "award": "Outstanding",
+   "paper_title": "Modeling CO2 and Global Temperature",
+   "pages": 22,
+   "fulltext": "corpus/papers/2022B-13010.md",
+   "pdf": "sources/papers/2022B-13010.pdf",
+   "model_families": [
+    "statistics-regression",
+    "time-series-forecasting"
+   ],
+   "models": [
+    "step-size analysis; linear",
+    "polynomial and exponential fits; natural exponential model; CO2-temperature association"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "non-technical article"
+   ],
+   "data_sources": [
+    "historical CO2 and temperature series; climate references"
+   ],
+   "tags": [
+    "CO2",
+    "temperature",
+    "step size",
+    "exponential regression",
+    "non-technical article"
+   ],
+   "card": "papers/2022B-13010.md"
   },
   {
    "id": "2023A-13643",
@@ -1794,6 +4192,314 @@
     "waterfall charts"
    ],
    "card": "papers/2023B-13694.md"
+  },
+  {
+   "id": "2023B-13904",
+   "year": 2023,
+   "problem": "B",
+   "problem_title": "Charging Ahead with E-buses",
+   "team": "13904",
+   "award": "Outstanding",
+   "paper_title": "Electric bus ecological and financial transition",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023B-13904.md",
+   "pdf": "sources/papers/2023B-13904.pdf",
+   "model_families": [
+    "optimization-math-programming",
+    "evaluation-mcdm",
+    "economics-cost-benefit"
+   ],
+   "models": [
+    "TOPSIS with entropy weights; zero-one integer programming; ten-year cash-flow simulation"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "SL Stockholm bus data; bus life-cycle emissions",
+    "costs and route data"
+   ],
+   "tags": [
+    "e-bus",
+    "TOPSIS",
+    "entropy weights",
+    "integer programming",
+    "charging"
+   ],
+   "card": "papers/2023B-13904.md"
+  },
+  {
+   "id": "2023B-14087",
+   "year": 2023,
+   "problem": "B",
+   "problem_title": "Charging Ahead with E-buses",
+   "team": "14087",
+   "award": "Outstanding",
+   "paper_title": "Electric bus transition in Seattle and other cities",
+   "pages": 24,
+   "fulltext": "corpus/papers/2023B-14087.md",
+   "pdf": "sources/papers/2023B-14087.pdf",
+   "model_families": [
+    "statistics-regression",
+    "evaluation-mcdm",
+    "optimization-math-programming",
+    "spatial-geographic"
+   ],
+   "models": [
+    "logistic",
+    "linear and exponential regressions; recursive fleet-finance model; EWM-TOPSIS; K-means clustering"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "Seattle",
+    "San Francisco and New York bus counts",
+    "emissions",
+    "costs and route data"
+   ],
+   "tags": [
+    "electric bus",
+    "regression",
+    "fleet finance",
+    "TOPSIS",
+    "K-means"
+   ],
+   "card": "papers/2023B-14087.md"
+  },
+  {
+   "id": "2023B-14323",
+   "year": 2023,
+   "problem": "B",
+   "problem_title": "Charging Ahead with E-buses",
+   "team": "14323",
+   "award": "Outstanding",
+   "paper_title": "Life-cycle environmental and financial case for electric buses",
+   "pages": 25,
+   "fulltext": "corpus/papers/2023B-14323.md",
+   "pdf": "sources/papers/2023B-14323.pdf",
+   "model_families": [
+    "economics-cost-benefit",
+    "statistics-regression",
+    "time-series-forecasting"
+   ],
+   "models": [
+    "bus life-cycle emissions comparison; purchase-fuel-maintenance cost model; ten-year transition plan"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "Washington DC Metrobus and three-city bus data; battery",
+    "fuel and electricity costs"
+   ],
+   "tags": [
+    "electric bus",
+    "life-cycle emissions",
+    "fleet finance",
+    "transition plan"
+   ],
+   "card": "papers/2023B-14323.md"
+  },
+  {
+   "id": "2024A-14995",
+   "year": 2024,
+   "problem": "A",
+   "problem_title": "To Play or not to Play: Modeling Future Olympic Games",
+   "team": "14995",
+   "award": "Outstanding",
+   "paper_title": "Olympic event selection with combined weighting and Monte Carlo TOPSIS",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024A-14995.md",
+   "pdf": "sources/papers/2024A-14995.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "probability-stochastic",
+    "statistics-regression"
+   ],
+   "models": [
+    "AHP",
+    "entropy and coefficient-of-variation weighting; CRITIC; MC-TOPSIS"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "48 Olympic events; IOC criteria and event popularity",
+    "gender",
+    "sustainability",
+    "safety and economic data"
+   ],
+   "tags": [
+    "Olympics",
+    "MC-TOPSIS",
+    "combined weights",
+    "event selection"
+   ],
+   "card": "papers/2024A-14995.md"
+  },
+  {
+   "id": "2024A-15041",
+   "year": 2024,
+   "problem": "A",
+   "problem_title": "To Play or not to Play: Modeling Future Olympic Games",
+   "team": "15041",
+   "award": "Outstanding",
+   "paper_title": "Hierarchical multi-criteria model for Olympic events",
+   "pages": 28,
+   "fulltext": "corpus/papers/2024A-15041.md",
+   "pdf": "sources/papers/2024A-15041.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "decision-game-theory",
+    "statistics-regression"
+   ],
+   "models": [
+    "hierarchical AHP-TOPSIS; host-specific subcriteria; ±10% and ±50% sensitivity"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "27 factors for Olympic events; historical Tokyo",
+    "Paris and LA decisions; Brisbane context"
+   ],
+   "tags": [
+    "Olympics",
+    "H-MCDM",
+    "AHP",
+    "TOPSIS",
+    "sensitivity"
+   ],
+   "card": "papers/2024A-15041.md"
+  },
+  {
+   "id": "2024A-15504",
+   "year": 2024,
+   "problem": "A",
+   "problem_title": "To Play or not to Play: Modeling Future Olympic Games",
+   "team": "15504",
+   "award": "Outstanding",
+   "paper_title": "Probabilistic Olympic sport inclusion model",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024A-15504.md",
+   "pdf": "sources/papers/2024A-15504.pdf",
+   "model_families": [
+    "probability-stochastic",
+    "statistics-regression",
+    "evaluation-mcdm"
+   ],
+   "models": [
+    "logistic inclusion probability with base score",
+    "inertia and bias correction; sensitivity analysis"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "Historical Olympic sport inclusion records; nine subcriteria from web and literature"
+   ],
+   "tags": [
+    "Olympics",
+    "logistic regression",
+    "sport inclusion",
+    "sensitivity"
+   ],
+   "card": "papers/2024A-15504.md"
+  },
+  {
+   "id": "2024A-15926",
+   "year": 2024,
+   "problem": "A",
+   "problem_title": "To Play or not to Play: Modeling Future Olympic Games",
+   "team": "15926",
+   "award": "Outstanding",
+   "paper_title": "TOPSIS model for Olympic event potential",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024A-15926.md",
+   "pdf": "sources/papers/2024A-15926.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression"
+   ],
+   "models": [
+    "factor analysis; entropy-weight TOPSIS; AHP-weight TOPSIS; 0.6/0.4 weighted score; threshold and sensitivity"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "21 factors derived from six IOC criteria; recent Olympic event data"
+   ],
+   "tags": [
+    "Olympics",
+    "TOPSIS",
+    "entropy",
+    "AHP",
+    "inclusion threshold"
+   ],
+   "card": "papers/2024A-15926.md"
+  },
+  {
+   "id": "2024A-16159",
+   "year": 2024,
+   "problem": "A",
+   "problem_title": "To Play or not to Play: Modeling Future Olympic Games",
+   "team": "16159",
+   "award": "Outstanding",
+   "paper_title": "Entropy-weight ranking of Olympic sports",
+   "pages": 25,
+   "fulltext": "corpus/papers/2024A-16159.md",
+   "pdf": "sources/papers/2024A-16159.pdf",
+   "model_families": [
+    "evaluation-mcdm",
+    "statistics-regression"
+   ],
+   "models": [
+    "factor scoring; min-max normalization; correlation checks; entropy weighting; sensitivity"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "deliverables": [
+    "letter or summary sheet"
+   ],
+   "data_sources": [
+    "IOC criteria and sport-level popularity",
+    "equity",
+    "sustainability",
+    "inclusivity",
+    "innovation",
+    "safety and fair-play data"
+   ],
+   "tags": [
+    "Olympics",
+    "entropy weights",
+    "normalization",
+    "sport ranking"
+   ],
+   "card": "papers/2024A-16159.md"
   },
   {
    "id": "2024B-15022",
