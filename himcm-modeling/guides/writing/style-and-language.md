@@ -45,6 +45,15 @@ Adapt the pattern, not the words. All examples are from Outstanding papers.
 - "Nest is superior to our learning algorithm in terms of transparency." (2018B-8506, p. 22)
 - "Despite the limitations, we can still gain a general idea of how dandelions seeds should spread from this model." (2023A-14140, p. 5)
 
+**Making a decision rule explicit**
+
+- "we set a threshold of inclusion as 0.45, based on the distribution of the simulation results" (2024A-15926, p. 1)
+- "By comparing RMSE, MAE and MRE, the exponential model has the best performance in the training set and test set, and is the most accurate." (2022B-12646, p. 1)
+
+**Explaining a result to the client**
+
+- "Under the specific annual funding column, the number corresponding to a project indicates the start year of the project." (2020B-10997, p. 23)
+
 **Turning results into guidance**
 
 - "Normal distribution is recommended if a predominant wind direction is evident, while uniform distribution is more appropriate for more random wind directions." (2023A-14076, p. 24)
@@ -52,6 +61,7 @@ Adapt the pattern, not the words. All examples are from Outstanding papers.
 ## Habits to avoid
 
 - **Claims without support.** "Our model is highly accurate" with no error measure; "validating the accuracy and feasibility of the model" after one rough comparison. Say what was compared and how close it was.
+- **Presenting a screening score as a prediction.** A threshold on a constructed score says which options pass your rule, not what a committee will decide; the stronger 2024A papers kept that distinction (2024A-15926 treated 0.45 as an inclusion threshold for its score).
 - **Over-claiming from limited tests.** Agreement with self-generated data, a handful of personas or one external figure supports plausibility, not proof.
 - **Method lists without reasons.** "We used AHP, entropy weights, TOPSIS and k-means" tells a reader nothing about why.
 - **Vague quantities.** "A large increase", "hundreds of millions of tons" where a number with a range is possible (see the 2024B-16226 card).

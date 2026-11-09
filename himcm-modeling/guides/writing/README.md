@@ -27,7 +27,7 @@ An HiMCM paper is a **technical report written for expert readers in a hurry**, 
 
 ## Rules come from the current statement
 
-Page limits, required parts and their order, and format details are set each year by COMAP. From 2020 the statements set a 25-page limit that counts everything (summary sheet, table of contents, references, appendices); earlier papers in the corpus are sometimes much longer because earlier rules differed. Always follow the current statement and contest instructions, including how to identify the paper (normally by team control number only).
+Page limits, required parts and their order, and format details are set each year by COMAP. From 2020 the statements set a 25-page limit that counts everything (summary sheet, table of contents, references, appendices); earlier papers in the corpus (2014–2019) are often 30–60 pages or more because earlier rules differed. Always follow the current statement and contest instructions, including how to identify the paper (normally by team control number only).
 
 ## A writing schedule that works
 

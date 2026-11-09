@@ -50,7 +50,15 @@ For each model:
 4. **Worked example**: one case traced through every step (see [figures-tables-equations.md](figures-tables-equations.md)).
 5. **Algorithm**: numbered steps, pseudocode or a flowchart for anything computational.
 
+When a problem has several parallel cases (several places, cities or scenarios), use the same recipe for each: inputs, calculation, chart, interpretation. The 2019A papers on free charging in public places (2019A-9824, 2019A-9844) used this pattern so a reader could compare coffee shops, malls and schools at a glance. Headings that say what changes in each scenario help in the same way (2022A-13405).
+
+A short conclusion at the end of each major section tells the reader what carries forward (2022A-12600 ended its model sections with "Conclusion" subsections, pp. 13, 19).
+
 Define a term before you use it: "We use the term hyperparameters to designate global values that are not directly passed into our model but still change the output of the model." (2023A-14632, p. 9)
+
+### Approaches that did not work
+
+A brief, honest account of an approach you tried and dropped can strengthen the paper when it explains the final choice. 2016B-6829's table of contents lists "An NP-Hard 0-1 Matrix: Failed" and "Optimized Brute Force Search(IDA*): Failed" before the method that worked (p. 3). Keep such sections short and say what was learned.
 
 ### Results
 
@@ -70,7 +78,7 @@ Specific to your model, honest, and usually 3–5 of each. A weakness can come w
 
 ### Conclusion
 
-Restate the answer to each requirement with its key number, the recommendation, and the main limitation. 2024B-15502 used a numbered conclusion that restated each result with its number (pp. 23–24). Do not introduce new results here.
+Restate the answer to each requirement with its key number, the recommendation, and the main limitation. A limitations paragraph is most useful when it says what should be measured next to improve the answer (2019B-10337 and 2019B-10407 closed with this). 2024B-15502 used a numbered conclusion that restated each result with its number (pp. 23–24). Do not introduce new results here.
 
 ### References
 
@@ -83,6 +91,10 @@ Code, full data tables, full rankings. It counts toward the page limit under cur
 ## Placement of the non-technical piece
 
 Papers placed the memo, letter or article either right after the summary (2018A-8554, 2020A-10549, 2021A-11900, 2021B-11552, 2018B-8506) or at the end (2020B-10839, 2022B-12465, 2023B-13694, 2024B-15502, 2024B-16226). Both worked. Follow the statement if it specifies an order. Putting it up front means it is read early; putting it at the end lets it summarize results the reader has already seen.
+
+## Changes over time
+
+Papers from 2014–2019 were written under different rules and are often 30–60 pages or more, with the letter or memo placed right after the summary sheet. Their structures and devices are still worth learning from, but not their length. Since 2020 the statements have set a 25-page total; check the current statement.
 
 ## Page budget
 

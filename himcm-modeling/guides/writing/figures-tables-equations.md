@@ -22,6 +22,9 @@ Strong HiMCM papers explain a large share of their work visually. A judge skimmi
 | Side-by-side comparison table | Your ranking vs others, before vs after a fix | 2018A-8554 (Table 6), 2018A-8874 (Tables 20, 23), 2020A-11135 (p. 18) |
 | Sankey or flow diagram | Shows flows from sources to outcomes | 2024B-15502 (p. 10) |
 | Pipeline diagram with step bands | Shows a model's stages | 2024B-15502 (pp. 4, 9) |
+| Table of competing models' outputs | Shows how far candidate models disagree before one is chosen | 2022B-12646 (fit, test error and forecasts for five models, pp. 1, 12–14) |
+| Maps of a spatial design | Show where the proposal sits on real terrain or geography | 2017B ski-resort papers; 2016B warehouse maps |
+| Schedule or timetable for the reader | Gives the client something to act on | 2016A-6453 race-day start schedule (p. 3); 2020B-10997 funding schedule |
 | Changed rows highlighted | Shows what an upgrade changed | 2024B-15502 model-upgrade table with changed rows in red (p. 22) |
 
 ## Figures
@@ -57,6 +60,7 @@ A worked example is among the most valuable devices in the corpus. Take one real
 - 2020A-10549 took one persona through every step before summarizing the other nine (pp. 10–16).
 - 2021A-11931 traced the Tesla Powerwall 2 through every equation (pp. 17–19).
 - 2020A-10550 showed one sub-matrix column with its comparison matrix and eigenvector (pp. 12–13).
+- 2014A-5086 built its recommendation around a standard 600-passenger train of 10 cars with 12 rows (p. 2).
 - 2018A-8992 showed one imputation in full "in the interest of clarity" (p. 8).
 
 ## Pseudocode and algorithms

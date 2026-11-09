@@ -57,6 +57,7 @@ Use this on a full draft. It is a list of questions, not a template: a paper can
 - [ ] ★ Written for the named reader, in their language, with no technical terms.
 - [ ] Gives one to three memorable numbers that match the paper, and a clear recommendation.
 - [ ] Looks like the genre requested (memo header, letter salutation and signature, article headline and image, app screens).
+- [ ] States the answer the reader asked for in the opening paragraph, and explains how to read any table or schedule it includes.
 - [ ] Fits its length limit.
 
 ## Final pass

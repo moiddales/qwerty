@@ -14,8 +14,10 @@ The summary sheet is the first page a judge reads and often the page that decide
 
 Every Outstanding paper had a one-page summary, but their styles differed. Two broad types both won:
 
-- **Quantified summaries** that name the answers. For example, 2020B-10876 gave the first-year project IDs, a first-year budget of $1,034,015.58, a 31-year horizon and a recommendation to raise 1.3 times current giving (p. 1). 2022B-12465 attached a number to nearly every claim (p. 1). 2021B-11576 packed each problem's paragraph with results (p. 1), and 2024B-15502 gave intervals in scientific notation (p. 1). 2021A-11462 gave the result (4 Powerwall+, $34,000), a market check and an honest caveat in three paragraphs (p. 1).
+- **Quantified summaries** that name the answers. For example, 2020B-10876 gave the first-year project IDs, a first-year budget of $1,034,015.58, a 31-year horizon and a recommendation to raise 1.3 times current giving (p. 1). 2022B-12465 attached a number to nearly every claim (p. 1). 2021B-11576 packed each problem's paragraph with results (p. 1), and 2024B-15502 gave intervals in scientific notation (p. 1). 2021A-11462 gave the result (4 Powerwall+, $34,000), a market check and an honest caveat in three paragraphs (p. 1). 2022A-13014 gave the colony's population range, the factors that mattered most in a ±40% sensitivity test and the number of hives for the field, all on the summary page (p. 1). 2023B-14323 opened each paragraph with what the part asked and closed it with one headline figure for Washington, D.C. (p. 1). 2022B-12646 reported every candidate model's fit and 2100 forecast, then named the model it chose and why (p. 1).
 - **Method-narrative summaries** that explain the chain of ideas clearly but give few final numbers. Most 2020A papers and several 2023A papers are like this. These worked mainly where the answer is a model or a tool (a job recommender, an impact index) rather than a number.
+
+Across all 92 cards, quantified summaries appear in every period. Problems that ask for forecasts, schedules, costs or rankings offer many examples (for instance in 2014A, 2015B, 2016A, 2019A, 2022A, 2022B, 2023B and 2024A; see the "Writing and presentation" section of each card).
 
 **Recommendation:** where the requirements ask for values, forecasts, schedules or a choice, put the actual answers in the summary. A reader should not have to search the paper for them. Where the deliverable is a tool, state concretely what it does, what it was tested on, and one or two representative outputs.
 
@@ -46,6 +48,9 @@ Adapt the pattern, not the words:
 - The key idea: "Cost effectiveness balances and quantifies the somewhat contradictory objectives of FRPCE." (2020B-10876, p. 1)
 - Overcoming a data gap: "we designed an HPC energy consumption model that indirectly estimates energy use based on societal computing demands, overcoming the challenge of obtaining HPC energy consumption data." (2024B-15502, p. 1)
 - Design approach: "Our team constructed our model from the bottom-up, first considering the basic ecological and financial impacts of individual buses." (2023B-13694, p. 1)
+- A part's question, then its answer: "In Part II, we were asked to consider the financial consequences of transitioning to an electric fleet, and then apply a financial model to the same city." … "Our model concluded that D.C would save $75,461,591 in the long term if they transitioned their fleet from diesel to electric." (2023B-14323, p. 1)
+- Model choice with its reason: "By comparing RMSE, MAE and MRE, the exponential model has the best performance in the training set and test set, and is the most accurate." (2022B-12646, p. 1)
+- A decision rule stated with its basis: "we set a threshold of inclusion as 0.45, based on the distribution of the simulation results" (2024A-15926, p. 1)
 
 ## Quick test
 
