@@ -1,0 +1,226 @@
+city_id,city_name,task,search_status,download_status,parse_status,validation_status,evidence_file,missing_classification,publication_status,next_action
+3651000,New York city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+3651000,New York city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3651000,New York city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0644000,Los Angeles city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0644000,Los Angeles city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+1714000,Chicago city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1714000,Chicago city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4835000,Houston city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4835000,Houston city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0455000,Phoenix city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0455000,Phoenix city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4260000,Philadelphia city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4260000,Philadelphia city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4865000,San Antonio city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4865000,San Antonio city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0666000,San Diego city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0666000,San Diego city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4819000,Dallas city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4819000,Dallas city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4827000,Fort Worth city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4827000,Fort Worth city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+1235000,Jacksonville city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1235000,Jacksonville city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4805000,Austin city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4805000,Austin city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0668000,San Jose city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0668000,San Jose city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+3712000,Charlotte city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3712000,Charlotte city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+3918000,Columbus city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3918000,Columbus city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+1836003,Indianapolis city (balance),graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1836003,Indianapolis city (balance),historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0667000,San Francisco city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0667000,San Francisco city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+5363000,Seattle city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+5363000,Seattle city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+0820000,Denver city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+0820000,Denver city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4752006,Nashville-Davidson metropolitan government (balance),graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4752006,Nashville-Davidson metropolitan government (balance),historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4055000,Oklahoma City city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4055000,Oklahoma City city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+1150000,Washington city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+1150000,Washington city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+4824000,El Paso city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+4824000,El Paso city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+3240000,Las Vegas city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+3240000,Las Vegas city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,admissions,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,transit_schedules_roundtrips,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,activity_eligibility,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,mental_health_availability,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,course_access,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,youth_wages,in_progress,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,nhts_microdata,official_source_verified,downloaded,parsed,validated,nhts/validation.json;nhts/city_coverage.csv,public_use_geography_not_identifiable,ready_for_commit,Use national context; city-specific estimates require separately authorized detailed geography
+2507000,Boston city,graduation_update,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone
+2507000,Boston city,historical_gaps,pending_review,not_yet_verified,pending,pending,,,pending,Acquire and validate official evidence; do not close on entry link alone

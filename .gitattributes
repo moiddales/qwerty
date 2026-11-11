@@ -1,0 +1,2 @@
+# Archive checksums cover the exact LF-terminated bytes.
+*.b64 -text

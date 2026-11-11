@@ -1,0 +1,183 @@
+{
+  "source_url": "https://nhts.ornl.gov/media/2022/download/csv.zip",
+  "archive_path": "raw/nhts_2022_v2_1_csv.zip",
+  "archive_bytes": 4533528,
+  "archive_sha256": "64530c396d5f164d2259a22f7042f27bee5147babcd367568ddbfafe6c8bf34c",
+  "parts": [
+    {
+      "path": "archive_parts/part_0001.b64",
+      "sha256": "365bf479e877030844aa78f8794fdd3fa830855bf24ba6b0c7f6cd0bf5eede63",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0002.b64",
+      "sha256": "b6212db6b8f13c09f7078cd42e75b421eaff9ea421e97ac916b4f21c14e56420",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0003.b64",
+      "sha256": "7d16c2f38046d590b753af1987beb626f526814c6266083dec6998453823c28e",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0004.b64",
+      "sha256": "6aa0297854fa19fcb7b884e02a75e01b13132fbb356adc6f1607dc110b723ade",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0005.b64",
+      "sha256": "2d90c340d40f3a8bcce0df99c6dfa4e21e9e115a4cd6c922fc3aba8116203ee3",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0006.b64",
+      "sha256": "6deb2bdccc2df1817dc8a5af2447f6841254caae5ed17dea3db3259e2ed3e496",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0007.b64",
+      "sha256": "4c4d2fdefe8efdb5d1aa97905d75af64051c596739c6a3055a16bbe69fe5d233",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0008.b64",
+      "sha256": "9ccae1da24669ce04acc26892ca8104f66d5f50dcf1d5785c7f0507db016b669",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0009.b64",
+      "sha256": "1677127ac3ad31c710537542a022b4c81dd7e7cc4361afafb39ce12630538014",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0010.b64",
+      "sha256": "ac8bc4da5c24f1fcbdc61ab519eab226320de01b22336285eb254410e0210fa0",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0011.b64",
+      "sha256": "324419f6821e43c25adbbd6543624b18024dc6cc2504c2b51de80675403865d0",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0012.b64",
+      "sha256": "8245298b7b3f0899a5f4bcccd161d83d3aa806aa574b8bb92a6335e86c327140",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0013.b64",
+      "sha256": "e30c1ea1990f3132cae7da5a132453977c9ac169ae16f07988f44b31e69d6152",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0014.b64",
+      "sha256": "b186b04391889cd44b6bdeca79a2d11c1e4838c931671d8ca680ce97c9fec5d6",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0015.b64",
+      "sha256": "a6fe8232fad88fc9bfe73bcbad539d1f40136aa3130c5a7d5d1c7bcf41669bae",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0016.b64",
+      "sha256": "37dad553dcf205f8d15e0eee8507935a210980453e04b4b484ca5f9e1f846ebb",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0017.b64",
+      "sha256": "055cf68246087e94ed8b982a78e2afd0b5ca2be7bd89338001d64246de83bcf4",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0018.b64",
+      "sha256": "54d892fdb36cfd37b949f7d44559f654a2aa20efa93b4743d2c1e58a7e7d6977",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0019.b64",
+      "sha256": "034afb8e16f38ebdf5d2d2c5165a747cbd126a0e428426257e560c281fc48836",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0020.b64",
+      "sha256": "e54fe82c6c9f381e60cccd7fb466e30b0b694690523bf21ecdff23416180a957",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0021.b64",
+      "sha256": "cb87037042072138bf92c3ed6b83c67c1be3fb8951549ec81c08bbd16ea77049",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0022.b64",
+      "sha256": "8067ab94003d58e474c56018c7af07e2b973f39b7e60188ee19db654298e333a",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0023.b64",
+      "sha256": "cf5903672b37b886e683c0663a4ede513293436e01fe7b951129fda09a9eb3db",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0024.b64",
+      "sha256": "eff90213ce7cabce95ba3960f49c0ff00e097fc2c79401205f5faa496f3c8bf8",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0025.b64",
+      "sha256": "f69349787692b2c869b80d688e7ab552f38484d531384382b4040e4ccf07ca9f",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0026.b64",
+      "sha256": "159f33dc57b602f96dbad26e3fe04e625e29c885116037f540132742abc050cf",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0027.b64",
+      "sha256": "631540240c7e1361d71bf8bdd67e34c6dd93ea700ab15896dae2c499f3457cb8",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0028.b64",
+      "sha256": "03dcffeff33fb73f1e501c0fdd3d81f312a74d1c767b139548efd17bd2671ef4",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0029.b64",
+      "sha256": "22b51f05f25a205b93c8f10127430f1e59843e8d7fdaca34568c4c2b8dced1db",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0030.b64",
+      "sha256": "315b6ffd6f5fedd91c7494788d2d467114e5550d58adf75524a1275fb79e2878",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0031.b64",
+      "sha256": "a75a3116a666bd3bd19ceb57f81667c719a57a9e5963f39065cc24de0c48b687",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0032.b64",
+      "sha256": "bfaa604da5fee2633b66260acdb3171ccea5a376c3ace9b567ae8c7056ebf418",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0033.b64",
+      "sha256": "14cf16438c2d76d25099efe63e24d6ae568d371149f2f1336fbcb7bfcad16a7a",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0034.b64",
+      "sha256": "5871d99180ff99bd49e2468fbd4dd5b38af19c80beff1e891060d57117ebb9ee",
+      "raw_bytes": 131072
+    },
+    {
+      "path": "archive_parts/part_0035.b64",
+      "sha256": "45fe7c89b4f2f0b26f26de36f13ed8df87e5e727204c678c952e8916fe23401d",
+      "raw_bytes": 77080
+    }
+  ]
+}

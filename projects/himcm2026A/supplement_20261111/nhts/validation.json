@@ -1,0 +1,59 @@
+{
+  "version": "2022 public-use V2.1",
+  "tables": [
+    {
+      "file": "hhv2pub.csv",
+      "rows": 7893,
+      "columns": 43,
+      "bytes": 1767471,
+      "sha256": "d459a63d9bf818f38ea4a222fc0ae038e78509011cba3233762abd39d785745b"
+    },
+    {
+      "file": "ldtv2pub.csv",
+      "rows": 16997,
+      "columns": 74,
+      "bytes": 6418788,
+      "sha256": "523da0b5778061e1c405d3c656c30184e1e366dc913fd369c135fa7ca29baad8"
+    },
+    {
+      "file": "perv2pub.csv",
+      "rows": 16997,
+      "columns": 153,
+      "bytes": 12473819,
+      "sha256": "fa4d816ccd4d1975ff8afd394ce50b1d2326fa2c0b07b8d7f36636ea670fd89c"
+    },
+    {
+      "file": "tripv2pub.csv",
+      "rows": 31074,
+      "columns": 102,
+      "bytes": 17505566,
+      "sha256": "f821357ffbab035a4a6704f575cfd20cd7eb4d2f890bd69e1345776377a66c82"
+    },
+    {
+      "file": "vehv2pub.csv",
+      "rows": 14684,
+      "columns": 55,
+      "bytes": 4455967,
+      "sha256": "eb7bc61dde5f81d08b2437a053aff2eabe9575a6befbfed6bc9a36159c23b52a"
+    }
+  ],
+  "youth_persons": 979,
+  "youth_trips": 1429,
+  "age_range": [
+    14,
+    18
+  ],
+  "household_key_unique": true,
+  "person_key_unique": true,
+  "person_household_foreign_keys": true,
+  "trip_person_foreign_keys": true,
+  "person_weight": "WTPERFIN",
+  "trip_weight": "WTTRDFIN",
+  "household_weight": "WTHHFIN",
+  "design_stratum": "STRATUMID",
+  "variance_method": "Taylor linearization; user guide PDF page 33",
+  "replicate_weights": "not available for NextGen NHTS; explicitly stated on user guide PDF page 33",
+  "age_filter_note": "14-18 age subset; age alone does not establish public high-school enrollment",
+  "city_estimates": "not identifiable in this public-use version",
+  "status": "validated"
+}

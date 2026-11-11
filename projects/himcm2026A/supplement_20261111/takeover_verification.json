@@ -1,0 +1,32 @@
+{
+  "retrieved_at": "2026-11-11T11:56:29.363082+00:00",
+  "workspace": "E:\\文档\\ChatGPT\\MCM1\\qwerty-work",
+  "branch": "claude/affectionate-mayer-ihqczh",
+  "base_commit": "1db1364b5ce264b402804c1504aa1e78436d5781",
+  "remote_head_at_takeover": "1db1364b5ce264b402804c1504aa1e78436d5781",
+  "working_tree_before_recovery": "clean freshly cloned sparse checkout",
+  "python_version": "Python 3.13.5",
+  "archive_parts": 659,
+  "archive_bytes": 86295630,
+  "archive_sha256": "08ef430a6018d6ff20c011333b5277b7a57b6eba15d1340cdf5fc033e78db20e",
+  "verified_members": 1201,
+  "cities": 25,
+  "long_table_records": 157256,
+  "coverage_rows": 3761,
+  "prior_supplement_directory_found": false,
+  "prior_gtfs_files_found": false,
+  "prior_nhts_files_found": false,
+  "recovery_commands": [
+    "python projects/himcm2026A/analysis/restore_city_archive.py",
+    "python projects/himcm2026A/analysis/restore_city_archive.py --extract"
+  ],
+  "observed_issue": "Windows core.autocrlf=true changed 659 b64 files to CRLF. Restored exact LF bytes and checked each against original manifest before rerunning unchanged verifier. Git object bytes unchanged.",
+  "post_extract_review": "Root current project documents not archive members. Six tracked CSVs had newline-only differences (git diff --ignore-space-at-eol empty); retained current HEAD versions.",
+  "clone_access": "Full history clone stalled; first shallow clone failed curl56 schannel early EOF at263MiB. Successful blob:none sparse clone with OpenSSL; target project plus knowledge guides available.",
+  "subagents": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "xhigh",
+    "maximum_concurrent": 3
+  },
+  "status": "takeover_verified_supplement_in_progress"
+}
