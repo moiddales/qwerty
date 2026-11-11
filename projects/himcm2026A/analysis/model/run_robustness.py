@@ -100,3 +100,103 @@ OUT["error_correlation_p_first"] = res
 
 json.dump(OUT, open(RES / "robustness_summary.json", "w"), indent=1, ensure_ascii=False, default=float)
 print(json.dumps(OUT, indent=1, ensure_ascii=False, default=float))
+
+# ---------------------------------------------------------------- 6. diagnostics for the remaining risk-register items
+dg = {}
+cov = PH.reshape(nC, MP.m, 3)
+dg["segments_all_0_or_all_1"] = [f"{MP.inds[j]} seg{l + 1}" for j in range(MP.m) for l in range(3)
+                                 if np.all(cov[:, j, l] <= 0) or np.all(cov[:, j, l] >= 1)]
+dg["cities_at_or_beyond_node_range_share"] = round(float(np.mean((Xr.values - MP.nodes[:, 0]) * good_dir <= 0) + np.mean((Xr.values - MP.nodes[:, 3]) * good_dir >= 0)), 3)
+dg["theta0_in_theta_plan"] = MP.feasible(MP.theta0)
+contrib = (PH * MP.theta0).reshape(nC, MP.m, 3).sum(2)
+dom_score = np.stack([contrib[:, [j for j in range(MP.m) if MP.dom[j] == d]].sum(1) * 7 for d in DOMAINS], 1)
+dg["min_domain_score"] = [CITY[int(dom_score.min(1).argmin())], DOMAINS[int(dom_score.min(0).argmin())], round(float(dom_score.min()), 3)]
+r = pd.DataFrame(Xr.values * good_dir, columns=MP.inds).corr(method="spearman")
+pairs = [(a, b, round(r.loc[a, b], 3)) for i, a in enumerate(MP.inds) for b in MP.inds[i + 1:] if abs(r.loc[a, b]) >= 0.6]
+dg["indicator_pairs_abs_spearman_ge_0.6"] = sorted(pairs, key=lambda t: -abs(t[2]))
+obs = pd.read_csv(RES.parent / "data/processed/observations_all_levels.csv.gz", dtype=str, low_memory=False,
+                  usecols=["source_id", "indicator_id", "value", "observation_period", "city_id"])
+pov = obs[(obs.source_id == "S02") & (obs.indicator_id == "poverty_pct") & (obs.observation_period == "2020-2024")].set_index("city_id").value.astype(float).reindex(CID)
+dg["spearman_grad_district_vs_poverty"] = round(stats.spearmanr(X.E2r_grad_district, pov)[0], 3)
+dg["spearman_adv_course_vs_poverty"] = round(stats.spearmanr(X.E1_adv_course, pov)[0], 3)
+ref_sw = pd.read_csv(RES / "M2_champion_by_domain_share.csv")
+dg["champions_in_one_parameter_scans"] = sorted(ref_sw.champion.unique().tolist())
+dg["possible_winners_by_LP_theta_plan"] = int((pd.read_csv(RES / "M2_plan_preferences_robust.csv").possible_winner_margin >= 0).sum())
+el = pd.read_csv(RES / "M2_smaa_eligibility.csv")
+dg["max_gap_p_first_given_eligible_minus_joint"] = round(float((el.p_first_given_eligible - el.p_eligible_and_first).max()), 4)
+OUT["risk_diagnostics"] = dg
+json.dump(OUT, open(RES / "robustness_summary.json", "w"), indent=1, ensure_ascii=False, default=float)
+print(json.dumps(dg, indent=1, ensure_ascii=False, default=float))
+
+# ---------------------------------------------------------------- 7. joint feasibility inside cities: affordable rent AND transit access in the same tract
+# ACS 2020-24 tract median gross rent and poverty (2020 tracts) mapped to 2010 tracts with the Opportunity Atlas crosswalk,
+# then joined to SLD block groups (2010 geography) aggregated to tracts.
+A = RES.parent / "data/extracted/foundation/acs"
+
+
+def acs_tract(table, cols):
+    d = pd.read_csv(A / f"2024_5YR_{table}_county_small_areas.csv.gz", dtype=str)
+    d = d[d.GEO_ID.str.startswith("1400000US")].copy(); d["tract_2020"] = d.GEO_ID.str[-11:]
+    for c in cols:
+        d[c] = pd.to_numeric(d[c]); d.loc[d[c] < 0, c] = np.nan
+    return d.set_index("tract_2020")[cols]
+
+
+t20 = acs_tract("B25064", ["B25064_E001"]).join(acs_tract("B17001", ["B17001_E001", "B17001_E002"]))
+cw = pd.read_csv(RES.parent / "data/extracted/foundation/opportunity/us_tract_2010_2020_crosswalk_relevant_counties.csv.gz", dtype=str)
+long = pd.concat([cw[["tract_2020", f"tract_2010_{k}", f"wgt_{k}"]].set_axis(["tract_2020", "tract_2010", "w"], axis=1) for k in range(1, 6)]).dropna()
+long["w"] = long.w.astype(float)
+long = long.join(t20, on="tract_2020")
+long["wp"] = long.w * long.B17001_E001
+ok = long.dropna(subset=["B25064_E001", "wp"])
+t10 = pd.DataFrame({"rent": (ok.B25064_E001 * ok.wp).groupby(ok.tract_2010).sum() / ok.wp.groupby(ok.tract_2010).sum()})
+okp = long.dropna(subset=["B17001_E002", "w"])
+t10["poverty"] = (okp.B17001_E002 * okp.w).groupby(okp.tract_2010).sum() / (okp.B17001_E001 * okp.w).groupby(okp.tract_2010).sum()
+bg["tract_2010"] = bg.bg_geoid2019.astype(str).str.zfill(12).str[:11]
+tr = bg.groupby(["city_id", "tract_2010"]).apply(lambda g: pd.Series({"pop": g.TotPop.sum(), "access": np.average(g.D5BR0 / 1000, weights=g.TotPop)}),
+                                                 include_groups=False).reset_index().join(t10, on="tract_2010")
+rows = []
+for c, g in tr.groupby("city_id"):
+    k = g.dropna(subset=["rent"])
+    w = k["pop"]
+    row = {"city_id": c, "pop_share_with_rent_data": g.dropna(subset=["rent"])["pop"].sum() / g["pop"].sum()}
+    for inc in (80000, 50000):
+        aff = k.rent * 12 <= 0.30 * inc
+        row[f"share_affordable_{inc // 1000}k"] = np.average(aff, weights=w)
+        row[f"share_affordable_and_access60k_{inc // 1000}k"] = np.average(aff & (k.access >= 60), weights=w)
+    hp = g[g.poverty >= 0.25]
+    row["access_high_poverty_tracts_over_city"] = (np.average(hp.access, weights=hp["pop"]) / np.average(g.access, weights=g["pop"])) if len(hp) else np.nan
+    rows.append(row)
+jf = pd.DataFrame(rows).set_index("city_id").reindex(CID)
+jf.insert(0, "city", CITY)
+jf.round(3).to_csv(RES / "joint_feasibility_tracts.csv")
+spec = {k: v for k, v in SPEC_M2.items() if k != "M5r_transit_access"}
+spec["M5j_affordable_access_share"] = ("Mobility", [0.02, 0.10, 0.30, 0.60], "share of residents in tracts that are affordable at $80k and reach 60k jobs by transit in 45 min")
+Xj = X.copy(); Xj["M5j_affordable_access_share"] = jf["share_affordable_and_access60k_80k"].values
+mj = Model(spec, STATEMENTS_PLAN)
+uj = mj.phi(fill_missing(Xj[mj.inds]).values) @ mj.theta0
+OUT["joint_feasibility"] = {
+    "min_rent_data_coverage": [jf.city[jf.pop_share_with_rent_data.idxmin()], round(float(jf.pop_share_with_rent_data.min()), 3)],
+    "spearman_city_mean_access_vs_affordable_access_share": round(stats.spearmanr(X.M5r_transit_access, jf.share_affordable_and_access60k_80k)[0], 3),
+    "highest_affordable_access_share_80k": jf.sort_values("share_affordable_and_access60k_80k", ascending=False).head(5).set_index("city").share_affordable_and_access60k_80k.round(3).to_dict(),
+    "lowest_high_poverty_access_ratio": jf.sort_values("access_high_poverty_tracts_over_city").head(4).set_index("city").access_high_poverty_tracts_over_city.round(2).to_dict(),
+    "model_with_joint_measure": {"champion": CITY[uj.argmax()], "top5": CITY[np.argsort(-uj)[:5]].tolist(),
+                                 "kendall_tau_vs_M2_plan": round(stats.kendalltau(U0, uj)[0], 3)}}
+json.dump(OUT, open(RES / "robustness_summary.json", "w"), indent=1, ensure_ascii=False, default=float)
+print(json.dumps(OUT["joint_feasibility"], indent=1, ensure_ascii=False, default=float))
+
+# ---------------------------------------------------------------- 8. geography: air quality from CBSA monitors instead of city-weighted counties
+aq = pd.read_csv(RES.parent / "data/processed/observations_all_levels.csv.gz", dtype=str, low_memory=False,
+                 usecols=["source_id", "indicator_id", "value", "observation_period", "city_id", "geography_type"])
+aq = aq[(aq.source_id == "S10") & (aq.geography_type == "CBSA")]
+aq["v"] = pd.to_numeric(aq.value)
+w = aq.pivot_table(index=["city_id", "observation_period"], columns="indicator_id", values="v")
+bad = ["cbsa_aqi_unhealthy_for_sensitive_groups_days", "cbsa_aqi_unhealthy_days", "cbsa_aqi_very_unhealthy_days", "cbsa_aqi_hazardous_days"]
+cbsa = (w[bad].sum(axis=1) / w.cbsa_aqi_days_with_aqi * 100).groupby(level=0).mean().reindex(CID)
+Xg = X.copy(); Xg["H1_bad_air_days"] = cbsa.values
+ug = MP.phi(fill_missing(Xg[MP.inds]).values) @ MP.theta0
+OUT["geography_air_cbsa"] = {"spearman_county_vs_cbsa_air": round(stats.spearmanr(X.H1_bad_air_days, cbsa)[0], 3),
+                             "champion": CITY[ug.argmax()], "kendall_tau_vs_M2": round(stats.kendalltau(U0, ug)[0], 3),
+                             "floor_fail_air_30pct": CITY[cbsa.values > 30].tolist()}
+json.dump(OUT, open(RES / "robustness_summary.json", "w"), indent=1, ensure_ascii=False, default=float)
+print(json.dumps(OUT["geography_air_cbsa"], ensure_ascii=False))

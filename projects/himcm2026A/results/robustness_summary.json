@@ -45,5 +45,183 @@
    "New York": 0.064,
    "Chicago": 0.062
   }
+ },
+ "risk_diagnostics": {
+  "segments_all_0_or_all_1": [
+   "M2_walkability seg1"
+  ],
+  "cities_at_or_beyond_node_range_share": 0.08,
+  "theta0_in_theta_plan": true,
+  "min_domain_score": [
+   "Nashville-Davidson",
+   "Inclusion",
+   0.145
+  ],
+  "indicator_pairs_abs_spearman_ge_0.6": [
+   [
+    "M2_walkability",
+    "M5r_transit_access",
+    0.875
+   ],
+   [
+    "M2_walkability",
+    "A1_park_access",
+    0.843
+   ],
+   [
+    "C1_rent_share",
+    "C2_nonhousing_prices",
+    0.805
+   ],
+   [
+    "S2_traffic_deaths",
+    "A1_park_access",
+    0.796
+   ],
+   [
+    "A1_park_access",
+    "M5r_transit_access",
+    0.788
+   ],
+   [
+    "H2_school_health_staff",
+    "M2_walkability",
+    0.773
+   ],
+   [
+    "M2_walkability",
+    "C1_rent_share",
+    -0.734
+   ],
+   [
+    "H2_school_health_staff",
+    "M5r_transit_access",
+    0.73
+   ],
+   [
+    "A1_park_access",
+    "C1_rent_share",
+    -0.726
+   ],
+   [
+    "S2_traffic_deaths",
+    "H2_school_health_staff",
+    0.717
+   ],
+   [
+    "M2_walkability",
+    "C2_nonhousing_prices",
+    -0.71
+   ],
+   [
+    "A1_park_access",
+    "C2_nonhousing_prices",
+    -0.705
+   ],
+   [
+    "C2_nonhousing_prices",
+    "M5r_transit_access",
+    -0.705
+   ],
+   [
+    "S2_traffic_deaths",
+    "M2_walkability",
+    0.702
+   ],
+   [
+    "C1_rent_share",
+    "I2_suspension",
+    -0.681
+   ],
+   [
+    "A4_teen_wage_real",
+    "I2_suspension",
+    0.669
+   ],
+   [
+    "S2_traffic_deaths",
+    "M5r_transit_access",
+    0.668
+   ],
+   [
+    "H2_school_health_staff",
+    "A1_park_access",
+    0.654
+   ],
+   [
+    "S2_traffic_deaths",
+    "C1_rent_share",
+    -0.652
+   ],
+   [
+    "S2_traffic_deaths",
+    "C2_nonhousing_prices",
+    -0.635
+   ],
+   [
+    "H2_school_health_staff",
+    "C1_rent_share",
+    -0.622
+   ],
+   [
+    "H2_school_health_staff",
+    "I1_equality_policy",
+    0.62
+   ],
+   [
+    "C1_rent_share",
+    "M5r_transit_access",
+    -0.615
+   ]
+  ],
+  "spearman_grad_district_vs_poverty": -0.376,
+  "spearman_adv_course_vs_poverty": -0.238,
+  "champions_in_one_parameter_scans": [
+   "Austin",
+   "Chicago",
+   "Denver",
+   "Seattle"
+  ],
+  "possible_winners_by_LP_theta_plan": 19,
+  "max_gap_p_first_given_eligible_minus_joint": 0.0
+ },
+ "joint_feasibility": {
+  "min_rent_data_coverage": [
+   "Dallas",
+   0.983
+  ],
+  "spearman_city_mean_access_vs_affordable_access_share": 0.548,
+  "highest_affordable_access_share_80k": {
+   "Philadelphia": 0.943,
+   "Chicago": 0.861,
+   "Houston": 0.793,
+   "Dallas": 0.732,
+   "Columbus": 0.727
+  },
+  "lowest_high_poverty_access_ratio": {
+   "Washington": 0.78,
+   "Dallas": 0.79,
+   "Houston": 0.93,
+   "Chicago": 0.96
+  },
+  "model_with_joint_measure": {
+   "champion": "Denver",
+   "top5": [
+    "Denver",
+    "Seattle",
+    "Chicago",
+    "New York",
+    "Boston"
+   ],
+   "kendall_tau_vs_M2_plan": 0.953
+  }
+ },
+ "geography_air_cbsa": {
+  "spearman_county_vs_cbsa_air": 0.916,
+  "champion": "Seattle",
+  "kendall_tau_vs_M2": 0.967,
+  "floor_fail_air_30pct": [
+   "Phoenix"
+  ]
  }
 }

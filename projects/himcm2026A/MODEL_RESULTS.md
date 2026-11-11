@@ -11,7 +11,7 @@ cd projects/himcm2026A/analysis/model
 python run_model.py        # 约 25 秒
 python run_extensions.py   # 约 20 秒
 python run_preferences.py  # 约 1 分钟
-python run_robustness.py   # 约 10 秒
+python run_robustness.py   # 约 30 秒
 python make_figures.py
 ```
 
@@ -22,7 +22,7 @@ python make_figures.py
 | `analysis/model/run_model.py` | 底线、参考榜、稳健偏好 LP、可能冠军、后悔值、SMAA、ELECTRE III、结构对照、敏感性、Poisson–Gamma、城内分布、外部对照 |
 | `analysis/model/run_extensions.py` | 偏好信息曲线、单条偏好陈述、学生画像、GTFS 与 Chicago 口径对照、数值核验 |
 | `analysis/model/run_preferences.py` | 研究定义偏好陈述下的稳健分析、SMAA、后悔值；抽样权重的 ELECTRE III |
-| `analysis/model/run_robustness.py` | 数据区间下的精确稳健偏好、后悔值尺度、Poisson–Gamma 安全指标、下尾 α、误差相关 |
+| `analysis/model/run_robustness.py` | 数据区间下的精确稳健偏好、后悔值尺度、Poisson–Gamma 安全指标、下尾 α、误差相关、风险诊断、普查区联合可行性、空气质量地理口径 |
 | `analysis/model/make_figures.py` | 论文图 `results/figures/fig1—fig8` |
 | `results/summary.json`、`extensions_summary.json`、`preferences_summary.json` | 全部关键数字 |
 
@@ -145,7 +145,26 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 | 下尾比例 α=0.1/0.2/0.3（公交可达性） | α=0.1 与 0.3 的 Spearman 0.885，单城最大相差 9 位 |
 | 同领域误差完全相关与独立 | SMAA 第一名 Seattle 0.648 / 0.607，Denver 0.237 / 0.249 |
 
+| 空气质量改用 CBSA 监测 | Spearman 0.916；参考冠军变为 Seattle；Phoenix 未通过空气底线 |
+
 数据区间的求法：φ 对每项指标单调、θ≥0，所以对任意 θ，A−B 的最坏数据都是 A 取区间不利端、B 取有利端。因此“对所有 θ 和所有区间内数据都成立”可以用一个 LP 精确判定。
+
+## 4c. 居住区层面的联合可行性（`results/joint_feasibility_tracts.csv`）
+
+做法：ACS 2020—24 普查区租金中位数与贫困率（2020 普查区）经 2010—2020 对照表映射到 2010 普查区，再与 SLD 街区组可达性按普查区合并。各城有租金数据的人口覆盖率均 ≥98.3%。
+
+| 城市 | 8 万美元可负担的居民比例 | 可负担且 45 分钟公交可达 6 万岗位 | 5 万美元：可负担且可达 |
+|---|---|---|---|
+| Philadelphia | 94.6% | 94.3% | 38.1% |
+| Chicago | 87.5% | 86.1% | 36.5% |
+| Denver | 68.2% | 68.1% | 6.6% |
+| Seattle | 38.5% | 38.5% | 1.1% |
+| San Francisco | 15.5% | 15.5% | 5.9% |
+
+- **全市均值掩盖了联合不可行**：全市平均可达性与“可负担且可达”比例的 Spearman 只有 0.548。
+- **替换后冠军不变**：用“可负担且可达”比例替换可达性指标后，冠军仍为 Denver，τ 0.953。
+- **对中低收入家庭的含义**：Seattle 的高分主要属于能负担其中心城区的家庭。
+- **高贫困普查区的可达性**：大多数城市高于全市均值；Washington（0.78）与 Dallas（0.79）低于均值。
 
 ## 5. 画像、公平与辅助模型
 
