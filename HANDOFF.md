@@ -2,7 +2,9 @@
 
 ## 当前工作更新：2026-11-11
 
-最新进度（A-002）：已完成 [A 题数学模型分析](projects/himcm2026A/MATH_MODELS.md)和构造例子核验，研究方案与项目交接已同步更新；尚未产生真实城市排名。
+最新进度（A-003）：已完成 [数据收集方案](projects/himcm2026A/DATA_COLLECTION_PLAN.md)和[来源/访问核查](projects/himcm2026A/DATA_SOURCES.md)。按用户“先确认收集方案之后实施”的要求，当前等待确认后开展完整采集；尚未产生真实城市排名。
+
+当前数据任务可在必要时使用最多三个 GPT6-Astra 子代理；此项按 2026-11-11 新要求执行，覆盖下方历史记录的禁用与旧型号要求。优先现成统计和数据集；确认后按批次收集、验证、推送。获取受阻须有证据区分注册/付费/许可、访问通道问题、指定口径不可得和待核实。
 
 当前在本知识库基础上开展 2026 HiMCM A 城市选择研究。接手先读根目录 [AGENTS.md](AGENTS.md)、[项目日志](PROJECT_LOG.md)与 [A 题交接](projects/himcm2026A/HANDOFF.md)，当前方案在 [PLAN.md](projects/himcm2026A/PLAN.md)。
 
@@ -237,3 +239,4 @@ Read this before assisting a team that is preparing a HiMCM/MidMCM submission. I
 5. **Keep the team in charge of the modeling.** COMAP advises caution when AI is used for model selection and building, code, interpreting results and drawing conclusions. Explain your reasoning, present alternatives with trade-offs, and make sure the team understands and can defend every choice. Do not hand over a finished solution.
 6. **Respect the format limits.** In recent contests (2024–2026) the 25 total pages include the summary sheet, table of contents, solution, letter/memo and references list; only the Report on Use of AI Tools is excluded. Check the current year's problem statement, which lists exactly what counts.
 ````
+
