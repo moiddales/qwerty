@@ -4,6 +4,8 @@
 
 ## 复现
 
+依赖：Python 3.9+ 和 `analysis/model/requirements.txt` 中的包（`pip install -r projects/himcm2026A/analysis/model/requirements.txt`）。模型方法讲解（构造例子）见 [docs/model_guide/](docs/model_guide/README.md)。
+
 ```bash
 python projects/himcm2026A/analysis/restore_city_archive.py --extract
 python projects/himcm2026A/analysis/model/build_matrix.py
