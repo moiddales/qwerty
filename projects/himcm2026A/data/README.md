@@ -11,6 +11,7 @@
 | `processed/observations_all_levels.csv.gz` | 统一长表。包含城市、关联机构、学校、县/都市区背景及不同年份；保留来源与限定，不是可直接一列相加的指数矩阵 |
 | `metadata/city_source_numeric_coverage.csv` | 全25城×来源的有效数值数量；0表示没有该来源有效数值，不表示指标为零 |
 | `metadata/city_source_period_coverage.csv` | 细分年份、地理层级的覆盖统计 |
+| `metadata/city_indicator_period_coverage.csv` | 25城×字段×年份×地理层级；单元格为有效数值数/记录总数，0/0表示无记录 |
 | `metadata/observation_dictionary.csv` | 来源—字段—单位—地理层级字典与覆盖 |
 | `metadata/cities.csv` | 冻结的25城与排名、人口、Census代码 |
 | `metadata/city_county_crosswalk.csv`、`city_county_cbsa_crosswalk.csv` | 2020—2025居民分县人口及份额、CBSA匹配 |
@@ -32,6 +33,6 @@
 
 ACS派生比例附分子分母和组件MOE，未伪造协方差或派生置信区间。旧Urban毕业率中点是来源区间的代理，不能视为精确率或用于底线。CRDC负码、YRBS888888/333333、IMLS负码均未填0。
 
-`analysis/integrate_collection.py`重新整合长表，原域脚本负责提取。下载记录提供原URL、时间、字节数、SHA256。大文本采用gzip；归档分块若存在，先运行项目的恢复脚本，按清单还原后再复算。受限源不会被恢复脚本擅自下载或发布。
+`analysis/integrate_collection.py`重新整合长表，原域脚本负责提取。下载记录提供原URL、时间、字节数、SHA256。从仓库根目录运行 `python projects/himcm2026A/analysis/restore_city_archive.py --extract` 可恢复完整包。大文本采用gzip；归档分块若存在，先运行项目的恢复脚本，按清单还原后再复算。受限源不会被恢复脚本擅自下载或发布。
 
 归档包内的各域状态和早期上传记录是采集时快照；当前发布范围以仓库顶层 `DATA_COLLECTION_STATUS.md` 与 `metadata/source_file_publication.csv` 为准。大批量全国源文件可以从清单内原始URL重取，城市字段已随包保存。

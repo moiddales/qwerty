@@ -57,6 +57,9 @@ def integrate():
     dictionary=master.groupby(['source_id','indicator_id','unit','geography_type'],dropna=False).agg(
         rows=('value','size'),numeric_values=('value','count'),cities=('city_id','nunique')).reset_index()
     dictionary.to_csv(PROJECT/'data/metadata/observation_dictionary.csv',index=False)
+    detailed=master.groupby(['source_id','indicator_id','unit','observation_period','geography_type','city_id'],dropna=False).value.agg(['count','size'])
+    detailed['coverage']=detailed['count'].astype(str)+'/'+detailed['size'].astype(str)
+    detailed.coverage.unstack('city_id').reindex(columns=cities.city_id).fillna('0/0').to_csv(PROJECT/'data/metadata/city_indicator_period_coverage.csv')
     pd.DataFrame(inventory).to_csv(PROJECT/'data/metadata/integrated_table_inventory.csv',index=False)
     validation=dict(cities=master.city_id.nunique(),observation_rows=len(master),numeric_values=int(master.value.notna().sum()),
         source_families=master.source_id.nunique(),columns=len(master.columns),

@@ -1,0 +1,8 @@
+# Original national downloads and expanded city data are managed by archive manifests.
+# Existing tracked readable extracts remain tracked.
+data/raw/
+data/extracted/
+data/processed/
+data/metadata/*/
+data/archives/
+analysis/__pycache__/
