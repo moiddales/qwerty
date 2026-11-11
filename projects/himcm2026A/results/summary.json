@@ -1,0 +1,331 @@
+{
+ "M0": {
+  "reference_top10": [
+   "Seattle",
+   "Denver",
+   "Chicago",
+   "New York",
+   "Boston",
+   "Austin",
+   "San Diego",
+   "Washington",
+   "San Jose",
+   "Philadelphia"
+  ],
+  "champion": "Seattle",
+  "champion_U": 0.8294,
+  "gap_1_2": 0.0154,
+  "necessary_pairs": 0,
+  "pairs": 300,
+  "possible_winners": [
+   "New York",
+   "Los Angeles",
+   "Chicago",
+   "Phoenix",
+   "Philadelphia",
+   "San Antonio",
+   "San Diego",
+   "Dallas",
+   "Jacksonville",
+   "Austin",
+   "San Jose",
+   "Charlotte",
+   "Columbus",
+   "Indianapolis",
+   "San Francisco",
+   "Seattle",
+   "Denver",
+   "Nashville-Davidson",
+   "Oklahoma City",
+   "Washington",
+   "El Paso",
+   "Las Vegas",
+   "Boston"
+  ],
+  "min_regret_city": "Seattle",
+  "min_regret": 0.2997,
+  "pareto_dominated": {},
+  "smaa_broad_p_first_top5": {
+   "Seattle": 0.5394,
+   "Denver": 0.241,
+   "Chicago": 0.0797,
+   "New York": 0.0702,
+   "Austin": 0.0305
+  }
+ },
+ "M1": {
+  "reference_top10": [
+   "Seattle",
+   "Denver",
+   "Chicago",
+   "New York",
+   "Boston",
+   "Austin",
+   "San Diego",
+   "San Francisco",
+   "Washington",
+   "San Jose"
+  ],
+  "champion": "Seattle",
+  "champion_U": 0.8169,
+  "gap_1_2": 0.0034,
+  "necessary_pairs": 0,
+  "pairs": 300,
+  "possible_winners": [
+   "New York",
+   "Los Angeles",
+   "Chicago",
+   "Houston",
+   "Phoenix",
+   "Philadelphia",
+   "San Antonio",
+   "San Diego",
+   "Dallas",
+   "Fort Worth",
+   "Jacksonville",
+   "Austin",
+   "San Jose",
+   "Charlotte",
+   "Columbus",
+   "Indianapolis",
+   "San Francisco",
+   "Seattle",
+   "Denver",
+   "Nashville-Davidson",
+   "Oklahoma City",
+   "Washington",
+   "El Paso",
+   "Las Vegas",
+   "Boston"
+  ],
+  "min_regret_city": "Seattle",
+  "min_regret": 0.3023,
+  "pareto_dominated": {},
+  "smaa_broad_p_first_top5": {
+   "Seattle": 0.3517,
+   "Denver": 0.3059,
+   "Chicago": 0.171,
+   "New York": 0.0759,
+   "Austin": 0.0486
+  }
+ },
+ "revision": {
+  "kendall_tau_M0_M1": 0.893,
+  "largest_moves": [
+   [
+    "Philadelphia",
+    10,
+    15
+   ],
+   [
+    "San Francisco",
+    13,
+    8
+   ],
+   [
+    "Las Vegas",
+    15,
+    11
+   ],
+   [
+    "Los Angeles",
+    11,
+    13
+   ],
+   [
+    "El Paso",
+    12,
+    14
+   ],
+   [
+    "Columbus",
+    14,
+    12
+   ]
+  ],
+  "sld_vs_ntd_spearman": 0.816
+ },
+ "floors": {
+  "reference_income": 80000,
+  "thresholds": {
+   "C1_rent_share": 50.0,
+   "S1_violent_crime": 1200.0,
+   "S2_traffic_deaths": 20.0,
+   "H1_bad_air_days": 30.0
+  },
+  "fail": [
+   "San Francisco"
+  ],
+  "pending": [
+   "Los Angeles",
+   "Phoenix",
+   "Nashville-Davidson"
+  ],
+  "max_gap_simulation_minus_bonferroni": 0.0015
+ },
+ "electre": {
+  "thresholds_q_p_v": [
+   0.05,
+   0.15,
+   0.5
+  ],
+  "top5_by_mean_position": [
+   "Austin",
+   "Chicago",
+   "Denver",
+   "Seattle",
+   "Columbus"
+  ],
+  "spearman_vs_additive": 0.852,
+  "additive_champion_vetoed_against": [
+   "New York",
+   "Chicago",
+   "Houston",
+   "San Antonio",
+   "Jacksonville",
+   "Austin",
+   "San Jose",
+   "Charlotte",
+   "Columbus",
+   "Indianapolis",
+   "San Francisco",
+   "Denver",
+   "Nashville-Davidson",
+   "Oklahoma City",
+   "Washington",
+   "El Paso",
+   "Las Vegas",
+   "Boston"
+  ]
+ },
+ "structure": {
+  "kendall_tau_vs_reference": {
+   "exp_k1": 0.933,
+   "exp_k2": 0.953,
+   "exp_k4": 0.88,
+   "linear": 0.907,
+   "ces_rho0.5": 0.98,
+   "ces_rho0": 0.9,
+   "ces_rho-1": 0.76,
+   "ces_rho-2": 0.707,
+   "ces_rho-5": 0.553,
+   "choquet_MA_0.05": 0.987,
+   "choquet_MA_0.1": 0.967,
+   "entropy_minmax": 0.733,
+   "critic_minmax": 0.853
+  },
+  "champion_by_column": {
+   "piecewise_ref": "Seattle",
+   "exp_k1": "Denver",
+   "exp_k2": "Denver",
+   "exp_k4": "Denver",
+   "linear": "Seattle",
+   "ces_rho0.5": "Seattle",
+   "ces_rho0": "Seattle",
+   "ces_rho-1": "Chicago",
+   "ces_rho-2": "Chicago",
+   "ces_rho-5": "Chicago",
+   "choquet_MA_0.05": "Seattle",
+   "choquet_MA_0.1": "Seattle",
+   "entropy_minmax": "San Francisco",
+   "critic_minmax": "Seattle"
+  },
+  "ces_champion_switches_rho": [
+   [
+    1.0,
+    "Seattle"
+   ],
+   [
+    -0.2,
+    "Chicago"
+   ]
+  ],
+  "entropy_top_weights": {
+   "A2_library_teen": 0.114,
+   "A4_teen_wage_real": 0.1,
+   "H2_school_health_staff": 0.099,
+   "M1r_transit_hours_pc": 0.09
+  },
+  "leave_one_city_out_pair_reversals": {
+   "fixed_reference_scale": 0,
+   "entropy_minmax": 58
+  }
+ },
+ "sensitivity": {
+  "node_shift_10pct_p_first": {
+   "Denver": 0.488,
+   "Seattle": 0.366,
+   "Chicago": 0.144,
+   "New York": 0.002
+  },
+  "measurement_sd_multiplier_p_first": {
+   "0.5": {
+    "Seattle": 0.7,
+    "Denver": 0.288,
+    "Chicago": 0.012
+   },
+   "1": {
+    "Seattle": 0.558,
+    "Denver": 0.361,
+    "Chicago": 0.081
+   },
+   "2": {
+    "Seattle": 0.438,
+    "Denver": 0.352,
+    "Chicago": 0.193
+   },
+   "4": {
+    "Seattle": 0.318,
+    "Denver": 0.302,
+    "Chicago": 0.211
+   }
+  },
+  "leave_one_indicator_champions": {
+   "Seattle": 10,
+   "Denver": 6,
+   "Chicago": 4
+  }
+ },
+ "poisson_gamma": {
+  "pooled_rate_per_100k": 5.96,
+  "chi2": 116.4,
+  "df": 24,
+  "p": 4.3e-14,
+  "a": 5.85,
+  "b": 98062.0,
+  "spearman_eb_teen_vs_all_age_rate": 0.752
+ },
+ "equity": {
+  "spearman_transit_mean_vs_lower20": 0.926,
+  "spearman_transit_mean_vs_share_ge4": 0.961,
+  "cities_lower20_mean_zero": [
+   "Fort Worth",
+   "Jacksonville",
+   "Nashville-Davidson",
+   "Oklahoma City"
+  ],
+  "spearman_C1_rent_vs_acs_severe_burden": -0.257
+ },
+ "external_checks": {
+  "opportunity_atlas_upward_mobility_vs_U": {
+   "n": 25,
+   "spearman": 0.332
+  },
+  "yrbs2023_felt_unsafe_at_or_to_school_vs_violent_crime(expected -)": {
+   "n": 9,
+   "spearman": -0.733
+  },
+  "yrbs2023_not_on_sports_team_vs_school_sports(expected -)": {
+   "n": 7,
+   "spearman": -0.929
+  },
+  "yrbs2023_felt_sad_or_hopeless_vs_health_domain(expected -)": {
+   "n": 11,
+   "spearman": -0.755
+  },
+  "yrbs2023_bullied_at_school_vs_inclusion_domain(expected -)": {
+   "n": 11,
+   "spearman": 0.445
+  }
+ }
+}

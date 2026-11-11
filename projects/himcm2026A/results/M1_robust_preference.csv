@@ -1,0 +1,26 @@
+city_id,city,rank_ref,necessarily_beats,necessarily_beaten_by,possible_winner_margin,max_regret,regret_rank,worst_rival
+5363000,Seattle,1,0,0,0.2168,0.3023,1,Washington
+0820000,Denver,2,0,0,0.2301,0.334,2,Austin
+1714000,Chicago,3,0,0,0.1989,0.3478,3,Denver
+3651000,New York,4,0,0,0.1787,0.3721,4,Austin
+2507000,Boston,5,0,0,0.1632,0.4227,6,Denver
+4805000,Austin,6,0,0,0.1595,0.4593,9,Denver
+0666000,San Diego,7,0,0,0.0914,0.3996,5,Washington
+0667000,San Francisco,8,0,0,0.1634,0.4429,7,Denver
+1150000,Washington,9,0,0,0.1421,0.4782,11,Seattle
+0668000,San Jose,10,0,0,0.1612,0.4709,10,Washington
+3240000,Las Vegas,11,0,0,0.1497,0.5064,12,New York
+3918000,Columbus,12,0,0,0.1508,0.5608,18,Seattle
+0644000,Los Angeles,13,0,0,0.075,0.4564,8,Denver
+4824000,El Paso,14,0,0,0.1267,0.5411,14,Denver
+4260000,Philadelphia,15,0,0,0.0852,0.5495,15,Seattle
+4865000,San Antonio,16,0,0,0.078,0.5598,17,Seattle
+3712000,Charlotte,17,0,0,0.0902,0.5337,13,Seattle
+1836003,Indianapolis,18,0,0,0.073,0.5539,16,New York
+4827000,Fort Worth,19,0,0,0.0155,0.6071,21,Seattle
+0455000,Phoenix,20,0,0,0.0581,0.5873,19,New York
+1235000,Jacksonville,21,0,0,0.1151,0.6293,24,Boston
+4819000,Dallas,22,0,0,0.0142,0.6286,23,Seattle
+4055000,Oklahoma City,23,0,0,0.0999,0.6116,22,New York
+4835000,Houston,24,0,0,0.0058,0.5916,20,Chicago
+4752006,Nashville-Davidson,25,0,0,0.041,0.6937,25,Seattle

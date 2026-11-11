@@ -1,0 +1,20 @@
+,domain,from_share,champion
+0,Education,0.0,Denver
+1,Education,0.12,Seattle
+2,Safety,0.0,Denver
+3,Safety,0.13,Seattle
+4,Safety,0.2275,Chicago
+5,Health,0.0,Chicago
+6,Health,0.0825,Seattle
+7,Health,0.18,Denver
+8,Mobility,0.0,Denver
+9,Mobility,0.04,Seattle
+10,Mobility,0.5275,San Francisco
+11,Activities,0.0,Seattle
+12,Activities,0.25,Denver
+13,Affordability,0.0,Seattle
+14,Affordability,0.155,Denver
+15,Affordability,0.395,Austin
+16,Affordability,0.585,El Paso
+17,Inclusion,0.0,Chicago
+18,Inclusion,0.0425,Seattle
