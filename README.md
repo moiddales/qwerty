@@ -48,6 +48,12 @@ Paper ids have the form `<YEAR><PROBLEM>-<TEAM>`, for example `2021B-11576`. A p
 - Analysis cards: all 92 paper cards and 22 problem cards covering every 2014–2024 problem represented in the corpus. The 2025 statements are included as current problem references; no 2025 Outstanding-paper corpus is included.
 - The guides are built from the complete 2014–2024 card set and remain extensible through [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Active research projects
+
+- [2026 HiMCM A: city selection research plan](projects/himcm2026A/PLAN.md)
+- [Project handoff](projects/himcm2026A/HANDOFF.md), [user requirements](projects/himcm2026A/USER_REQUESTS.md), and [project log](PROJECT_LOG.md)
+- [Working rules and synchronization requirements](AGENTS.md)
+
 ## Tools
 
 Run from the repository root (Python 3; `pdftotext` and `pdftoppm` from poppler; `pypdf` for splitting):
