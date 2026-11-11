@@ -1,0 +1,26 @@
+city_id,city,floor_status_$80k,U_reference,rank_reference,smaa_broad_p_first,smaa_broad_rank_90pct,max_regret_broad,theta_plan_possible_winner,theta_plan_smaa_p_first,theta_plan_smaa_p_top3,theta_plan_max_regret,electre_kernel_freq_plan,affordable_and_accessible_residents_$80k,recommendation_status
+5363000,Seattle,pass,0.8205,2,0.3629,1-5,0.3022,True,0.6358,0.9787,0.1541,0.405,0.385,leading recommendation
+0820000,Denver,pass,0.821,1,0.3694,1-7,0.3328,True,0.2348,0.7505,0.2099,0.235,0.681,co-leader under some preferences
+3651000,New York,pass,0.7889,4,0.0555,1-11,0.3721,True,0.06,0.6026,0.2381,0.0,0.619,contender for top 3
+1714000,Chicago,pass,0.8069,3,0.1304,1-7,0.3488,True,0.0575,0.4672,0.2061,0.4975,0.861,co-leader under some preferences
+4805000,Austin,pass,0.7606,6,0.0387,2-12,0.4676,True,0.0063,0.08,0.3325,0.09,0.577,"ranked, not a contender"
+0667000,San Francisco,fail,0.7526,8,0.0089,3-20,0.4435,True,0.0036,0.0692,0.2587,0.0,0.155,not recommended at $80k (floor)
+2507000,Boston,pass,0.7736,5,0.0241,2-14,0.4232,True,0.0012,0.0296,0.2729,0.0,0.406,"ranked, not a contender"
+1150000,Washington,pass,0.7486,9,0.0036,4-18,0.4782,True,0.0007,0.0156,0.3188,0.0,0.505,"ranked, not a contender"
+0666000,San Diego,pass,0.7541,7,0.0002,4-15,0.4086,True,0.0001,0.0053,0.2954,0.0,0.251,"ranked, not a contender"
+0668000,San Jose,pass,0.7391,10,0.001,5-18,0.4715,True,0.0,0.0004,0.3281,0.0,0.079,"ranked, not a contender"
+3918000,Columbus,pass,0.7265,11,0.0046,4-19,0.5603,True,0.0,0.0005,0.4259,0.0,0.727,"ranked, not a contender"
+3240000,Las Vegas,pass,0.7263,12,0.0003,5-16,0.5059,True,0.0,0.0002,0.3904,0.0,0.535,"ranked, not a contender"
+0644000,Los Angeles,pending,0.7211,13,0.0,6-20,0.4533,True,0.0,0.0002,0.3203,0.0,0.588,"ranked, not a contender"
+4260000,Philadelphia,pass,0.7003,14,0.0,8-21,0.5501,False,0.0,0.0,0.4073,0.0,0.943,cannot rank first under stated preferences
+4824000,El Paso,pass,0.6946,15,0.0004,7-20,0.5559,True,0.0,0.0,0.4365,0.0,0.082,"ranked, not a contender"
+4865000,San Antonio,pass,0.6928,16,0.0,8-19,0.5587,True,0.0,0.0,0.4146,0.0,0.613,"ranked, not a contender"
+3712000,Charlotte,pass,0.6846,17,0.0,10-21,0.5342,True,0.0,0.0,0.4465,0.0,0.344,"ranked, not a contender"
+1836003,Indianapolis,pass,0.6639,18,0.0,12-23,0.5524,True,0.0,0.0,0.4527,0.0,0.408,"ranked, not a contender"
+4827000,Fort Worth,pass,0.6504,19,0.0,15-23,0.6186,False,0.0,0.0,0.469,0.0,0.184,cannot rank first under stated preferences
+0455000,Phoenix,pending,0.6449,20,0.0,14-24,0.5873,False,0.0,0.0,0.4474,0.0,0.513,cannot rank first under stated preferences
+4819000,Dallas,pass,0.6282,21,0.0,16-24,0.6278,False,0.0,0.0,0.472,0.0,0.732,cannot rank first under stated preferences
+4055000,Oklahoma City,pass,0.6256,22,0.0,16-24,0.5987,True,0.0,0.0,0.5074,0.0,0.258,"ranked, not a contender"
+1235000,Jacksonville,pass,0.6242,23,0.0,15-24,0.6442,False,0.0,0.0,0.5007,0.0,0.034,cannot rank first under stated preferences
+4835000,Houston,pass,0.6102,24,0.0,19-24,0.58,True,0.0,0.0,0.4593,0.0,0.793,"ranked, not a contender"
+4752006,Nashville-Davidson,pending,0.5178,25,0.0,24-25,0.6972,False,0.0,0.0,0.6079,0.0,0.215,cannot rank first under stated preferences

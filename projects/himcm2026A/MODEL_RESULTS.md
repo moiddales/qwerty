@@ -13,6 +13,7 @@ python run_extensions.py   # 约 20 秒
 python run_preferences.py  # 约 1 分钟
 python run_robustness.py   # 约 30 秒
 python make_figures.py
+python make_tables.py
 ```
 
 | 文件 | 内容 |
@@ -23,6 +24,7 @@ python make_figures.py
 | `analysis/model/run_extensions.py` | 偏好信息曲线、单条偏好陈述、学生画像、GTFS 与 Chicago 口径对照、数值核验 |
 | `analysis/model/run_preferences.py` | 研究定义偏好陈述下的稳健分析、SMAA、后悔值；抽样权重的 ELECTRE III |
 | `analysis/model/run_robustness.py` | 数据区间下的精确稳健偏好、后悔值尺度、Poisson–Gamma 安全指标、下尾 α、误差相关、风险诊断、普查区联合可行性、空气质量地理口径 |
+| `analysis/model/make_tables.py` | 模型阶段交付表：指标与补偿关系表、25 城总表、一城贯穿算例 |
 | `analysis/model/make_figures.py` | 论文图 `results/figures/fig1—fig8` |
 | `results/summary.json`、`extensions_summary.json`、`preferences_summary.json` | 全部关键数字 |
 
@@ -205,6 +207,25 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 | “校内被欺凌”与包容领域（11 城） | +0.45 | 不一致：MEI 是市政政策，不反映校内体验 |
 | GTFS 2026 周末比与 NTD 周末保留率（23 城） | 0.726 | 一致 |
 | Opportunity Atlas 与总分（历史队列） | 0.32 | — |
+
+## 6b. 模型阶段交付表（PLAN 第 9—10 节）
+
+| 文件 | 内容 |
+|---|---|
+| `results/table_indicators_and_compensation.csv` | 20 项指标的定义与来源、方向、固定节点及依据、补偿角色（底线/可补偿/ELECTRE 否决）、参考权重、覆盖与取值范围 |
+| `results/table_master_25_cities.csv` | 25 城底线状态、参考得分与名次、两种偏好集合下的 SMAA 与后悔值、可能冠军、ELECTRE 核心频率、居住区联合可行性、推荐状态 |
+| `results/WORKED_EXAMPLE.md`、`worked_example_Seattle.csv` | Seattle 逐步通过底线、分段价值、对 Denver 的 LP 区间、SMAA、后悔值与 ELECTRE |
+
+25 城推荐状态：
+
+| 状态 | 城市 |
+|---|---|
+| 领先推荐 | Seattle |
+| 部分偏好下并列领先 | Denver、Chicago |
+| 前三竞争者 | New York |
+| $80k 不推荐（底线） | San Francisco |
+| 研究定义偏好下不可能第一 | Philadelphia、Fort Worth、Phoenix、Dallas、Jacksonville、Nashville |
+| 其余 | 参与排名 |
 
 ## 6a. 图
 

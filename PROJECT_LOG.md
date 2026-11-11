@@ -305,3 +305,14 @@ RISKS.md 更新 R4.2、R4.6、R5.1、R6.2，补充 R2.10。PLAN 第 6—7 节与
 - 空气质量 CBSA 口径：参考冠军变为 Seattle，Phoenix 未通过空气底线。
 
 RISKS.md 全部条目已用真实数据检验并更新状态（无“待检验”条目）。PLAN 第 5—8 节的模型与检验均已在现有数据上计算。
+
+## 2026-11-11 — A-018：模型阶段交付表（Asia/Shanghai）
+
+承接 U20261111-17。新增 make_tables.py，按 PLAN 第 9 节阶段 3 与第 10 节核心输出 1—3 生成：
+- 指标与补偿关系表；
+- 25 城总表（资格、参考表现、稳健推荐状态）；
+- Seattle 一城贯穿算例（results/WORKED_EXAMPLE.md）。
+
+推荐状态：Seattle 领先，Denver、Chicago 部分偏好下并列领先，San Francisco 在 8 万美元下不推荐。
+
+模型搭建与计算阶段完成。论文、新闻文章属写作阶段；STATEMENTS_PLAN 待队内确认后重跑 run_preferences.py、make_tables.py、make_figures.py。
