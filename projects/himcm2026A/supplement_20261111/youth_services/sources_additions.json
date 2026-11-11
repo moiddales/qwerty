@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "chicago_activity_event",
+    "url": "https://www.chicagoparkdistrict.com/events/teens-park-signature-archer",
+    "title": "Archer teen signature workshop November13,2026",
+    "content_marker": "Nov 13, 2026",
+    "authority": "municipal park district",
+    "rights": "Original excluded; short facts and URL only"
+  },
+  {
+    "source_id": "nyc_activity_site",
+    "url": "https://www.nycgovparks.org/facilities/recreationcenters/M033",
+    "title": "NYC Parks Hamilton Fish Recreation Center",
+    "content_marker": "128 Pitt",
+    "authority": "municipal government",
+    "rights": "Original excluded; short facts and URL only"
+  },
+  {
+    "source_id": "charlotte_mental_payment",
+    "url": "https://teenhealthconnection.org/medical/",
+    "title": "Teen Health Connection current payment/age FAQ",
+    "content_marker": "sliding fee",
+    "authority": "official provider",
+    "rights": "Original excluded; short facts and URL only"
+  },
+  {
+    "source_id": "nashville_activity_fall",
+    "url": "https://www.nashville.gov/sites/default/files/2026-08/2026SoutheastActivityScheduleFall.pdf?ct=1787062164",
+    "title": "Southeast fall2026 schedule link from live city facility page",
+    "content_marker": "Teen",
+    "authority": "municipal government",
+    "rights": "Original excluded; short facts and URL only"
+  },
+  {
+    "source_id": "indianapolis_activity_current",
+    "url": "https://attend.indypl.org/event/17687731",
+    "title": "Indianapolis Public Library Teen Switch Gaming Afternoon November 12 2026",
+    "content_marker": "ages 12-17",
+    "authority": "official public-library event provider",
+    "rights": "Original excluded; short facts and URL only"
+  }
+]

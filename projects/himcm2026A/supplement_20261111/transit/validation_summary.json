@@ -1,0 +1,13 @@
+{
+  "associated_cities": 25,
+  "feeds_downloaded": 35,
+  "feeds_with_critical_tables_and_links": 35,
+  "stop_time_rows": 36701900,
+  "feeds_with_no_reference_date_service": [
+    "mdb-2886",
+    "ntd-50050"
+  ],
+  "all_needed_operators_collected": false,
+  "round_trip_access_calculated": false,
+  "publication": "Original files local pending per-provider license review; public facts and validation only"
+}

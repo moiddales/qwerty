@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://www.cdc.gov/places/current-release-notes/",
+    "channel": "web.run official page read",
+    "checked_date": "2026-11-11",
+    "publication_date": "2026-03-16",
+    "facts": "2025 release:35 measures from2023BRFSS,5 from2022; PA/KY lack2023-based estimates;5 earlier measures retained",
+    "local_channel": "HTTP403; published API25cityJSON actual200"
+  },
+  {
+    "url": "https://www.nhtsa.gov/file-downloads?p=nhtsa%2Fdownloads%2FFARS%2F",
+    "channel": "web.run official directory read",
+    "checked_date": "2026-11-11",
+    "facts": "Published year folders listed through2024; separate official report813778 schedules2025ARF for early2027",
+    "local_channel": "HTTP403; reportPDF actual200"
+  }
+]

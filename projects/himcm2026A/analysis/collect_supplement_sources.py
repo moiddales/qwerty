@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import argparse
 import csv
 import hashlib
+import http.client
 import json
 import urllib.error
 import urllib.parse
@@ -38,6 +39,9 @@ def fetch(url, path, log, source):
                      response_sha256=hashlib.sha256(body).hexdigest(), classification="cause_unverified")
     except (urllib.error.URLError, TimeoutError) as error:
         entry.update(error=str(error), classification="cause_unverified")
+    except http.client.IncompleteRead as error:
+        entry.update(error=str(error), partial_bytes=len(error.partial), download_status="incomplete_response",
+                     classification="transfer_interrupted_cause_unverified")
     log.parent.mkdir(parents=True, exist_ok=True)
     with log.open("a", encoding="utf-8") as stream:
         stream.write(json.dumps(entry, ensure_ascii=False) + "\n")

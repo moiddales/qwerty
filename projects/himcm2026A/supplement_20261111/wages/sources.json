@@ -1,0 +1,882 @@
+[
+  {
+    "source_id": "US_FAQ",
+    "publisher": "US Department of Labor",
+    "title": "Minimum Wage FAQ",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/faq",
+    "expected_terms": [
+      "7.25",
+      "4.25"
+    ]
+  },
+  {
+    "source_id": "US_YOUTH",
+    "publisher": "US Department of Labor",
+    "title": "Fact Sheet 32 Youth Minimum Wage",
+    "url": "https://www.dol.gov/agencies/whd/fact-sheets/32-minimum-wage-youth",
+    "expected_terms": [
+      "4.25",
+      "90"
+    ]
+  },
+  {
+    "source_id": "US_STATE",
+    "publisher": "US Department of Labor",
+    "title": "State Minimum Wage Laws",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+    "expected_terms": [
+      "2026",
+      "15.15",
+      "7.25"
+    ]
+  },
+  {
+    "source_id": "US_TIPPED",
+    "publisher": "US Department of Labor",
+    "title": "Minimum Wages for Tipped Employees",
+    "url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+    "expected_terms": [
+      "2026",
+      "2.13",
+      "6.75"
+    ]
+  },
+  {
+    "source_id": "US_COVERAGE",
+    "publisher": "US Department of Labor",
+    "title": "Fact Sheet 14 FLSA Coverage",
+    "url": "https://www.dol.gov/agencies/whd/fact-sheets/14-flsa-coverage",
+    "expected_terms": [
+      "500,000",
+      "interstate"
+    ]
+  },
+  {
+    "source_id": "US_CERTIFICATE",
+    "publisher": "US Department of Labor",
+    "title": "Subminimum Wage",
+    "url": "https://www.dol.gov/agencies/whd/special-employment",
+    "expected_terms": [
+      "75 percent",
+      "certificate"
+    ]
+  },
+  {
+    "source_id": "CA_FAQ",
+    "publisher": "California DIR",
+    "title": "Minimum Wage FAQ",
+    "url": "https://www.dir.ca.gov/dlse/faq_minimumwage.htm",
+    "expected_terms": [
+      "16.90",
+      "160",
+      "85 percent"
+    ]
+  },
+  {
+    "source_id": "CA_FASTFOOD",
+    "publisher": "California DIR",
+    "title": "Fast Food Minimum Wage FAQ",
+    "url": "https://www.dir.ca.gov/dlse/Fast-Food-Minimum-Wage-FAQ.htm",
+    "expected_terms": [
+      "20.00",
+      "60",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "CA_HEALTH",
+    "publisher": "California DIR",
+    "title": "Health Care Worker Minimum Wage FAQ",
+    "url": "https://www.dir.ca.gov/dlse/Health-Care-Worker-Minimum-Wage-FAQ.htm",
+    "expected_terms": [
+      "7/1/26",
+      "$25",
+      "October 16, 2024"
+    ]
+  },
+  {
+    "source_id": "LA_RATE",
+    "publisher": "Los Angeles Office of Wage Standards",
+    "title": "Minimum Wage Ordinance",
+    "url": "https://wagesla.lacity.gov/",
+    "expected_terms": [
+      "18.42",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "LA_CODE",
+    "publisher": "Los Angeles official code via American Legal",
+    "title": "LAMC Article 7 Minimum Wage",
+    "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-209549",
+    "expected_terms": [
+      "160",
+      "85 percent"
+    ]
+  },
+  {
+    "source_id": "SD_RATE",
+    "publisher": "City of San Diego",
+    "title": "Earned Sick Leave and Minimum Wage",
+    "url": "https://www.sandiego.gov/olse/minimum-wage/earned-sick-leave",
+    "expected_terms": [
+      "17.75",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "SD_FAQ",
+    "publisher": "City of San Diego",
+    "title": "2026 Minimum Wage FAQ",
+    "url": "https://www.sandiego.gov/sites/default/files/mwo-faqs.pdf",
+    "expected_terms": [
+      "17.75",
+      "subsidized"
+    ]
+  },
+  {
+    "source_id": "SJ_RATE",
+    "publisher": "City of San Jose",
+    "title": "Minimum Wage Ordinance",
+    "url": "https://www.sanjoseca.gov/your-government/departments-offices/public-works/labor-compliance/minimum-wage-ordinance",
+    "expected_terms": [
+      "18.45",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "SF_RATE",
+    "publisher": "City and County of San Francisco",
+    "title": "2026 Historical Minimum Wage Rates and Government Supported Employee Definition",
+    "url": "https://media.api.sf.gov/documents/2026_Historical_San_Francisco_Minimum_Wage_Rates_M9ynRNo.pdf",
+    "expected_terms": [
+      "19.61",
+      "17.35",
+      "under the age of 18"
+    ]
+  },
+  {
+    "source_id": "NY_RATE",
+    "publisher": "New York State",
+    "title": "New York State Minimum Wage",
+    "url": "https://www.ny.gov/programs/new-york-states-minimum-wage",
+    "expected_terms": [
+      "17.00",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "NY_TIPPED",
+    "publisher": "New York Attorney General",
+    "title": "Wages and pay",
+    "url": "https://ag.ny.gov/resources/individuals/workers-rights/wages-pay",
+    "expected_terms": [
+      "14.15",
+      "11.35",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "NY_MINORS",
+    "publisher": "New York Department of Labor",
+    "title": "Laws Governing Employment of Minors 2026",
+    "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+    "expected_terms": [
+      "minimum wage",
+      "students"
+    ]
+  },
+  {
+    "source_id": "CHI_RATE",
+    "publisher": "Chicago Office of Labor Standards",
+    "title": "July 2026 Labor Standards one page notice",
+    "url": "https://www.chicago.gov/content/dam/city/depts/bacp/OSL/july2026onepagerfinal.pdf",
+    "expected_terms": [
+      "17.05",
+      "12.96",
+      "youth"
+    ]
+  },
+  {
+    "source_id": "IL_FAQ",
+    "publisher": "Illinois Department of Labor",
+    "title": "Minimum Wage Overtime FAQ",
+    "url": "https://labor.illinois.gov/faqs/minimum-wage-overtime-faq.html",
+    "expected_terms": [
+      "650",
+      "13.00",
+      "14.50"
+    ]
+  },
+  {
+    "source_id": "AZ_RATE",
+    "publisher": "Arizona Industrial Commission",
+    "title": "2026 Minimum Wage Announcement",
+    "url": "https://www.azica.gov/sites/default/files/2025-10/2026%20Minimum%20Wage.pdf",
+    "expected_terms": [
+      "15.15",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "AZ_FAQ",
+    "publisher": "Arizona Industrial Commission",
+    "title": "Minimum Wage FAQ",
+    "url": "https://www.azica.gov/labor-frequently-asked-questions-english",
+    "expected_terms": [
+      "tip",
+      "youth",
+      "small"
+    ]
+  },
+  {
+    "source_id": "PA_RULE",
+    "publisher": "Commonwealth of Pennsylvania",
+    "title": "Minimum Wage Law and regulations",
+    "url": "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/minimum-wage-law",
+    "expected_terms": [
+      "231.103",
+      "7.25",
+      "training"
+    ]
+  },
+  {
+    "source_id": "TX_RATE",
+    "publisher": "Texas Workforce Commission",
+    "title": "Texas Minimum Wage Law",
+    "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-minimum-wage-law",
+    "expected_terms": [
+      "7.25",
+      "2009"
+    ]
+  },
+  {
+    "source_id": "TX_YOUTH",
+    "publisher": "Texas Workforce Commission",
+    "title": "Texas Business Today June 2025",
+    "url": "https://content.govdelivery.com/accounts/TXWC/bulletins/3e2b42f",
+    "expected_terms": [
+      "4.25",
+      "90"
+    ]
+  },
+  {
+    "source_id": "FL_RATE",
+    "publisher": "Florida Commerce",
+    "title": "Florida Minimum Wage",
+    "url": "https://floridajobs.org/florida-minimum-wage",
+    "expected_terms": [
+      "15.00",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "NC_RATE",
+    "publisher": "North Carolina Department of Labor",
+    "title": "Minimum Wage in NC",
+    "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/minimum-wage-nc",
+    "expected_terms": [
+      "7.25",
+      "2.13"
+    ]
+  },
+  {
+    "source_id": "OH_RATE",
+    "publisher": "Ohio Department of Commerce",
+    "title": "Ohio Minimum Wage Set to Increase in 2026",
+    "url": "https://com.ohio.gov/about-us/media-center/news/Ohio-Minimum-Wage-Set-to-Increase-in-2026-11",
+    "expected_terms": [
+      "11.00",
+      "405,000",
+      "15-year-old"
+    ]
+  },
+  {
+    "source_id": "IN_RULE",
+    "publisher": "Indiana Department of Labor",
+    "title": "Explanation of Minimum Wage",
+    "url": "https://www.in.gov/dol/files/Explanation_of_Minimum_Wage.pdf",
+    "expected_terms": [
+      "4.25",
+      "90",
+      "7.25"
+    ]
+  },
+  {
+    "source_id": "WA_RATE",
+    "publisher": "Washington Labor and Industries",
+    "title": "Minimum Wage",
+    "url": "https://www.lni.wa.gov/workers-rights/wages/minimum-wage/",
+    "expected_terms": [
+      "17.13",
+      "85%"
+    ]
+  },
+  {
+    "source_id": "SEA_RATE",
+    "publisher": "Seattle Office of Labor Standards",
+    "title": "Minimum Wage",
+    "url": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage",
+    "expected_terms": [
+      "21.30",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "SEA_YOUTH",
+    "publisher": "Seattle Office of Labor Standards",
+    "title": "Minimum Wage Q and A; revision 2018",
+    "url": "https://www.seattle.gov/Documents/Departments/LaborStandards/MW%20QA_121918.pdf",
+    "expected_terms": [
+      "85%",
+      "16-17"
+    ]
+  },
+  {
+    "source_id": "DEN_RATE",
+    "publisher": "Denver Auditor Denver Labor",
+    "title": "Denver Minimum Wage",
+    "url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage/Minimum-Wage",
+    "expected_terms": [
+      "19.29",
+      "16.27",
+      "certified youth"
+    ]
+  },
+  {
+    "source_id": "CO_LOCAL",
+    "publisher": "Colorado Department of Labor",
+    "title": "INFO 19 Local Minimum Wages 2025",
+    "url": "https://cdle.colorado.gov/sites/cdle/files/info_%2319_local_min_wages_6.17.2025_accessible.pdf",
+    "expected_terms": [
+      "Denver",
+      "minors",
+      "15%"
+    ]
+  },
+  {
+    "source_id": "TN_RATE",
+    "publisher": "Tennessee Department of Labor",
+    "title": "Should I be paid minimum wage",
+    "url": "https://lwdsupport.tn.gov/hc/en-us/articles/360000130587-Should-I-be-paid-minimum-wage",
+    "expected_terms": [
+      "no state laws"
+    ]
+  },
+  {
+    "source_id": "OK_RULE",
+    "publisher": "Oklahoma Department of Labor",
+    "title": "Wage and Hour FAQs",
+    "url": "https://oklahoma.gov/labor/workplace-rights/wage-hour/faqs---wage-and-hour.html",
+    "expected_terms": [
+      "7.25",
+      "minimum"
+    ]
+  },
+  {
+    "source_id": "DC_RATE",
+    "publisher": "District of Columbia Attorney General",
+    "title": "Wage and Hour Laws",
+    "url": "https://oag.dc.gov/worker-rights/wage-and-hour-laws",
+    "expected_terms": [
+      "18.40",
+      "10.30",
+      "under the age of 18"
+    ]
+  },
+  {
+    "source_id": "NV_RULE",
+    "publisher": "Nevada Legislature",
+    "title": "Nevada Administrative Code 608",
+    "url": "https://www.leg.state.nv.us/NAC/NAC-608.html",
+    "expected_terms": [
+      "under 18",
+      "trainee",
+      "608.250"
+    ]
+  },
+  {
+    "source_id": "NV_POSTERS",
+    "publisher": "Nevada Labor Commissioner",
+    "title": "Employer Posters",
+    "url": "https://labor.nv.gov/employer/employer_posters/",
+    "expected_terms": [
+      "2026 Minimum Wage Bulletin"
+    ]
+  },
+  {
+    "source_id": "MA_YOUTH",
+    "publisher": "Massachusetts Department of Public Health",
+    "title": "About youth employment and safety",
+    "url": "https://www.mass.gov/info-details/about-youth-employment-and-safety",
+    "expected_terms": [
+      "15.00",
+      "6.75"
+    ]
+  },
+  {
+    "source_id": "MA_PAY",
+    "publisher": "Massachusetts Attorney General",
+    "title": "Pay and recordkeeping",
+    "url": "https://www.mass.gov/guides/pay-and-recordkeeping",
+    "expected_terms": [
+      "15.00",
+      "8.00",
+      "6.75"
+    ]
+  },
+  {
+    "source_id": "US_WORKER",
+    "publisher": "US Department of Labor Worker.gov",
+    "title": "Minimum wage",
+    "url": "https://www.worker.gov/pay-minimum-wage/",
+    "expected_terms": [
+      "7.25",
+      "4.25",
+      "2.13"
+    ]
+  },
+  {
+    "source_id": "US_ELAWS",
+    "publisher": "US Department of Labor",
+    "title": "FLSA wages advisor",
+    "url": "https://webapps.dol.gov/elaws/whd/flsa/docs/wages.asp",
+    "expected_terms": [
+      "4.25",
+      "90"
+    ]
+  },
+  {
+    "source_id": "US_ELAWS_COVERAGE",
+    "publisher": "US Department of Labor",
+    "title": "FLSA coverage advisor",
+    "url": "https://webapps.dol.gov/elaws/whd/flsa/scope/screen10.asp",
+    "expected_terms": [
+      "500,000",
+      "interstate"
+    ]
+  },
+  {
+    "source_id": "LA_FAQ",
+    "publisher": "Los Angeles Office of Wage Standards",
+    "title": "Minimum Wage FAQ 2026",
+    "url": "https://wagesla.lacity.gov/sites/g/files/wph1941/files/2026-04/MWO-FAQ%20English%20ADA.pdf",
+    "expected_terms": [
+      "85",
+      "160"
+    ]
+  },
+  {
+    "source_id": "LA_HOTEL",
+    "publisher": "Los Angeles Office of Wage Standards",
+    "title": "2026 Hotel Worker wage chart",
+    "url": "https://wagesla.lacity.gov/sites/g/files/wph1941/files/2026-06/2026%20CHMWO%20Wage%20Chart%20wHB%20Rev05-27-26.pdf",
+    "expected_terms": [
+      "2026",
+      "25.00"
+    ]
+  },
+  {
+    "source_id": "NY_NYC",
+    "publisher": "New York City",
+    "title": "New York minimum wage rates",
+    "url": "https://nyc-business.nyc.gov/nycbusiness/description/wage-regulations-in-new-york-state",
+    "expected_terms": [
+      "17.00",
+      "14.15",
+      "11.35"
+    ]
+  },
+  {
+    "source_id": "NY_LAW",
+    "publisher": "New York Senate",
+    "title": "Labor Law 652",
+    "url": "https://www.nysenate.gov/legislation/laws/LAB/652",
+    "expected_terms": [
+      "17.00",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "OH_POSTER",
+    "publisher": "Montgomery County Ohio; Ohio Department of Commerce original",
+    "title": "Official 2026 Ohio minimum wage poster",
+    "url": "https://www.mcohio.org/DocumentCenter/View/8673/2026-Ohio-Minimum-Wage",
+    "expected_terms": [
+      "11.00",
+      "405,000",
+      "under the age of 16"
+    ]
+  },
+  {
+    "source_id": "PA_TRAINING",
+    "publisher": "Pennsylvania Code and Bulletin",
+    "title": "34 Pa Code 231.103 Training wage",
+    "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/034/chapter231/s231.103.html&d=reduce",
+    "expected_terms": [
+      "7.25",
+      "July 23, 2009"
+    ]
+  },
+  {
+    "source_id": "PA_STUDENTS",
+    "publisher": "Pennsylvania Code and Bulletin",
+    "title": "34 Pa Code 231.61 Student certificates",
+    "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/034/chapter231/s231.61.html&d=reduce",
+    "expected_terms": [
+      "85%",
+      "23",
+      "40"
+    ]
+  },
+  {
+    "source_id": "NV_2026",
+    "publisher": "Nevada Labor Commissioner",
+    "title": "2026 Minimum Wage Bulletin",
+    "url": "https://labor.nv.gov/uploadedFiles/labornvgov/content/Employer/26.06.29%20-%202026%20Minimum%20Wage%20Bulletin.pdf",
+    "expected_terms": [
+      "12.00",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "MA_TEEN",
+    "publisher": "Massachusetts Attorney General",
+    "title": "Preventing child labor exploitation fact sheet",
+    "url": "https://www.mass.gov/doc/preventing-child-labor-exploitation-fact-sheet/download",
+    "expected_terms": [
+      "minimum wage",
+      "minors"
+    ]
+  },
+  {
+    "source_id": "NC_LAW",
+    "publisher": "North Carolina General Assembly",
+    "title": "Wage and Hour Act exemptions",
+    "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.14.html",
+    "expected_terms": [
+      "Fair Labor Standards",
+      "students"
+    ]
+  },
+  {
+    "source_id": "CHI_PRESS",
+    "publisher": "City of Chicago BACP via Publicnow distribution",
+    "title": "June 8 2026 official press release",
+    "url": "https://ebs.publicnow.com/view/6D09FB9ECBDE18D23EEA4743D2910063475EC104",
+    "expected_terms": [
+      "17.05",
+      "12.96"
+    ]
+  },
+  {
+    "source_id": "CHI_OLS",
+    "publisher": "Chicago Office of Labor Standards",
+    "title": "Labor Standards",
+    "url": "https://chicago.gov/LaborStandards",
+    "expected_terms": [
+      "17.05",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "CHI_RATE_ALT",
+    "publisher": "Chicago Office of Labor Standards",
+    "title": "July 2026 official notice alternate official hostname",
+    "url": "https://chicago.gov/content/dam/city/depts/bacp/OSL/july2026onepagerfinal.pdf",
+    "expected_terms": [
+      "17.05",
+      "12.96"
+    ]
+  },
+  {
+    "source_id": "CHI_MW_ALT",
+    "publisher": "Chicago BACP",
+    "title": "Minimum wage information alternate official hostname",
+    "url": "https://chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html",
+    "expected_terms": [
+      "17.05",
+      "youth"
+    ]
+  },
+  {
+    "source_id": "FL_ALT",
+    "publisher": "Florida Commerce",
+    "title": "Florida minimum wage official www hostname",
+    "url": "https://www.floridajobs.org/florida-minimum-wage",
+    "expected_terms": [
+      "15.00",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "AZ_EMPLOYEE",
+    "publisher": "Arizona Legislature",
+    "title": "ARS23-362 alternate 1997 provision; does not contain requested 2006 definitions; excluded from coding",
+    "url": "https://www.azleg.gov/ars/23/00362.htm",
+    "expected_terms": [
+      "employee",
+      "small business"
+    ],
+    "exclude_from_rule_coding": "Wrong same-number version; use AZ_DEFINITIONS."
+  },
+  {
+    "source_id": "AZ_LAW",
+    "publisher": "Arizona Legislature",
+    "title": "ARS 23-363 minimum wage",
+    "url": "https://www.azleg.gov/ars/23/00363.htm",
+    "expected_terms": [
+      "three dollars",
+      "tips"
+    ]
+  },
+  {
+    "source_id": "TX_PREEMPT",
+    "publisher": "Texas Legislature",
+    "title": "Texas Labor Code chapter 62",
+    "url": "https://statutes.capitol.texas.gov/Docs/LA/htm/LA.62.htm",
+    "expected_terms": [
+      "62.0515",
+      "public contract"
+    ]
+  },
+  {
+    "source_id": "NC_PREEMPT",
+    "publisher": "North Carolina General Assembly",
+    "title": "GS 95-25.1 local preemption",
+    "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.1.html",
+    "expected_terms": [
+      "preempted",
+      "compensation"
+    ]
+  },
+  {
+    "source_id": "NC_STUDENTS",
+    "publisher": "North Carolina General Assembly",
+    "title": "GS 95-25.3 minimum wage",
+    "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.3.html",
+    "expected_terms": [
+      "ninety percent",
+      "lowest nickel"
+    ]
+  },
+  {
+    "source_id": "OH_PREEMPT",
+    "publisher": "Ohio Legislature",
+    "title": "ORC 4111.02 wage rates",
+    "url": "https://codes.ohio.gov/ohio-revised-code/section-4111.02",
+    "expected_terms": [
+      "political subdivision"
+    ]
+  },
+  {
+    "source_id": "MA_LAW",
+    "publisher": "Massachusetts Legislature",
+    "title": "General Laws Chapter151 Section1",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151/Section1",
+    "expected_terms": [
+      "15.00",
+      "2023"
+    ]
+  },
+  {
+    "source_id": "MA_SERVICE",
+    "publisher": "Massachusetts Legislature",
+    "title": "General Laws Chapter151 Section7",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151/Section7",
+    "expected_terms": [
+      "6.75",
+      "2023"
+    ]
+  },
+  {
+    "source_id": "OH_OFFICIAL_POSTER",
+    "publisher": "Ohio Department of Commerce",
+    "title": "2026 poster observed from official index",
+    "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DICO/WageAndHour/2026_Minumum_Wage_Poster.pdf",
+    "expected_terms": [
+      "11.00",
+      "405,000",
+      "under the age of 16"
+    ]
+  },
+  {
+    "source_id": "CHI_FAQ",
+    "publisher": "Chicago BACP",
+    "title": "September2025 FAQ with July2026 youth schedule",
+    "url": "https://chicago.gov/content/dam/city/depts/bacp/OSL/faqminimumwage09302025.pdf",
+    "expected_terms": [
+      "2026",
+      "16.50",
+      "youth"
+    ]
+  },
+  {
+    "source_id": "US_GUIDE",
+    "publisher": "US Department of Labor",
+    "title": "Employment law guide minimum wages",
+    "url": "https://webapps.dol.gov/elaws/elg/minwage.htm",
+    "expected_terms": [
+      "7.25",
+      "4.25",
+      "2.13"
+    ]
+  },
+  {
+    "source_id": "NV_APPROVED",
+    "publisher": "Nevada Legislature",
+    "title": "Approved regulation R185-24 effective filing 2026",
+    "url": "https://www.leg.state.nv.us/Register/2024Register/R185-24AP.pdf",
+    "expected_terms": [
+      "under 18",
+      "12 per",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "NV_CONST",
+    "publisher": "Nevada Legislature",
+    "title": "Nevada Constitution Article15 Section16",
+    "url": "https://www.leg.state.nv.us/Const/NVConst.html",
+    "expected_terms": [
+      "under eighteen",
+      "twelve dollars"
+    ]
+  },
+  {
+    "source_id": "AZ_DEFINITIONS",
+    "publisher": "Arizona Legislature",
+    "title": "ARS23-362 Proposition202 definitions Version1",
+    "url": "https://www.azleg.gov/ars/23/00362.01.htm",
+    "expected_terms": [
+      "small business",
+      "five hundred"
+    ]
+  },
+  {
+    "source_id": "AZ_YOUTH_FAQ",
+    "publisher": "Arizona Industrial Commission",
+    "title": "2017 Fair Wages FAQ adult and minor wages equal",
+    "url": "https://www.azica.gov/sites/default/files/media/Changes%20Only-FREQUENTLY%20ASKED%20QUESTIONS_MasterwTOC_REV05232017.pdf",
+    "expected_terms": [
+      "adult and minor",
+      "Yes."
+    ]
+  },
+  {
+    "source_id": "IN_POSTER",
+    "publisher": "Indiana Department of Labor",
+    "title": "Indiana Minimum Wage Law official poster",
+    "url": "https://www.in.gov/dol/files/Indiana2009MinimumWage.pdf",
+    "expected_terms": [
+      "4.25",
+      "90",
+      "7.25"
+    ]
+  },
+  {
+    "source_id": "OK_POSTER",
+    "publisher": "Oklahoma Department of Labor",
+    "title": "Oklahoma minimum wage law exemptions poster",
+    "url": "https://oklahoma.gov/content/dam/ok/en/labor/documents/safety-and-health/workplace-rights/wage-hour/workplace-posters/Minimum%20Wage%20Poster.pdf",
+    "expected_terms": [
+      "eighteen",
+      "twenty-five",
+      "7.25"
+    ]
+  },
+  {
+    "source_id": "SJ_COUNTY",
+    "publisher": "Santa Clara County official handbook",
+    "title": "Minimum wage in Santa Clara County 2026",
+    "url": "https://stgenssa.sccgov.org/debs/program_handbooks/charts/assets/2CalFresh/MinWageSCC.htm",
+    "expected_terms": [
+      "18.45",
+      "San Jose"
+    ]
+  },
+  {
+    "source_id": "PA_TIP",
+    "publisher": "Commonwealth of Pennsylvania",
+    "title": "Overtime and Tipped Worker Rules",
+    "url": "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/labor-law/overtime-and-tipped-worker-rules-in-pa",
+    "expected_terms": [
+      "2.83",
+      "7.25"
+    ]
+  },
+  {
+    "source_id": "MA_CERT",
+    "publisher": "Massachusetts Legislature",
+    "title": "General Laws Chapter151 Section9 learners certificate",
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151/Section9",
+    "expected_terms": [
+      "learners",
+      "certificate"
+    ]
+  },
+  {
+    "source_id": "CHI_CODE_WAGE",
+    "publisher": "City of Chicago code hosted by American Legal",
+    "title": "2026 S75 6-105-020 minimum hourly wage",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639811",
+    "expected_terms": [
+      "under 18",
+      "1.50",
+      "2026"
+    ]
+  },
+  {
+    "source_id": "CHI_CODE_DEF",
+    "publisher": "City of Chicago code hosted by American Legal",
+    "title": "2026 S75 6-105-010 definitions",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639780",
+    "expected_terms": [
+      "two-week",
+      "camp counselor",
+      "4(a)(2)"
+    ]
+  },
+  {
+    "source_id": "CHI_CODE_TIP",
+    "publisher": "City of Chicago code hosted by American Legal",
+    "title": "2026 S75 6-105-030 tipped wage May2026amendment",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639835",
+    "expected_terms": [
+      "2028",
+      "24 percent"
+    ]
+  },
+  {
+    "source_id": "FL_STATUTE",
+    "publisher": "Florida Senate",
+    "title": "2026 minimum wage law448.110",
+    "url": "https://www.flsenate.gov/Laws/Statutes/2026/448.110",
+    "expected_terms": [
+      "2003",
+      "213",
+      "214"
+    ]
+  },
+  {
+    "source_id": "US_TIP_TABLE_ALT",
+    "publisher": "US Department of Labor",
+    "title": "Tipped employee table direct official no www hostname",
+    "url": "https://dol.gov/agencies/whd/state/minimum-wage/tipped",
+    "expected_terms": [
+      "11.98",
+      "2026",
+      "2.13"
+    ]
+  },
+  {
+    "source_id": "SF_POSTER",
+    "publisher": "San Francisco OLSE",
+    "title": "2026 Minimum Wage Ordinance poster; filename retains2025",
+    "url": "https://media.api.sf.gov/documents/2025_MWO_poster_June2025.pdf",
+    "expected_terms": [
+      "19.61",
+      "two (2)"
+    ]
+  }
+]

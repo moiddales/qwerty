@@ -1,0 +1,57 @@
+[
+  {
+    "source_id": "sanantonio_activity",
+    "url": "https://www.sa.gov/Directory/Departments/Parks/Programs-Classes/Community-Club-Hubs",
+    "checked_date": "2026-11-11",
+    "timezone": "Asia/Shanghai",
+    "channel": "official_search_index_text",
+    "web_open_reported_http_status": "",
+    "observation": "Official indexed text read: free Community Club Hubs and Teen Club description; numeric age, site hours and addresses absent.",
+    "local_download_success": false,
+    "rights": "No full source copy published; short facts and URL only"
+  },
+  {
+    "source_id": "sandiego_activity_event",
+    "url": "https://sandiego.events.mylibrary.digital/event?id=396577",
+    "checked_date": "2026-11-11",
+    "timezone": "Asia/Shanghai",
+    "channel": "official_search_index_text",
+    "web_open_reported_http_status": 403,
+    "observation": "Official event indexed text read; separate web open and local GET return403. Event ages12-18, address, schedule and no-registration rule visible.",
+    "local_download_success": false,
+    "rights": "No full source copy published; short facts and URL only"
+  },
+  {
+    "source_id": "sanjose_activity",
+    "url": "https://www.sanjoseca.gov/your-government/departments-offices/parks-recreation-neighborhood-services/programs-activities/teen-centers/",
+    "checked_date": "2026-11-11",
+    "timezone": "Asia/Shanghai",
+    "channel": "official_search_index_text",
+    "web_open_reported_http_status": 403,
+    "observation": "Official indexed text read for grades6-12, free, Bascom address/hours and guardian signature; web open and local GET return403.",
+    "local_download_success": false,
+    "rights": "No full source copy published; short facts and URL only"
+  },
+  {
+    "source_id": "sanjose_mental_county",
+    "url": "https://files.santaclaracounty.gov/migrated/2023-09-13%20BH%20SLS%20Informational%20Session_.pdf",
+    "checked_date": "2026-11-11",
+    "timezone": "Asia/Shanghai",
+    "channel": "official_pdf_web_open",
+    "web_open_reported_http_status": "",
+    "observation": "Web tool parsed18-page September13,2023 county PDF; access steps at page5. Local GET403.",
+    "local_download_success": false,
+    "rights": "No full source copy published; short facts and URL only"
+  },
+  {
+    "source_id": "charlotte_mental_faq",
+    "url": "https://teenhealthconnection.org/wp-content/uploads/2023/10/Section-4-FINAL.pdf",
+    "checked_date": "2026-11-11",
+    "timezone": "Asia/Shanghai",
+    "channel": "official_pdf_web_open",
+    "web_open_reported_http_status": "",
+    "observation": "Web tool parsed10-page PDF; geographic acceptance and payment FAQ page3, dated September2022. Local download incomplete; current payment page independently obtained.",
+    "local_download_success": false,
+    "rights": "No full source copy published; short facts and URL only"
+  }
+]

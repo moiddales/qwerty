@@ -1,0 +1,53 @@
+{
+  "feed_id": "mdb-2351",
+  "city_id": "3240000",
+  "provider": "Regional Transportation Commission of Southern Nevada (RTC)",
+  "file": "raw_local\\current_gtfs\\mdb-2351.zip",
+  "bytes": 6617681,
+  "sha256": "1448e595969c5a9ed834e0df434f9fd4f1e2b542edc15deec3f81d7b286afc5f",
+  "missing_critical_tables": [],
+  "table_rows": {
+    "agency": 1,
+    "stops": 3785,
+    "routes": 39,
+    "trips": 14036,
+    "calendar": 23,
+    "calendar_dates": 1141,
+    "feed_info": 1
+  },
+  "stop_time_rows": 729171,
+  "agency_timezones": [
+    "America/Los_Angeles"
+  ],
+  "feed_info": [
+    {
+      "feed_publisher_name": "Regional Transportation Commission of Southern Nevada ",
+      "feed_publisher_url": "http://www.rtcsnv.com",
+      "feed_lang": "en",
+      "feed_start_date": "20260823",
+      "feed_end_date": "20270821",
+      "feed_version": "August 2026_20261103"
+    }
+  ],
+  "trips_duplicate_ids": 0,
+  "stops_duplicate_ids": 0,
+  "stop_times_unknown_trip_rows": 0,
+  "stop_times_unknown_stop_rows": 0,
+  "trips_unknown_route": 0,
+  "trips_unknown_service": 0,
+  "trips_without_stop_times": 0,
+  "missing_time_rows": 0,
+  "frequency_rows": 0,
+  "frequency_unknown_trips": 0,
+  "frequency_exact_times": [],
+  "active_stop_time_rows": {
+    "20261118": 185899,
+    "20261114": 168360,
+    "20261115": 151946
+  },
+  "temporal_scope": "2026 snapshot; do not assign these schedules to the 2024 base window",
+  "frequency_handling": "Retain headway and exact_times; template rows are not counted as literal departures",
+  "missing_time_handling": "Retained for interpolation at routing stage; never replace blanks by midnight",
+  "round_trip_status": "raw schedule inputs acquired; origin/destination/opening/eligibility routing still required",
+  "status": "critical_tables_and_links_validated"
+}

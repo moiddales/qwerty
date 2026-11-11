@@ -1,0 +1,42 @@
+{
+  "feed_id": "mdb-510",
+  "city_id": "3651000",
+  "provider": "Metropolitan Transit Authority (MTA)",
+  "file": "raw_local\\current_gtfs\\mdb-510.zip",
+  "bytes": 8446523,
+  "sha256": "79c19bca2eb715c9032713c96e16c28a7c922d5916e5c3bd720d5f42ca4d0b87",
+  "missing_critical_tables": [],
+  "table_rows": {
+    "agency": 1,
+    "stops": 2758,
+    "routes": 92,
+    "trips": 45424,
+    "calendar": 32,
+    "calendar_dates": 160
+  },
+  "stop_time_rows": 1077998,
+  "agency_timezones": [
+    "America/New_York"
+  ],
+  "trips_duplicate_ids": 0,
+  "stops_duplicate_ids": 0,
+  "stop_times_unknown_trip_rows": 0,
+  "stop_times_unknown_stop_rows": 0,
+  "trips_unknown_route": 0,
+  "trips_unknown_service": 0,
+  "trips_without_stop_times": 0,
+  "missing_time_rows": 0,
+  "frequency_rows": 0,
+  "frequency_unknown_trips": 0,
+  "frequency_exact_times": [],
+  "active_stop_time_rows": {
+    "20261118": 270813,
+    "20261114": 184249,
+    "20261115": 155161
+  },
+  "temporal_scope": "2026 snapshot; do not assign these schedules to the 2024 base window",
+  "frequency_handling": "Retain headway and exact_times; template rows are not counted as literal departures",
+  "missing_time_handling": "Retained for interpolation at routing stage; never replace blanks by midnight",
+  "round_trip_status": "raw schedule inputs acquired; origin/destination/opening/eligibility routing still required",
+  "status": "critical_tables_and_links_validated"
+}

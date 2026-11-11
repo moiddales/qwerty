@@ -1,0 +1,119 @@
+{
+  "checked_at": "2026-11-11T20:27:13+08:00",
+  "cities": 25,
+  "records": 50,
+  "sources": 91,
+  "locally_http_200": 80,
+  "locally_marker_present": 80,
+  "native_curl_valid_sources": 4,
+  "locally_valid_unique_sources": 84,
+  "unresolved_local_sources": [
+    {
+      "source_id": "sanantonio_activity",
+      "referenced_by_current_record": true
+    },
+    {
+      "source_id": "sandiego_activity_event",
+      "referenced_by_current_record": true
+    },
+    {
+      "source_id": "sandiego_mental_directory",
+      "referenced_by_current_record": false
+    },
+    {
+      "source_id": "sanjose_activity",
+      "referenced_by_current_record": true
+    },
+    {
+      "source_id": "sanjose_mental_county",
+      "referenced_by_current_record": true
+    },
+    {
+      "source_id": "charlotte_mental_faq",
+      "referenced_by_current_record": true
+    },
+    {
+      "source_id": "nashville_activity",
+      "referenced_by_current_record": false
+    }
+  ],
+  "source_errors": [
+    {
+      "source_id": "sanantonio_activity",
+      "http_status": 403,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "sandiego_activity_event",
+      "http_status": 403,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "sandiego_mental_directory",
+      "http_status": 404,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "jacksonville_mental_hours",
+      "http_status": "",
+      "parse_status": "request_failed",
+      "marker_status": "",
+      "error": "HTTPSConnectionPool(host='cgcjax.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+    },
+    {
+      "source_id": "sanjose_activity",
+      "http_status": 403,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "sanjose_mental_county",
+      "http_status": 403,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "charlotte_mental_faq",
+      "http_status": "",
+      "parse_status": "request_failed",
+      "marker_status": "",
+      "error": "('Connection broken: IncompleteRead(855861 bytes read, 8970068 more expected)', IncompleteRead(855861 bytes read, 8970068 more expected))"
+    },
+    {
+      "source_id": "indianapolis_activity",
+      "http_status": "",
+      "parse_status": "request_failed",
+      "marker_status": "",
+      "error": "HTTPSConnectionPool(host='parks.indy.gov', port=443): Max retries exceeded with url: /wp-content/uploads/2025/07/Explore-Indy-Parks-Summer-2025-8.5-x-11-in-8.5-x-11-in.pdf (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+    },
+    {
+      "source_id": "indianapolis_mental_payment",
+      "http_status": "",
+      "parse_status": "request_failed",
+      "marker_status": "",
+      "error": "HTTPSConnectionPool(host='www.eskenazihealth.edu', port=443): Max retries exceeded with url: /docs/default-source/mental-health/sandra-eskenazi-mental-health-center-consumer-guide.pdf (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+    },
+    {
+      "source_id": "nashville_activity",
+      "http_status": 404,
+      "parse_status": "http_error_response_saved_locally",
+      "marker_status": "",
+      "error": ""
+    },
+    {
+      "source_id": "lasvegas_mental",
+      "http_status": "",
+      "parse_status": "request_failed",
+      "marker_status": "",
+      "error": "HTTPSConnectionPool(host='www.unlvhealth.org', port=443): Max retries exceeded with url: /clinic/mojave-counseling (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"
+    }
+  ]
+}

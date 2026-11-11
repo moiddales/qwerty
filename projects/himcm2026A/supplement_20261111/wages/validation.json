@@ -1,0 +1,14 @@
+{
+  "as_of_date": "2026-11-11",
+  "city_rows": 25,
+  "age14_15_numeric": 25,
+  "age16_17_numeric": 25,
+  "age18_numeric": 25,
+  "source_count": 85,
+  "access_attempts": 85,
+  "locally_confirmed_sources": 51,
+  "checks": [
+    "25 exact frozen city IDs; all rows conditional; linked source IDs exist; age-rate values positive",
+    "No index/ranking or earnings forecast produced; unresolved youth/tip/training overlays stay explicit"
+  ]
+}

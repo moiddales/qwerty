@@ -1,0 +1,180 @@
+source_key,fact_index,document_valid,anchor_present,publication_status,anchor
+nyc_high_admissions,1,True,True,accepted,A NYC resident
+nyc_high_admissions,2,True,True,accepted,Three Paths
+nyc_high_admissions,3,True,True,accepted,A current eighth grade or first-time ninth grade student
+nyc_high_admissions,4,True,True,accepted,"Tuesday, October 6, 2026"
+lausd_resident_identifier,1,True,True,accepted,residency within established school attendance boundaries
+lausd_resident_identifier,2,True,True,accepted,Zones of Choice website
+cps_high_resources,1,True,True,accepted,Proof of residency is required by July 1
+cps_high_resources,2,True,True,accepted,used to determine students’ neighborhood school
+hisd_choice_home,1,True,True,accepted,beyond their zoned campus
+pxu_attendance,1,True,True,accepted,Attendance Boundaries
+pxu_attendance,2,True,True,accepted,whether or not they live within the school or District boundaries
+philadelphia_selection,1,True,True,accepted,based on their home address
+philadelphia_selection,2,True,True,accepted,"November 24, 2026"
+philadelphia_selection,3,True,True,accepted,up to five schools
+philadelphia_selection,4,True,True,accepted,standardized assessment percentiles will not be reviewed
+saisd_choice_timeline,1,True,True,accepted,inside and outside SAISD boundaries
+saisd_choice_timeline,2,True,True,accepted,must re-apply
+saisd_choice_timeline,3,True,True,accepted,February 12
+sdusd_choice,1,False,False,pending_verification,outside your neighborhood boundary
+sdusd_choice,2,False,False,pending_verification,"Monday, October 5 - Sunday, November 15, 2026"
+sdusd_choice,3,False,False,pending_verification,Find Your Neighborhood School
+dallas_booker_admissions,1,True,True,accepted,"Jan. 31, 2027"
+dallas_booker_admissions,2,True,True,accepted,audition date
+fwisd_choice_schools,1,False,False,pending_verification,"November 7, 2026 to January 8, 2027"
+fwisd_choice_schools,2,False,False,pending_verification,Full-Choice Campus
+duval_registration_guide,1,True,True,accepted,school choice process
+austin_transfer,1,True,True,accepted,Future transfers require a transfer application
+austin_transfer,2,True,True,accepted,from their zoned campus
+austin_transfer,3,True,True,accepted,General transfers are limited within the enrollment capacity of a school
+sjusd_enrollment,1,True,True,accepted,currently and continuously residing
+sjusd_enrollment,2,True,True,accepted,2027-2028 and Beyond School Locator
+sjusd_enrollment,3,True,True,accepted,overloaded to the nearest school
+sjusd_enrollment,4,True,True,accepted,begins the first week in December
+cms_choice_dates,1,True,True,accepted,12/11/2026
+columbus_choice,1,True,True,accepted,Parent Portal
+columbus_choice,2,True,True,accepted,"April 12, 2026"
+ips_enrollment_change,1,True,True,accepted,IPS will no longer be a part of Enroll Indy
+ips_enrollment_change,2,True,True,accepted,Fall 2026
+sfusd_dates,1,True,True,accepted,"Week of March 15, 2027"
+seattle_assignment,1,True,True,accepted,other than their attendance area school
+seattle_assignment,2,True,True,accepted,tiebreakers
+seattle_enrollment_dates,1,True,True,accepted,"Jan. 4-31, 2027"
+denver_round1,1,True,True,accepted,"Dec. 1, 2026"
+denver_round1,2,True,True,accepted,guaranteed a spot at their neighborhood school
+mnps_optional_faq,1,True,True,accepted,1 (highest priority) to 7 (lowest priority)
+mnps_optional_faq,2,True,True,accepted,guaranteed pathway
+okcps_transfers,1,True,True,accepted,Every home address in Oklahoma
+okcps_transfers,2,True,True,accepted,April 15 of 2026
+dc_lottery_apply,1,True,True,accepted,"February 1, 2027"
+dc_lottery_apply,2,True,True,accepted,entered into the lottery
+episd_ccte_dual,1,True,True,accepted,EPCC course simultaneously
+episd_ccte_dual,2,True,True,accepted,Register with EPISD home campus
+ccsd_magnet,1,True,True,accepted,"January 12, 2027"
+ccsd_magnet,2,True,True,accepted,"computerized, random lottery"
+boston_registration,1,True,True,accepted,February 5
+boston_registration,2,True,True,accepted,high schools are citywide options
+nyc_cuny_collegenow,1,True,True,accepted,high school GPA of 80+
+nyc_cuny_collegenow,2,True,True,accepted,9th graders
+lausd_dual,1,True,True,accepted,"Tuition, fees, and books are covered"
+lausd_dual,2,True,True,accepted,There is no specific GPA or special test score required to enroll
+lausd_dual,3,True,True,accepted,usually during the regular school day
+lausd_dual,4,True,True,accepted,more than 11 units per semester
+lausd_dual,5,True,True,accepted,There is a fee for each AP exam
+lausd_dual,6,True,True,accepted,Schools may charge fees for IB exams
+lausd_dual,7,True,True,accepted,pay for transportation and books
+lausd_dual,8,True,True,accepted,BEFORE signing up
+cps_dual,1,True,True,accepted,Be age 16+
+cps_dual,2,True,True,accepted,2.5 cumulative grade point average
+cps_dual,3,True,True,accepted,"tuition, materials, and laboratory fees"
+cps_dual,4,True,True,accepted,one course per semester
+hisd_dual,1,True,True,accepted,TSI Score Report
+phoenixcollege_dual,1,False,False,pending_verification,course placement prerequisites
+phoenixcollege_dual,2,False,False,pending_verification,pay tuition and fees
+philadelphia_dual,1,True,True,accepted,cumulative minimum GPA of 2.5
+philadelphia_dual,2,True,True,accepted,cover the costs of books and tuition
+philadelphia_dual,3,True,True,accepted,typically after-school
+saisd_dual_faq,1,True,True,accepted,No Tuition Fees
+saisd_dual_faq,2,True,True,accepted,SAISD teacher approved as an adjunct instructor
+sdusd_missionbay_dual,1,False,False,pending_verification,"GPA, prerequisites"
+sdusd_missionbay_dual,2,False,False,pending_verification,Course offerings change year-to-year
+dallas_woodrow_dual,1,True,True,accepted,Take and pass the required eligibility test
+dallas_woodrow_dual,2,True,True,accepted,purchase a text book
+dallas_woodrow_dual,3,True,True,accepted,All other courses are taken at Richland
+fwisd_dual,1,True,True,accepted,TSI eligibility
+fwisd_dual,2,True,True,accepted,tuition-free
+duval_dual,1,True,True,accepted,minimum cumulative unweighted 3.0 GPA
+duval_dual,2,True,True,accepted,Semester 2 of Grade 10
+duval_dual,3,True,True,accepted,unweighted 3.5 GPA
+austin_dual,1,True,True,accepted,Complete the sophomore year
+austin_dual,2,True,True,accepted,Purchase required textbooks
+sj_deanza_dual,1,False,False,pending_verification,including rising 9th graders
+sj_deanza_dual,2,False,False,pending_verification,for FREE
+cms_palisades_ccp,1,True,True,accepted,GPA of 2.8
+columbus_ohio_ccp,1,True,True,accepted,"no cost for tuition, books or fees"
+columbus_ohio_ccp,2,True,True,accepted,September 1 - November 1
+columbus_ohio_ccp,3,True,True,accepted,their own requirements to enroll
+ips_ivytech_dual,1,True,True,accepted,complete the Knowledge Assessment
+ips_ivytech_dual,2,True,True,accepted,there is no cost to students
+ips_ivytech_dual,3,True,True,accepted,during the regular school day
+sfusd_dual,1,True,True,accepted,provided free of charge
+sfusd_dual,2,True,True,accepted,Prerequisites must be cleared before course registration
+sfusd_dual,3,True,True,accepted,at least two weeks
+seattle_runningstart,1,True,True,accepted,at least Junior/11th grade status
+seattle_runningstart,2,True,True,accepted,responsible for paying the exam fee
+denver_co_concurrent,1,True,True,accepted,less than 21 years of age
+denver_co_concurrent,2,True,True,accepted,Each school is different
+mnps_dual,1,True,True,accepted,GPA of 2.8
+mnps_dual,2,True,True,accepted,tuition-free college courses
+mnps_dual,3,True,True,accepted,hybrid format
+okcps_concurrent,1,True,True,accepted,prohibited from enrolling in any form of developmental education
+okcps_concurrent,2,True,True,accepted,GPA requirements set forth by the college
+okcps_concurrent,3,True,True,accepted,within one (1) school day
+dc_dual_faq,1,True,True,accepted,Special course fees
+dc_dual_faq,2,True,True,accepted,DCPS students in grades 10-12
+dc_dual_faq,3,True,True,accepted,does not conflict with any DCPS scheduling requirements
+lasvegas_csn_jumpstart,1,True,True,accepted,"freshman, sophomore, junior, senior"
+lasvegas_csn_jumpstart,2,True,True,accepted,per course fee
+boston_bhcc_dual,1,True,True,accepted,NOT eligible for Dual Enrollment
+boston_bhcc_dual,2,True,True,accepted,Placement by High School GPA
+boston_bhcc_dual,3,True,True,accepted,funding is not guaranteed
+boston_bhcc_dual,4,True,True,accepted,"Submission Deadline: January 4, 2027"
+sandiego_sdccd_highschool,1,True,True,accepted,This must be done each term
+sandiego_sdccd_highschool,2,True,True,accepted,Enrollment in Exercise Science classes will not be permitted
+sandiego_sdccd_highschool,3,True,True,accepted,fewer than 12 units
+sandiego_sdccd_highschool,4,True,True,accepted,Free Tuition and Textbooks
+sandiego_sdccd_highschool,5,True,True,accepted,Part of the Regular School Day
+sandiego_sdccd_highschool,6,True,True,accepted,If the class is full
+sandiego_sdccd_highschool,7,True,True,accepted,maintain a 2.0 grade point average
+nyc_ap_exams,1,True,True,accepted,All high school level students are eligible
+cps_gocps_dates,1,True,True,accepted,"Friday November 13, 2026"
+cps_gocps_dates,2,True,True,accepted,Students looking to transfer during 10-12th grade
+boston_residency,1,True,True,accepted,student under age 18
+boston_residency,2,True,True,accepted,will not be considered for invitation
+fwisd_choices_main,1,True,True,accepted,Admission to Choice programs are determined through the Choice lottery process
+fwisd_choices_main,2,True,True,accepted,"Friday, January 8, 2027"
+cps_northside_ap_science,1,True,True,accepted,Limited to Juniors and Seniors
+cps_northside_ap_science,2,True,True,accepted,"Open to Sophomores, Juniors and Seniors"
+philadelphia_central_ap_science,1,True,True,accepted,Changes in final report card grades
+philadelphia_central_ap_science,2,True,True,accepted,limited seats available
+austin_ap,1,True,True,accepted,fee reduction available for students who qualify
+austin_ap,2,True,True,accepted,Campuses only proctor
+cms_ib,1,True,True,accepted,Entry at 10th grade
+cms_ib,2,True,True,accepted,Pass three MYP courses
+cms_ib,3,True,True,accepted,if still applicable and open
+cms_ib,4,True,True,accepted,DP is a two-year curriculum
+sjusd_exam_fees,1,True,True,accepted,covers the fees for Advanced Placement
+sjusd_exam_fees,2,True,True,accepted,International Baccalaureate exams
+houston_hspva_ap,1,True,True,accepted,Enrollment is open to all students
+houston_hspva_ap,2,True,True,accepted,only allows five academic courses
+houston_hspva_ap,3,True,True,accepted,AP test fees are paid by Houston ISD
+dallas_credit_comparison,1,False,False,pending_verification,Meet high school prerequisites
+dallas_credit_comparison,2,False,False,pending_verification,be enrolled in the IB Diploma Programme
+dallas_credit_comparison,3,False,False,pending_verification,meeting the TSI requirements
+fwisd_terrell_science,1,True,True,accepted,Prerequisite: Honors Biology
+fwisd_terrell_science,2,True,True,accepted,including one year of life science
+seattle_west_ap,1,True,True,accepted,Earned a ‘B’ grade or better
+seattle_west_ap,2,True,True,accepted,exam fee is $20.00
+okcps_classen_ap,1,False,False,pending_verification,must meet prerequisites and requirements
+pxu_open_enrollment,1,True,True,accepted,No tuition shall be charged for open enrollment
+pxu_open_enrollment,2,True,True,accepted,once every twelve (12) weeks
+hisd_k12_criteria,1,True,True,accepted,processed before out-of-district applications
+hisd_k12_criteria,2,True,True,accepted,"High schools with Magnet, IB or CTE programming"
+hisd_k12_criteria,3,True,True,accepted,magnet matrix of 80 or higher
+hisd_k12_dates,1,True,True,accepted,12/08/2026
+hisd_k12_dates,2,True,True,accepted,"First-Come, First-Served Basis"
+hisd_k12_dates,3,True,True,accepted,even if you are zoned to that school
+sjusd_dual_outside,1,True,True,accepted,Students must obtain prior approval before enrolling
+sjusd_dual_outside,2,True,True,accepted,must contact their academic counselor
+sjusd_middle_high,1,True,True,accepted,"All requests must be submitted by 5:00 p.m. on February 12, 2027"
+sjusd_middle_high,2,True,True,accepted,Students who are requesting a Voluntary Integrative Transfer
+sjusd_middle_high,3,True,True,accepted,programmatic or physical capacity
+dc_enroll_right,1,True,True,accepted,Every child that is a DC resident
+dc_enroll_right,2,True,True,accepted,based on their address
+duval_residency_rules,1,True,True,accepted,All students registering for any Duval County public school
+dallas_dual_district,1,True,True,accepted,contact the high school campus you plan to attend
+dallas_credit_chart_current,1,True,True,accepted,AP courses are open enrollment
+dallas_credit_chart_current,2,True,True,accepted,Indicate course choice on course selection sheet
+dallas_credit_chart_current,3,True,True,accepted,and enroll in the IB Diploma
+dallas_credit_chart_current,4,True,True,accepted,Meet prerequisites and demonstrate college readiness

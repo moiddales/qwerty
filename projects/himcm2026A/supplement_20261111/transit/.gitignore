@@ -1,0 +1,4 @@
+# Original catalog contains key-bearing public service URLs; publish selected redacted facts.
+mobility_database_feeds_v2.csv
+selected_feed_registry_local.json
+acquisition_results_local.json

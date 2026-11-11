@@ -1,0 +1,51 @@
+﻿city_id,census_city_name,city,domain,sample_records,published_wait_measurements,published_capacity_numbers,scope
+3651000,New York city,New York,activity,1,0,0,named official program sample; no citywide representativeness
+3651000,New York city,New York,mental_health,1,0,0,named official program sample; no citywide representativeness
+0644000,Los Angeles city,Los Angeles,activity,1,0,0,named official program sample; no citywide representativeness
+0644000,Los Angeles city,Los Angeles,mental_health,1,0,0,named official program sample; no citywide representativeness
+1714000,Chicago city,Chicago,activity,1,0,0,named official program sample; no citywide representativeness
+1714000,Chicago city,Chicago,mental_health,1,0,0,named official program sample; no citywide representativeness
+4835000,Houston city,Houston,activity,1,0,0,named official program sample; no citywide representativeness
+4835000,Houston city,Houston,mental_health,1,0,0,named official program sample; no citywide representativeness
+0455000,Phoenix city,Phoenix,activity,1,0,0,named official program sample; no citywide representativeness
+0455000,Phoenix city,Phoenix,mental_health,1,0,0,named official program sample; no citywide representativeness
+4260000,Philadelphia city,Philadelphia,activity,1,0,0,named official program sample; no citywide representativeness
+4260000,Philadelphia city,Philadelphia,mental_health,1,0,0,named official program sample; no citywide representativeness
+4865000,San Antonio city,San Antonio,activity,1,0,0,named official program sample; no citywide representativeness
+4865000,San Antonio city,San Antonio,mental_health,1,0,0,named official program sample; no citywide representativeness
+0666000,San Diego city,San Diego,activity,1,0,0,named official program sample; no citywide representativeness
+0666000,San Diego city,San Diego,mental_health,1,0,0,named official program sample; no citywide representativeness
+4819000,Dallas city,Dallas,activity,1,0,1,named official program sample; no citywide representativeness
+4819000,Dallas city,Dallas,mental_health,1,0,0,named official program sample; no citywide representativeness
+4827000,Fort Worth city,Fort Worth,activity,1,0,0,named official program sample; no citywide representativeness
+4827000,Fort Worth city,Fort Worth,mental_health,1,0,0,named official program sample; no citywide representativeness
+1235000,Jacksonville city,Jacksonville,activity,1,0,0,named official program sample; no citywide representativeness
+1235000,Jacksonville city,Jacksonville,mental_health,1,0,0,named official program sample; no citywide representativeness
+4805000,Austin city,Austin,activity,1,0,0,named official program sample; no citywide representativeness
+4805000,Austin city,Austin,mental_health,1,0,0,named official program sample; no citywide representativeness
+0668000,San Jose city,San Jose,activity,1,0,0,named official program sample; no citywide representativeness
+0668000,San Jose city,San Jose,mental_health,1,0,0,named official program sample; no citywide representativeness
+3712000,Charlotte city,Charlotte,activity,1,0,0,named official program sample; no citywide representativeness
+3712000,Charlotte city,Charlotte,mental_health,1,0,0,named official program sample; no citywide representativeness
+3918000,Columbus city,Columbus,activity,1,0,0,named official program sample; no citywide representativeness
+3918000,Columbus city,Columbus,mental_health,1,0,0,named official program sample; no citywide representativeness
+1836003,Indianapolis city (balance),Indianapolis (balance),activity,1,0,0,named official program sample; no citywide representativeness
+1836003,Indianapolis city (balance),Indianapolis (balance),mental_health,1,0,0,named official program sample; no citywide representativeness
+0667000,San Francisco city,San Francisco,activity,1,0,0,named official program sample; no citywide representativeness
+0667000,San Francisco city,San Francisco,mental_health,1,0,0,named official program sample; no citywide representativeness
+5363000,Seattle city,Seattle,activity,1,0,0,named official program sample; no citywide representativeness
+5363000,Seattle city,Seattle,mental_health,1,1,0,named official program sample; no citywide representativeness
+0820000,Denver city,Denver,activity,1,0,0,named official program sample; no citywide representativeness
+0820000,Denver city,Denver,mental_health,1,0,0,named official program sample; no citywide representativeness
+4752006,Nashville-Davidson metropolitan government (balance),Nashville-Davidson (balance),activity,1,0,0,named official program sample; no citywide representativeness
+4752006,Nashville-Davidson metropolitan government (balance),Nashville-Davidson (balance),mental_health,1,0,0,named official program sample; no citywide representativeness
+4055000,Oklahoma City city,Oklahoma City,activity,1,0,0,named official program sample; no citywide representativeness
+4055000,Oklahoma City city,Oklahoma City,mental_health,1,0,0,named official program sample; no citywide representativeness
+1150000,Washington city,Washington,activity,1,0,0,named official program sample; no citywide representativeness
+1150000,Washington city,Washington,mental_health,1,0,0,named official program sample; no citywide representativeness
+4824000,El Paso city,El Paso,activity,1,0,0,named official program sample; no citywide representativeness
+4824000,El Paso city,El Paso,mental_health,1,0,0,named official program sample; no citywide representativeness
+3240000,Las Vegas city,Las Vegas,activity,1,0,0,named official program sample; no citywide representativeness
+3240000,Las Vegas city,Las Vegas,mental_health,1,0,0,named official program sample; no citywide representativeness
+2507000,Boston city,Boston,activity,1,0,0,named official program sample; no citywide representativeness
+2507000,Boston city,Boston,mental_health,1,0,0,named official program sample; no citywide representativeness

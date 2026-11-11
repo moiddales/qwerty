@@ -1,0 +1,31 @@
+field,definition,missing_value
+population_rank,Frozen Census V2025 population rank.,empty string; never zero-imputed
+city_id,Seven-character state+place Census ID; preserve leading zeroes.,empty string; never zero-imputed
+city_name,"Frozen city name, including Census balance.",empty string; never zero-imputed
+state_abbr,US postal abbreviation; DC is district.,empty string; never zero-imputed
+as_of_date,"Date at which the source-coded reference scenario is compared, YYYY-MM-DD.",empty string; never zero-imputed
+unit,"USD per hour gross statutory wage, not observed earnings.",empty string; never zero-imputed
+reference_scenario,The common employment scenario required for numeric age reference columns.,empty string; never zero-imputed
+work_geography,Actual place of work determines geographic wage entitlement; residence is not sufficient.,empty string; never zero-imputed
+applicable_reference_level,"Controlling level for the named reference job; city, state, or conditional federal.",empty string; never zero-imputed
+state_general_rate,General state/district floor before youth/local/industry exceptions; blank for TN no state law.,empty string; never zero-imputed
+state_rate_effective_from,Start date of coded state general rate; not download date.,empty string; never zero-imputed
+federal_general_rate,FLSA-covered ordinary nonexempt floor before youth/tip/certificate exceptions.,empty string; never zero-imputed
+federal_rate_effective_from,Federal general rate effective date.,empty string; never zero-imputed
+city_general_rate,Higher citywide general rate if a city rule is explicitly coded; blank is not zero.,empty string; never zero-imputed
+city_rate_effective_from,"Start of coded city general rate, not original ordinance adoption date.",empty string; never zero-imputed
+age_14_15_reference_rate,"Reference job age14-15 rate; Seattle18.105 is exact85% formula, cent rounding unresolved.",empty string; never zero-imputed
+age_16_17_reference_rate,Reference job age16-17 rate conditional on coverage and absence of named exceptions.,empty string; never zero-imputed
+age_18_reference_rate,"Reference job age18 rate, past initial youth/training period.",empty string; never zero-imputed
+youth_rate_basis,Why age groups share or differ in rates; identifies derivation and source vintage.,empty string; never zero-imputed
+initial_period_rule,Initial calendar-day/employment-hour or approved-training rule; these units must not be interchanged.,empty string; never zero-imputed
+age18_tipped_cash_reference_rate,Age18 employer direct cash floor under named tip conditions; tips are additional and employer covers shortfall.,empty string; never zero-imputed
+tipped_rule,Tip credit eligibility and total-wage condition; age18 values do not automatically cover under18.,empty string; never zero-imputed
+employer_coverage,Headcount/revenue/location/hour-threshold and employee-coverage constraints.,empty string; never zero-imputed
+industry_and_program_rules,"Separately coded industry, subsidized youth, certificate, family, camp or public-contract classes.",empty string; never zero-imputed
+local_general_rule_status,Evidence for the city/state relationship; partial local-special-rule searches stay explicit.,empty string; never zero-imputed
+source_version_note,"Document revision, temporal mismatch, calculation and source typo qualifications.",empty string; never zero-imputed
+evidence_status,Source content reading status; inspect access logs for actual local HTTP and parse stage.,empty string; never zero-imputed
+unresolved_fields,Named remaining wage-rule qualification; blank indicates no additional unresolved item recorded.,empty string; never zero-imputed
+source_ids,Pipe-delimited IDs in sources.json; source facts also have locally tested access metadata.,empty string; never zero-imputed
+source_urls,Pipe-delimited original official URLs aligned with source_ids.,empty string; never zero-imputed

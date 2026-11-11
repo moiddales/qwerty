@@ -1,0 +1,26 @@
+city_id,city_name,age14_15_numeric,age16_17_numeric,age18_numeric,initial_period_coded,tipped_conditions_coded,employer_conditions_coded,industry_or_program_conditions_coded,source_count,locally_confirmed_sources,open_qualification
+3651000,New York city,1,1,1,1,1,1,1,5,4,
+0644000,Los Angeles city,1,1,1,1,1,1,1,8,6,Local treatment of state learners age18; health/fast-food learner interactions not given automatic reduced numeric wage.
+1714000,Chicago city,1,1,1,1,1,1,1,8,3,Initial90day tipped/state learner program interactions must use job-specific coverage; not combined into one floor.
+4835000,Houston city,1,1,1,1,1,1,1,5,3,
+0455000,Phoenix city,1,1,1,1,1,1,0,6,3,No Phoenix-specific general ordinance located; local contracted/prevailing wages not inventoried.
+4260000,Philadelphia city,1,1,1,1,1,1,1,5,4,City/public-contractor living wage is a separate job class; not exhaustively inventoried.
+4865000,San Antonio city,1,1,1,1,1,1,1,5,3,
+0666000,San Diego city,1,1,1,1,1,1,1,7,5,California160hour learner rule relationship to city wage unresolved; no reduced city learner number assigned.
+4819000,Dallas city,1,1,1,1,1,1,1,5,3,
+4827000,Fort Worth city,1,1,1,1,1,1,1,5,3,
+1235000,Jacksonville city,1,1,1,1,1,1,0,6,2,2026 poster direct access403; precise Florida youth/certificate overlay not fully coded.
+4805000,Austin city,1,1,1,1,1,1,1,5,3,
+0668000,San Jose city,1,1,1,1,1,1,1,7,4,Current SanJose learner/certificate/CBA exceptions and exact employer nexus not independently resolved.
+3712000,Charlotte city,1,1,1,1,1,1,1,6,5,
+3918000,Columbus city,1,1,1,1,1,1,0,5,3,Exactly$405000 boundary:poster says below; state2025 news says$405000-or-less; use >$405000 reference employers.
+1836003,Indianapolis city (balance),1,1,1,1,1,1,0,3,2,
+0667000,San Francisco city,1,1,1,1,1,1,1,7,5,Ordinary CA160hour learner interaction with SF city ordinance unresolved; no general youth discount assigned.
+5363000,Seattle city,1,1,1,1,1,1,1,5,4,2026 cent-rounding rule for85% calculation; currentageFAQ revision after2018 not obtained.
+0820000,Denver city,1,1,1,1,1,1,1,5,2,Rounding/stacking of certified-program reduction and tipped credit not numerically applied.
+4752006,Nashville-Davidson metropolitan government (balance),1,1,1,1,1,1,1,4,1,
+4055000,Oklahoma City city,1,1,1,1,1,1,1,4,3,No floor assigned where both state and federal protections exclude the job.
+1150000,Washington city,1,1,1,1,1,1,1,3,2,
+4824000,El Paso city,1,1,1,1,1,1,1,5,3,
+3240000,Las Vegas city,1,1,1,1,1,1,1,5,4,
+2507000,Boston city,1,1,1,1,1,1,1,6,3,Current special learner certificate schedules and every occupational exemption not fully coded.

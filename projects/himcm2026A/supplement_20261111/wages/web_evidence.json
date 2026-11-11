@@ -1,0 +1,146 @@
+[
+  {
+    "source_id": "US_YOUTH",
+    "url": "https://www.dol.gov/agencies/whd/fact-sheets/32-minimum-wage-youth",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index full text",
+    "short_fact": "Revised July 2008 fact sheet: under 20, first 90 calendar days, $4.25; no displacement; higher applicable state or local standard prevails.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "US_STATE",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index full text",
+    "short_fact": "Updated November 5, 2026: state general minimum wages and Tennessee no state minimum wage; this table excludes youth and local differential provisions.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "US_TIPPED",
+    "url": "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index currenttable",
+    "short_fact": "Current table dated November 5, 2026: Florida $15.00 total, $3.02 maximum tip credit, $11.98 cash, more than $30 monthly tips.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "AZ_RATE",
+    "url": "https://www.azica.gov/sites/default/files/2025-10/2026%20Minimum%20Wage.pdf",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index PDF",
+    "short_fact": "Arizona ICA announcement: $15.15 effective January 1, 2026.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "AZ_YOUTH_FAQ",
+    "url": "https://www.azica.gov/sites/default/files/media/Changes%20Only-FREQUENTLY%20ASKED%20QUESTIONS_MasterwTOC_REV05232017.pdf",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index PDF",
+    "short_fact": "2017 official FAQ states the Arizona minimum wage is the same for adults and minors.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "SJ_RATE",
+    "url": "https://www.sanjoseca.gov/your-government/departments-offices/public-works/labor-compliance/minimum-wage-ordinance",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "2026 city banner: $18.45 effective January 1; local Santa Clara County official table also returned HTTP 200.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "TN_RATE",
+    "url": "https://lwdsupport.tn.gov/hc/en-us/articles/360000130587-Should-I-be-paid-minimum-wage",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "Tennessee DOL states there is no state minimum wage law; federal coverage must be evaluated separately.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "FL_RATE",
+    "url": "https://floridajobs.org/florida-minimum-wage",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "Florida Commerce states $15.00 from September 30, 2026 through December 31, 2027; local HTTP 403 is logged separately.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "OH_RATE",
+    "url": "https://com.ohio.gov/about-us/media-center/news/Ohio-Minimum-Wage-Set-to-Increase-in-2026-11",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "Official news dated September 30, 2025: age 14-15 remains $7.25 in 2026; revenue wording is $405,000 or less, while official poster says below $405,000.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "MA_YOUTH",
+    "url": "https://www.mass.gov/info-details/about-youth-employment-and-safety",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "Current official youth employment FAQ gives general wage $15.00 and service rate $6.75.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "MA_PAY",
+    "url": "https://www.mass.gov/guides/pay-and-recordkeeping",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index page",
+    "short_fact": "Mass.gov states general wage $15.00, service rate $6.75 effective 2023, and agricultural wage $8.00.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "TX_PREEMPT",
+    "url": "https://statutes.capitol.texas.gov/Docs/LA/htm/LA.62.htm",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official search-index statutorytext",
+    "short_fact": "Texas Labor Code 62.0515 preempts general private-employment local wage ordinances, with public-contract and job-training exceptions.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "CHI_PRESS",
+    "url": "https://ebs.publicnow.com/view/6D09FB9ECBDE18D23EEA4743D2910063475EC104",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "web tool official indexedgovernmentpressreleasedistribution",
+    "short_fact": "Official city release dated June 8, 2026: general and subsidized youth/transitional program wages reach $17.05 on July 1.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "CHI_CODE_WAGE",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639811",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "Web tool direct open of official municipal code 2026 S-75",
+    "short_fact": "6-105-020(b)(3)(F): under-18 and named youth-program wages rise by up to $1.50 annually until matching the general city rate; the 2026 rate is therefore $17.05.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "CHI_CODE_DEF",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639780",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "Web tool direct open of official municipal code 2026 S-75",
+    "short_fact": "6-105-010: at least 2 hours per 2-week period; ordinary employers need 4+ employees; initial 90-day state 4(a)(2) and certain camp-stipend exclusions apply.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  },
+  {
+    "source_id": "CHI_CODE_TIP",
+    "url": "https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2639835",
+    "observed_date": "2026-11-11",
+    "channel": "web tool; independent of local Windows urllib",
+    "method": "Web tool direct open of official municipal code 2026 S-75",
+    "short_fact": "6-105-030, amended May 20, 2026: maximum 24% tip credit through June 30, 2028; current BACP table gives ordinary cash wage $12.96.",
+    "local_http_evidence": "See access_log.jsonl and source_access_latest.csv; web result is not a local HTTP200."
+  }
+]

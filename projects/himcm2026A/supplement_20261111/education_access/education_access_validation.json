@@ -1,0 +1,13 @@
+{
+  "updated_at_utc": "2026-11-11T12:25:39+00:00",
+  "cities_with_facts": 25,
+  "catalogue_sources": 74,
+  "valid_local_documents": 67,
+  "accepted_facts": 164,
+  "pending_fact_codings": 15,
+  "coverage_cells": 450,
+  "cells_with_partial_evidence": 136,
+  "missing_cells": 314,
+  "all_25_city_task_complete": false,
+  "physical_school_lea_city_queue_rows": 714
+}

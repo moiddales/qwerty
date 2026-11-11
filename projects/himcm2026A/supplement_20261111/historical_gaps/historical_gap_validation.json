@@ -1,0 +1,20 @@
+{
+  "places_source_rows": 25,
+  "places_original_records": 2000,
+  "places_missing_rechecked": 210,
+  "places_missing_by_city": {
+    "4835000": 14,
+    "4260000": 70,
+    "4865000": 14,
+    "4819000": 14,
+    "4827000": 14,
+    "1235000": 14,
+    "4805000": 14,
+    "5363000": 14,
+    "0820000": 14,
+    "4752006": 14,
+    "4824000": 14
+  },
+  "fars_cities_with_explicit_publication_status": 25,
+  "all_historical_gaps_closed": false
+}

@@ -1,0 +1,97 @@
+{
+  "source_url": "https://ntmcatalog.bts.gov/transit/2024-12-02/80006.zip",
+  "observed_http_status": 200,
+  "bytes": 294620,
+  "sha256": "bab12f9bad1c6698e6cb4ee3c45213cace5d8da574200df70e10116321229075",
+  "zip_members": [
+    {
+      "name": "agency.csv",
+      "bytes": 209,
+      "directory": false
+    },
+    {
+      "name": "calendar.csv",
+      "bytes": 1334,
+      "directory": false
+    },
+    {
+      "name": "calendar_dates.csv",
+      "bytes": 535,
+      "directory": false
+    },
+    {
+      "name": "feed_info.csv",
+      "bytes": 211,
+      "directory": false
+    },
+    {
+      "name": "routes.csv",
+      "bytes": 23414,
+      "directory": false
+    },
+    {
+      "name": "shapes.csv/",
+      "bytes": 0,
+      "directory": true
+    },
+    {
+      "name": "stop_times.csv/",
+      "bytes": 0,
+      "directory": true
+    },
+    {
+      "name": "stops.csv",
+      "bytes": 877283,
+      "directory": false
+    },
+    {
+      "name": "trips.csv",
+      "bytes": 1557263,
+      "directory": false
+    }
+  ],
+  "official_database_stats": [
+    {
+      "file_name": "stops.csv",
+      "ntd_id": "80006",
+      "records": 7499
+    },
+    {
+      "file_name": "feed_info.csv",
+      "ntd_id": "80006",
+      "records": 1
+    },
+    {
+      "file_name": "calendar_dates.csv",
+      "ntd_id": "80006",
+      "records": 20
+    },
+    {
+      "file_name": "calendar.csv",
+      "ntd_id": "80006",
+      "records": 12
+    },
+    {
+      "file_name": "agency.csv",
+      "ntd_id": "80006",
+      "records": 1
+    },
+    {
+      "file_name": "routes.csv",
+      "ntd_id": "80006",
+      "records": 124
+    },
+    {
+      "file_name": "trips.csv",
+      "ntd_id": "80006",
+      "records": 20791
+    },
+    {
+      "file_name": "stop_times.csv",
+      "ntd_id": "80006",
+      "records": 785035
+    }
+  ],
+  "finding": "ZIP export has empty directory stop_times.csv/ although official database lists785035 records; not a complete GTFS schedule",
+  "replacement": "Operator direct2026 RTD zip downloaded and validated separately; historical2024 export gap remains"
+}

@@ -1,0 +1,24 @@
+field,definition
+record_id,"Unique source-key, fact index and city association. Not a student or school identifier."
+city_id,Seven-character Census place/balance GEOID from the frozen cities.csv; preserve leading zeroes.
+city_name,Frozen Census incorporated-place or published balance name.
+state,Two-letter state abbreviation.
+source_id,S28: official local/state/district supplements under the project source catalogue.
+source_key,Join to education_access_sources.csv and acquisition attempts in education_access_http_log.jsonl.
+indicator_id,"education_access_ plus topic; topic is a policy construct, not a numeric city performance score."
+value,Empty for qualitative policy facts. Never encode unknown eligibility/capacity as numeric zero.
+unit,policy_rule for qualitative facts.
+value_text,Original factual paraphrase coded from the cited official policy; preserve its stated conditions.
+observation_period,"Explicit school/application year when stated, otherwise current undated webpage or board policy."
+geography_type,Named district/provider scope associated with a city; not citywide resident eligibility.
+source_geo_id,Readable district/provider scope. Not a FIPS code and not a completed GIS boundary.
+program,Program/pathway to which the rule applies; examination eligibility and course enrollment are distinct.
+grade_group,School grade/age applicability when stated; otherwise see the detailed rule.
+source_url,Official source URL; acquisition log preserves requested and final redirect URLs.
+source_section,Section or title supporting manual coding.
+quality_note,"Observed scope, source-date conflict or other specific limitation."
+raw_value,Short literal locator/anchor from the source; full original response is held locally in ignored raw_local.
+accessed_at_utc,Actual local-machine HTTPS GET start time with UTC offset.
+evidence_local_path,Project-relative local extracted text path; excluded from public Git files.
+evidence_status,"Local HTTP status, valid-document anchors and fact-anchor presence checked."
+UNVERIFIED,No accepted policy fact in this topic/city cell yet; not evidence of zero access or unavailable data.

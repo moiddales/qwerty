@@ -1,0 +1,33 @@
+﻿field,meaning,missing_value
+record_id,Unique named-program sample key,empty; never inferred zero
+city_id,Census city identifier from existing data/metadata/cities.csv; preserve as text,empty; never inferred zero
+census_city_name,"Frozen official city name, including balance",empty; never inferred zero
+population_rank,Existing frozen population rank,empty; never inferred zero
+city,Readable candidate city label,empty; never inferred zero
+state,USPS state abbreviation,empty; never inferred zero
+domain,activity or mental_health,empty; never inferred zero
+provider,Official program provider,empty; never inferred zero
+program,"Named program, event or explicit policy sample",empty; never inferred zero
+evidence_scope,Actual institution/site/network represented; no citywide inference,empty; never inferred zero
+age_min,Explicit numeric inclusive minimum in years; blank if unavailable,empty; never inferred zero
+age_max,Explicit numeric inclusive maximum in years; under21 coded20 for whole-year ages,empty; never inferred zero
+age_grade_rule,"Grade, clinical or target-group rule; exact wording conflicts preserved",empty; never inferred zero
+residence_eligibility,"Residence, county, clinical or program eligibility",empty; never inferred zero
+location,"Service point, contact point or virtual delivery; uncertainty explicitly labelled",empty; never inferred zero
+fee_usd,Explicit applicable price in USD; zero only when source confirms free,empty; never inferred zero
+fee_unit,Unit to which numeric price applies,empty; never inferred zero
+fee_rule,Known price context or unresolved applicability,empty; never inferred zero
+reduction_rule,"Discount, financial assistance or scholarship conditions",empty; never inferred zero
+schedule,"Project, building or intake hours with scope stated",empty; never inferred zero
+registration_appointment,"Enrollment, appointment, consent, documents or entry conditions",empty; never inferred zero
+referral_rule,"Referring clinician, self-referral, triage or routing requirement",empty; never inferred zero
+insurance_rule,"Accepted insurance, eligibility and plan-specific restrictions",empty; never inferred zero
+self_pay_rule,Uninsured/self-pay or sliding fee conditions; no invented amount,empty; never inferred zero
+capacity_number,Explicit numeric program supply; blank if unavailable,empty; never inferred zero
+capacity_unit,"Capacity measure, such as annual passes offered",empty; never inferred zero
+capacity_rule,"Capacity date, scope and conditions; not facility counts or attendance",empty; never inferred zero
+wait_days,Published measured days; only Seattle department median37 in this sample,empty; never inferred zero
+wait_rule,Wait measure definition or qualitative intake/availability statement,empty; never inferred zero
+observation_period,Source policy/event/statistic applicability period; distinct from retrieval date,empty; never inferred zero
+source_ids,Semicolon-delimited keys into sources*.json and access evidence,empty; never inferred zero
+quality_note,"Specific dated limitations, conflicts and unresolved conditions",empty; never inferred zero

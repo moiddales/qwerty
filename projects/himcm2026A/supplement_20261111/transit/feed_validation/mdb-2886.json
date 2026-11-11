@@ -1,0 +1,42 @@
+{
+  "feed_id": "mdb-2886",
+  "city_id": "0667000",
+  "provider": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
+  "file": "raw_local\\current_gtfs\\mdb-2886.zip",
+  "bytes": 10447937,
+  "sha256": "69572de4529dd3b7848e11258df5ea2aef1b36611d953d84fe0170075dbab910",
+  "missing_critical_tables": [],
+  "table_rows": {
+    "agency": 1,
+    "stops": 3238,
+    "routes": 68,
+    "trips": 50690,
+    "calendar": 3,
+    "calendar_dates": 58
+  },
+  "stop_time_rows": 1901119,
+  "agency_timezones": [
+    "America/Los_Angeles"
+  ],
+  "trips_duplicate_ids": 0,
+  "stops_duplicate_ids": 0,
+  "stop_times_unknown_trip_rows": 0,
+  "stop_times_unknown_stop_rows": 0,
+  "trips_unknown_route": 0,
+  "trips_unknown_service": 0,
+  "trips_without_stop_times": 0,
+  "missing_time_rows": 0,
+  "frequency_rows": 0,
+  "frequency_unknown_trips": 0,
+  "frequency_exact_times": [],
+  "active_stop_time_rows": {
+    "20261118": 0,
+    "20261114": 0,
+    "20261115": 0
+  },
+  "temporal_scope": "2026 snapshot; do not assign these schedules to the 2024 base window",
+  "frequency_handling": "Retain headway and exact_times; template rows are not counted as literal departures",
+  "missing_time_handling": "Retained for interpolation at routing stage; never replace blanks by midnight",
+  "round_trip_status": "raw schedule inputs acquired; origin/destination/opening/eligibility routing still required",
+  "status": "critical_tables_and_links_validated"
+}
