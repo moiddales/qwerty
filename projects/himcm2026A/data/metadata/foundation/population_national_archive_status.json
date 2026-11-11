@@ -1,0 +1,11 @@
+{
+  "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+  "source_version": "Vintage 2025",
+  "local_checkpoint": "0d71bf7fe36b5c5fead4674431560524610ea46b",
+  "source_bytes": 7464556,
+  "source_sha256": "e3508f5201465913476d4ddf91740f191f7977c9f2614a2a7e30b5fd22027934",
+  "source_git_blob": "ad55d5c762df4960c37edd95f852398be1302f48",
+  "github_archived": false,
+  "reason": "7.46MB connector create_blob did not return; national original omitted from published checkpoint; 25-city complete population extract and official ranking XLSX included",
+  "city_extract": "projects/himcm2026A/data/extracted/foundation/population_25cities_2020_2025.csv"
+}
