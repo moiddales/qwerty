@@ -177,15 +177,18 @@ note("H3_youth_mh_facilities", "SAMHSA-listed mental-health facilities accepting
 # ---------- mobility: SLD block groups inside the city ----------
 sel = pd.read_csv(D / "extracted/mobility_opportunities/sld_city_bg_spatial_selection.csv", dtype=str)
 sld = pd.read_csv(D / "extracted/mobility_opportunities/sld_selected_block_groups_all_source_fields.csv.gz", dtype=str,
-                  usecols=["bg_geoid2019", "TotPop", "D4C", "D4A", "NatWalkInd"])
+                  usecols=["bg_geoid2019", "TotPop", "D4C", "D4A", "NatWalkInd", "D5BR", "D5AR"])
 bg = sel[sel.selection == "contained"].merge(sld, on="bg_geoid2019")
-for c in ("TotPop", "D4C", "D4A", "NatWalkInd"):
+for c in ("TotPop", "D4C", "D4A", "NatWalkInd", "D5BR", "D5AR"):
     bg[c] = pd.to_numeric(bg[c], errors="coerce")
+bg["D5BR0"] = bg.D5BR.where(bg.D5BR >= 0, 0.0)  # -99999: no transit within walking distance -> no jobs reachable by transit
 bg["D4C0"] = bg.D4C.where(bg.D4C >= 0, 0.0)   # -99999: no transit service within the buffer -> 0 trips per hour
 bg = bg[bg.TotPop > 0]
-bg[["city_id", "bg_geoid2019", "TotPop", "D4C0", "D4A", "NatWalkInd"]].to_csv(OUT / "sld_block_groups.csv", index=False)
+bg[["city_id", "bg_geoid2019", "TotPop", "D4C0", "D4A", "NatWalkInd", "D5BR0", "D5AR"]].to_csv(OUT / "sld_block_groups.csv", index=False)
 wmean = lambda col: (bg[col] * bg.TotPop).groupby(bg.city_id).sum() / bg.TotPop.groupby(bg.city_id).sum()
 X["M1_transit_frequency"], X["M2_walkability"] = wmean("D4C0"), wmean("NatWalkInd")
+X["M5r_transit_access"] = wmean("D5BR0") / 1000
+note("M5r_transit_access", "Population-weighted mean of SLD D5br over block groups inside the city: thousands of jobs reachable within a 45-minute transit commute (walk + scheduled transit, distance-decay, TravelTime API 2020 with 2017 jobs); block groups with no transit within walking distance count as 0")
 share = lambda flag: (flag * bg.TotPop).groupby(bg.city_id).sum() / bg.TotPop.groupby(bg.city_id).sum()
 cov = pd.DataFrame({"pop_share_no_frequency_D4c": share(bg.D4C < 0), "pop_share_no_stop_within_1200m_D4a": share(bg.D4A < 0)})
 cov.round(3).to_csv(OUT / "audit_sld_transit_coverage.csv")

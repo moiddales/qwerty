@@ -1,32 +1,32 @@
 scan,value,n_fail,failing,champion_eligible,top5_eligible
-income,50000,8,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Denver;Boston,Chicago,Chicago;Austin;Columbus;Las Vegas;El Paso
+income,50000,8,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Denver;Boston,Chicago,Chicago;Columbus;Austin;Las Vegas;Washington
 income,60000,7,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Boston,Chicago,Chicago;Denver;Austin;Washington;Columbus
-income,70000,2,San Jose;San Francisco,Chicago,Chicago;Denver;Seattle;New York;Austin
-income,80000,1,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
+income,70000,2,San Jose;San Francisco,Denver,Denver;Chicago;Seattle;New York;Austin
+income,80000,1,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
 income,100000,0,,Seattle,Seattle;Denver;Chicago;New York;Boston
 income,120000,0,,Seattle,Seattle;Denver;New York;Chicago;San Francisco
-S1_violent_crime,600,16,New York;Los Angeles;Houston;Phoenix;Philadelphia;San Antonio;Dallas;Charlotte;Indianapolis;San Francisco;Seattle;Denver;Nashville-Davidson;Oklahoma City;Washington;Boston,Chicago,Chicago;Austin;San Diego;San Jose;Las Vegas
+S1_violent_crime,600,16,New York;Los Angeles;Houston;Phoenix;Philadelphia;San Antonio;Dallas;Charlotte;Indianapolis;San Francisco;Seattle;Denver;Nashville-Davidson;Oklahoma City;Washington;Boston,Chicago,Chicago;Austin;San Diego;San Jose;Columbus
 S1_violent_crime,700,10,Los Angeles;Houston;Phoenix;Philadelphia;Indianapolis;San Francisco;Seattle;Denver;Nashville-Davidson;Washington,Chicago,Chicago;New York;Boston;Austin;San Diego
 S1_violent_crime,800,7,Houston;Philadelphia;Indianapolis;San Francisco;Denver;Nashville-Davidson;Washington,Seattle,Seattle;Chicago;New York;Boston;Austin
 S1_violent_crime,900,6,Houston;Philadelphia;Indianapolis;San Francisco;Denver;Nashville-Davidson,Seattle,Seattle;Chicago;New York;Boston;Austin
-S1_violent_crime,1000,3,Houston;San Francisco;Nashville-Davidson,Seattle,Seattle;Denver;Chicago;New York;Boston
-S1_violent_crime,1100,2,San Francisco;Nashville-Davidson,Seattle,Seattle;Denver;Chicago;New York;Boston
-S1_violent_crime,1200,1,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
+S1_violent_crime,1000,3,Houston;San Francisco;Nashville-Davidson,Denver,Denver;Seattle;Chicago;New York;Boston
+S1_violent_crime,1100,2,San Francisco;Nashville-Davidson,Denver,Denver;Seattle;Chicago;New York;Boston
+S1_violent_crime,1200,1,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
 S2_traffic_deaths,8,18,Los Angeles;Houston;Phoenix;Philadelphia;San Antonio;San Diego;Dallas;Fort Worth;Jacksonville;Austin;Charlotte;Columbus;Indianapolis;San Francisco;Denver;Nashville-Davidson;Oklahoma City;El Paso,Seattle,Seattle;Chicago;New York;Boston;Washington
-S2_traffic_deaths,10,13,Houston;Phoenix;San Antonio;Dallas;Fort Worth;Jacksonville;Austin;Charlotte;Indianapolis;San Francisco;Nashville-Davidson;Oklahoma City;El Paso,Seattle,Seattle;Denver;Chicago;New York;Boston
-S2_traffic_deaths,12,10,Houston;Phoenix;San Antonio;Dallas;Fort Worth;Jacksonville;Indianapolis;San Francisco;Nashville-Davidson;Oklahoma City,Seattle,Seattle;Denver;Chicago;New York;Boston
-S2_traffic_deaths,14,7,Houston;Phoenix;Dallas;Jacksonville;Indianapolis;San Francisco;Nashville-Davidson,Seattle,Seattle;Denver;Chicago;New York;Boston
-S2_traffic_deaths,16,4,Phoenix;Dallas;Jacksonville;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-S2_traffic_deaths,18,2,Phoenix;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-S2_traffic_deaths,20,1,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-H1_bad_air_days,5,9,Los Angeles;Chicago;Houston;Phoenix;San Diego;Fort Worth;San Francisco;El Paso;Las Vegas,Seattle,Seattle;Denver;New York;Boston;Austin
-H1_bad_air_days,10,5,Los Angeles;Houston;Phoenix;San Francisco;El Paso,Seattle,Seattle;Denver;Chicago;New York;Boston
-H1_bad_air_days,15,3,Los Angeles;Phoenix;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-H1_bad_air_days,20,3,Los Angeles;Phoenix;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-H1_bad_air_days,25,3,Los Angeles;Phoenix;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-H1_bad_air_days,30,1,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-C1_rent_share,30,9,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Denver;Washington;Boston,Chicago,Chicago;Austin;Las Vegas;Columbus;El Paso
-C1_rent_share,35,7,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Boston,Denver,Denver;Chicago;Austin;Washington;Las Vegas
-C1_rent_share,40,5,New York;San Diego;San Jose;San Francisco;Boston,Seattle,Seattle;Denver;Chicago;Austin;Washington
-C1_rent_share,45,2,San Jose;San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
-C1_rent_share,50,1,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Boston
+S2_traffic_deaths,10,13,Houston;Phoenix;San Antonio;Dallas;Fort Worth;Jacksonville;Austin;Charlotte;Indianapolis;San Francisco;Nashville-Davidson;Oklahoma City;El Paso,Denver,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,12,10,Houston;Phoenix;San Antonio;Dallas;Fort Worth;Jacksonville;Indianapolis;San Francisco;Nashville-Davidson;Oklahoma City,Denver,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,14,7,Houston;Phoenix;Dallas;Jacksonville;Indianapolis;San Francisco;Nashville-Davidson,Denver,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,16,4,Phoenix;Dallas;Jacksonville;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,18,2,Phoenix;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,20,1,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+H1_bad_air_days,5,9,Los Angeles;Chicago;Houston;Phoenix;San Diego;Fort Worth;San Francisco;El Paso;Las Vegas,Denver,Denver;Seattle;New York;Boston;Austin
+H1_bad_air_days,10,5,Los Angeles;Houston;Phoenix;San Francisco;El Paso,Denver,Denver;Seattle;Chicago;New York;Boston
+H1_bad_air_days,15,3,Los Angeles;Phoenix;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+H1_bad_air_days,20,3,Los Angeles;Phoenix;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+H1_bad_air_days,25,3,Los Angeles;Phoenix;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+H1_bad_air_days,30,1,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+C1_rent_share,30,9,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Denver;Washington;Boston,Chicago,Chicago;Austin;Columbus;Las Vegas;Philadelphia
+C1_rent_share,35,7,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Boston,Denver,Denver;Chicago;Austin;Washington;Columbus
+C1_rent_share,40,5,New York;San Diego;San Jose;San Francisco;Boston,Denver,Denver;Seattle;Chicago;Austin;Washington
+C1_rent_share,45,2,San Jose;San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston
+C1_rent_share,50,1,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston

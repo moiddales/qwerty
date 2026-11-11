@@ -262,3 +262,15 @@
 新增 analysis/model/build_matrix.py、core.py、run_model.py 与 results/（指标矩阵、审计表、M0/M1 各项结果、summary.json）；新增 MODEL_RESULTS.md。真实数据审计发现两处测量问题（SLD 公交频率在圣迭戈缺码；毕业率被市内特殊特许学校拉低），据此形成 M0→M1 修订。M1 参考榜前三 Seattle、Denver、Chicago，差距 0.0034；300 对城市无必然偏好关系。
 
 验证：脚本完整运行一次并写出全部结果文件。按用户要求未做逐项核验和排错；时变网络可达性未运行（原始 GTFS 不在仓库）。接手动作见 MODEL_RESULTS.md 末节。
+
+## 2026-11-11 — A-014：全部模型搭建与计算完成（Asia/Shanghai）
+
+用户原文见 U20261111-17。在 A-013 首轮基础上复核并补全。
+
+- 修正 ELECTRE III：阈值改在价值尺度上（q/p/v=0.05/0.20/0.80），重写蒸馏（候选集不再缩小时继续降低 λ），加入两个前序的交集与阈值扫描。原版本否决过宽、上升蒸馏 7 城并列第一。
+- 新增 M2：SLD D5br 45 分钟公交可达岗位数（GTFS 时刻网络计算，25 城统一）替换服务小时，避免重复计量；冠军 Seattle→Denver，差 0.0005。
+- 新增 run_extensions.py：偏好信息曲线、单条偏好陈述检验、七个学生/家庭画像（含各自底线）、GTFS 周末比与 NTD 对照、校级 AP/IB 覆盖、Chicago 犯罪口径敏感性、数值核验。
+- RISKS.md 按真实计算更新 21 条状态；Bonferroni 保守问题已排除（最大差 0.0006）。
+- MODEL_RESULTS.md 全部重写为最终结果。
+
+验证：run_model.py 与 run_extensions.py 完整运行；六项数值核验全部通过。下一步：队内偏好判断收紧 Θ、出图、论文与新闻文章。

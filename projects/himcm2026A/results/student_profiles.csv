@@ -1,0 +1,8 @@
+profile,eligible_cities,excluded,reference_champion,reference_top5,smaa_p_first
+"reference family ($80k, equal domains)",24,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston,Seattle 0.41; Denver 0.40; Chicago 0.13
+low-budget family ($50k),17,New York;Los Angeles;San Diego;San Jose;San Francisco;Seattle;Denver;Boston,Columbus,Columbus;Chicago;El Paso;Las Vegas;San Antonio,Chicago 0.37; Columbus 0.36; El Paso 0.13
+student without a car (transit-dependent),18,Fort Worth;Jacksonville;Charlotte;Indianapolis;San Francisco;Nashville-Davidson;Oklahoma City,Seattle,Seattle;Denver;Chicago;New York;Boston,Seattle 0.45; Denver 0.41; Chicago 0.09
+activities and sports focus,24,San Francisco,Denver,Denver;Seattle;Chicago;New York;Boston,Denver 0.48; Seattle 0.41; Chicago 0.07
+LGBTQ+ student,19,Houston;Charlotte;San Francisco;Nashville-Davidson;Oklahoma City;El Paso,Seattle,Seattle;Denver;New York;Chicago;Boston,Seattle 0.51; Denver 0.36; Chicago 0.06
+student needing mental-health support,14,Los Angeles;Houston;San Antonio;Dallas;Fort Worth;Jacksonville;Austin;San Jose;San Francisco;El Paso;Boston,Denver,Denver;Seattle;New York;Chicago;Washington,Denver 0.59; Seattle 0.34; Chicago 0.03
+academic focus,24,San Francisco,Seattle,Seattle;Denver;Chicago;New York;Austin,Seattle 0.57; Denver 0.18; New York 0.11

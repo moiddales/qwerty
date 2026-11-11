@@ -1,0 +1,9 @@
+set,domain_band,indicator_min_share_of_equal,necessary_pairs_of_300,cities_never_beaten_necessarily,min_regret_city,min_regret
+indicator-level,1/14-2/7,0.33,0,25,Seattle,0.3022
+indicator-level,1/7 +/- 50%,0.33,0,25,Seattle,0.2791
+indicator-level,1/7 +/- 25%,0.6,7,20,Seattle,0.1816
+indicator-level,1/7 +/- 10%,0.85,56,15,Seattle,0.1098
+domain-level (theta0 shapes),1/14-2/7,,95,8,Denver,0.0103
+domain-level (theta0 shapes),1/7 +/- 50%,,147,4,Denver,0.0073
+domain-level (theta0 shapes),1/7 +/- 25%,,224,3,Denver,0.0036
+domain-level (theta0 shapes),1/7 +/- 10%,,276,2,Denver,0.0014

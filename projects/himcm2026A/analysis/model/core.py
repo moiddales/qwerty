@@ -42,6 +42,10 @@ SPEC_M1.update({
     "M4r_weekend_retention": ("Mobility", [0.3, 0.5, 0.7, 0.9], "weekend service hours as a share of weekday hours"),
 })
 
+# M2: network accessibility replaces the service-supply measure (access already contains the service it uses)
+SPEC_M2 = {k: v for k, v in SPEC_M1.items() if k != "M1r_transit_hours_pc"}
+SPEC_M2["M5r_transit_access"] = ("Mobility", [10, 60, 200, 600], "thousand jobs reachable within 45 minutes by transit (SLD D5br)")
+
 REF_INCOME = 80000          # USD per year, reference household scenario
 FLOORS = {"C1_rent_share": 50.0, "S1_violent_crime": 1200.0, "S2_traffic_deaths": 20.0, "H1_bad_air_days": 30.0}
 SEG_SHAPE = np.array([0.5628, 0.2888, 0.1484])   # exponential value function with k = 2 evaluated at z = 1/3, 2/3, 1

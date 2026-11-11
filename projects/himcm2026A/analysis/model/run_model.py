@@ -9,7 +9,7 @@ import json
 import numpy as np
 import pandas as pd
 from scipy import stats
-from core import (Model, SPEC_M0, SPEC_M1, DOMAINS, FLOORS, REF_INCOME, RES, load, fill_missing, ranks)
+from core import (Model, SPEC_M0, SPEC_M1, SPEC_M2, DOMAINS, FLOORS, REF_INCOME, RES, load, fill_missing, ranks)
 
 N_SMAA = 10000
 rng = np.random.default_rng(20261111)
@@ -194,23 +194,26 @@ def analyse(tag, spec, X, S):
 # =====================================================================================================
 M0, PH0, U0, th0s = analyse("M0", SPEC_M0, X_all, S_all)
 M1, PH1, U1, th1s = analyse("M1", SPEC_M1, X_all, S_all)
+M2, PH2, U2, th2s = analyse("M2", SPEC_M2, X_all, S_all)
 
 # ---------- revision comparison M0 -> M1 (and each change alone)
-cmp = pd.DataFrame({"city": CITY, "rank_M0": ranks(U0), "rank_M1": ranks(U1), "U_M0": U0, "U_M1": U1}, index=CID)
+cmp = pd.DataFrame({"city": CITY, "rank_M0": ranks(U0), "rank_M1": ranks(U1), "rank_M2": ranks(U2), "U_M0": U0, "U_M1": U1, "U_M2": U2}, index=CID)
 spec_a = {k: v for k, v in SPEC_M0.items() if k != "E2_grad_rate"}; spec_a["E2r_grad_district"] = SPEC_M1["E2r_grad_district"]
 spec_b = {k: v for k, v in SPEC_M0.items() if k != "M1_transit_frequency"}
 spec_b.update({k: SPEC_M1[k] for k in ("M1r_transit_hours_pc", "M4r_weekend_retention")})
 for lab, sp in (("grad_only", spec_a), ("transit_only", spec_b)):
     m = Model(sp); cmp[f"rank_{lab}"] = ranks(m.phi(fill_missing(X_all[m.inds]).values) @ m.theta0)
 cmp["shift"] = cmp.rank_M0 - cmp.rank_M1
-tab(cmp.sort_values("rank_M1").round(4), "revision_M0_vs_M1")
-SUM["revision"] = {"kendall_tau_M0_M1": round(stats.kendalltau(U0, U1)[0], 3),
+tab(cmp.sort_values("rank_M2").round(4), "revision_M0_M1_M2")
+SUM["revision"] = {"kendall_tau_M0_M1": round(stats.kendalltau(U0, U1)[0], 3), "kendall_tau_M1_M2": round(stats.kendalltau(U1, U2)[0], 3),
+                   "moves_M1_to_M2": cmp[cmp.rank_M1 != cmp.rank_M2][["city", "rank_M1", "rank_M2"]].values.tolist(),
+                   "spearman_access_vs_service_hours": round(stats.spearmanr(X_all.M5r_transit_access, X_all.M1r_transit_hours_pc)[0], 3),
                    "largest_moves": cmp.reindex(cmp["shift"].abs().sort_values(ascending=False).index).head(6)[["city", "rank_M0", "rank_M1"]].values.tolist(),
                    "sld_vs_ntd_spearman": round(stats.spearmanr(X_all.M1_transit_frequency, X_all.M1r_transit_hours_pc, nan_policy="omit")[0], 3)}
 
 # =====================================================================================================
-# The remaining analyses use the revised model M1.
-M, PH, U, X, S = M1, PH1, U1, X_all, S_all
+# The remaining analyses use the final model M2.
+M, PH, U, X, S = M2, PH2, U2, X_all, S_all
 Xr = fill_missing(X[M.inds])
 ind_w = M.theta0.reshape(M.m, 3).sum(1)
 z_lin = np.clip((Xr.values - M.nodes[:, 0]) / (M.nodes[:, 3] - M.nodes[:, 0]), 0, 1)   # linear 0-1 position between worst and best
@@ -256,42 +259,40 @@ for k, grid in (("S1_violent_crime", [600, 700, 800, 900, 1000, 1100, 1200]), ("
                      "champion_eligible": CITY[order[0]] if order else "", "top5_eligible": ";".join(CITY[order[:5]])})
 tab(pd.DataFrame(scan).set_index("scan"), "floors_scan")
 
-# ---------- ELECTRE III on the 0-1 positions, weights = indicator totals of theta0
-q, p, v = 0.05, 0.15, 0.50
-d = z_lin[None, :, :] - z_lin[:, None, :]            # d[a,b,j] = g_j(b) - g_j(a)
-cj = np.clip((p - d) / (p - q), 0, 1)
-Cc = (cj * ind_w).sum(2)
-dj = np.clip((d - p) / (v - p), 0, 1)
-sig = Cc.copy()
-for a in range(nC):
-    for b in range(nC):
-        if a != b and Cc[a, b] < 1:
-            mask = dj[a, b] > Cc[a, b]
-            sig[a, b] = Cc[a, b] * np.prod((1 - dj[a, b][mask]) / (1 - Cc[a, b]))
-np.fill_diagonal(sig, 0)
+# ---------- ELECTRE III on per-indicator partial values (concave theta0 shape, 0 = worst node, 1 = best node)
+val = (PH * M.theta0).reshape(nC, M.m, 3).sum(2) / ind_w
+
+
+def electre(val, q, p, v):
+    d = val[None, :, :] - val[:, None, :]              # d[a,b,j] = g_j(b) - g_j(a)
+    C = (np.clip((p - d) / (p - q), 0, 1) * ind_w).sum(2)
+    dj = np.clip((d - p) / (v - p), 0, 1) if v < 1 else np.zeros_like(d)
+    sig = C.copy()
+    for a in range(nC):
+        for b in range(nC):
+            if a != b and C[a, b] < 1:
+                k = dj[a, b] > C[a, b]
+                sig[a, b] = C[a, b] * np.prod((1 - dj[a, b][k]) / (1 - C[a, b]))
+    np.fill_diagonal(sig, 0)
+    return sig, dj
 
 
 def distill(sig, descending=True):
-    left = list(range(len(sig))); classes = []
+    """Standard ELECTRE III distillation with s(lambda) = 0.30 - 0.15 lambda. Returns class index (1 = best)."""
     s = lambda lam: 0.30 - 0.15 * lam
+    left, classes = list(range(len(sig))), []
     while left:
         D = left[:]
-        sub = sig[np.ix_(D, D)]
-        lam = sub.max()
-        while True:
-            if lam <= 0:
-                break
+        lam = sig[np.ix_(D, D)].max()
+        while len(D) > 1 and lam > 0:
             sub = sig[np.ix_(D, D)]
-            below = sub[sub < lam - s(lam)]
+            below = sub[(sub < lam - s(lam)) & ~np.eye(len(D), dtype=bool)]
             lam_next = below.max() if below.size else 0.0
-            out = (sub > lam_next) & (sub > sub.T + s(sub))
+            out = (sub > lam_next) & (sub - sub.T > s(sub))
             qual = out.sum(1) - out.sum(0)
-            best = qual.max() if descending else qual.min()
-            D2 = [D[i] for i in range(len(D)) if qual[i] == best]
-            if len(D2) == 1 or lam_next == 0 or len(D2) == len(D):
-                D = D2
-                break
-            D, lam = D2, lam_next
+            target = qual.max() if descending else qual.min()
+            D = [D[i] for i in range(len(D)) if qual[i] == target]
+            lam = lam_next
         classes.append(D)
         left = [x for x in left if x not in D]
     if not descending:
@@ -302,17 +303,37 @@ def distill(sig, descending=True):
     return r
 
 
+def final_order(r1, r2):
+    """Intersection of the two preorders: a above b if a is at least as good in both and better in one."""
+    above = ((r1[:, None] <= r1[None, :]) & (r2[:, None] <= r2[None, :]) & ((r1[:, None] < r1[None, :]) | (r2[:, None] < r2[None, :])))
+    incomparable = ~above & ~above.T & ~((r1[:, None] == r1[None, :]) & (r2[:, None] == r2[None, :]))
+    return above.sum(0) + 1, incomparable.sum(1)
+
+
+q, p, v = 0.05, 0.20, 0.80
+sig, dj = electre(val, q, p, v)
 r_desc, r_asc = distill(sig, True), distill(sig, False)
+pos, inc = final_order(r_desc, r_asc)
 el = pd.DataFrame({"city": CITY, "rank_additive": ranks(U), "electre_descending": r_desc, "electre_ascending": r_asc,
+                   "cities_strictly_above": pos - 1, "incomparable_with": inc,
                    "electre_mean_position": (stats.rankdata(r_desc) + stats.rankdata(r_asc)) / 2,
-                   "vetoes_received": [int(((dj[a] >= 1).any(1)).sum()) for a in range(nC)]}, index=CID)
-tab(el.sort_values("electre_mean_position"), "electre_iii")
+                   "vetoed_against": [int((dj[a] >= 1).any(1).sum()) for a in range(nC)]}, index=CID)
+tab(el.sort_values(["cities_strictly_above", "electre_mean_position"]), "electre_iii")
 tab(pd.DataFrame(sig, CITY, CITY).round(3), "electre_credibility")
 champ = int(np.argmax(U))
+ev = {}
+for vv in (0.6, 0.8, 1.0):
+    for pp in (0.15, 0.20, 0.30):
+        sg, _ = electre(val, q, pp, vv)
+        rd, ra = distill(sg, True), distill(sg, False)
+        top = el.city.values[np.flatnonzero(final_order(rd, ra)[0] == 1)].tolist()
+        ev[f"p{pp}_v{vv}"] = top
 SUM["electre"] = {"thresholds_q_p_v": [q, p, v],
-                  "top5_by_mean_position": el.sort_values("electre_mean_position").city.head(5).tolist(),
+                  "kernel_no_city_above": el.city[pos == 1].tolist(),
+                  "top6_by_mean_position": el.sort_values("electre_mean_position").city.head(6).tolist(),
                   "spearman_vs_additive": round(stats.spearmanr(el.rank_additive, el.electre_mean_position)[0], 3),
-                  "additive_champion_vetoed_against": [CITY[b] for b in range(nC) if (dj[champ, b] >= 1).any()]}
+                  "additive_champion_vetoed_against": [CITY[b] for b in range(nC) if (dj[champ, b] >= 1).any()],
+                  "kernel_by_threshold": ev}
 
 # ---------- structural contrasts: exponential value, CES across domains, Choquet, entropy / CRITIC
 struct = pd.DataFrame({"city": CITY, "piecewise_ref": ranks(U)}, index=CID)
@@ -428,11 +449,13 @@ def lower_tail_mean(v, w, alpha=0.2):
 
 rows = []
 for c, g in bgf.groupby("city_id"):
-    w = g.TotPop.values; f = g.D4C0.values; wk = g.NatWalkInd.values
+    w = g.TotPop.values; f = g.D4C0.values; wk = g.NatWalkInd.values; ac = g.D5BR0.values / 1000
     rows.append({"city_id": c, "transit_mean": np.average(f, weights=w), "transit_lower20_mean": lower_tail_mean(f, w),
                  "pop_share_freq_ge_4_per_hour": np.average(f >= 4, weights=w), "pop_share_no_service": np.average(f <= 0, weights=w),
                  "walk_mean": np.average(wk, weights=w), "walk_lower20_mean": lower_tail_mean(wk, w),
-                 "pop_share_walk_most_walkable": np.average(wk >= 15.26, weights=w)})
+                 "pop_share_walk_most_walkable": np.average(wk >= 15.26, weights=w),
+                 "access_mean_kjobs": np.average(ac, weights=w), "access_lower20_mean_kjobs": lower_tail_mean(ac, w),
+                 "pop_share_access_ge_60k": np.average(ac >= 60, weights=w), "pop_share_no_transit_access": np.average(ac <= 0, weights=w)})
 eq = pd.DataFrame(rows).set_index("city_id").reindex(CID)
 eq.insert(0, "city", CITY)
 bad = cov.index[cov.pop_share_no_frequency_D4c - cov.pop_share_no_stop_within_1200m_D4a > 0.25]
@@ -443,7 +466,10 @@ rb = obs[(obs.source_id == "S02") & (obs.indicator_id == "rent_burden_ge50_pct")
 eq["renters_paying_50pct_plus_acs"] = rb.reindex(CID)
 tab(eq.round(3), "equity_within_city")
 valid = eq.transit_mean.notna()
-SUM["equity"] = {"spearman_transit_mean_vs_lower20": round(stats.spearmanr(eq.transit_mean[valid], eq.transit_lower20_mean[valid])[0], 3),
+eq["rank_access_mean"] = ranks(eq.access_mean_kjobs.values); eq["rank_access_lower20"] = ranks(eq.access_lower20_mean_kjobs.values)
+tab(eq.round(3), "equity_within_city")
+SUM["equity"] = {"access_rank_moves_mean_vs_lower20": eq[(eq.rank_access_mean - eq.rank_access_lower20).abs() >= 3][["city", "rank_access_mean", "rank_access_lower20"]].values.tolist(),
+                 "pop_share_no_transit_access_top": eq.sort_values("pop_share_no_transit_access", ascending=False).head(5).set_index("city").pop_share_no_transit_access.round(3).to_dict(),"spearman_transit_mean_vs_lower20": round(stats.spearmanr(eq.transit_mean[valid], eq.transit_lower20_mean[valid])[0], 3),
                  "spearman_transit_mean_vs_share_ge4": round(stats.spearmanr(eq.transit_mean[valid], eq.pop_share_freq_ge_4_per_hour[valid])[0], 3),
                  "cities_lower20_mean_zero": eq.city[valid & (eq.transit_lower20_mean <= 0)].tolist(),
                  "spearman_C1_rent_vs_acs_severe_burden": round(stats.spearmanr(X.C1_rent_2br, eq.renters_paying_50pct_plus_acs)[0], 3)}

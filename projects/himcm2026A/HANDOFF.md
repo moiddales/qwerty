@@ -1,6 +1,6 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-013（2026-11-11）：核心模型已在真实25城数据上首轮跑通，结果与复现方法见 [MODEL_RESULTS.md](MODEL_RESULTS.md)；结果未经复核。脚本在 analysis/model/，输出在 results/。下一步由接手者复核、收紧偏好集合、更新RISKS并写作。
+> 最新检查点A-014（2026-11-11）：全部模型已在真实25城数据上搭建并计算，数值核验通过；最终模型M2，Denver与Seattle并列领先、Chicago第三。结果与复现见 [MODEL_RESULTS.md](MODEL_RESULTS.md)，RISKS.md已按真实计算更新20余条状态。下一步：补充队内偏好判断收紧Θ后重算、出图、写论文与新闻文章。
 
 > 最新检查点A-012：A-011已通过GitHub连接器同步为acda247并由Git取回验证。A-012包含25城工资/教育局部事实/活动心理样本，GTFS与历史缺口验证，仍在连续补采。读取supplement_20261111/city_task_tracker.csv与各域README；不要把25城有样本/非空表当完整实际机会矩阵。后续重点是未核招生与AP/IB、过期feed替换与必要联程、往返/活动窗口、新毕业率和未解决历史字段。
 

@@ -10,6 +10,7 @@ S1_violent_crime,"Violent crimes per 100,000, mean of 2022-2025 FBI agency count
 S2_traffic_deaths,"Traffic deaths per 100,000 residents by crash location, FARS 2021-2024 mean; SD = SD of annual rates / sqrt(4)"
 H1_bad_air_days,"Percent of monitored days with AQI above 100, county monitors weighted by the city's residents in each county, EPA 2021-2024 mean"
 H3_youth_mh_facilities,"SAMHSA-listed mental-health facilities accepting children/adolescents per 100,000 residents under 18 (facility postal city; no capacity measure); Poisson SD"
+M5r_transit_access,"Population-weighted mean of SLD D5br over block groups inside the city: thousands of jobs reachable within a 45-minute transit commute (walk + scheduled transit, distance-decay, TravelTime API 2020 with 2017 jobs); block groups with no transit within walking distance count as 0"
 M1r_transit_hours_pc,"Annual fixed-route vehicle revenue hours of the principal operator per resident of its service area, NTD 2022-2025 mean (rail cars counted individually)"
 M4r_weekend_retention,"Mean of typical Saturday and Sunday revenue hours divided by typical weekday revenue hours, principal operator, NTD 2022-2025 mean"
 M1_transit_frequency,"Missing for ['0666000']: SLD has stops but no frequency data there. Population-weighted mean of SLD D4c (transit trips per hour within 0.25 mile, weekday evening peak) over block groups inside the city; unserved block groups count as 0; SLD v3 (GTFS around 2020)"

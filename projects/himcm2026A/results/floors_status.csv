@@ -1,9 +1,9 @@
 city_id,city,C1_rent_share,C1_rent_share_state,S1_violent_crime,S1_violent_crime_state,S2_traffic_deaths,S2_traffic_deaths_state,H1_bad_air_days,H1_bad_air_days_state,p_joint_simulation,p_joint_product,p_joint_bonferroni_lower,point_eligible,status
 3651000,New York,41.28,pass,679.74,pass,2.85,pass,1.19,pass,1.0,1.0,1.0,True,pass
-0644000,Los Angeles,38.16,pass,755.58,pass,8.74,pass,27.87,pending,0.8064,0.8087,0.8087,True,pending
+0644000,Los Angeles,38.16,pass,755.58,pass,8.74,pass,27.87,pending,0.808,0.8087,0.8087,True,pending
 1714000,Chicago,25.71,pass,516.45,pass,7.02,pass,5.42,pass,1.0,1.0,1.0,True,pass
-4835000,Houston,20.36,pass,1061.33,pass,14.09,pass,10.11,pass,0.992,0.9926,0.9926,True,pass
-0455000,Phoenix,28.16,pass,780.26,pass,18.33,pass,27.39,pending,0.6038,0.6027,0.6024,True,pending
+4835000,Houston,20.36,pass,1061.33,pass,14.09,pass,10.11,pass,0.9927,0.9926,0.9926,True,pass
+0455000,Phoenix,28.16,pass,780.26,pass,18.33,pass,27.39,pending,0.5996,0.6027,0.6024,True,pending
 4260000,Philadelphia,26.06,pass,938.27,pass,8.67,pass,2.57,pass,1.0,1.0,1.0,True,pass
 4865000,San Antonio,21.87,pass,678.05,pass,12.75,pass,3.83,pass,1.0,1.0,1.0,True,pass
 0666000,San Diego,42.5,pass,410.52,pass,8.01,pass,9.36,pass,1.0,1.0,1.0,True,pass
@@ -14,11 +14,11 @@ city_id,city,C1_rent_share,C1_rent_share_state,S1_violent_crime,S1_violent_crime
 0668000,San Jose,46.98,pass,558.32,pass,6.7,pass,1.16,pass,1.0,1.0,1.0,True,pass
 3712000,Charlotte,23.31,pass,690.88,pass,11.4,pass,0.77,pass,1.0,1.0,1.0,True,pass
 3918000,Columbus,19.53,pass,482.08,pass,9.68,pass,1.19,pass,1.0,1.0,1.0,True,pass
-1836003,Indianapolis,20.24,pass,964.51,pass,14.32,pass,2.68,pass,0.9996,0.9993,0.9993,True,pass
+1836003,Indianapolis,20.24,pass,964.51,pass,14.32,pass,2.68,pass,0.9993,0.9993,0.9993,True,pass
 0667000,San Francisco,50.39,fail,599.58,pass,4.8,pass,0.07,pass,0.0,0.0,0.0,False,fail
 5363000,Seattle,39.67,pass,776.76,pass,5.38,pass,1.81,pass,1.0,1.0,1.0,True,pass
 0820000,Denver,33.02,pass,978.14,pass,9.71,pass,4.54,pass,1.0,1.0,1.0,True,pass
-4752006,Nashville-Davidson,24.28,pass,1159.65,pending,15.9,pass,0.93,pass,0.7192,0.7233,0.7233,True,pending
+4752006,Nashville-Davidson,24.28,pass,1159.65,pending,15.9,pass,0.93,pass,0.7239,0.7233,0.7233,True,pending
 4055000,Oklahoma City,16.36,pass,667.03,pass,13.7,pass,1.8,pass,1.0,1.0,1.0,True,pass
 1150000,Washington,30.68,pass,874.28,pass,6.03,pass,1.75,pass,1.0,1.0,1.0,True,pass
 4824000,El Paso,17.25,pass,307.04,pass,11.27,pass,10.07,pass,1.0,1.0,1.0,True,pass
