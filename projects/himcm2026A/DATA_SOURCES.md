@@ -2,7 +2,7 @@
 
 核查日期：2026-11-11（Asia/Shanghai）。对应 [收集方案](DATA_COLLECTION_PLAN.md)。
 
-**本文件记录已发现的数据入口、文档和少量访问测试；不表示数据文件已完整下载、解析或覆盖 25 城。** 精确字段和最新文件状态在实施时以该版代码本及实际文件为准。A/B/C 层含义见收集方案。S28—S29 为待展开路线。
+**当前采集结果见 [DATA_COLLECTION_STATUS.md](DATA_COLLECTION_STATUS.md) 和 [逐来源状态](data/metadata/source_acquisition_status.csv)。下方各节为采集前入口核查记录，旧的“尚未下载/待解析”不代表当前状态。** 本轮已完成全25城实际提取，版本变化包括新取得CRDC2023—24、FBI现行月度数据、NTL公交调查镜像和全25城青年票价。具体缺口见 [DATA_GAPS.md](DATA_GAPS.md)。
 
 ## 1. 人口、地理与家庭条件
 

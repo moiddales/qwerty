@@ -1,0 +1,1780 @@
+source_id,indicator_id,unit,geography_type,rows,numeric_values,cities
+S01,population,persons,Census place/balance,150,150,25
+S02,B01001_E001,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E002,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E003,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E004,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E005,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E006,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E007,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E008,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E009,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E010,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E011,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E012,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E013,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E014,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E015,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E016,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E017,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E018,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E019,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E020,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E021,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E022,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E023,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E024,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E025,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E026,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E027,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E028,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E029,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E030,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E031,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E032,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E033,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E034,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E035,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E036,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E037,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E038,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E039,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E040,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E041,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E042,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E043,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E044,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E045,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E046,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E047,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E048,count; universe in row,Census place/balance,75,75,25
+S02,B01001_E049,count; universe in row,Census place/balance,75,75,25
+S02,B01003_E001,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E001,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E002,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E003,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E004,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E005,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E006,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E007,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E008,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E009,count; universe in row,Census place/balance,50,50,25
+S02,B02001_E010,count; universe in row,Census place/balance,50,50,25
+S02,B03003_E001,count; universe in row,Census place/balance,50,50,25
+S02,B03003_E002,count; universe in row,Census place/balance,50,50,25
+S02,B03003_E003,count; universe in row,Census place/balance,50,50,25
+S02,B08201_E001,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E002,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E003,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E004,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E005,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E006,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E007,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E008,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E009,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E010,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E011,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E012,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E013,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E014,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E015,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E016,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E017,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E018,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E019,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E020,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E021,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E022,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E023,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E024,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E025,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E026,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E027,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E028,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E029,count; universe in row,Census place/balance,75,75,25
+S02,B08201_E030,count; universe in row,Census place/balance,75,75,25
+S02,B08301_E001,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E002,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E003,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E004,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E005,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E006,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E007,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E008,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E009,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E010,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E011,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E012,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E013,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E014,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E015,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E016,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E017,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E018,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E019,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E020,count; universe in row,Census place/balance,50,50,25
+S02,B08301_E021,count; universe in row,Census place/balance,50,50,25
+S02,B14001_E001,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E002,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E003,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E004,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E005,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E006,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E007,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E008,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E009,count; universe in row,Census place/balance,75,75,25
+S02,B14001_E010,count; universe in row,Census place/balance,75,75,25
+S02,B14003_E001,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E002,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E003,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E004,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E005,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E006,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E007,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E008,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E009,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E010,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E011,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E012,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E013,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E014,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E015,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E016,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E017,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E018,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E019,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E020,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E021,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E022,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E023,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E024,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E025,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E026,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E027,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E028,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E029,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E030,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E031,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E032,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E033,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E034,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E035,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E036,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E037,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E038,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E039,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E040,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E041,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E042,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E043,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E044,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E045,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E046,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E047,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E048,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E049,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E050,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E051,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E052,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E053,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E054,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E055,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E056,count; universe in row,Census place/balance,50,50,25
+S02,B14003_E057,count; universe in row,Census place/balance,50,50,25
+S02,B14005_E001,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E002,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E003,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E004,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E005,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E006,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E007,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E008,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E009,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E010,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E011,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E012,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E013,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E014,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E015,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E016,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E017,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E018,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E019,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E020,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E021,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E022,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E023,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E024,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E025,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E026,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E027,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E028,count; universe in row,Census place/balance,75,65,25
+S02,B14005_E029,count; universe in row,Census place/balance,75,65,25
+S02,B17001_E001,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E002,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E003,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E004,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E005,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E006,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E007,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E008,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E009,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E010,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E011,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E012,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E013,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E014,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E015,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E016,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E017,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E018,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E019,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E020,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E021,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E022,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E023,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E024,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E025,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E026,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E027,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E028,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E029,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E030,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E031,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E032,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E033,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E034,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E035,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E036,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E037,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E038,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E039,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E040,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E041,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E042,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E043,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E044,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E045,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E046,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E047,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E048,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E049,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E050,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E051,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E052,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E053,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E054,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E055,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E056,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E057,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E058,count; universe in row,Census place/balance,75,75,25
+S02,B17001_E059,count; universe in row,Census place/balance,75,75,25
+S02,B18101_E001,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E002,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E003,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E004,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E005,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E006,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E007,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E008,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E009,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E010,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E011,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E012,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E013,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E014,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E015,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E016,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E017,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E018,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E019,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E020,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E021,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E022,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E023,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E024,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E025,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E026,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E027,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E028,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E029,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E030,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E031,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E032,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E033,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E034,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E035,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E036,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E037,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E038,count; universe in row,Census place/balance,50,50,25
+S02,B18101_E039,count; universe in row,Census place/balance,50,50,25
+S02,B19013_E001,USD,Census place/balance,75,75,25
+S02,B19113_E001,USD,Census place/balance,50,50,25
+S02,B23001_E001,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E002,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E003,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E004,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E005,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E006,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E007,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E008,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E009,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E010,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E011,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E012,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E013,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E014,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E015,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E016,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E017,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E018,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E019,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E020,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E021,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E022,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E023,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E024,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E025,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E026,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E027,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E028,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E029,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E030,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E031,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E032,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E033,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E034,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E035,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E036,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E037,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E038,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E039,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E040,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E041,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E042,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E043,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E044,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E045,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E046,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E047,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E048,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E049,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E050,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E051,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E052,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E053,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E054,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E055,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E056,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E057,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E058,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E059,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E060,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E061,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E062,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E063,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E064,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E065,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E066,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E067,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E068,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E069,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E070,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E071,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E072,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E073,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E074,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E075,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E076,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E077,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E078,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E079,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E080,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E081,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E082,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E083,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E084,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E085,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E086,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E087,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E088,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E089,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E090,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E091,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E092,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E093,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E094,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E095,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E096,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E097,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E098,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E099,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E100,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E101,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E102,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E103,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E104,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E105,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E106,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E107,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E108,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E109,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E110,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E111,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E112,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E113,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E114,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E115,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E116,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E117,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E118,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E119,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E120,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E121,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E122,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E123,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E124,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E125,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E126,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E127,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E128,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E129,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E130,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E131,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E132,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E133,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E134,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E135,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E136,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E137,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E138,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E139,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E140,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E141,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E142,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E143,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E144,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E145,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E146,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E147,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E148,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E149,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E150,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E151,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E152,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E153,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E154,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E155,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E156,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E157,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E158,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E159,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E160,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E161,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E162,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E163,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E164,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E165,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E166,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E167,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E168,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E169,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E170,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E171,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E172,count; universe in row,Census place/balance,50,50,25
+S02,B23001_E173,count; universe in row,Census place/balance,50,50,25
+S02,B25031_E001,USD/month,Census place/balance,75,75,25
+S02,B25031_E002,USD/month,Census place/balance,75,75,25
+S02,B25031_E003,USD/month,Census place/balance,75,75,25
+S02,B25031_E004,USD/month,Census place/balance,75,75,25
+S02,B25031_E005,USD/month,Census place/balance,75,75,25
+S02,B25031_E006,USD/month,Census place/balance,75,75,25
+S02,B25031_E007,USD/month,Census place/balance,75,75,25
+S02,B25064_E001,USD/month,Census place/balance,75,75,25
+S02,B25070_E001,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E002,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E003,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E004,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E005,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E006,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E007,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E008,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E009,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E010,count; universe in row,Census place/balance,75,75,25
+S02,B25070_E011,count; universe in row,Census place/balance,75,75,25
+S02,B25074_E001,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E002,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E003,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E004,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E005,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E006,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E007,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E008,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E009,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E010,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E011,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E012,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E013,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E014,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E015,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E016,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E017,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E018,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E019,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E020,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E021,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E022,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E023,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E024,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E025,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E026,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E027,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E028,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E029,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E030,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E031,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E032,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E033,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E034,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E035,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E036,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E037,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E038,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E039,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E040,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E041,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E042,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E043,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E044,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E045,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E046,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E047,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E048,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E049,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E050,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E051,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E052,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E053,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E054,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E055,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E056,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E057,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E058,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E059,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E060,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E061,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E062,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E063,count; universe in row,Census place/balance,50,50,25
+S02,B25074_E064,count; universe in row,Census place/balance,50,50,25
+S02,B28002_E001,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E002,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E003,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E004,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E005,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E006,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E007,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E008,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E009,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E010,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E011,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E012,count; universe in row,Census place/balance,75,75,25
+S02,B28002_E013,count; universe in row,Census place/balance,75,75,25
+S02,B28005_E001,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E002,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E003,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E004,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E005,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E006,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E007,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E008,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E009,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E010,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E011,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E012,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E013,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E014,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E015,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E016,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E017,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E018,count; universe in row,Census place/balance,50,50,25
+S02,B28005_E019,count; universe in row,Census place/balance,50,50,25
+S02,C16001_E001,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E002,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E003,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E004,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E005,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E006,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E007,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E008,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E009,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E010,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E011,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E012,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E013,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E014,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E015,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E016,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E017,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E018,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E019,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E020,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E021,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E022,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E023,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E024,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E025,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E026,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E027,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E028,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E029,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E030,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E031,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E032,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E033,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E034,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E035,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E036,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E037,count; universe in row,Census place/balance,75,74,25
+S02,C16001_E038,count; universe in row,Census place/balance,75,74,25
+S02,broadband_any_pct,percent,Census place/balance,75,75,25
+S02,enrolled16_19_employment_pct,percent,Census place/balance,75,65,25
+S02,fixed_broadband_pct,percent,Census place/balance,75,75,25
+S02,hispanic_pct,percent,Census place/balance,50,50,25
+S02,no_internet_pct,percent,Census place/balance,75,75,25
+S02,no_vehicle_households_pct,percent,Census place/balance,75,75,25
+S02,poverty_pct,percent,Census place/balance,75,75,25
+S02,rent_burden_ge30_pct,percent,Census place/balance,75,75,25
+S02,rent_burden_ge50_pct,percent,Census place/balance,75,75,25
+S02,youth16_19_civilian_employed_share_pct,percent,Census place/balance,50,50,25
+S02,youth16_19_employment_pct,percent,Census place/balance,75,65,25
+S02,youth16_19_school_enrollment_pct,percent,Census place/balance,75,65,25
+S04,enrollment_grade_10,students,"schools within Census ACS2025 place, physical supply",25,25,25
+S04,enrollment_grade_11,students,"schools within Census ACS2025 place, physical supply",25,25,25
+S04,enrollment_grade_12,students,"schools within Census ACS2025 place, physical supply",25,25,25
+S04,enrollment_grade_9,students,"schools within Census ACS2025 place, physical supply",25,25,25
+S04,operating_schools_offering_grade9_12,schools,school points within Census ACS2025 place,25,25,25
+S05,SCH_APCOURSES,courses,school point within Census ACS2025 place,4549,2945,25
+S05,SCH_APCOURSES_observed_sum,courses,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_APENR_IND,yes_no,school point within Census ACS2025 place,4549,0,25
+S05,SCH_APENR_IND_offering_percent,percent of responding schools,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_DUAL_IND,yes_no,school point within Census ACS2025 place,4549,0,25
+S05,SCH_DUAL_IND_offering_percent,percent of responding schools,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_FTECOUNSELORS,FTE,school point within Census ACS2025 place,4549,4547,25
+S05,SCH_FTECOUNSELORS_observed_sum,FTE,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_FTESERVICES_NUR,FTE,school point within Census ACS2025 place,4549,4547,25
+S05,SCH_FTESERVICES_NUR_observed_sum,FTE,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_FTESERVICES_PSY,FTE,school point within Census ACS2025 place,4549,4547,25
+S05,SCH_FTESERVICES_PSY_observed_sum,FTE,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_FTESERVICES_SOC,FTE,school point within Census ACS2025 place,4549,4547,25
+S05,SCH_FTESERVICES_SOC_observed_sum,FTE,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,SCH_IBENR_IND,yes_no,school point within Census ACS2025 place,4549,0,25
+S05,SCH_IBENR_IND_offering_percent,percent of responding schools,high-school-offering school points within Census ACS2025 place,50,49,25
+S05,TOT_APENR_F,students,school point within Census ACS2025 place,4549,2946,25
+S05,TOT_APENR_F_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_APENR_M,students,school point within Census ACS2025 place,4549,2946,25
+S05,TOT_APENR_M_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_DUALENR_F,students,school point within Census ACS2025 place,4549,2402,25
+S05,TOT_DUALENR_F_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_DUALENR_M,students,school point within Census ACS2025 place,4549,2402,25
+S05,TOT_DUALENR_M_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_ENR_F,students,school point within Census ACS2025 place,4549,4549,25
+S05,TOT_ENR_F_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_ENR_M,students,school point within Census ACS2025 place,4549,4549,25
+S05,TOT_ENR_M_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,50,25
+S05,TOT_IBENR_F,students,school point within Census ACS2025 place,4549,256,25
+S05,TOT_IBENR_F_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,48,25
+S05,TOT_IBENR_M,students,school point within Census ACS2025 place,4549,256,25
+S05,TOT_IBENR_M_observed_sum,students,high-school-offering school points within Census ACS2025 place,50,48,25
+S06,ACGR_cohort_count,students,LEA associated with school points in city,530,530,23
+S06,ACGR_cohort_count,students,school point within Census ACS2025 place using 2020-21 NCES coordinates,1822,1822,23
+S06,ACGR_cohort_count,students,state background only,49,49,25
+S06,ACGR_exact_percent,percent,LEA associated with school points in city,530,224,23
+S06,ACGR_exact_percent,percent,school point within Census ACS2025 place using 2020-21 NCES coordinates,1822,446,23
+S06,ACGR_exact_percent,percent,state background only,49,49,25
+S06,ACGR_lower_bound,percent,LEA associated with school points in city,530,501,23
+S06,ACGR_lower_bound,percent,school point within Census ACS2025 place using 2020-21 NCES coordinates,1822,1705,23
+S06,ACGR_lower_bound,percent,state background only,49,49,25
+S06,ACGR_upper_bound,percent,LEA associated with school points in city,530,403,23
+S06,ACGR_upper_bound,percent,school point within Census ACS2025 place using 2020-21 NCES coordinates,1822,1338,23
+S06,ACGR_upper_bound,percent,state background only,49,49,25
+S06,cohort_num,students,school points within Census ACS2025 place using 2019-20 NCES coordinates,1474,1474,17
+S06,grad_rate_high,percent,school points within Census ACS2025 place using 2019-20 NCES coordinates,1474,1134,17
+S06,grad_rate_low,percent,school points within Census ACS2025 place using 2019-20 NCES coordinates,1474,1134,17
+S06,grad_rate_midpt,percent,school points within Census ACS2025 place using 2019-20 NCES coordinates,1474,1438,17
+S08,agency_population,persons,police agency,111,111,24
+S08,aggravated_assault,reported offenses,police agency,111,111,24
+S08,murder,reported offenses,police agency,111,111,24
+S08,rape,reported offenses,police agency,111,111,24
+S08,robbery,reported offenses,police agency,111,111,24
+S08,violent_crime,reported offenses,police agency,111,111,24
+S08-api,aggravated_assault,reported offenses,police agency,125,120,25
+S08-api,murder,reported offenses,police agency,125,120,25
+S08-api,rape,reported offenses,police agency,125,120,25
+S08-api,robbery,reported offenses,police agency,125,120,25
+S08-api,violent_crime,reported offenses,police agency,125,120,25
+S08-local,murders_local_report,classified murders,JSO jurisdiction,1,1,1
+S08-local-Chicago,aggravated_assault,reported offenses,police agency,1,1,1
+S08-local-Chicago,murder,reported offenses,police agency,1,1,1
+S08-local-Chicago,rape,reported offenses,police agency,1,1,1
+S08-local-Chicago,robbery,reported offenses,police agency,1,1,1
+S08-local-Chicago,violent_crime,reported offenses,police agency,1,1,1
+S08-local-Phoenix,aggravated_assault,reported offenses,police agency,1,1,1
+S08-local-Phoenix,homicide_including_negligent,reported offenses,police agency,1,1,1
+S08-local-Phoenix,rape,reported offenses,police agency,1,1,1
+S08-local-Phoenix,robbery,reported offenses,police agency,1,1,1
+S08-local-Phoenix,violent_crime_local_definition,reported offenses,police agency,1,1,1
+S08-state-CA,aggravated_assault,reported offenses,state-defined police jurisdiction,20,20,4
+S08-state-CA,murder,reported offenses,state-defined police jurisdiction,20,20,4
+S08-state-CA,rape,reported offenses,state-defined police jurisdiction,20,20,4
+S08-state-CA,robbery,reported offenses,state-defined police jurisdiction,20,20,4
+S08-state-CA,violent_crime,reported offenses,state-defined police jurisdiction,20,20,4
+S08-state-NY,aggravated_assault,reported offenses,five NYC county equivalents,4,4,1
+S08-state-NY,murder,reported offenses,five NYC county equivalents,4,4,1
+S08-state-NY,rape,reported offenses,five NYC county equivalents,4,4,1
+S08-state-NY,robbery,reported offenses,five NYC county equivalents,4,4,1
+S08-state-NY,violent_crime,reported offenses,five NYC county equivalents,4,4,1
+S09,fatal_crashes,crashes,FARS crash-location city,96,96,24
+S09,fatal_crashes,crashes,five NYC county equivalents,4,4,1
+S09,fatalities,persons,FARS crash-location city,96,96,24
+S09,fatalities,persons,five NYC county equivalents,4,4,1
+S09,fatalities_age14_18,persons,FARS crash-location city,96,96,24
+S09,fatalities_age14_18,persons,five NYC county equivalents,4,4,1
+S09,pedalcyclist_fatalities,persons,FARS crash-location city,96,96,24
+S09,pedalcyclist_fatalities,persons,five NYC county equivalents,4,4,1
+S09,pedestrian_fatalities,persons,FARS crash-location city,96,96,24
+S09,pedestrian_fatalities,persons,five NYC county equivalents,4,4,1
+S10,aqi_90th_percentile_aqi,AQI,county,203,203,25
+S10,aqi_days_co,days,county,203,203,25
+S10,aqi_days_no2,days,county,203,203,25
+S10,aqi_days_ozone,days,county,203,203,25
+S10,aqi_days_pm10,days,county,203,203,25
+S10,aqi_days_pm2_5,days,county,203,203,25
+S10,aqi_days_with_aqi,days,county,203,203,25
+S10,aqi_good_days,days,county,203,203,25
+S10,aqi_hazardous_days,days,county,203,203,25
+S10,aqi_max_aqi,AQI,county,203,203,25
+S10,aqi_median_aqi,AQI,county,203,203,25
+S10,aqi_moderate_days,days,county,203,203,25
+S10,aqi_unhealthy_days,days,county,203,203,25
+S10,aqi_unhealthy_for_sensitive_groups_days,days,county,203,203,25
+S10,aqi_very_unhealthy_days,days,county,203,203,25
+S10,cbsa_aqi_90th_percentile_aqi,AQI,CBSA,125,125,25
+S10,cbsa_aqi_days_co,days,CBSA,125,125,25
+S10,cbsa_aqi_days_no2,days,CBSA,125,125,25
+S10,cbsa_aqi_days_ozone,days,CBSA,125,125,25
+S10,cbsa_aqi_days_pm10,days,CBSA,125,125,25
+S10,cbsa_aqi_days_pm2_5,days,CBSA,125,125,25
+S10,cbsa_aqi_days_with_aqi,days,CBSA,125,125,25
+S10,cbsa_aqi_good_days,days,CBSA,125,125,25
+S10,cbsa_aqi_hazardous_days,days,CBSA,125,125,25
+S10,cbsa_aqi_max_aqi,AQI,CBSA,125,125,25
+S10,cbsa_aqi_median_aqi,AQI,CBSA,125,125,25
+S10,cbsa_aqi_moderate_days,days,CBSA,125,125,25
+S10,cbsa_aqi_unhealthy_days,days,CBSA,125,125,25
+S10,cbsa_aqi_unhealthy_for_sensitive_groups_days,days,CBSA,125,125,25
+S10,cbsa_aqi_very_unhealthy_days,days,CBSA,125,125,25
+S11,PT_SSE_PM_1807_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_CHC_COMP,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_NUT_COMP1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_NUT_COMP2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_PA_COMP,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_PM_1801_1_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_PM_1801_1_2A,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_PM_1801_1_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q10,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q12,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q13_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q14_1,percent,"participating school district survey, secondary schools",20,19,10
+S11,P_Q14_2,percent,"participating school district survey, secondary schools",20,19,10
+S11,P_Q14_3,percent,"participating school district survey, secondary schools",20,19,10
+S11,P_Q14_4,percent,"participating school district survey, secondary schools",20,18,10
+S11,P_Q14_5,percent,"participating school district survey, secondary schools",20,18,10
+S11,P_Q14_6,percent,"participating school district survey, secondary schools",20,18,10
+S11,P_Q14_7,percent,"participating school district survey, secondary schools",20,18,10
+S11,P_Q15,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q15_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q15_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q15_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q16_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q16_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q17,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q18,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q19,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q1_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q20_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q20_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q21_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q21_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q21_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q22,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q23,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q24,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_1_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_1_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_1_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_2_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_2_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_2_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_3_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_3_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_3_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_4_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_4_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_4_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_5_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_5_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q25_5_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_1_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_1_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_1_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_2_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_2_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q26_2_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27N,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_1_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_1_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_1_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_2_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_2_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_2_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_3_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_3_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_3_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_4_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_4_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q27_4_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_12,percent,"participating school district survey, secondary schools",20,19,10
+S11,P_Q28_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q28_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q29,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q2_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q30,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_14,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_15,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_16,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_17,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_18,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q31_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q32_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q33_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q33_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q33_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q33_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q33_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q34N,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q35_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q35_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q35_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q35_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q35_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q36,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q37,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q38,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_14,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_15,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q39_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q4,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q40_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_14,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q40_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q40_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q41,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q42_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q43_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q44_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q45_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q46_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q47_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q47_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q47_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q48_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q48_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q49,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q49_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q49_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q4_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q5_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q5_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q5_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q5_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q5_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q6_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q6_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q6_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_Q7_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q7_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_Q7_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,P_SHS_PM_1807_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_SHS_PM_1807_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_SHS_PM_1807_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_SSE_PM_1807_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,P_TOBVAPE,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_D_PM_1807_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q10_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q10_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q10_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q10_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11N_1,percent,"participating school district survey, secondary schools",10,8,10
+S11,T_Q11N_2,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_1_1,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_10,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_11,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_12,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_13,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_14,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_15,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_16,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_17,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_18,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_19,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_2,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_22,percent,"participating school district survey, secondary schools",10,8,10
+S11,T_Q11_1_3,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_4,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_5,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_6,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_7,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_8,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_1_9,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_2_1,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_10,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_11,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_12,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_13,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_14,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_15,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_16,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_17,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_18,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_19,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_2,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_22,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_3,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_4,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_5,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_6,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_7,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_8,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_2_9,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q11_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q11_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12N_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12N_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_1,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_1_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_2,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_1_22,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_23,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_3,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_1_4,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q12_1_5,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q12_1_6,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q12_1_7,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q12_1_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_1_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_1,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_2,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_22,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_23,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_3,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_4,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_5,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_6,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_7,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q12_2_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q12_2_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_1_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_2_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q13_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q14_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q14_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q14_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_20,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_21,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_22,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_23,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q15_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16N,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_20,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_21,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_22,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_23,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q16_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q16_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q17_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q17_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q17_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q17_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q17_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q17_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q18_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q18_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q18_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q18_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q19N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q19_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q19_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q19_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q19_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q1_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q20_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q21_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_11,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_12,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_13,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_14,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_15,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_16,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_17,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_18,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_19,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q21_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q22_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q22_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q22_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q22_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q22_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q22_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q23_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q24_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q24_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q24_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q25_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_7,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_8,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q25_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_10,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q26_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q26_9,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q27N_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27N_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27N_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27N_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27N_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27N_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q27_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q28,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q29,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q2_1,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q2_2,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q2_3,percent,"participating school district survey, secondary schools",20,18,10
+S11,T_Q2_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q2_5,percent,"participating school district survey, secondary schools",20,19,10
+S11,T_Q2_6,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q2_7,percent,"participating school district survey, secondary schools",10,9,10
+S11,T_Q3_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q3_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q3_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q3_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q3_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q3_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q3_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q3_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q4_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_6,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q4_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q4_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q5_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q5_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q5_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q5_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q5_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q5_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q6_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q7_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q7_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_1,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_2,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_3,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_4,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_5,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q8_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9N,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q9_10,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_11,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_12,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_13,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_14,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_15,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_16,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_17,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_18,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_19,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q9_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q9_4,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q9_5,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_Q9_6,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_7,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_8,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_Q9_9,percent,"participating school district survey, secondary schools",10,10,10
+S11,T_SHE_PM_1807_1,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_SHE_PM_1807_2,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_SHE_PM_1807_3,percent,"participating school district survey, secondary schools",20,20,10
+S11,T_SHS_PM_1807_4,percent,"participating school district survey, secondary schools",20,18,10
+S12,ALCBINGE,percent,school district,19,19,11
+S12,H10,percent,school district,29,22,12
+S12,H11,percent,school district,34,34,12
+S12,H12,percent,school district,28,16,12
+S12,H13,percent,school district,32,29,12
+S12,H14,percent,school district,34,32,12
+S12,H15,percent,school district,31,25,12
+S12,H16,percent,school district,32,28,12
+S12,H17,percent,school district,30,22,12
+S12,H18,percent,school district,34,33,12
+S12,H19,percent,school district,33,31,12
+S12,H20,percent,school district,32,30,12
+S12,H21,percent,school district,33,33,12
+S12,H22,percent,school district,29,14,12
+S12,H23,percent,school district,34,33,12
+S12,H24,percent,school district,34,34,12
+S12,H25,percent,school district,23,17,12
+S12,H26,percent,school district,34,34,12
+S12,H27,percent,school district,34,34,12
+S12,H28,percent,school district,32,29,12
+S12,H29,percent,school district,34,34,12
+S12,H30,percent,school district,34,34,12
+S12,H31,percent,school district,28,14,12
+S12,H32,percent,school district,29,19,12
+S12,H33,percent,school district,32,28,12
+S12,H34,percent,school district,29,12,12
+S12,H35,percent,school district,30,22,12
+S12,H36,percent,school district,34,34,12
+S12,H37,percent,school district,32,27,12
+S12,H38,percent,school district,28,11,12
+S12,H39,percent,school district,31,23,12
+S12,H40,percent,school district,32,27,12
+S12,H41,percent,school district,34,34,12
+S12,H42,percent,school district,27,16,12
+S12,H43,percent,school district,27,14,12
+S12,H44,percent,school district,29,17,12
+S12,H45,percent,school district,33,30,12
+S12,H46,percent,school district,33,33,12
+S12,H47,percent,school district,34,32,12
+S12,H48,percent,school district,32,29,12
+S12,H49,percent,school district,31,23,12
+S12,H50,percent,school district,34,30,12
+S12,H51,percent,school district,33,27,12
+S12,H52,percent,school district,32,29,12
+S12,H53,percent,school district,29,18,12
+S12,H54,percent,school district,34,33,12
+S12,H55,percent,school district,34,33,12
+S12,H56,percent,school district,33,29,12
+S12,H57,percent,school district,33,32,12
+S12,H58,percent,school district,33,28,12
+S12,H59,percent,school district,33,32,12
+S12,H60,percent,school district,32,30,12
+S12,H64,percent,school district,28,18,12
+S12,H65,percent,school district,29,20,12
+S12,H66,percent,school district,34,29,12
+S12,H7,percent,school district,28,14,12
+S12,H71,percent,school district,29,21,12
+S12,H72,percent,school district,33,29,12
+S12,H73,percent,school district,34,33,12
+S12,H74,percent,school district,28,13,12
+S12,H75,percent,school district,30,21,12
+S12,H76,percent,school district,30,20,12
+S12,H77,percent,school district,34,22,12
+S12,H78,percent,school district,34,34,12
+S12,H79,percent,school district,34,34,12
+S12,H8,percent,school district,32,27,12
+S12,H80,percent,school district,32,26,12
+S12,H81,percent,school district,32,26,12
+S12,H82,percent,school district,23,9,12
+S12,H83,percent,school district,34,33,12
+S12,H84,percent,school district,33,20,12
+S12,H85,percent,school district,23,9,12
+S12,H86,percent,school district,23,9,12
+S12,H87,percent,school district,17,17,10
+S12,H9,percent,school district,30,23,12
+S12,QNACESSFIREARM,percent,school district,23,0,12
+S12,QNBASICNEEDSACE,percent,school district,3,3,3
+S12,QNBCNONE,percent,school district,32,30,12
+S12,QNBK7DAY,percent,school district,33,29,12
+S12,QNCLOSE2PEOPLE,percent,school district,11,11,11
+S12,QNCONPP,percent,school district,34,30,12
+S12,QNCONSENTSEXCONT,percent,school district,2,2,2
+S12,QNDAYCGR,percent,school district,31,23,12
+S12,QNDAYCIG,percent,school district,32,28,12
+S12,QNDAYEVP,percent,school district,34,34,12
+S12,QNDAYSKL,percent,school district,28,11,12
+S12,QNDAYTB4,percent,school district,23,4,12
+S12,QNDLYPE,percent,school district,28,13,12
+S12,QNEMOABUSEACE,percent,school district,3,3,3
+S12,QNFDINSC,percent,school district,23,9,12
+S12,QNFR0,percent,school district,7,7,4
+S12,QNFR1,percent,school district,7,7,4
+S12,QNFR2,percent,school district,7,7,4
+S12,QNFRCGR,percent,school district,31,23,12
+S12,QNFRCIG,percent,school district,32,28,12
+S12,QNFREVP,percent,school district,34,34,12
+S12,QNFRSKL,percent,school district,28,11,12
+S12,QNFRTB4,percent,school district,23,4,12
+S12,QNFRUIT1,percent,school district,34,29,12
+S12,QNFRUIT2,percent,school district,34,29,12
+S12,QNFRUIT3,percent,school district,34,29,12
+S12,QNINCARPARENTACE,percent,school district,26,11,12
+S12,QNINTVIOLENCEACE,percent,school district,27,13,12
+S12,QNIUDIMP,percent,school district,32,30,12
+S12,QNLIVEDWABUSEACE,percent,school district,26,7,12
+S12,QNLIVEDWILLACE,percent,school district,26,7,12
+S12,QNNODNT,percent,school district,32,26,12
+S12,QNOBESE,percent,school district,34,34,12
+S12,QNOTHHPL,percent,school district,32,30,12
+S12,QNOWT,percent,school district,34,34,12
+S12,QNPA0DAY,percent,school district,34,33,12
+S12,QNPA7DAY,percent,school district,34,33,12
+S12,QNPARENTALMONITORING,percent,school district,1,1,1
+S12,QNPHYABUSEACE,percent,school district,4,4,4
+S12,QNPHYVIOLENCEACE,percent,school district,26,8,12
+S12,QNSEXABUSEACE,percent,school district,26,10,12
+S12,QNSODA1,percent,school district,29,21,12
+S12,QNSODA2,percent,school district,29,21,12
+S12,QNTALKADULTACE,percent,school district,28,13,12
+S12,QNTALKFRIENDACE,percent,school district,27,11,12
+S12,QNTB2,percent,school district,30,20,12
+S12,QNTB3,percent,school district,10,10,6
+S12,QNTB4,percent,school district,27,8,12
+S12,QNTB5,percent,school district,18,18,10
+S12,QNTREATBADLYACE,percent,school district,1,1,1
+S12,QNUNFAIRLYACE,percent,school district,34,14,12
+S12,QNVEG0,percent,school district,25,9,12
+S12,QNVEG1,percent,school district,25,9,12
+S12,QNVEG2,percent,school district,25,9,12
+S12,QNVEG3,percent,school district,25,9,12
+S12,QNVERBALABUSEACE,percent,school district,26,6,12
+S12,QNWATER,percent,school district,3,3,3
+S12,QNWATER1,percent,school district,3,3,3
+S12,QNWATER2,percent,school district,3,3,3
+S12,QNWATER3,percent,school district,3,3,3
+S12,TBCESS,percent,school district,17,17,9
+S13,active_mental_hpsa_correctionalfacility,unique designations,city-containing counties,18,18,18
+S13,active_mental_hpsa_federallyqualifiedhealthcenter,unique designations,city-containing counties,25,25,25
+S13,active_mental_hpsa_federallyqualifiedhealthcenterlookalike,unique designations,city-containing counties,17,17,17
+S13,active_mental_hpsa_geographichpsa,unique designations,city-containing counties,19,19,19
+S13,active_mental_hpsa_highneedsgeographichpsa,unique designations,city-containing counties,11,11,11
+S13,active_mental_hpsa_hpsapopulation,unique designations,city-containing counties,24,24,24
+S13,active_mental_hpsa_indianhealthservicetribalhealthandurbanindianhealthorganizations,unique designations,city-containing counties,14,14,14
+S13,active_mental_hpsa_otherfacility,unique designations,city-containing counties,8,8,8
+S13,active_mental_hpsa_ruralhealthclinic,unique designations,city-containing counties,4,4,4
+S13,active_mental_hpsa_statementalhospital,unique designations,city-containing counties,8,8,8
+S14,listed_mh_facilities_children_adolescents,listed facilities,facility postal city,25,25,25
+S15,ACCESS2_AdjPrev,percent,Census place,25,24,25
+S15,ACCESS2_CrudePrev,percent,Census place,25,24,25
+S15,ARTHRITIS_AdjPrev,percent,Census place,25,24,25
+S15,ARTHRITIS_CrudePrev,percent,Census place,25,24,25
+S15,BINGE_AdjPrev,percent,Census place,25,24,25
+S15,BINGE_CrudePrev,percent,Census place,25,24,25
+S15,BPHIGH_AdjPrev,percent,Census place,25,24,25
+S15,BPHIGH_CrudePrev,percent,Census place,25,24,25
+S15,BPMED_AdjPrev,percent,Census place,25,24,25
+S15,BPMED_CrudePrev,percent,Census place,25,24,25
+S15,CANCER_AdjPrev,percent,Census place,25,24,25
+S15,CANCER_CrudePrev,percent,Census place,25,24,25
+S15,CASTHMA_AdjPrev,percent,Census place,25,24,25
+S15,CASTHMA_CrudePrev,percent,Census place,25,24,25
+S15,CHD_AdjPrev,percent,Census place,25,24,25
+S15,CHD_CrudePrev,percent,Census place,25,24,25
+S15,CHECKUP_AdjPrev,percent,Census place,25,24,25
+S15,CHECKUP_CrudePrev,percent,Census place,25,24,25
+S15,CHOLSCREEN_AdjPrev,percent,Census place,25,24,25
+S15,CHOLSCREEN_CrudePrev,percent,Census place,25,24,25
+S15,COGNITION_AdjPrev,percent,Census place,25,24,25
+S15,COGNITION_CrudePrev,percent,Census place,25,24,25
+S15,COLON_SCREEN_AdjPrev,percent,Census place,25,25,25
+S15,COLON_SCREEN_CrudePrev,percent,Census place,25,25,25
+S15,COPD_AdjPrev,percent,Census place,25,24,25
+S15,COPD_CrudePrev,percent,Census place,25,24,25
+S15,CSMOKING_AdjPrev,percent,Census place,25,24,25
+S15,CSMOKING_CrudePrev,percent,Census place,25,24,25
+S15,DENTAL_AdjPrev,percent,Census place,25,25,25
+S15,DENTAL_CrudePrev,percent,Census place,25,25,25
+S15,DEPRESSION_AdjPrev,percent,Census place,25,24,25
+S15,DEPRESSION_CrudePrev,percent,Census place,25,24,25
+S15,DIABETES_AdjPrev,percent,Census place,25,24,25
+S15,DIABETES_CrudePrev,percent,Census place,25,24,25
+S15,DISABILITY_AdjPrev,percent,Census place,25,24,25
+S15,DISABILITY_CrudePrev,percent,Census place,25,24,25
+S15,EMOTIONSPT_AdjPrev,percent,Census place,25,14,25
+S15,EMOTIONSPT_CrudePrev,percent,Census place,25,14,25
+S15,FOODINSECU_AdjPrev,percent,Census place,25,14,25
+S15,FOODINSECU_CrudePrev,percent,Census place,25,14,25
+S15,FOODSTAMP_AdjPrev,percent,Census place,25,14,25
+S15,FOODSTAMP_CrudePrev,percent,Census place,25,14,25
+S15,GHLTH_AdjPrev,percent,Census place,25,24,25
+S15,GHLTH_CrudePrev,percent,Census place,25,24,25
+S15,HEARING_AdjPrev,percent,Census place,25,24,25
+S15,HEARING_CrudePrev,percent,Census place,25,24,25
+S15,HIGHCHOL_AdjPrev,percent,Census place,25,24,25
+S15,HIGHCHOL_CrudePrev,percent,Census place,25,24,25
+S15,HOUSINSECU_AdjPrev,percent,Census place,25,14,25
+S15,HOUSINSECU_CrudePrev,percent,Census place,25,14,25
+S15,INDEPLIVE_AdjPrev,percent,Census place,25,24,25
+S15,INDEPLIVE_CrudePrev,percent,Census place,25,24,25
+S15,LACKTRPT_AdjPrev,percent,Census place,25,14,25
+S15,LACKTRPT_CrudePrev,percent,Census place,25,14,25
+S15,LONELINESS_AdjPrev,percent,Census place,25,14,25
+S15,LONELINESS_CrudePrev,percent,Census place,25,14,25
+S15,LPA_AdjPrev,percent,Census place,25,24,25
+S15,LPA_CrudePrev,percent,Census place,25,24,25
+S15,MAMMOUSE_AdjPrev,percent,Census place,25,25,25
+S15,MAMMOUSE_CrudePrev,percent,Census place,25,25,25
+S15,MHLTH_AdjPrev,percent,Census place,25,24,25
+S15,MHLTH_CrudePrev,percent,Census place,25,24,25
+S15,MOBILITY_AdjPrev,percent,Census place,25,24,25
+S15,MOBILITY_CrudePrev,percent,Census place,25,24,25
+S15,OBESITY_AdjPrev,percent,Census place,25,24,25
+S15,OBESITY_CrudePrev,percent,Census place,25,24,25
+S15,PHLTH_AdjPrev,percent,Census place,25,24,25
+S15,PHLTH_CrudePrev,percent,Census place,25,24,25
+S15,SELFCARE_AdjPrev,percent,Census place,25,24,25
+S15,SELFCARE_CrudePrev,percent,Census place,25,24,25
+S15,SHUTUTILITY_AdjPrev,percent,Census place,25,14,25
+S15,SHUTUTILITY_CrudePrev,percent,Census place,25,14,25
+S15,SLEEP_AdjPrev,percent,Census place,25,25,25
+S15,SLEEP_CrudePrev,percent,Census place,25,25,25
+S15,STROKE_AdjPrev,percent,Census place,25,24,25
+S15,STROKE_CrudePrev,percent,Census place,25,24,25
+S15,TEETHLOST_AdjPrev,percent,Census place,25,25,25
+S15,TEETHLOST_CrudePrev,percent,Census place,25,25,25
+S15,VISION_AdjPrev,percent,Census place,25,24,25
+S15,VISION_CrudePrev,percent,Census place,25,24,25
+S16,sld_d3b_contained_bg_proxy,weighted_intersections_per_sq_mile,contained BG subset environmental proxy,25,25,25
+S16,sld_d3b_intersecting_bg_proxy,weighted_intersections_per_sq_mile,intersecting BG subset environmental proxy,25,25,25
+S16,sld_d4a_contained_bg_proxy,meters,contained BG subset environmental proxy,25,25,25
+S16,sld_d4a_intersecting_bg_proxy,meters,intersecting BG subset environmental proxy,25,25,25
+S16,sld_d4c_contained_bg_proxy,peak_hour_service_frequency,contained BG subset environmental proxy,25,25,25
+S16,sld_d4c_intersecting_bg_proxy,peak_hour_service_frequency,intersecting BG subset environmental proxy,25,25,25
+S16,sld_natwalkind_contained_bg_proxy,index_1_20,contained BG subset environmental proxy,25,25,25
+S16,sld_natwalkind_intersecting_bg_proxy,index_1_20,intersecting BG subset environmental proxy,25,25,25
+S17,ntd_annual_revenue_hours,vehicle_passenger_car_hours,transit_agency_mode_service,517,517,25
+S17,ntd_annual_revenue_miles,vehicle_passenger_car_miles,transit_agency_mode_service,517,517,25
+S17,ntd_annual_unlinked_trips,boardings,transit_agency_mode_service,517,517,25
+S19,park_residents_within_10min_walk,percent,TPL reported Census place/balance,3,3,3
+S19,park_residents_within_10min_walk,percent,TPL reported city,20,20,20
+S19,park_residents_within_10min_walk,percent,TPL reported city-county,2,2,2
+S20,imls_branlib,count,library_system,54,53,25
+S20,imls_centlib,count,library_system,54,53,25
+S20,imls_gpterms,count,library_system,54,53,25
+S20,imls_hrs_open,hours,library_system,54,51,25
+S20,imls_popu_lsa,people,library_system,54,53,25
+S20,imls_totatten,attendance_visits,library_system,54,52,25
+S20,imls_totpro,sessions,library_system,54,52,25
+S20,imls_yaatten,attendance_visits,library_system,54,52,25
+S20,imls_yapro,sessions,library_system,54,52,25
+S20-state,imls_totatten,attendance_visits,library_system,12,12,6
+S20-state,imls_totpro,sessions,library_system,12,12,6
+S20-state,imls_yaatten,attendance_visits,library_system,12,12,6
+S20-state,imls_yapro,sessions,library_system,12,12,6
+S21,MAIRPD_1,Index,CBSA regional background,425,425,25
+S21,MARPP_1,Index,CBSA regional background,425,425,25
+S21,MARPP_2,Index,CBSA regional background,425,425,25
+S21,MARPP_3,Index,CBSA regional background,425,425,25
+S21,MARPP_4,Index,CBSA regional background,425,425,25
+S21,MARPP_5,Index,CBSA regional background,425,425,25
+S22,hud_fmr_0br,USD/month,HUD rent area linked through county / Boston town,102,102,25
+S22,hud_fmr_1br,USD/month,HUD rent area linked through county / Boston town,102,102,25
+S22,hud_fmr_2br,USD/month,HUD rent area linked through county / Boston town,102,102,25
+S22,hud_fmr_3br,USD/month,HUD rent area linked through county / Boston town,102,102,25
+S22,hud_fmr_4br,USD/month,HUD rent area linked through county / Boston town,102,102,25
+S23,MEI_conversion_therapy_municipal_points,points,municipality,24,24,24
+S23,MEI_executive_lgbtq_liaison_municipal_points,points,municipality,24,24,24
+S23,MEI_final_score,points,municipality,25,24,25
+S23,MEI_human_rights_commission_municipal_points,points,municipality,24,24,24
+S23,MEI_law_enforcement_score,points,municipality,24,24,24
+S23,MEI_leadership_score,points,municipality,24,24,24
+S23,MEI_lgbtq_youth_services_points,points,municipality,24,24,24
+S23,MEI_municipal_employer_score,points,municipality,24,24,24
+S23,MEI_municipal_services_score,points,municipality,24,24,24
+S23,MEI_ndo_commission_enforcement_municipal_points,points,municipality,24,24,24
+S23,MEI_nondiscrimination_score,points,municipality,24,24,24
+S23,MEI_youth_bullying_GI_points,points,municipality,24,24,24
+S23,MEI_youth_bullying_SO_points,points,municipality,24,24,24
+S28,CPS_4year_Denominator,students,whole school district official outcome; geographic proxy,3,3,1
+S28,CPS_4year_Numerator,students,whole school district official outcome; geographic proxy,3,3,1
+S28,CPS_4year_Rate,percent,whole school district official outcome; geographic proxy,3,3,1
+S28,OSPI_4year_FinalCohort,students,whole school district official outcome; geographic proxy,3,3,1
+S28,OSPI_4year_Graduate,students,whole school district official outcome; geographic proxy,3,3,1
+S28,OSPI_4year_GraduationRate,percent,whole school district official outcome; geographic proxy,3,3,1
+S28,dcps_bullying_gender_identity_protection,documented policy fact,DC Public Schools; not all private/charter schools,1,0,1
+S28,dcps_care_grievance_support,documented policy fact,DC Public Schools; not all private/charter schools,1,0,1
+S28,dcps_transgender_guidance,documented policy fact,DC Public Schools; not all private/charter schools,1,0,1
+S28,four_year_adjusted_cohort_graduation_rate,percent,whole City of Chicago SD299; city proxy,1,1,1
+S28,four_year_adjusted_cohort_graduation_rate,percent,whole school district; city proxy,1,1,1
+S28,youth_student_fare_policy,USD per eligible fixed-route 2-hour unlimited pass,selected primary transit operator; not complete city operator inventory,1,1,1
+S28,youth_student_fare_policy,USD per eligible local 3-hour pass,selected primary transit operator; not complete city operator inventory,1,1,1
+S28,youth_student_fare_policy,USD per eligible local bus single ride,selected primary transit operator; not complete city operator inventory,1,1,1
+S28,youth_student_fare_policy,USD per eligible local ride,selected primary transit operator; not complete city operator inventory,21,21,21
+S28,youth_student_fare_policy,USD per eligible residential-route single ride,selected primary transit operator; not complete city operator inventory,1,1,1

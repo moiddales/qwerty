@@ -1,0 +1,30 @@
+source_id,source_name,acquisition_status,coverage,limitation_or_use
+S01,人口,acquired,25城；2020–2025,全国原表/排名及25城提取
+S02,ACS,acquired_with_source_gaps,25城；53表,一年个别表缺行，五年补充；MOE/全部城市字段/相关县社区保存
+S03,地理,acquired,25城/51城市县关系/50县,城市多边形、州县CBSA、学校/机构关联；非完整招生网络
+S04,CCD,acquired,25城,2024–25目录、经营高中2431校、年级/会员全字段
+S05,CRDC,acquired,25城×2版,2021–22/2023–24所有选中学校/LEA模块和代码本
+S06,毕业率,acquired_with_geography_limits,25城资料可用,EDFacts23城+2020–21州补充2城；同年不等于城市居民同口径
+S07,SEDA,acquired_local_license_restriction,343相关学区,原包和子集不再分发，非高中成绩
+S08,犯罪,acquired,2022–2025全25城；2021标准口径24城,现行FBI+历史Table8+州补充；Phoenix2021本地口径独立
+S09,FARS,acquired,2021–2024全25城,2025未发布到可用ARF范围；事故地与居民风险不同
+S10,EPA空气,acquired,25城关联县/CBSA,2021–2025及2025监测数据；不称城市精确测量
+S11,Profiles,acquired_partial_survey_coverage,10关联城市,2022/2024全国资料，非参与城市无调查
+S12,YRBS,acquired_partial_survey_coverage,12关联城市,2021/2023/2025，缺测/抑制保留
+S13,HRSA,acquired,25城县背景,动态快照；缺医指定不是青少年等待时间
+S14,SAMHSA,acquired,25城邮政地址关联,2025名录青少年服务机构，非完整市界/容量
+S15,PLACES,acquired_with_source_gaps,25城,2025成人背景，210缺值保留，不填青少年结果
+S16,SLD,acquired_proxy,25城两种BG集合,2019 BG与2025市界；全部选中BG原字段保存
+S17,NTD,acquired_agency_level,25城主机构关联,2022–2025服务与客流；保留agency/mode/TOS
+S18,NTM,acquired_aggregates_conditional_network,25城feed关联,2026快照官方聚合；历史GTFS全国大包仍为条件入口
+S19,公园,acquired_facts_version_limits,25城,3城测量年未确认、2城县尺度；未再分发TPL整包
+S20,图书馆,acquired,25城/27系统,FY2023/24及Texas2024/25补充；系统地理不强分城市
+S21,BEA RPP,acquired,25城主都市区,2008–2024价格分项/平减指数
+S22,HUD,acquired,25城×县/FMR区域,FY2024/27与1983–2027历史，ZIP储备
+S23,HRC,acquired_with_DC_alternative,24评分城+DC政策,DC无MEI；事实分项及DC官方政策保留
+S24,Walk Score,conditional_not_purchased,可选来源,API/商业授权条件，使用开放数据替代
+S25,AllTransit,conditional_not_purchased,可选来源,专有/定制收费数据，使用开放数据替代
+S26,Opportunity Atlas,acquired_historical_validation,50相关县和约1.45万tract,1978–83/1984–89出生队列，当前修订标准误；不当当前城市结果
+S27,青年公交调查,acquired_mirror_hash_verified,Santa Cruz独立样本392行129列,NTL镜像与Dryad CSV/XLSX/README SHA完全一致，CC0
+S28,地方补充与政策,acquired_facts_conditional_admissions,25城票价；DC政策；两城毕业率等,所有票价含条件/票种；招生入口仅3城储备，不称完整招生模型
+S29,偏好与参数证据,acquired_research_reserve,4调查/方法来源,官方YRBS归属/保护因素现成表、NHTS趋势、Profiles；无伪造客观权重

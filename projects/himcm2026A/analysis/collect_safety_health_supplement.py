@@ -1,0 +1,4 @@
+from collect_safety_health import *
+items=[('S08-local','https://opendata.jaxsheriff.org/Doc/'+str(n),f'jso_doc_{n}.pdf','JSO jurisdiction','2024/2025' if n in [59,60,62] else '2021') for n in [59,60,62,39]]
+items += [('S08-local','https://www.arcgis.com/sharing/rest/content/items/4b3c20282321477a87f042e7c1ab7b4f/data?f=json','jso_dashboard.json','JSO jurisdiction','live'),('S08-state','https://openjustice.doj.ca.gov/data','california_openjustice_data.html','California agencies','live'),('S08-state','https://data.ny.gov/api/views/ca8h-8gjq.json','ny_crime_metadata.json','New York agencies','live'),('S08-state','https://apps.criminaljustice.ny.gov/crimnet/ojsa/Crime%20in%20NYS%202021.pdf','ny_crime_2021.pdf','New York region/county','2021')]
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:list(ex.map(fetch,items))

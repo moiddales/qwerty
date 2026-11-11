@@ -2,7 +2,7 @@
 
 ## 当前工作更新：2026-11-11
 
-最新进度（A-003）：已完成 [数据收集方案](projects/himcm2026A/DATA_COLLECTION_PLAN.md)和[来源/访问核查](projects/himcm2026A/DATA_SOURCES.md)。用户已确认收集方案并要求全25城完整采集，当前正在实施；尚未产生真实城市排名。
+最新进度（A-005）：已完成全部25城实际数据采集、补缺、提取与整合，正在归档推送。接手先读 [数据状态](projects/himcm2026A/DATA_COLLECTION_STATUS.md)、[缺口结局](projects/himcm2026A/DATA_GAPS.md) 和 [A题交接](projects/himcm2026A/HANDOFF.md)。第一批远端提交d52b6d1已验证；完整包上传状态以分块manifest及远端head为准。未生成真实城市排名。
 
 当前数据任务可在必要时使用最多三个 GPT6-Astra 子代理；此项按 2026-11-11 新要求执行，覆盖下方历史记录的禁用与旧型号要求。优先现成统计和数据集；确认后按批次收集、验证、推送。获取受阻须有证据区分注册/付费/许可、访问通道问题、指定口径不可得和待核实。
 

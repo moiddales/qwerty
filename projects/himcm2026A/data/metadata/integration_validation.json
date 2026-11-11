@@ -1,0 +1,9 @@
+{
+  "cities": 25,
+  "observation_rows": 157256,
+  "numeric_values": 121160,
+  "source_families": 28,
+  "columns": 48,
+  "prohibited_numeric_codes": 0,
+  "integration": "No temporal/geographic aggregation or imputation; observation IDs identify source rows, not independent samples"
+}

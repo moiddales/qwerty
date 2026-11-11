@@ -1,0 +1,1999 @@
+city_id,source_id,observation_period,geography_type,rows,numeric_values,indicators
+0455000,S01,2020,Census place/balance,1,1,1
+0455000,S01,2021,Census place/balance,1,1,1
+0455000,S01,2022,Census place/balance,1,1,1
+0455000,S01,2023,Census place/balance,1,1,1
+0455000,S01,2024,Census place/balance,1,1,1
+0455000,S01,2025,Census place/balance,1,1,1
+0455000,S02,2020-2024,Census place/balance,258,258,258
+0455000,S02,2024,Census place/balance,648,648,648
+0455000,S02,2025,Census place/balance,648,648,648
+0455000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0455000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0455000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+0455000,S05,2021-22,school point within Census ACS2025 place,1920,951,16
+0455000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+0455000,S05,2023-24,school point within Census ACS2025 place,1952,995,16
+0455000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,460,383,4
+0455000,S06,2020-2021,LEA associated with school points in city,296,211,4
+0455000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,460,333,4
+0455000,S06,2021-2022,state background only,4,4,4
+0455000,S06,2022-2023,state background only,4,4,4
+0455000,S08,2022,police agency,6,6,6
+0455000,S08,2023,police agency,6,6,6
+0455000,S08,2024,police agency,6,6,6
+0455000,S08,2025,police agency,6,6,6
+0455000,S08-api,2021,police agency,5,0,5
+0455000,S08-api,2022,police agency,5,5,5
+0455000,S08-api,2023,police agency,5,5,5
+0455000,S08-api,2024,police agency,5,5,5
+0455000,S08-api,2025,police agency,5,5,5
+0455000,S08-local-Phoenix,2021,police agency,5,5,5
+0455000,S09,2021,FARS crash-location city,5,5,5
+0455000,S09,2022,FARS crash-location city,5,5,5
+0455000,S09,2023,FARS crash-location city,5,5,5
+0455000,S09,2024,FARS crash-location city,5,5,5
+0455000,S10,2021,CBSA,15,15,15
+0455000,S10,2021,county,15,15,15
+0455000,S10,2022,CBSA,15,15,15
+0455000,S10,2022,county,15,15,15
+0455000,S10,2023,CBSA,15,15,15
+0455000,S10,2023,county,15,15,15
+0455000,S10,2024,CBSA,15,15,15
+0455000,S10,2024,county,15,15,15
+0455000,S10,2025,CBSA,15,15,15
+0455000,S10,2025,county,15,15,15
+0455000,S13,2026-11-10 snapshot,city-containing counties,9,9,9
+0455000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0455000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+0455000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0455000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0455000,S17,2022,transit_agency_mode_service,6,6,3
+0455000,S17,2023,transit_agency_mode_service,6,6,3
+0455000,S17,2024,transit_agency_mode_service,6,6,3
+0455000,S17,2025,transit_agency_mode_service,6,6,3
+0455000,S19,2026 release,TPL reported city,1,1,1
+0455000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+0455000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+0455000,S21,2008,CBSA regional background,6,6,6
+0455000,S21,2009,CBSA regional background,6,6,6
+0455000,S21,2010,CBSA regional background,6,6,6
+0455000,S21,2011,CBSA regional background,6,6,6
+0455000,S21,2012,CBSA regional background,6,6,6
+0455000,S21,2013,CBSA regional background,6,6,6
+0455000,S21,2014,CBSA regional background,6,6,6
+0455000,S21,2015,CBSA regional background,6,6,6
+0455000,S21,2016,CBSA regional background,6,6,6
+0455000,S21,2017,CBSA regional background,6,6,6
+0455000,S21,2018,CBSA regional background,6,6,6
+0455000,S21,2019,CBSA regional background,6,6,6
+0455000,S21,2020,CBSA regional background,6,6,6
+0455000,S21,2021,CBSA regional background,6,6,6
+0455000,S21,2022,CBSA regional background,6,6,6
+0455000,S21,2023,CBSA regional background,6,6,6
+0455000,S21,2024,CBSA regional background,6,6,6
+0455000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0455000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0455000,S23,2025,municipality,13,13,13
+0455000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+0644000,S01,2020,Census place/balance,1,1,1
+0644000,S01,2021,Census place/balance,1,1,1
+0644000,S01,2022,Census place/balance,1,1,1
+0644000,S01,2023,Census place/balance,1,1,1
+0644000,S01,2024,Census place/balance,1,1,1
+0644000,S01,2025,Census place/balance,1,1,1
+0644000,S02,2020-2024,Census place/balance,258,258,258
+0644000,S02,2024,Census place/balance,648,648,648
+0644000,S02,2025,Census place/balance,648,648,648
+0644000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0644000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0644000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+0644000,S05,2021-22,school point within Census ACS2025 place,3424,1861,16
+0644000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+0644000,S05,2023-24,school point within Census ACS2025 place,3392,1963,16
+0644000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,848,732,4
+0644000,S06,2020-2021,LEA associated with school points in city,8,8,4
+0644000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,860,624,4
+0644000,S06,2021-2022,state background only,4,4,4
+0644000,S06,2022-2023,state background only,4,4,4
+0644000,S08,2022,police agency,6,6,6
+0644000,S08,2023,police agency,6,6,6
+0644000,S08,2024,police agency,6,6,6
+0644000,S08,2025,police agency,6,6,6
+0644000,S08-api,2021,police agency,5,0,5
+0644000,S08-api,2022,police agency,5,5,5
+0644000,S08-api,2023,police agency,5,5,5
+0644000,S08-api,2024,police agency,5,5,5
+0644000,S08-api,2025,police agency,5,5,5
+0644000,S08-state-CA,2021,state-defined police jurisdiction,5,5,5
+0644000,S08-state-CA,2022,state-defined police jurisdiction,5,5,5
+0644000,S08-state-CA,2023,state-defined police jurisdiction,5,5,5
+0644000,S08-state-CA,2024,state-defined police jurisdiction,5,5,5
+0644000,S08-state-CA,2025,state-defined police jurisdiction,5,5,5
+0644000,S09,2021,FARS crash-location city,5,5,5
+0644000,S09,2022,FARS crash-location city,5,5,5
+0644000,S09,2023,FARS crash-location city,5,5,5
+0644000,S09,2024,FARS crash-location city,5,5,5
+0644000,S10,2021,CBSA,15,15,15
+0644000,S10,2021,county,15,15,15
+0644000,S10,2022,CBSA,15,15,15
+0644000,S10,2022,county,15,15,15
+0644000,S10,2023,CBSA,15,15,15
+0644000,S10,2023,county,15,15,15
+0644000,S10,2024,CBSA,15,15,15
+0644000,S10,2024,county,15,15,15
+0644000,S10,2025,CBSA,15,15,15
+0644000,S10,2025,county,15,15,15
+0644000,S11,2022,"participating school district survey, secondary schools",526,526,526
+0644000,S11,2024,"participating school district survey, secondary schools",533,533,533
+0644000,S12,2021,school district,122,90,122
+0644000,S12,2023,school district,101,99,101
+0644000,S12,2025,school district,117,93,117
+0644000,S13,2026-11-10 snapshot,city-containing counties,8,8,8
+0644000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0644000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+0644000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0644000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0644000,S17,2022,transit_agency_mode_service,21,21,3
+0644000,S17,2023,transit_agency_mode_service,21,21,3
+0644000,S17,2024,transit_agency_mode_service,21,21,3
+0644000,S17,2025,transit_agency_mode_service,24,24,3
+0644000,S19,2026 release,TPL reported city,1,1,1
+0644000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+0644000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+0644000,S21,2008,CBSA regional background,6,6,6
+0644000,S21,2009,CBSA regional background,6,6,6
+0644000,S21,2010,CBSA regional background,6,6,6
+0644000,S21,2011,CBSA regional background,6,6,6
+0644000,S21,2012,CBSA regional background,6,6,6
+0644000,S21,2013,CBSA regional background,6,6,6
+0644000,S21,2014,CBSA regional background,6,6,6
+0644000,S21,2015,CBSA regional background,6,6,6
+0644000,S21,2016,CBSA regional background,6,6,6
+0644000,S21,2017,CBSA regional background,6,6,6
+0644000,S21,2018,CBSA regional background,6,6,6
+0644000,S21,2019,CBSA regional background,6,6,6
+0644000,S21,2020,CBSA regional background,6,6,6
+0644000,S21,2021,CBSA regional background,6,6,6
+0644000,S21,2022,CBSA regional background,6,6,6
+0644000,S21,2023,CBSA regional background,6,6,6
+0644000,S21,2024,CBSA regional background,6,6,6
+0644000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0644000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0644000,S23,2025,municipality,13,13,13
+0644000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+0666000,S01,2020,Census place/balance,1,1,1
+0666000,S01,2021,Census place/balance,1,1,1
+0666000,S01,2022,Census place/balance,1,1,1
+0666000,S01,2023,Census place/balance,1,1,1
+0666000,S01,2024,Census place/balance,1,1,1
+0666000,S01,2025,Census place/balance,1,1,1
+0666000,S02,2020-2024,Census place/balance,258,258,258
+0666000,S02,2024,Census place/balance,648,648,648
+0666000,S02,2025,Census place/balance,648,648,648
+0666000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0666000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0666000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+0666000,S05,2021-22,school point within Census ACS2025 place,1104,622,16
+0666000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+0666000,S05,2023-24,school point within Census ACS2025 place,1072,615,16
+0666000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,268,206,4
+0666000,S06,2020-2021,LEA associated with school points in city,24,21,4
+0666000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,268,201,4
+0666000,S06,2021-2022,state background only,4,4,4
+0666000,S06,2022-2023,state background only,4,4,4
+0666000,S08,2021,police agency,6,6,6
+0666000,S08,2022,police agency,6,6,6
+0666000,S08,2023,police agency,6,6,6
+0666000,S08,2024,police agency,6,6,6
+0666000,S08,2025,police agency,6,6,6
+0666000,S08-api,2021,police agency,5,5,5
+0666000,S08-api,2022,police agency,5,5,5
+0666000,S08-api,2023,police agency,5,5,5
+0666000,S08-api,2024,police agency,5,5,5
+0666000,S08-api,2025,police agency,5,5,5
+0666000,S08-state-CA,2021,state-defined police jurisdiction,5,5,5
+0666000,S08-state-CA,2022,state-defined police jurisdiction,5,5,5
+0666000,S08-state-CA,2023,state-defined police jurisdiction,5,5,5
+0666000,S08-state-CA,2024,state-defined police jurisdiction,5,5,5
+0666000,S08-state-CA,2025,state-defined police jurisdiction,5,5,5
+0666000,S09,2021,FARS crash-location city,5,5,5
+0666000,S09,2022,FARS crash-location city,5,5,5
+0666000,S09,2023,FARS crash-location city,5,5,5
+0666000,S09,2024,FARS crash-location city,5,5,5
+0666000,S10,2021,CBSA,15,15,15
+0666000,S10,2021,county,15,15,15
+0666000,S10,2022,CBSA,15,15,15
+0666000,S10,2022,county,15,15,15
+0666000,S10,2023,CBSA,15,15,15
+0666000,S10,2023,county,15,15,15
+0666000,S10,2024,CBSA,15,15,15
+0666000,S10,2024,county,15,15,15
+0666000,S10,2025,CBSA,15,15,15
+0666000,S10,2025,county,15,15,15
+0666000,S11,2022,"participating school district survey, secondary schools",526,526,526
+0666000,S11,2024,"participating school district survey, secondary schools",533,533,533
+0666000,S12,2021,school district,120,69,120
+0666000,S12,2023,school district,77,73,77
+0666000,S12,2025,school district,117,70,117
+0666000,S13,2026-11-10 snapshot,city-containing counties,6,6,6
+0666000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0666000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+0666000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0666000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0666000,S17,2022,transit_agency_mode_service,18,18,3
+0666000,S17,2023,transit_agency_mode_service,18,18,3
+0666000,S17,2024,transit_agency_mode_service,18,18,3
+0666000,S17,2025,transit_agency_mode_service,18,18,3
+0666000,S19,2026 release,TPL reported city,1,1,1
+0666000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+0666000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+0666000,S21,2008,CBSA regional background,6,6,6
+0666000,S21,2009,CBSA regional background,6,6,6
+0666000,S21,2010,CBSA regional background,6,6,6
+0666000,S21,2011,CBSA regional background,6,6,6
+0666000,S21,2012,CBSA regional background,6,6,6
+0666000,S21,2013,CBSA regional background,6,6,6
+0666000,S21,2014,CBSA regional background,6,6,6
+0666000,S21,2015,CBSA regional background,6,6,6
+0666000,S21,2016,CBSA regional background,6,6,6
+0666000,S21,2017,CBSA regional background,6,6,6
+0666000,S21,2018,CBSA regional background,6,6,6
+0666000,S21,2019,CBSA regional background,6,6,6
+0666000,S21,2020,CBSA regional background,6,6,6
+0666000,S21,2021,CBSA regional background,6,6,6
+0666000,S21,2022,CBSA regional background,6,6,6
+0666000,S21,2023,CBSA regional background,6,6,6
+0666000,S21,2024,CBSA regional background,6,6,6
+0666000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0666000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0666000,S23,2025,municipality,13,13,13
+0666000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+0667000,S01,2020,Census place/balance,1,1,1
+0667000,S01,2021,Census place/balance,1,1,1
+0667000,S01,2022,Census place/balance,1,1,1
+0667000,S01,2023,Census place/balance,1,1,1
+0667000,S01,2024,Census place/balance,1,1,1
+0667000,S01,2025,Census place/balance,1,1,1
+0667000,S02,2020-2024,Census place/balance,258,258,258
+0667000,S02,2024,Census place/balance,648,616,648
+0667000,S02,2025,Census place/balance,648,616,648
+0667000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0667000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0667000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,14,16
+0667000,S05,2021-22,school point within Census ACS2025 place,400,203,16
+0667000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,13,16
+0667000,S05,2023-24,school point within Census ACS2025 place,416,203,16
+0667000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,112,90,4
+0667000,S06,2020-2021,LEA associated with school points in city,8,7,4
+0667000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,108,83,4
+0667000,S06,2021-2022,state background only,4,4,4
+0667000,S06,2022-2023,state background only,4,4,4
+0667000,S08,2022,police agency,6,6,6
+0667000,S08,2023,police agency,6,6,6
+0667000,S08,2024,police agency,6,6,6
+0667000,S08,2025,police agency,6,6,6
+0667000,S08-api,2021,police agency,5,0,5
+0667000,S08-api,2022,police agency,5,5,5
+0667000,S08-api,2023,police agency,5,5,5
+0667000,S08-api,2024,police agency,5,5,5
+0667000,S08-api,2025,police agency,5,5,5
+0667000,S08-state-CA,2021,state-defined police jurisdiction,5,5,5
+0667000,S08-state-CA,2022,state-defined police jurisdiction,5,5,5
+0667000,S08-state-CA,2023,state-defined police jurisdiction,5,5,5
+0667000,S08-state-CA,2024,state-defined police jurisdiction,5,5,5
+0667000,S08-state-CA,2025,state-defined police jurisdiction,5,5,5
+0667000,S09,2021,FARS crash-location city,5,5,5
+0667000,S09,2022,FARS crash-location city,5,5,5
+0667000,S09,2023,FARS crash-location city,5,5,5
+0667000,S09,2024,FARS crash-location city,5,5,5
+0667000,S10,2021,CBSA,15,15,15
+0667000,S10,2021,county,15,15,15
+0667000,S10,2022,CBSA,15,15,15
+0667000,S10,2022,county,15,15,15
+0667000,S10,2023,CBSA,15,15,15
+0667000,S10,2023,county,15,15,15
+0667000,S10,2024,CBSA,15,15,15
+0667000,S10,2024,county,15,15,15
+0667000,S10,2025,CBSA,15,15,15
+0667000,S11,2022,"participating school district survey, secondary schools",526,495,526
+0667000,S11,2024,"participating school district survey, secondary schools",533,533,533
+0667000,S12,2021,school district,121,70,121
+0667000,S12,2023,school district,71,69,71
+0667000,S12,2025,school district,117,67,117
+0667000,S13,2026-11-10 snapshot,city-containing counties,4,4,4
+0667000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0667000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+0667000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0667000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0667000,S17,2022,transit_agency_mode_service,18,18,3
+0667000,S17,2023,transit_agency_mode_service,18,18,3
+0667000,S17,2024,transit_agency_mode_service,18,18,3
+0667000,S17,2025,transit_agency_mode_service,18,18,3
+0667000,S19,2026 release,TPL reported city,1,1,1
+0667000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+0667000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+0667000,S21,2008,CBSA regional background,6,6,6
+0667000,S21,2009,CBSA regional background,6,6,6
+0667000,S21,2010,CBSA regional background,6,6,6
+0667000,S21,2011,CBSA regional background,6,6,6
+0667000,S21,2012,CBSA regional background,6,6,6
+0667000,S21,2013,CBSA regional background,6,6,6
+0667000,S21,2014,CBSA regional background,6,6,6
+0667000,S21,2015,CBSA regional background,6,6,6
+0667000,S21,2016,CBSA regional background,6,6,6
+0667000,S21,2017,CBSA regional background,6,6,6
+0667000,S21,2018,CBSA regional background,6,6,6
+0667000,S21,2019,CBSA regional background,6,6,6
+0667000,S21,2020,CBSA regional background,6,6,6
+0667000,S21,2021,CBSA regional background,6,6,6
+0667000,S21,2022,CBSA regional background,6,6,6
+0667000,S21,2023,CBSA regional background,6,6,6
+0667000,S21,2024,CBSA regional background,6,6,6
+0667000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0667000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0667000,S23,2025,municipality,13,13,13
+0667000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+0668000,S01,2020,Census place/balance,1,1,1
+0668000,S01,2021,Census place/balance,1,1,1
+0668000,S01,2022,Census place/balance,1,1,1
+0668000,S01,2023,Census place/balance,1,1,1
+0668000,S01,2024,Census place/balance,1,1,1
+0668000,S01,2025,Census place/balance,1,1,1
+0668000,S02,2020-2024,Census place/balance,258,258,258
+0668000,S02,2024,Census place/balance,648,648,648
+0668000,S02,2025,Census place/balance,648,648,648
+0668000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0668000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0668000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+0668000,S05,2021-22,school point within Census ACS2025 place,768,433,16
+0668000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+0668000,S05,2023-24,school point within Census ACS2025 place,784,453,16
+0668000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,196,154,4
+0668000,S06,2020-2021,LEA associated with school points in city,28,27,4
+0668000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,192,160,4
+0668000,S06,2021-2022,state background only,4,4,4
+0668000,S06,2022-2023,state background only,4,4,4
+0668000,S08,2022,police agency,6,6,6
+0668000,S08,2024,police agency,6,6,6
+0668000,S08,2025,police agency,6,6,6
+0668000,S08-api,2021,police agency,5,0,5
+0668000,S08-api,2022,police agency,5,5,5
+0668000,S08-api,2023,police agency,5,5,5
+0668000,S08-api,2024,police agency,5,5,5
+0668000,S08-api,2025,police agency,5,5,5
+0668000,S08-state-CA,2021,state-defined police jurisdiction,5,5,5
+0668000,S08-state-CA,2022,state-defined police jurisdiction,5,5,5
+0668000,S08-state-CA,2023,state-defined police jurisdiction,5,5,5
+0668000,S08-state-CA,2024,state-defined police jurisdiction,5,5,5
+0668000,S08-state-CA,2025,state-defined police jurisdiction,5,5,5
+0668000,S09,2021,FARS crash-location city,5,5,5
+0668000,S09,2022,FARS crash-location city,5,5,5
+0668000,S09,2023,FARS crash-location city,5,5,5
+0668000,S09,2024,FARS crash-location city,5,5,5
+0668000,S10,2021,CBSA,15,15,15
+0668000,S10,2021,county,15,15,15
+0668000,S10,2022,CBSA,15,15,15
+0668000,S10,2022,county,15,15,15
+0668000,S10,2023,CBSA,15,15,15
+0668000,S10,2023,county,15,15,15
+0668000,S10,2024,CBSA,15,15,15
+0668000,S10,2024,county,15,15,15
+0668000,S10,2025,CBSA,15,15,15
+0668000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+0668000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0668000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+0668000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0668000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0668000,S17,2022,transit_agency_mode_service,12,12,3
+0668000,S17,2023,transit_agency_mode_service,12,12,3
+0668000,S17,2024,transit_agency_mode_service,12,12,3
+0668000,S17,2025,transit_agency_mode_service,12,12,3
+0668000,S19,2026 release,TPL reported city,1,1,1
+0668000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+0668000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+0668000,S21,2008,CBSA regional background,6,6,6
+0668000,S21,2009,CBSA regional background,6,6,6
+0668000,S21,2010,CBSA regional background,6,6,6
+0668000,S21,2011,CBSA regional background,6,6,6
+0668000,S21,2012,CBSA regional background,6,6,6
+0668000,S21,2013,CBSA regional background,6,6,6
+0668000,S21,2014,CBSA regional background,6,6,6
+0668000,S21,2015,CBSA regional background,6,6,6
+0668000,S21,2016,CBSA regional background,6,6,6
+0668000,S21,2017,CBSA regional background,6,6,6
+0668000,S21,2018,CBSA regional background,6,6,6
+0668000,S21,2019,CBSA regional background,6,6,6
+0668000,S21,2020,CBSA regional background,6,6,6
+0668000,S21,2021,CBSA regional background,6,6,6
+0668000,S21,2022,CBSA regional background,6,6,6
+0668000,S21,2023,CBSA regional background,6,6,6
+0668000,S21,2024,CBSA regional background,6,6,6
+0668000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0668000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0668000,S23,2025,municipality,13,13,13
+0668000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+0820000,S01,2020,Census place/balance,1,1,1
+0820000,S01,2021,Census place/balance,1,1,1
+0820000,S01,2022,Census place/balance,1,1,1
+0820000,S01,2023,Census place/balance,1,1,1
+0820000,S01,2024,Census place/balance,1,1,1
+0820000,S01,2025,Census place/balance,1,1,1
+0820000,S02,2020-2024,Census place/balance,258,258,258
+0820000,S02,2024,Census place/balance,648,648,648
+0820000,S02,2025,Census place/balance,648,648,648
+0820000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+0820000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+0820000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+0820000,S05,2021-22,school point within Census ACS2025 place,944,524,16
+0820000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+0820000,S05,2023-24,school point within Census ACS2025 place,896,504,16
+0820000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,228,214,4
+0820000,S06,2020-2021,LEA associated with school points in city,12,10,4
+0820000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,224,166,4
+0820000,S06,2021-2022,state background only,4,4,4
+0820000,S06,2022-2023,state background only,4,4,4
+0820000,S08,2021,police agency,6,6,6
+0820000,S08,2022,police agency,6,6,6
+0820000,S08,2023,police agency,6,6,6
+0820000,S08,2024,police agency,6,6,6
+0820000,S08,2025,police agency,6,6,6
+0820000,S08-api,2021,police agency,5,5,5
+0820000,S08-api,2022,police agency,5,5,5
+0820000,S08-api,2023,police agency,5,5,5
+0820000,S08-api,2024,police agency,5,5,5
+0820000,S08-api,2025,police agency,5,5,5
+0820000,S09,2021,FARS crash-location city,5,5,5
+0820000,S09,2022,FARS crash-location city,5,5,5
+0820000,S09,2023,FARS crash-location city,5,5,5
+0820000,S09,2024,FARS crash-location city,5,5,5
+0820000,S10,2021,CBSA,15,15,15
+0820000,S10,2021,county,15,15,15
+0820000,S10,2022,CBSA,15,15,15
+0820000,S10,2022,county,15,15,15
+0820000,S10,2023,CBSA,15,15,15
+0820000,S10,2023,county,15,15,15
+0820000,S10,2024,CBSA,15,15,15
+0820000,S10,2024,county,15,15,15
+0820000,S10,2025,CBSA,15,15,15
+0820000,S10,2025,county,15,15,15
+0820000,S13,2026-11-10 snapshot,city-containing counties,7,7,7
+0820000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+0820000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+0820000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+0820000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+0820000,S17,2022,transit_agency_mode_service,18,18,3
+0820000,S17,2023,transit_agency_mode_service,18,18,3
+0820000,S17,2024,transit_agency_mode_service,18,18,3
+0820000,S17,2025,transit_agency_mode_service,18,18,3
+0820000,S19,2026 release,TPL reported city,1,1,1
+0820000,S20,FY2023: 01/01/2023--12/31/2023,library_system,9,8,9
+0820000,S20,FY2024: 01/01/2024--12/31/2024,library_system,9,8,9
+0820000,S21,2008,CBSA regional background,6,6,6
+0820000,S21,2009,CBSA regional background,6,6,6
+0820000,S21,2010,CBSA regional background,6,6,6
+0820000,S21,2011,CBSA regional background,6,6,6
+0820000,S21,2012,CBSA regional background,6,6,6
+0820000,S21,2013,CBSA regional background,6,6,6
+0820000,S21,2014,CBSA regional background,6,6,6
+0820000,S21,2015,CBSA regional background,6,6,6
+0820000,S21,2016,CBSA regional background,6,6,6
+0820000,S21,2017,CBSA regional background,6,6,6
+0820000,S21,2018,CBSA regional background,6,6,6
+0820000,S21,2019,CBSA regional background,6,6,6
+0820000,S21,2020,CBSA regional background,6,6,6
+0820000,S21,2021,CBSA regional background,6,6,6
+0820000,S21,2022,CBSA regional background,6,6,6
+0820000,S21,2023,CBSA regional background,6,6,6
+0820000,S21,2024,CBSA regional background,6,6,6
+0820000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+0820000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+0820000,S23,2025,municipality,13,13,13
+0820000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+1150000,S01,2020,Census place/balance,1,1,1
+1150000,S01,2021,Census place/balance,1,1,1
+1150000,S01,2022,Census place/balance,1,1,1
+1150000,S01,2023,Census place/balance,1,1,1
+1150000,S01,2024,Census place/balance,1,1,1
+1150000,S01,2025,Census place/balance,1,1,1
+1150000,S02,2020-2024,Census place/balance,258,258,258
+1150000,S02,2024,Census place/balance,648,648,648
+1150000,S02,2025,Census place/balance,648,616,648
+1150000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+1150000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+1150000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+1150000,S05,2021-22,school point within Census ACS2025 place,704,424,16
+1150000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+1150000,S05,2023-24,school point within Census ACS2025 place,688,433,16
+1150000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,152,142,4
+1150000,S06,2020-2021,LEA associated with school points in city,76,54,4
+1150000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,164,112,4
+1150000,S06,2021-2022,state background only,4,4,4
+1150000,S06,2022-2023,state background only,4,4,4
+1150000,S08,2022,police agency,6,6,6
+1150000,S08,2023,police agency,6,6,6
+1150000,S08,2024,police agency,6,6,6
+1150000,S08,2025,police agency,6,6,6
+1150000,S08-api,2021,police agency,5,5,5
+1150000,S08-api,2022,police agency,5,5,5
+1150000,S08-api,2023,police agency,5,5,5
+1150000,S08-api,2024,police agency,5,5,5
+1150000,S08-api,2025,police agency,5,5,5
+1150000,S09,2021,FARS crash-location city,5,5,5
+1150000,S09,2022,FARS crash-location city,5,5,5
+1150000,S09,2023,FARS crash-location city,5,5,5
+1150000,S09,2024,FARS crash-location city,5,5,5
+1150000,S10,2021,CBSA,15,15,15
+1150000,S10,2021,county,15,15,15
+1150000,S10,2022,CBSA,15,15,15
+1150000,S10,2022,county,15,15,15
+1150000,S10,2023,CBSA,15,15,15
+1150000,S10,2023,county,15,15,15
+1150000,S10,2024,CBSA,15,15,15
+1150000,S10,2024,county,15,15,15
+1150000,S10,2025,CBSA,15,15,15
+1150000,S10,2025,county,15,15,15
+1150000,S11,2022,"participating school district survey, secondary schools",526,525,526
+1150000,S11,2024,"participating school district survey, secondary schools",533,533,533
+1150000,S12,2021,school district,121,78,121
+1150000,S12,2023,school district,85,85,85
+1150000,S12,2025,school district,117,87,117
+1150000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+1150000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+1150000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+1150000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+1150000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+1150000,S17,2022,transit_agency_mode_service,12,12,3
+1150000,S17,2023,transit_agency_mode_service,9,9,3
+1150000,S17,2024,transit_agency_mode_service,9,9,3
+1150000,S17,2025,transit_agency_mode_service,9,9,3
+1150000,S19,2026 release,TPL reported city,1,1,1
+1150000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,9,9
+1150000,S20,FY2024: 10/01/2023--09/30/2024,library_system,9,9,9
+1150000,S21,2008,CBSA regional background,6,6,6
+1150000,S21,2009,CBSA regional background,6,6,6
+1150000,S21,2010,CBSA regional background,6,6,6
+1150000,S21,2011,CBSA regional background,6,6,6
+1150000,S21,2012,CBSA regional background,6,6,6
+1150000,S21,2013,CBSA regional background,6,6,6
+1150000,S21,2014,CBSA regional background,6,6,6
+1150000,S21,2015,CBSA regional background,6,6,6
+1150000,S21,2016,CBSA regional background,6,6,6
+1150000,S21,2017,CBSA regional background,6,6,6
+1150000,S21,2018,CBSA regional background,6,6,6
+1150000,S21,2019,CBSA regional background,6,6,6
+1150000,S21,2020,CBSA regional background,6,6,6
+1150000,S21,2021,CBSA regional background,6,6,6
+1150000,S21,2022,CBSA regional background,6,6,6
+1150000,S21,2023,CBSA regional background,6,6,6
+1150000,S21,2024,CBSA regional background,6,6,6
+1150000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+1150000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+1150000,S23,2025,municipality,1,0,1
+1150000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+1150000,S28,policy page accessed2026-11-11; guidance June2015 where indicated,DC Public Schools; not all private/charter schools,3,0,3
+1235000,S01,2020,Census place/balance,1,1,1
+1235000,S01,2021,Census place/balance,1,1,1
+1235000,S01,2022,Census place/balance,1,1,1
+1235000,S01,2023,Census place/balance,1,1,1
+1235000,S01,2024,Census place/balance,1,1,1
+1235000,S01,2025,Census place/balance,1,1,1
+1235000,S02,2020-2024,Census place/balance,258,258,258
+1235000,S02,2024,Census place/balance,648,648,648
+1235000,S02,2025,Census place/balance,648,648,648
+1235000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+1235000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+1235000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+1235000,S05,2021-22,school point within Census ACS2025 place,736,403,16
+1235000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+1235000,S05,2023-24,school point within Census ACS2025 place,752,415,16
+1235000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,172,133,4
+1235000,S06,2020-2021,LEA associated with school points in city,12,12,4
+1235000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,168,113,4
+1235000,S06,2021-2022,state background only,4,4,4
+1235000,S06,2022-2023,state background only,4,4,4
+1235000,S08-api,2021,police agency,5,5,5
+1235000,S08-api,2022,police agency,5,5,5
+1235000,S08-api,2023,police agency,5,5,5
+1235000,S08-api,2024,police agency,5,5,5
+1235000,S08-api,2025,police agency,5,5,5
+1235000,S08-local,2024,JSO jurisdiction,1,1,1
+1235000,S09,2021,FARS crash-location city,5,5,5
+1235000,S09,2022,FARS crash-location city,5,5,5
+1235000,S09,2023,FARS crash-location city,5,5,5
+1235000,S09,2024,FARS crash-location city,5,5,5
+1235000,S10,2021,CBSA,15,15,15
+1235000,S10,2021,county,15,15,15
+1235000,S10,2022,CBSA,15,15,15
+1235000,S10,2022,county,15,15,15
+1235000,S10,2023,CBSA,15,15,15
+1235000,S10,2023,county,15,15,15
+1235000,S10,2024,CBSA,15,15,15
+1235000,S10,2024,county,15,15,15
+1235000,S10,2025,CBSA,15,15,15
+1235000,S10,2025,county,15,15,15
+1235000,S12,2021,school district,117,75,117
+1235000,S13,2026-11-10 snapshot,city-containing counties,3,3,3
+1235000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+1235000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+1235000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+1235000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+1235000,S17,2022,transit_agency_mode_service,18,18,3
+1235000,S17,2023,transit_agency_mode_service,18,18,3
+1235000,S17,2024,transit_agency_mode_service,18,18,3
+1235000,S17,2025,transit_agency_mode_service,18,18,3
+1235000,S19,2026 release,TPL reported city,1,1,1
+1235000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,9,9
+1235000,S20,FY2024: 10/01/2023--09/30/2024,library_system,9,9,9
+1235000,S21,2008,CBSA regional background,6,6,6
+1235000,S21,2009,CBSA regional background,6,6,6
+1235000,S21,2010,CBSA regional background,6,6,6
+1235000,S21,2011,CBSA regional background,6,6,6
+1235000,S21,2012,CBSA regional background,6,6,6
+1235000,S21,2013,CBSA regional background,6,6,6
+1235000,S21,2014,CBSA regional background,6,6,6
+1235000,S21,2015,CBSA regional background,6,6,6
+1235000,S21,2016,CBSA regional background,6,6,6
+1235000,S21,2017,CBSA regional background,6,6,6
+1235000,S21,2018,CBSA regional background,6,6,6
+1235000,S21,2019,CBSA regional background,6,6,6
+1235000,S21,2020,CBSA regional background,6,6,6
+1235000,S21,2021,CBSA regional background,6,6,6
+1235000,S21,2022,CBSA regional background,6,6,6
+1235000,S21,2023,CBSA regional background,6,6,6
+1235000,S21,2024,CBSA regional background,6,6,6
+1235000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+1235000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+1235000,S23,2025,municipality,13,13,13
+1235000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+1714000,S01,2020,Census place/balance,1,1,1
+1714000,S01,2021,Census place/balance,1,1,1
+1714000,S01,2022,Census place/balance,1,1,1
+1714000,S01,2023,Census place/balance,1,1,1
+1714000,S01,2024,Census place/balance,1,1,1
+1714000,S01,2025,Census place/balance,1,1,1
+1714000,S02,2020-2024,Census place/balance,258,258,258
+1714000,S02,2024,Census place/balance,648,648,648
+1714000,S02,2025,Census place/balance,648,648,648
+1714000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+1714000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+1714000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+1714000,S05,2021-22,school point within Census ACS2025 place,2848,1724,16
+1714000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+1714000,S05,2023-24,school point within Census ACS2025 place,2816,1686,16
+1714000,S06,2021-2022,state background only,4,4,4
+1714000,S06,2022-2023,state background only,4,4,4
+1714000,S08,2022,police agency,6,6,6
+1714000,S08,2023,police agency,6,6,6
+1714000,S08,2024,police agency,6,6,6
+1714000,S08,2025,police agency,6,6,6
+1714000,S08-api,2021,police agency,5,0,5
+1714000,S08-api,2022,police agency,5,5,5
+1714000,S08-api,2023,police agency,5,5,5
+1714000,S08-api,2024,police agency,5,5,5
+1714000,S08-api,2025,police agency,5,5,5
+1714000,S08-local-Chicago,2021,police agency,5,5,5
+1714000,S09,2021,FARS crash-location city,5,5,5
+1714000,S09,2022,FARS crash-location city,5,5,5
+1714000,S09,2023,FARS crash-location city,5,5,5
+1714000,S09,2024,FARS crash-location city,5,5,5
+1714000,S10,2021,CBSA,15,15,15
+1714000,S10,2021,county,30,30,15
+1714000,S10,2022,CBSA,15,15,15
+1714000,S10,2022,county,30,30,15
+1714000,S10,2023,CBSA,15,15,15
+1714000,S10,2023,county,30,30,15
+1714000,S10,2024,CBSA,15,15,15
+1714000,S10,2024,county,30,30,15
+1714000,S10,2025,CBSA,15,15,15
+1714000,S10,2025,county,30,30,15
+1714000,S11,2022,"participating school district survey, secondary schools",526,493,526
+1714000,S11,2024,"participating school district survey, secondary schools",533,532,533
+1714000,S12,2021,school district,122,80,122
+1714000,S12,2023,school district,82,80,82
+1714000,S12,2025,school district,117,81,117
+1714000,S13,2026-11-10 snapshot,city-containing counties,9,9,9
+1714000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+1714000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+1714000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+1714000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+1714000,S17,2022,transit_agency_mode_service,6,6,3
+1714000,S17,2023,transit_agency_mode_service,6,6,3
+1714000,S17,2024,transit_agency_mode_service,6,6,3
+1714000,S17,2025,transit_agency_mode_service,6,6,3
+1714000,S19,2026 release,TPL reported city,1,1,1
+1714000,S20,FY2023: 01/01/2022--12/31/2022,library_system,9,9,9
+1714000,S20,FY2024: 01/01/2023--12/31/2023,library_system,9,9,9
+1714000,S21,2008,CBSA regional background,6,6,6
+1714000,S21,2009,CBSA regional background,6,6,6
+1714000,S21,2010,CBSA regional background,6,6,6
+1714000,S21,2011,CBSA regional background,6,6,6
+1714000,S21,2012,CBSA regional background,6,6,6
+1714000,S21,2013,CBSA regional background,6,6,6
+1714000,S21,2014,CBSA regional background,6,6,6
+1714000,S21,2015,CBSA regional background,6,6,6
+1714000,S21,2016,CBSA regional background,6,6,6
+1714000,S21,2017,CBSA regional background,6,6,6
+1714000,S21,2018,CBSA regional background,6,6,6
+1714000,S21,2019,CBSA regional background,6,6,6
+1714000,S21,2020,CBSA regional background,6,6,6
+1714000,S21,2021,CBSA regional background,6,6,6
+1714000,S21,2022,CBSA regional background,6,6,6
+1714000,S21,2023,CBSA regional background,6,6,6
+1714000,S21,2024,CBSA regional background,6,6,6
+1714000,S22,FY2024,HUD rent area linked through county / Boston town,10,10,5
+1714000,S22,FY2027,HUD rent area linked through county / Boston town,10,10,5
+1714000,S23,2025,municipality,13,13,13
+1714000,S28,2020-21 (2021 Illinois Report Card),whole City of Chicago SD299; city proxy,1,1,1
+1714000,S28,2022-2023,whole school district official outcome; geographic proxy,3,3,3
+1714000,S28,2023-2024,whole school district official outcome; geographic proxy,3,3,3
+1714000,S28,2024-2025,whole school district official outcome; geographic proxy,3,3,3
+1714000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+1836003,S01,2020,Census place/balance,1,1,1
+1836003,S01,2021,Census place/balance,1,1,1
+1836003,S01,2022,Census place/balance,1,1,1
+1836003,S01,2023,Census place/balance,1,1,1
+1836003,S01,2024,Census place/balance,1,1,1
+1836003,S01,2025,Census place/balance,1,1,1
+1836003,S02,2020-2024,Census place/balance,258,258,258
+1836003,S02,2024,Census place/balance,648,648,648
+1836003,S02,2025,Census place/balance,648,648,648
+1836003,S04,2024-25,school points within Census ACS2025 place,1,1,1
+1836003,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+1836003,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+1836003,S05,2021-22,school point within Census ACS2025 place,784,448,16
+1836003,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+1836003,S05,2023-24,school point within Census ACS2025 place,800,443,16
+1836003,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,136,99,4
+1836003,S06,2020-2021,LEA associated with school points in city,120,84,4
+1836003,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,152,109,4
+1836003,S06,2021-2022,state background only,4,4,4
+1836003,S06,2022-2023,state background only,4,4,4
+1836003,S08,2021,police agency,6,6,6
+1836003,S08,2022,police agency,6,6,6
+1836003,S08,2023,police agency,6,6,6
+1836003,S08,2024,police agency,6,6,6
+1836003,S08,2025,police agency,6,6,6
+1836003,S08-api,2021,police agency,5,5,5
+1836003,S08-api,2022,police agency,5,5,5
+1836003,S08-api,2023,police agency,5,5,5
+1836003,S08-api,2024,police agency,5,5,5
+1836003,S08-api,2025,police agency,5,5,5
+1836003,S09,2021,FARS crash-location city,5,5,5
+1836003,S09,2022,FARS crash-location city,5,5,5
+1836003,S09,2023,FARS crash-location city,5,5,5
+1836003,S09,2024,FARS crash-location city,5,5,5
+1836003,S10,2021,CBSA,15,15,15
+1836003,S10,2021,county,15,15,15
+1836003,S10,2022,CBSA,15,15,15
+1836003,S10,2022,county,15,15,15
+1836003,S10,2023,CBSA,15,15,15
+1836003,S10,2023,county,15,15,15
+1836003,S10,2024,CBSA,15,15,15
+1836003,S10,2024,county,15,15,15
+1836003,S10,2025,CBSA,15,15,15
+1836003,S10,2025,county,15,15,15
+1836003,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+1836003,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+1836003,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+1836003,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+1836003,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+1836003,S17,2022,transit_agency_mode_service,12,12,3
+1836003,S17,2023,transit_agency_mode_service,15,15,3
+1836003,S17,2024,transit_agency_mode_service,15,15,3
+1836003,S17,2025,transit_agency_mode_service,12,12,3
+1836003,S19,website snapshot 2026-11-11; measurement vintage unconfirmed,TPL reported Census place/balance,1,1,1
+1836003,S20,FY2023: 01/01/2023--12/31/2023,library_system,9,9,9
+1836003,S20,FY2024: 01/01/2024--12/31/2024,library_system,9,9,9
+1836003,S21,2008,CBSA regional background,6,6,6
+1836003,S21,2009,CBSA regional background,6,6,6
+1836003,S21,2010,CBSA regional background,6,6,6
+1836003,S21,2011,CBSA regional background,6,6,6
+1836003,S21,2012,CBSA regional background,6,6,6
+1836003,S21,2013,CBSA regional background,6,6,6
+1836003,S21,2014,CBSA regional background,6,6,6
+1836003,S21,2015,CBSA regional background,6,6,6
+1836003,S21,2016,CBSA regional background,6,6,6
+1836003,S21,2017,CBSA regional background,6,6,6
+1836003,S21,2018,CBSA regional background,6,6,6
+1836003,S21,2019,CBSA regional background,6,6,6
+1836003,S21,2020,CBSA regional background,6,6,6
+1836003,S21,2021,CBSA regional background,6,6,6
+1836003,S21,2022,CBSA regional background,6,6,6
+1836003,S21,2023,CBSA regional background,6,6,6
+1836003,S21,2024,CBSA regional background,6,6,6
+1836003,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+1836003,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+1836003,S23,2025,municipality,13,13,13
+1836003,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+2507000,S01,2020,Census place/balance,1,1,1
+2507000,S01,2021,Census place/balance,1,1,1
+2507000,S01,2022,Census place/balance,1,1,1
+2507000,S01,2023,Census place/balance,1,1,1
+2507000,S01,2024,Census place/balance,1,1,1
+2507000,S01,2025,Census place/balance,1,1,1
+2507000,S02,2020-2024,Census place/balance,258,258,258
+2507000,S02,2024,Census place/balance,648,616,648
+2507000,S02,2025,Census place/balance,648,616,648
+2507000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+2507000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+2507000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+2507000,S05,2021-22,school point within Census ACS2025 place,768,458,16
+2507000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+2507000,S05,2023-24,school point within Census ACS2025 place,704,436,16
+2507000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,184,173,4
+2507000,S06,2020-2021,LEA associated with school points in city,56,37,4
+2507000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,176,125,4
+2507000,S06,2021-2022,state background only,4,4,4
+2507000,S06,2022-2023,state background only,4,4,4
+2507000,S08,2021,police agency,6,6,6
+2507000,S08,2022,police agency,6,6,6
+2507000,S08,2023,police agency,6,6,6
+2507000,S08,2024,police agency,6,6,6
+2507000,S08,2025,police agency,6,6,6
+2507000,S08-api,2021,police agency,5,5,5
+2507000,S08-api,2022,police agency,5,5,5
+2507000,S08-api,2023,police agency,5,5,5
+2507000,S08-api,2024,police agency,5,5,5
+2507000,S08-api,2025,police agency,5,5,5
+2507000,S09,2021,FARS crash-location city,5,5,5
+2507000,S09,2022,FARS crash-location city,5,5,5
+2507000,S09,2023,FARS crash-location city,5,5,5
+2507000,S09,2024,FARS crash-location city,5,5,5
+2507000,S10,2021,CBSA,15,15,15
+2507000,S10,2021,county,15,15,15
+2507000,S10,2022,CBSA,15,15,15
+2507000,S10,2022,county,15,15,15
+2507000,S10,2023,CBSA,15,15,15
+2507000,S10,2023,county,15,15,15
+2507000,S10,2024,CBSA,15,15,15
+2507000,S10,2024,county,15,15,15
+2507000,S10,2025,CBSA,15,15,15
+2507000,S10,2025,county,15,15,15
+2507000,S11,2022,"participating school district survey, secondary schools",526,526,526
+2507000,S11,2024,"participating school district survey, secondary schools",533,533,533
+2507000,S12,2021,school district,124,78,124
+2507000,S12,2023,school district,92,92,92
+2507000,S12,2025,school district,117,84,117
+2507000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+2507000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+2507000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+2507000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+2507000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+2507000,S17,2022,transit_agency_mode_service,27,27,3
+2507000,S17,2023,transit_agency_mode_service,24,24,3
+2507000,S17,2024,transit_agency_mode_service,24,24,3
+2507000,S17,2025,transit_agency_mode_service,24,24,3
+2507000,S19,2026 release,TPL reported city,1,1,1
+2507000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+2507000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+2507000,S21,2008,CBSA regional background,6,6,6
+2507000,S21,2009,CBSA regional background,6,6,6
+2507000,S21,2010,CBSA regional background,6,6,6
+2507000,S21,2011,CBSA regional background,6,6,6
+2507000,S21,2012,CBSA regional background,6,6,6
+2507000,S21,2013,CBSA regional background,6,6,6
+2507000,S21,2014,CBSA regional background,6,6,6
+2507000,S21,2015,CBSA regional background,6,6,6
+2507000,S21,2016,CBSA regional background,6,6,6
+2507000,S21,2017,CBSA regional background,6,6,6
+2507000,S21,2018,CBSA regional background,6,6,6
+2507000,S21,2019,CBSA regional background,6,6,6
+2507000,S21,2020,CBSA regional background,6,6,6
+2507000,S21,2021,CBSA regional background,6,6,6
+2507000,S21,2022,CBSA regional background,6,6,6
+2507000,S21,2023,CBSA regional background,6,6,6
+2507000,S21,2024,CBSA regional background,6,6,6
+2507000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+2507000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+2507000,S23,2025,municipality,13,13,13
+2507000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+3240000,S01,2020,Census place/balance,1,1,1
+3240000,S01,2021,Census place/balance,1,1,1
+3240000,S01,2022,Census place/balance,1,1,1
+3240000,S01,2023,Census place/balance,1,1,1
+3240000,S01,2024,Census place/balance,1,1,1
+3240000,S01,2025,Census place/balance,1,1,1
+3240000,S02,2020-2024,Census place/balance,258,258,258
+3240000,S02,2024,Census place/balance,648,648,648
+3240000,S02,2025,Census place/balance,648,648,648
+3240000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+3240000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+3240000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+3240000,S05,2021-22,school point within Census ACS2025 place,608,340,16
+3240000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+3240000,S05,2023-24,school point within Census ACS2025 place,624,360,16
+3240000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,144,119,4
+3240000,S06,2020-2021,LEA associated with school points in city,8,8,4
+3240000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,144,99,4
+3240000,S06,2021-2022,state background only,4,4,4
+3240000,S06,2022-2023,state background only,4,4,4
+3240000,S08,2021,police agency,6,6,6
+3240000,S08,2022,police agency,6,6,6
+3240000,S08,2023,police agency,6,6,6
+3240000,S08,2024,police agency,6,6,6
+3240000,S08,2025,police agency,6,6,6
+3240000,S08-api,2021,police agency,5,5,5
+3240000,S08-api,2022,police agency,5,5,5
+3240000,S08-api,2023,police agency,5,5,5
+3240000,S08-api,2024,police agency,5,5,5
+3240000,S08-api,2025,police agency,5,5,5
+3240000,S09,2021,FARS crash-location city,5,5,5
+3240000,S09,2022,FARS crash-location city,5,5,5
+3240000,S09,2023,FARS crash-location city,5,5,5
+3240000,S09,2024,FARS crash-location city,5,5,5
+3240000,S10,2021,CBSA,15,15,15
+3240000,S10,2021,county,15,15,15
+3240000,S10,2022,CBSA,15,15,15
+3240000,S10,2022,county,15,15,15
+3240000,S10,2023,CBSA,15,15,15
+3240000,S10,2023,county,15,15,15
+3240000,S10,2024,CBSA,15,15,15
+3240000,S10,2024,county,15,15,15
+3240000,S10,2025,CBSA,15,15,15
+3240000,S10,2025,county,15,15,15
+3240000,S13,2026-11-10 snapshot,city-containing counties,9,9,9
+3240000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+3240000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+3240000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+3240000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+3240000,S17,2022,transit_agency_mode_service,6,6,3
+3240000,S17,2023,transit_agency_mode_service,6,6,3
+3240000,S17,2024,transit_agency_mode_service,6,6,3
+3240000,S17,2025,transit_agency_mode_service,6,6,3
+3240000,S19,website snapshot 2026-11-11; measurement vintage unconfirmed,TPL reported Census place/balance,1,1,1
+3240000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+3240000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+3240000,S21,2008,CBSA regional background,6,6,6
+3240000,S21,2009,CBSA regional background,6,6,6
+3240000,S21,2010,CBSA regional background,6,6,6
+3240000,S21,2011,CBSA regional background,6,6,6
+3240000,S21,2012,CBSA regional background,6,6,6
+3240000,S21,2013,CBSA regional background,6,6,6
+3240000,S21,2014,CBSA regional background,6,6,6
+3240000,S21,2015,CBSA regional background,6,6,6
+3240000,S21,2016,CBSA regional background,6,6,6
+3240000,S21,2017,CBSA regional background,6,6,6
+3240000,S21,2018,CBSA regional background,6,6,6
+3240000,S21,2019,CBSA regional background,6,6,6
+3240000,S21,2020,CBSA regional background,6,6,6
+3240000,S21,2021,CBSA regional background,6,6,6
+3240000,S21,2022,CBSA regional background,6,6,6
+3240000,S21,2023,CBSA regional background,6,6,6
+3240000,S21,2024,CBSA regional background,6,6,6
+3240000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+3240000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+3240000,S23,2025,municipality,13,13,13
+3240000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+3651000,S01,2020,Census place/balance,1,1,1
+3651000,S01,2021,Census place/balance,1,1,1
+3651000,S01,2022,Census place/balance,1,1,1
+3651000,S01,2023,Census place/balance,1,1,1
+3651000,S01,2024,Census place/balance,1,1,1
+3651000,S01,2025,Census place/balance,1,1,1
+3651000,S02,2020-2024,Census place/balance,258,258,258
+3651000,S02,2024,Census place/balance,648,648,648
+3651000,S02,2025,Census place/balance,648,648,648
+3651000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+3651000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+3651000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+3651000,S05,2021-22,school point within Census ACS2025 place,9472,5347,16
+3651000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+3651000,S05,2023-24,school point within Census ACS2025 place,8896,5259,16
+3651000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,2088,1956,4
+3651000,S06,2020-2021,LEA associated with school points in city,372,285,4
+3651000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,2100,1505,4
+3651000,S06,2021-2022,state background only,4,4,4
+3651000,S06,2022-2023,state background only,4,4,4
+3651000,S08,2022,police agency,6,6,6
+3651000,S08,2023,police agency,6,6,6
+3651000,S08,2024,police agency,6,6,6
+3651000,S08,2025,police agency,6,6,6
+3651000,S08-api,2021,police agency,5,5,5
+3651000,S08-api,2022,police agency,5,5,5
+3651000,S08-api,2023,police agency,5,5,5
+3651000,S08-api,2024,police agency,5,5,5
+3651000,S08-api,2025,police agency,5,5,5
+3651000,S08-state-NY,2021,five NYC county equivalents,5,5,5
+3651000,S08-state-NY,2022,five NYC county equivalents,5,5,5
+3651000,S08-state-NY,2023,five NYC county equivalents,5,5,5
+3651000,S08-state-NY,2024,five NYC county equivalents,5,5,5
+3651000,S09,2021,five NYC county equivalents,5,5,5
+3651000,S09,2022,five NYC county equivalents,5,5,5
+3651000,S09,2023,five NYC county equivalents,5,5,5
+3651000,S09,2024,five NYC county equivalents,5,5,5
+3651000,S10,2021,CBSA,15,15,15
+3651000,S10,2021,county,75,75,15
+3651000,S10,2022,CBSA,15,15,15
+3651000,S10,2022,county,75,75,15
+3651000,S10,2023,CBSA,15,15,15
+3651000,S10,2023,county,75,75,15
+3651000,S10,2024,CBSA,15,15,15
+3651000,S10,2024,county,75,75,15
+3651000,S10,2025,CBSA,15,15,15
+3651000,S10,2025,county,75,75,15
+3651000,S11,2022,"participating school district survey, secondary schools",526,526,526
+3651000,S11,2024,"participating school district survey, secondary schools",533,533,533
+3651000,S12,2021,school district,120,70,120
+3651000,S12,2023,school district,80,79,80
+3651000,S12,2025,school district,117,71,117
+3651000,S13,2026-11-10 snapshot,city-containing counties,9,9,9
+3651000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+3651000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+3651000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+3651000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+3651000,S17,2022,transit_agency_mode_service,15,15,3
+3651000,S17,2023,transit_agency_mode_service,15,15,3
+3651000,S17,2024,transit_agency_mode_service,15,15,3
+3651000,S17,2025,transit_agency_mode_service,15,15,3
+3651000,S19,2026 release,TPL reported city,1,1,1
+3651000,S20,FY2023: 01/01/2023--12/31/2023,library_system,27,27,9
+3651000,S20,FY2024: 01/01/2024--12/31/2024,library_system,27,27,9
+3651000,S21,2008,CBSA regional background,6,6,6
+3651000,S21,2009,CBSA regional background,6,6,6
+3651000,S21,2010,CBSA regional background,6,6,6
+3651000,S21,2011,CBSA regional background,6,6,6
+3651000,S21,2012,CBSA regional background,6,6,6
+3651000,S21,2013,CBSA regional background,6,6,6
+3651000,S21,2014,CBSA regional background,6,6,6
+3651000,S21,2015,CBSA regional background,6,6,6
+3651000,S21,2016,CBSA regional background,6,6,6
+3651000,S21,2017,CBSA regional background,6,6,6
+3651000,S21,2018,CBSA regional background,6,6,6
+3651000,S21,2019,CBSA regional background,6,6,6
+3651000,S21,2020,CBSA regional background,6,6,6
+3651000,S21,2021,CBSA regional background,6,6,6
+3651000,S21,2022,CBSA regional background,6,6,6
+3651000,S21,2023,CBSA regional background,6,6,6
+3651000,S21,2024,CBSA regional background,6,6,6
+3651000,S22,FY2024,HUD rent area linked through county / Boston town,25,25,5
+3651000,S22,FY2027,HUD rent area linked through county / Boston town,25,25,5
+3651000,S23,2025,municipality,13,13,13
+3651000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+3712000,S01,2020,Census place/balance,1,1,1
+3712000,S01,2021,Census place/balance,1,1,1
+3712000,S01,2022,Census place/balance,1,1,1
+3712000,S01,2023,Census place/balance,1,1,1
+3712000,S01,2024,Census place/balance,1,1,1
+3712000,S01,2025,Census place/balance,1,1,1
+3712000,S02,2020-2024,Census place/balance,258,258,258
+3712000,S02,2024,Census place/balance,648,648,648
+3712000,S02,2025,Census place/balance,648,648,648
+3712000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+3712000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+3712000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+3712000,S05,2021-22,school point within Census ACS2025 place,608,369,16
+3712000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+3712000,S05,2023-24,school point within Census ACS2025 place,608,389,16
+3712000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,120,90,4
+3712000,S06,2020-2021,LEA associated with school points in city,28,22,4
+3712000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,124,99,4
+3712000,S06,2021-2022,state background only,4,4,4
+3712000,S06,2022-2023,state background only,4,4,4
+3712000,S08,2021,police agency,6,6,6
+3712000,S08,2022,police agency,6,6,6
+3712000,S08,2023,police agency,6,6,6
+3712000,S08,2024,police agency,6,6,6
+3712000,S08,2025,police agency,6,6,6
+3712000,S08-api,2021,police agency,5,5,5
+3712000,S08-api,2022,police agency,5,5,5
+3712000,S08-api,2023,police agency,5,5,5
+3712000,S08-api,2024,police agency,5,5,5
+3712000,S08-api,2025,police agency,5,5,5
+3712000,S09,2021,FARS crash-location city,5,5,5
+3712000,S09,2022,FARS crash-location city,5,5,5
+3712000,S09,2023,FARS crash-location city,5,5,5
+3712000,S09,2024,FARS crash-location city,5,5,5
+3712000,S10,2021,CBSA,15,15,15
+3712000,S10,2021,county,15,15,15
+3712000,S10,2022,CBSA,15,15,15
+3712000,S10,2022,county,15,15,15
+3712000,S10,2023,CBSA,15,15,15
+3712000,S10,2023,county,15,15,15
+3712000,S10,2024,CBSA,15,15,15
+3712000,S10,2024,county,15,15,15
+3712000,S10,2025,CBSA,15,15,15
+3712000,S10,2025,county,15,15,15
+3712000,S13,2026-11-10 snapshot,city-containing counties,3,3,3
+3712000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+3712000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+3712000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+3712000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+3712000,S17,2022,transit_agency_mode_service,18,18,3
+3712000,S17,2023,transit_agency_mode_service,18,18,3
+3712000,S17,2024,transit_agency_mode_service,18,18,3
+3712000,S17,2025,transit_agency_mode_service,21,21,3
+3712000,S19,2026 release,TPL reported city-county,1,1,1
+3712000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+3712000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+3712000,S21,2008,CBSA regional background,6,6,6
+3712000,S21,2009,CBSA regional background,6,6,6
+3712000,S21,2010,CBSA regional background,6,6,6
+3712000,S21,2011,CBSA regional background,6,6,6
+3712000,S21,2012,CBSA regional background,6,6,6
+3712000,S21,2013,CBSA regional background,6,6,6
+3712000,S21,2014,CBSA regional background,6,6,6
+3712000,S21,2015,CBSA regional background,6,6,6
+3712000,S21,2016,CBSA regional background,6,6,6
+3712000,S21,2017,CBSA regional background,6,6,6
+3712000,S21,2018,CBSA regional background,6,6,6
+3712000,S21,2019,CBSA regional background,6,6,6
+3712000,S21,2020,CBSA regional background,6,6,6
+3712000,S21,2021,CBSA regional background,6,6,6
+3712000,S21,2022,CBSA regional background,6,6,6
+3712000,S21,2023,CBSA regional background,6,6,6
+3712000,S21,2024,CBSA regional background,6,6,6
+3712000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+3712000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+3712000,S23,2025,municipality,13,13,13
+3712000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+3918000,S01,2020,Census place/balance,1,1,1
+3918000,S01,2021,Census place/balance,1,1,1
+3918000,S01,2022,Census place/balance,1,1,1
+3918000,S01,2023,Census place/balance,1,1,1
+3918000,S01,2024,Census place/balance,1,1,1
+3918000,S01,2025,Census place/balance,1,1,1
+3918000,S02,2020-2024,Census place/balance,258,258,258
+3918000,S02,2024,Census place/balance,648,648,648
+3918000,S02,2025,Census place/balance,648,648,648
+3918000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+3918000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+3918000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+3918000,S05,2021-22,school point within Census ACS2025 place,960,484,16
+3918000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+3918000,S05,2023-24,school point within Census ACS2025 place,976,509,16
+3918000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,212,182,4
+3918000,S06,2020-2021,LEA associated with school points in city,140,104,4
+3918000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,200,144,4
+3918000,S06,2021-2022,state background only,4,4,4
+3918000,S06,2022-2023,state background only,4,4,4
+3918000,S08,2021,police agency,6,6,6
+3918000,S08,2022,police agency,6,6,6
+3918000,S08,2023,police agency,6,6,6
+3918000,S08,2024,police agency,6,6,6
+3918000,S08,2025,police agency,6,6,6
+3918000,S08-api,2021,police agency,5,5,5
+3918000,S08-api,2022,police agency,5,5,5
+3918000,S08-api,2023,police agency,5,5,5
+3918000,S08-api,2024,police agency,5,5,5
+3918000,S08-api,2025,police agency,5,5,5
+3918000,S09,2021,FARS crash-location city,5,5,5
+3918000,S09,2022,FARS crash-location city,5,5,5
+3918000,S09,2023,FARS crash-location city,5,5,5
+3918000,S09,2024,FARS crash-location city,5,5,5
+3918000,S10,2021,CBSA,15,15,15
+3918000,S10,2021,county,30,30,15
+3918000,S10,2022,CBSA,15,15,15
+3918000,S10,2022,county,30,30,15
+3918000,S10,2023,CBSA,15,15,15
+3918000,S10,2023,county,30,30,15
+3918000,S10,2024,CBSA,15,15,15
+3918000,S10,2024,county,30,30,15
+3918000,S10,2025,CBSA,15,15,15
+3918000,S10,2025,county,30,30,15
+3918000,S13,2026-11-10 snapshot,city-containing counties,6,6,6
+3918000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+3918000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+3918000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+3918000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+3918000,S17,2022,transit_agency_mode_service,9,9,3
+3918000,S17,2023,transit_agency_mode_service,9,9,3
+3918000,S17,2024,transit_agency_mode_service,9,9,3
+3918000,S17,2025,transit_agency_mode_service,9,9,3
+3918000,S19,website snapshot 2026-11-11; measurement vintage unconfirmed,TPL reported Census place/balance,1,1,1
+3918000,S20,FY2023: 01/01/2023--12/31/2023,library_system,9,9,9
+3918000,S20,FY2024: 01/01/2024--12/31/2024,library_system,9,9,9
+3918000,S21,2008,CBSA regional background,6,6,6
+3918000,S21,2009,CBSA regional background,6,6,6
+3918000,S21,2010,CBSA regional background,6,6,6
+3918000,S21,2011,CBSA regional background,6,6,6
+3918000,S21,2012,CBSA regional background,6,6,6
+3918000,S21,2013,CBSA regional background,6,6,6
+3918000,S21,2014,CBSA regional background,6,6,6
+3918000,S21,2015,CBSA regional background,6,6,6
+3918000,S21,2016,CBSA regional background,6,6,6
+3918000,S21,2017,CBSA regional background,6,6,6
+3918000,S21,2018,CBSA regional background,6,6,6
+3918000,S21,2019,CBSA regional background,6,6,6
+3918000,S21,2020,CBSA regional background,6,6,6
+3918000,S21,2021,CBSA regional background,6,6,6
+3918000,S21,2022,CBSA regional background,6,6,6
+3918000,S21,2023,CBSA regional background,6,6,6
+3918000,S21,2024,CBSA regional background,6,6,6
+3918000,S22,FY2024,HUD rent area linked through county / Boston town,15,15,5
+3918000,S22,FY2027,HUD rent area linked through county / Boston town,15,15,5
+3918000,S23,2025,municipality,13,13,13
+3918000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4055000,S01,2020,Census place/balance,1,1,1
+4055000,S01,2021,Census place/balance,1,1,1
+4055000,S01,2022,Census place/balance,1,1,1
+4055000,S01,2023,Census place/balance,1,1,1
+4055000,S01,2024,Census place/balance,1,1,1
+4055000,S01,2025,Census place/balance,1,1,1
+4055000,S02,2020-2024,Census place/balance,258,258,258
+4055000,S02,2024,Census place/balance,648,648,648
+4055000,S02,2025,Census place/balance,648,648,648
+4055000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4055000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4055000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4055000,S05,2021-22,school point within Census ACS2025 place,368,236,16
+4055000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4055000,S05,2023-24,school point within Census ACS2025 place,368,242,16
+4055000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,92,70,4
+4055000,S06,2020-2021,LEA associated with school points in city,76,67,4
+4055000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,88,70,4
+4055000,S06,2022-2023,state background only,4,4,4
+4055000,S08,2021,police agency,6,6,6
+4055000,S08,2022,police agency,6,6,6
+4055000,S08,2023,police agency,6,6,6
+4055000,S08,2024,police agency,6,6,6
+4055000,S08,2025,police agency,6,6,6
+4055000,S08-api,2021,police agency,5,5,5
+4055000,S08-api,2022,police agency,5,5,5
+4055000,S08-api,2023,police agency,5,5,5
+4055000,S08-api,2024,police agency,5,5,5
+4055000,S08-api,2025,police agency,5,5,5
+4055000,S09,2021,FARS crash-location city,5,5,5
+4055000,S09,2022,FARS crash-location city,5,5,5
+4055000,S09,2023,FARS crash-location city,5,5,5
+4055000,S09,2024,FARS crash-location city,5,5,5
+4055000,S10,2021,CBSA,15,15,15
+4055000,S10,2021,county,45,45,15
+4055000,S10,2022,CBSA,15,15,15
+4055000,S10,2022,county,45,45,15
+4055000,S10,2023,CBSA,15,15,15
+4055000,S10,2023,county,45,45,15
+4055000,S10,2024,CBSA,15,15,15
+4055000,S10,2024,county,45,45,15
+4055000,S10,2025,CBSA,15,15,15
+4055000,S10,2025,county,45,45,15
+4055000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+4055000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4055000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,80,80
+4055000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4055000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4055000,S17,2022,transit_agency_mode_service,15,15,3
+4055000,S17,2023,transit_agency_mode_service,15,15,3
+4055000,S17,2024,transit_agency_mode_service,18,18,3
+4055000,S17,2025,transit_agency_mode_service,18,18,3
+4055000,S19,2026 release,TPL reported city,1,1,1
+4055000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+4055000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+4055000,S21,2008,CBSA regional background,6,6,6
+4055000,S21,2009,CBSA regional background,6,6,6
+4055000,S21,2010,CBSA regional background,6,6,6
+4055000,S21,2011,CBSA regional background,6,6,6
+4055000,S21,2012,CBSA regional background,6,6,6
+4055000,S21,2013,CBSA regional background,6,6,6
+4055000,S21,2014,CBSA regional background,6,6,6
+4055000,S21,2015,CBSA regional background,6,6,6
+4055000,S21,2016,CBSA regional background,6,6,6
+4055000,S21,2017,CBSA regional background,6,6,6
+4055000,S21,2018,CBSA regional background,6,6,6
+4055000,S21,2019,CBSA regional background,6,6,6
+4055000,S21,2020,CBSA regional background,6,6,6
+4055000,S21,2021,CBSA regional background,6,6,6
+4055000,S21,2022,CBSA regional background,6,6,6
+4055000,S21,2023,CBSA regional background,6,6,6
+4055000,S21,2024,CBSA regional background,6,6,6
+4055000,S22,FY2024,HUD rent area linked through county / Boston town,20,20,5
+4055000,S22,FY2027,HUD rent area linked through county / Boston town,20,20,5
+4055000,S23,2025,municipality,13,13,13
+4055000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4260000,S01,2020,Census place/balance,1,1,1
+4260000,S01,2021,Census place/balance,1,1,1
+4260000,S01,2022,Census place/balance,1,1,1
+4260000,S01,2023,Census place/balance,1,1,1
+4260000,S01,2024,Census place/balance,1,1,1
+4260000,S01,2025,Census place/balance,1,1,1
+4260000,S02,2020-2024,Census place/balance,258,258,258
+4260000,S02,2024,Census place/balance,648,648,648
+4260000,S02,2025,Census place/balance,648,648,648
+4260000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4260000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4260000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4260000,S05,2021-22,school point within Census ACS2025 place,1456,830,16
+4260000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4260000,S05,2023-24,school point within Census ACS2025 place,1440,833,16
+4260000,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,356,328,4
+4260000,S06,2020-2021,LEA associated with school points in city,140,99,4
+4260000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,360,263,4
+4260000,S06,2021-2022,state background only,4,4,4
+4260000,S06,2022-2023,state background only,4,4,4
+4260000,S08,2022,police agency,6,6,6
+4260000,S08,2023,police agency,6,6,6
+4260000,S08,2024,police agency,6,6,6
+4260000,S08,2025,police agency,6,6,6
+4260000,S08-api,2021,police agency,5,5,5
+4260000,S08-api,2022,police agency,5,5,5
+4260000,S08-api,2023,police agency,5,5,5
+4260000,S08-api,2024,police agency,5,5,5
+4260000,S08-api,2025,police agency,5,5,5
+4260000,S09,2021,FARS crash-location city,5,5,5
+4260000,S09,2022,FARS crash-location city,5,5,5
+4260000,S09,2023,FARS crash-location city,5,5,5
+4260000,S09,2024,FARS crash-location city,5,5,5
+4260000,S10,2021,CBSA,15,15,15
+4260000,S10,2021,county,15,15,15
+4260000,S10,2022,CBSA,15,15,15
+4260000,S10,2022,county,15,15,15
+4260000,S10,2023,CBSA,15,15,15
+4260000,S10,2023,county,15,15,15
+4260000,S10,2024,CBSA,15,15,15
+4260000,S10,2024,county,15,15,15
+4260000,S10,2025,CBSA,15,15,15
+4260000,S10,2025,county,15,15,15
+4260000,S11,2022,"participating school district survey, secondary schools",526,526,526
+4260000,S11,2024,"participating school district survey, secondary schools",533,533,533
+4260000,S12,2021,school district,124,97,124
+4260000,S12,2023,school district,110,109,110
+4260000,S12,2025,school district,117,102,117
+4260000,S13,2026-11-10 snapshot,city-containing counties,4,4,4
+4260000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4260000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,10,80
+4260000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4260000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4260000,S17,2022,transit_agency_mode_service,21,21,3
+4260000,S17,2023,transit_agency_mode_service,21,21,3
+4260000,S17,2024,transit_agency_mode_service,21,21,3
+4260000,S17,2025,transit_agency_mode_service,21,21,3
+4260000,S19,2026 release,TPL reported city,1,1,1
+4260000,S20,FY2023: 01/01/2023--12/31/2023,library_system,9,9,9
+4260000,S20,FY2024: 01/01/2024--12/31/2024,library_system,9,9,9
+4260000,S21,2008,CBSA regional background,6,6,6
+4260000,S21,2009,CBSA regional background,6,6,6
+4260000,S21,2010,CBSA regional background,6,6,6
+4260000,S21,2011,CBSA regional background,6,6,6
+4260000,S21,2012,CBSA regional background,6,6,6
+4260000,S21,2013,CBSA regional background,6,6,6
+4260000,S21,2014,CBSA regional background,6,6,6
+4260000,S21,2015,CBSA regional background,6,6,6
+4260000,S21,2016,CBSA regional background,6,6,6
+4260000,S21,2017,CBSA regional background,6,6,6
+4260000,S21,2018,CBSA regional background,6,6,6
+4260000,S21,2019,CBSA regional background,6,6,6
+4260000,S21,2020,CBSA regional background,6,6,6
+4260000,S21,2021,CBSA regional background,6,6,6
+4260000,S21,2022,CBSA regional background,6,6,6
+4260000,S21,2023,CBSA regional background,6,6,6
+4260000,S21,2024,CBSA regional background,6,6,6
+4260000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+4260000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+4260000,S23,2025,municipality,13,13,13
+4260000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4752006,S01,2020,Census place/balance,1,1,1
+4752006,S01,2021,Census place/balance,1,1,1
+4752006,S01,2022,Census place/balance,1,1,1
+4752006,S01,2023,Census place/balance,1,1,1
+4752006,S01,2024,Census place/balance,1,1,1
+4752006,S01,2025,Census place/balance,1,1,1
+4752006,S02,2020-2024,Census place/balance,258,258,258
+4752006,S02,2024,Census place/balance,648,616,648
+4752006,S02,2025,Census place/balance,648,616,648
+4752006,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4752006,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4752006,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4752006,S05,2021-22,school point within Census ACS2025 place,560,318,16
+4752006,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4752006,S05,2023-24,school point within Census ACS2025 place,576,335,16
+4752006,S06,2019-20,school points within Census ACS2025 place using 2019-20 NCES coordinates,128,109,4
+4752006,S06,2020-2021,LEA associated with school points in city,20,16,4
+4752006,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,128,88,4
+4752006,S06,2021-2022,state background only,4,4,4
+4752006,S06,2022-2023,state background only,4,4,4
+4752006,S08,2021,police agency,6,6,6
+4752006,S08,2022,police agency,6,6,6
+4752006,S08,2023,police agency,6,6,6
+4752006,S08,2024,police agency,6,6,6
+4752006,S08,2025,police agency,6,6,6
+4752006,S08-api,2021,police agency,5,5,5
+4752006,S08-api,2022,police agency,5,5,5
+4752006,S08-api,2023,police agency,5,5,5
+4752006,S08-api,2024,police agency,5,5,5
+4752006,S08-api,2025,police agency,5,5,5
+4752006,S09,2021,FARS crash-location city,5,5,5
+4752006,S09,2022,FARS crash-location city,5,5,5
+4752006,S09,2023,FARS crash-location city,5,5,5
+4752006,S09,2024,FARS crash-location city,5,5,5
+4752006,S10,2021,CBSA,15,15,15
+4752006,S10,2021,county,15,15,15
+4752006,S10,2022,CBSA,15,15,15
+4752006,S10,2022,county,15,15,15
+4752006,S10,2023,CBSA,15,15,15
+4752006,S10,2023,county,15,15,15
+4752006,S10,2024,CBSA,15,15,15
+4752006,S10,2024,county,15,15,15
+4752006,S10,2025,CBSA,15,15,15
+4752006,S10,2025,county,15,15,15
+4752006,S12,2021,school district,120,74,120
+4752006,S12,2023,school district,83,82,83
+4752006,S12,2025,school district,117,88,117
+4752006,S13,2026-11-10 snapshot,city-containing counties,3,3,3
+4752006,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4752006,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4752006,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4752006,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4752006,S17,2022,transit_agency_mode_service,9,9,3
+4752006,S17,2023,transit_agency_mode_service,9,9,3
+4752006,S17,2024,transit_agency_mode_service,9,9,3
+4752006,S17,2025,transit_agency_mode_service,9,9,3
+4752006,S19,2026 release,TPL reported city-county,1,1,1
+4752006,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+4752006,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+4752006,S21,2008,CBSA regional background,6,6,6
+4752006,S21,2009,CBSA regional background,6,6,6
+4752006,S21,2010,CBSA regional background,6,6,6
+4752006,S21,2011,CBSA regional background,6,6,6
+4752006,S21,2012,CBSA regional background,6,6,6
+4752006,S21,2013,CBSA regional background,6,6,6
+4752006,S21,2014,CBSA regional background,6,6,6
+4752006,S21,2015,CBSA regional background,6,6,6
+4752006,S21,2016,CBSA regional background,6,6,6
+4752006,S21,2017,CBSA regional background,6,6,6
+4752006,S21,2018,CBSA regional background,6,6,6
+4752006,S21,2019,CBSA regional background,6,6,6
+4752006,S21,2020,CBSA regional background,6,6,6
+4752006,S21,2021,CBSA regional background,6,6,6
+4752006,S21,2022,CBSA regional background,6,6,6
+4752006,S21,2023,CBSA regional background,6,6,6
+4752006,S21,2024,CBSA regional background,6,6,6
+4752006,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+4752006,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+4752006,S23,2025,municipality,13,13,13
+4752006,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4805000,S01,2020,Census place/balance,1,1,1
+4805000,S01,2021,Census place/balance,1,1,1
+4805000,S01,2022,Census place/balance,1,1,1
+4805000,S01,2023,Census place/balance,1,1,1
+4805000,S01,2024,Census place/balance,1,1,1
+4805000,S01,2025,Census place/balance,1,1,1
+4805000,S02,2020-2024,Census place/balance,258,258,258
+4805000,S02,2024,Census place/balance,648,648,648
+4805000,S02,2025,Census place/balance,648,616,648
+4805000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4805000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4805000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4805000,S05,2021-22,school point within Census ACS2025 place,896,492,16
+4805000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4805000,S05,2023-24,school point within Census ACS2025 place,896,485,16
+4805000,S06,2020-2021,LEA associated with school points in city,92,74,4
+4805000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,140,99,4
+4805000,S06,2021-2022,state background only,4,4,4
+4805000,S06,2022-2023,state background only,4,4,4
+4805000,S08,2021,police agency,6,6,6
+4805000,S08,2022,police agency,6,6,6
+4805000,S08,2023,police agency,6,6,6
+4805000,S08,2024,police agency,6,6,6
+4805000,S08,2025,police agency,6,6,6
+4805000,S08-api,2021,police agency,5,5,5
+4805000,S08-api,2022,police agency,5,5,5
+4805000,S08-api,2023,police agency,5,5,5
+4805000,S08-api,2024,police agency,5,5,5
+4805000,S08-api,2025,police agency,5,5,5
+4805000,S09,2021,FARS crash-location city,5,5,5
+4805000,S09,2022,FARS crash-location city,5,5,5
+4805000,S09,2023,FARS crash-location city,5,5,5
+4805000,S09,2024,FARS crash-location city,5,5,5
+4805000,S10,2021,CBSA,15,15,15
+4805000,S10,2021,county,15,15,15
+4805000,S10,2022,CBSA,15,15,15
+4805000,S10,2022,county,15,15,15
+4805000,S10,2023,CBSA,15,15,15
+4805000,S10,2023,county,15,15,15
+4805000,S10,2024,CBSA,15,15,15
+4805000,S10,2024,county,15,15,15
+4805000,S10,2025,CBSA,15,15,15
+4805000,S10,2025,county,15,15,15
+4805000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+4805000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4805000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4805000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4805000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4805000,S17,2022,transit_agency_mode_service,15,15,3
+4805000,S17,2023,transit_agency_mode_service,15,15,3
+4805000,S17,2024,transit_agency_mode_service,15,15,3
+4805000,S17,2025,transit_agency_mode_service,15,15,3
+4805000,S19,2026 release,TPL reported city,1,1,1
+4805000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,9,9
+4805000,S20,FY2024: 10/01/2023--09/30/2024,library_system,9,9,9
+4805000,S20-state,FY2024: 10/01/2023--09/30/2024,library_system,4,4,4
+4805000,S20-state,FY2025,library_system,4,4,4
+4805000,S21,2008,CBSA regional background,6,6,6
+4805000,S21,2009,CBSA regional background,6,6,6
+4805000,S21,2010,CBSA regional background,6,6,6
+4805000,S21,2011,CBSA regional background,6,6,6
+4805000,S21,2012,CBSA regional background,6,6,6
+4805000,S21,2013,CBSA regional background,6,6,6
+4805000,S21,2014,CBSA regional background,6,6,6
+4805000,S21,2015,CBSA regional background,6,6,6
+4805000,S21,2016,CBSA regional background,6,6,6
+4805000,S21,2017,CBSA regional background,6,6,6
+4805000,S21,2018,CBSA regional background,6,6,6
+4805000,S21,2019,CBSA regional background,6,6,6
+4805000,S21,2020,CBSA regional background,6,6,6
+4805000,S21,2021,CBSA regional background,6,6,6
+4805000,S21,2022,CBSA regional background,6,6,6
+4805000,S21,2023,CBSA regional background,6,6,6
+4805000,S21,2024,CBSA regional background,6,6,6
+4805000,S22,FY2024,HUD rent area linked through county / Boston town,20,20,5
+4805000,S22,FY2027,HUD rent area linked through county / Boston town,20,20,5
+4805000,S23,2025,municipality,13,13,13
+4805000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4819000,S01,2020,Census place/balance,1,1,1
+4819000,S01,2021,Census place/balance,1,1,1
+4819000,S01,2022,Census place/balance,1,1,1
+4819000,S01,2023,Census place/balance,1,1,1
+4819000,S01,2024,Census place/balance,1,1,1
+4819000,S01,2025,Census place/balance,1,1,1
+4819000,S02,2020-2024,Census place/balance,258,258,258
+4819000,S02,2024,Census place/balance,648,648,648
+4819000,S02,2025,Census place/balance,648,648,648
+4819000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4819000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4819000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4819000,S05,2021-22,school point within Census ACS2025 place,1232,728,16
+4819000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4819000,S05,2023-24,school point within Census ACS2025 place,1232,724,16
+4819000,S06,2020-2021,LEA associated with school points in city,116,91,4
+4819000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,244,172,4
+4819000,S06,2021-2022,state background only,4,4,4
+4819000,S06,2022-2023,state background only,4,4,4
+4819000,S08,2021,police agency,6,6,6
+4819000,S08,2022,police agency,6,6,6
+4819000,S08,2023,police agency,6,6,6
+4819000,S08,2024,police agency,6,6,6
+4819000,S08,2025,police agency,6,6,6
+4819000,S08-api,2021,police agency,5,5,5
+4819000,S08-api,2022,police agency,5,5,5
+4819000,S08-api,2023,police agency,5,5,5
+4819000,S08-api,2024,police agency,5,5,5
+4819000,S08-api,2025,police agency,5,5,5
+4819000,S09,2021,FARS crash-location city,5,5,5
+4819000,S09,2022,FARS crash-location city,5,5,5
+4819000,S09,2023,FARS crash-location city,5,5,5
+4819000,S09,2024,FARS crash-location city,5,5,5
+4819000,S10,2021,CBSA,15,15,15
+4819000,S10,2021,county,75,75,15
+4819000,S10,2022,CBSA,15,15,15
+4819000,S10,2022,county,75,75,15
+4819000,S10,2023,CBSA,15,15,15
+4819000,S10,2023,county,75,75,15
+4819000,S10,2024,CBSA,15,15,15
+4819000,S10,2024,county,75,75,15
+4819000,S10,2025,CBSA,15,15,15
+4819000,S10,2025,county,75,75,15
+4819000,S13,2026-11-10 snapshot,city-containing counties,8,8,8
+4819000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4819000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4819000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4819000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4819000,S17,2022,transit_agency_mode_service,21,21,3
+4819000,S17,2023,transit_agency_mode_service,21,21,3
+4819000,S17,2024,transit_agency_mode_service,18,18,3
+4819000,S17,2025,transit_agency_mode_service,18,18,3
+4819000,S19,2026 release,TPL reported city,1,1,1
+4819000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,9,9
+4819000,S20,FY2024: 10/01/2023--09/30/2024,library_system,9,9,9
+4819000,S20-state,FY2024: 10/01/2023--09/30/2024,library_system,4,4,4
+4819000,S20-state,FY2025,library_system,4,4,4
+4819000,S21,2008,CBSA regional background,6,6,6
+4819000,S21,2009,CBSA regional background,6,6,6
+4819000,S21,2010,CBSA regional background,6,6,6
+4819000,S21,2011,CBSA regional background,6,6,6
+4819000,S21,2012,CBSA regional background,6,6,6
+4819000,S21,2013,CBSA regional background,6,6,6
+4819000,S21,2014,CBSA regional background,6,6,6
+4819000,S21,2015,CBSA regional background,6,6,6
+4819000,S21,2016,CBSA regional background,6,6,6
+4819000,S21,2017,CBSA regional background,6,6,6
+4819000,S21,2018,CBSA regional background,6,6,6
+4819000,S21,2019,CBSA regional background,6,6,6
+4819000,S21,2020,CBSA regional background,6,6,6
+4819000,S21,2021,CBSA regional background,6,6,6
+4819000,S21,2022,CBSA regional background,6,6,6
+4819000,S21,2023,CBSA regional background,6,6,6
+4819000,S21,2024,CBSA regional background,6,6,6
+4819000,S22,FY2024,HUD rent area linked through county / Boston town,25,25,5
+4819000,S22,FY2027,HUD rent area linked through county / Boston town,25,25,5
+4819000,S23,2025,municipality,13,13,13
+4819000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4824000,S01,2020,Census place/balance,1,1,1
+4824000,S01,2021,Census place/balance,1,1,1
+4824000,S01,2022,Census place/balance,1,1,1
+4824000,S01,2023,Census place/balance,1,1,1
+4824000,S01,2024,Census place/balance,1,1,1
+4824000,S01,2025,Census place/balance,1,1,1
+4824000,S02,2020-2024,Census place/balance,258,258,258
+4824000,S02,2024,Census place/balance,648,610,648
+4824000,S02,2025,Census place/balance,648,648,648
+4824000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4824000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4824000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4824000,S05,2021-22,school point within Census ACS2025 place,752,461,16
+4824000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4824000,S05,2023-24,school point within Census ACS2025 place,720,449,16
+4824000,S06,2020-2021,LEA associated with school points in city,52,45,4
+4824000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,160,133,4
+4824000,S06,2021-2022,state background only,4,4,4
+4824000,S06,2022-2023,state background only,4,4,4
+4824000,S08,2021,police agency,6,6,6
+4824000,S08,2022,police agency,6,6,6
+4824000,S08,2023,police agency,6,6,6
+4824000,S08,2024,police agency,6,6,6
+4824000,S08,2025,police agency,6,6,6
+4824000,S08-api,2021,police agency,5,5,5
+4824000,S08-api,2022,police agency,5,5,5
+4824000,S08-api,2023,police agency,5,5,5
+4824000,S08-api,2024,police agency,5,5,5
+4824000,S08-api,2025,police agency,5,5,5
+4824000,S09,2021,FARS crash-location city,5,5,5
+4824000,S09,2022,FARS crash-location city,5,5,5
+4824000,S09,2023,FARS crash-location city,5,5,5
+4824000,S09,2024,FARS crash-location city,5,5,5
+4824000,S10,2021,CBSA,15,15,15
+4824000,S10,2021,county,15,15,15
+4824000,S10,2022,CBSA,15,15,15
+4824000,S10,2022,county,15,15,15
+4824000,S10,2023,CBSA,15,15,15
+4824000,S10,2023,county,15,15,15
+4824000,S10,2024,CBSA,15,15,15
+4824000,S10,2024,county,15,15,15
+4824000,S10,2025,CBSA,15,15,15
+4824000,S10,2025,county,15,15,15
+4824000,S13,2026-11-10 snapshot,city-containing counties,7,7,7
+4824000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4824000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4824000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4824000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4824000,S17,2022,transit_agency_mode_service,9,9,3
+4824000,S17,2023,transit_agency_mode_service,9,9,3
+4824000,S17,2024,transit_agency_mode_service,12,12,3
+4824000,S17,2025,transit_agency_mode_service,12,12,3
+4824000,S19,2026 release,TPL reported city,1,1,1
+4824000,S20,FY2023: 09/01/2022--08/31/2023,library_system,9,9,9
+4824000,S20,FY2024: 09/01/2023--08/31/2024,library_system,9,9,9
+4824000,S20-state,FY2024: 09/01/2023--08/31/2024,library_system,4,4,4
+4824000,S20-state,FY2025,library_system,4,4,4
+4824000,S21,2008,CBSA regional background,6,6,6
+4824000,S21,2009,CBSA regional background,6,6,6
+4824000,S21,2010,CBSA regional background,6,6,6
+4824000,S21,2011,CBSA regional background,6,6,6
+4824000,S21,2012,CBSA regional background,6,6,6
+4824000,S21,2013,CBSA regional background,6,6,6
+4824000,S21,2014,CBSA regional background,6,6,6
+4824000,S21,2015,CBSA regional background,6,6,6
+4824000,S21,2016,CBSA regional background,6,6,6
+4824000,S21,2017,CBSA regional background,6,6,6
+4824000,S21,2018,CBSA regional background,6,6,6
+4824000,S21,2019,CBSA regional background,6,6,6
+4824000,S21,2020,CBSA regional background,6,6,6
+4824000,S21,2021,CBSA regional background,6,6,6
+4824000,S21,2022,CBSA regional background,6,6,6
+4824000,S21,2023,CBSA regional background,6,6,6
+4824000,S21,2024,CBSA regional background,6,6,6
+4824000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+4824000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+4824000,S23,2025,municipality,13,13,13
+4824000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4827000,S01,2020,Census place/balance,1,1,1
+4827000,S01,2021,Census place/balance,1,1,1
+4827000,S01,2022,Census place/balance,1,1,1
+4827000,S01,2023,Census place/balance,1,1,1
+4827000,S01,2024,Census place/balance,1,1,1
+4827000,S01,2025,Census place/balance,1,1,1
+4827000,S02,2020-2024,Census place/balance,258,258,258
+4827000,S02,2024,Census place/balance,648,648,648
+4827000,S02,2025,Census place/balance,648,648,648
+4827000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4827000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4827000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4827000,S05,2021-22,school point within Census ACS2025 place,1008,538,16
+4827000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4827000,S05,2023-24,school point within Census ACS2025 place,1072,569,16
+4827000,S06,2020-2021,LEA associated with school points in city,124,112,4
+4827000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,168,133,4
+4827000,S06,2021-2022,state background only,4,4,4
+4827000,S06,2022-2023,state background only,4,4,4
+4827000,S08,2021,police agency,6,6,6
+4827000,S08,2022,police agency,6,6,6
+4827000,S08,2023,police agency,6,6,6
+4827000,S08,2024,police agency,6,6,6
+4827000,S08,2025,police agency,6,6,6
+4827000,S08-api,2021,police agency,5,5,5
+4827000,S08-api,2022,police agency,5,5,5
+4827000,S08-api,2023,police agency,5,5,5
+4827000,S08-api,2024,police agency,5,5,5
+4827000,S08-api,2025,police agency,5,5,5
+4827000,S09,2021,FARS crash-location city,5,5,5
+4827000,S09,2022,FARS crash-location city,5,5,5
+4827000,S09,2023,FARS crash-location city,5,5,5
+4827000,S09,2024,FARS crash-location city,5,5,5
+4827000,S10,2021,CBSA,15,15,15
+4827000,S10,2021,county,60,60,15
+4827000,S10,2022,CBSA,15,15,15
+4827000,S10,2022,county,60,60,15
+4827000,S10,2023,CBSA,15,15,15
+4827000,S10,2023,county,60,60,15
+4827000,S10,2024,CBSA,15,15,15
+4827000,S10,2024,county,60,60,15
+4827000,S10,2025,CBSA,15,15,15
+4827000,S10,2025,county,60,60,15
+4827000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+4827000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4827000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4827000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4827000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4827000,S17,2022,transit_agency_mode_service,18,18,3
+4827000,S17,2023,transit_agency_mode_service,18,18,3
+4827000,S17,2024,transit_agency_mode_service,18,18,3
+4827000,S17,2025,transit_agency_mode_service,18,18,3
+4827000,S19,2026 release,TPL reported city,1,1,1
+4827000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,5,9
+4827000,S20,FY2024: -3---3,library_system,9,0,9
+4827000,S20-state,FY2024: 10/01/2023--09/30/2024,library_system,4,4,4
+4827000,S20-state,FY2025,library_system,4,4,4
+4827000,S21,2008,CBSA regional background,6,6,6
+4827000,S21,2009,CBSA regional background,6,6,6
+4827000,S21,2010,CBSA regional background,6,6,6
+4827000,S21,2011,CBSA regional background,6,6,6
+4827000,S21,2012,CBSA regional background,6,6,6
+4827000,S21,2013,CBSA regional background,6,6,6
+4827000,S21,2014,CBSA regional background,6,6,6
+4827000,S21,2015,CBSA regional background,6,6,6
+4827000,S21,2016,CBSA regional background,6,6,6
+4827000,S21,2017,CBSA regional background,6,6,6
+4827000,S21,2018,CBSA regional background,6,6,6
+4827000,S21,2019,CBSA regional background,6,6,6
+4827000,S21,2020,CBSA regional background,6,6,6
+4827000,S21,2021,CBSA regional background,6,6,6
+4827000,S21,2022,CBSA regional background,6,6,6
+4827000,S21,2023,CBSA regional background,6,6,6
+4827000,S21,2024,CBSA regional background,6,6,6
+4827000,S22,FY2024,HUD rent area linked through county / Boston town,25,25,5
+4827000,S22,FY2027,HUD rent area linked through county / Boston town,25,25,5
+4827000,S23,2025,municipality,13,13,13
+4827000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4835000,S01,2020,Census place/balance,1,1,1
+4835000,S01,2021,Census place/balance,1,1,1
+4835000,S01,2022,Census place/balance,1,1,1
+4835000,S01,2023,Census place/balance,1,1,1
+4835000,S01,2024,Census place/balance,1,1,1
+4835000,S01,2025,Census place/balance,1,1,1
+4835000,S02,2020-2024,Census place/balance,258,258,258
+4835000,S02,2024,Census place/balance,648,648,648
+4835000,S02,2025,Census place/balance,648,648,648
+4835000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4835000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4835000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4835000,S05,2021-22,school point within Census ACS2025 place,2064,1188,16
+4835000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4835000,S05,2023-24,school point within Census ACS2025 place,2224,1289,16
+4835000,S06,2020-2021,LEA associated with school points in city,168,149,4
+4835000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,376,274,4
+4835000,S06,2021-2022,state background only,4,4,4
+4835000,S06,2022-2023,state background only,4,4,4
+4835000,S08,2021,police agency,6,6,6
+4835000,S08,2022,police agency,6,6,6
+4835000,S08,2023,police agency,6,6,6
+4835000,S08,2024,police agency,6,6,6
+4835000,S08,2025,police agency,6,6,6
+4835000,S08-api,2021,police agency,5,5,5
+4835000,S08-api,2022,police agency,5,5,5
+4835000,S08-api,2023,police agency,5,5,5
+4835000,S08-api,2024,police agency,5,5,5
+4835000,S08-api,2025,police agency,5,5,5
+4835000,S09,2021,FARS crash-location city,5,5,5
+4835000,S09,2022,FARS crash-location city,5,5,5
+4835000,S09,2023,FARS crash-location city,5,5,5
+4835000,S09,2024,FARS crash-location city,5,5,5
+4835000,S10,2021,CBSA,15,15,15
+4835000,S10,2021,county,30,30,15
+4835000,S10,2022,CBSA,15,15,15
+4835000,S10,2022,county,30,30,15
+4835000,S10,2023,CBSA,15,15,15
+4835000,S10,2023,county,30,30,15
+4835000,S10,2024,CBSA,15,15,15
+4835000,S10,2024,county,30,30,15
+4835000,S10,2025,CBSA,15,15,15
+4835000,S10,2025,county,30,30,15
+4835000,S11,2022,"participating school district survey, secondary schools",526,526,526
+4835000,S11,2024,"participating school district survey, secondary schools",533,533,533
+4835000,S12,2021,school district,124,101,124
+4835000,S12,2023,school district,112,111,112
+4835000,S12,2025,school district,117,108,117
+4835000,S13,2026-11-10 snapshot,city-containing counties,8,8,8
+4835000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4835000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4835000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4835000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4835000,S17,2022,transit_agency_mode_service,24,24,3
+4835000,S17,2023,transit_agency_mode_service,24,24,3
+4835000,S17,2024,transit_agency_mode_service,24,24,3
+4835000,S17,2025,transit_agency_mode_service,27,27,3
+4835000,S19,2026 release,TPL reported city,1,1,1
+4835000,S20,FY2023: 07/01/2022--06/30/2023,library_system,9,9,9
+4835000,S20,FY2024: 07/01/2023--06/30/2024,library_system,9,9,9
+4835000,S20-state,FY2024: 07/01/2023--06/30/2024,library_system,4,4,4
+4835000,S20-state,FY2025,library_system,4,4,4
+4835000,S21,2008,CBSA regional background,6,6,6
+4835000,S21,2009,CBSA regional background,6,6,6
+4835000,S21,2010,CBSA regional background,6,6,6
+4835000,S21,2011,CBSA regional background,6,6,6
+4835000,S21,2012,CBSA regional background,6,6,6
+4835000,S21,2013,CBSA regional background,6,6,6
+4835000,S21,2014,CBSA regional background,6,6,6
+4835000,S21,2015,CBSA regional background,6,6,6
+4835000,S21,2016,CBSA regional background,6,6,6
+4835000,S21,2017,CBSA regional background,6,6,6
+4835000,S21,2018,CBSA regional background,6,6,6
+4835000,S21,2019,CBSA regional background,6,6,6
+4835000,S21,2020,CBSA regional background,6,6,6
+4835000,S21,2021,CBSA regional background,6,6,6
+4835000,S21,2022,CBSA regional background,6,6,6
+4835000,S21,2023,CBSA regional background,6,6,6
+4835000,S21,2024,CBSA regional background,6,6,6
+4835000,S22,FY2024,HUD rent area linked through county / Boston town,20,20,5
+4835000,S22,FY2027,HUD rent area linked through county / Boston town,20,20,5
+4835000,S23,2025,municipality,13,13,13
+4835000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+4865000,S01,2020,Census place/balance,1,1,1
+4865000,S01,2021,Census place/balance,1,1,1
+4865000,S01,2022,Census place/balance,1,1,1
+4865000,S01,2023,Census place/balance,1,1,1
+4865000,S01,2024,Census place/balance,1,1,1
+4865000,S01,2025,Census place/balance,1,1,1
+4865000,S02,2020-2024,Census place/balance,258,258,258
+4865000,S02,2024,Census place/balance,648,648,648
+4865000,S02,2025,Census place/balance,648,648,648
+4865000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+4865000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+4865000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+4865000,S05,2021-22,school point within Census ACS2025 place,1776,965,16
+4865000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+4865000,S05,2023-24,school point within Census ACS2025 place,1920,1036,16
+4865000,S06,2020-2021,LEA associated with school points in city,144,115,4
+4865000,S06,2020-2021,school point within Census ACS2025 place using 2020-21 NCES coordinates,284,206,4
+4865000,S06,2021-2022,state background only,4,4,4
+4865000,S06,2022-2023,state background only,4,4,4
+4865000,S08,2021,police agency,6,6,6
+4865000,S08,2022,police agency,6,6,6
+4865000,S08,2023,police agency,6,6,6
+4865000,S08,2024,police agency,6,6,6
+4865000,S08,2025,police agency,6,6,6
+4865000,S08-api,2021,police agency,5,5,5
+4865000,S08-api,2022,police agency,5,5,5
+4865000,S08-api,2023,police agency,5,5,5
+4865000,S08-api,2024,police agency,5,5,5
+4865000,S08-api,2025,police agency,5,5,5
+4865000,S09,2021,FARS crash-location city,5,5,5
+4865000,S09,2022,FARS crash-location city,5,5,5
+4865000,S09,2023,FARS crash-location city,5,5,5
+4865000,S09,2024,FARS crash-location city,5,5,5
+4865000,S10,2021,CBSA,15,15,15
+4865000,S10,2021,county,15,15,15
+4865000,S10,2022,CBSA,15,15,15
+4865000,S10,2022,county,15,15,15
+4865000,S10,2023,CBSA,15,15,15
+4865000,S10,2023,county,15,15,15
+4865000,S10,2024,CBSA,15,15,15
+4865000,S10,2024,county,15,15,15
+4865000,S10,2025,CBSA,15,15,15
+4865000,S10,2025,county,15,15,15
+4865000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+4865000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+4865000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+4865000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+4865000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+4865000,S17,2022,transit_agency_mode_service,15,15,3
+4865000,S17,2023,transit_agency_mode_service,15,15,3
+4865000,S17,2024,transit_agency_mode_service,15,15,3
+4865000,S17,2025,transit_agency_mode_service,15,15,3
+4865000,S19,2026 release,TPL reported city,1,1,1
+4865000,S20,FY2023: 10/01/2022--09/30/2023,library_system,9,9,9
+4865000,S20,FY2024: 10/01/2023--09/30/2024,library_system,9,9,9
+4865000,S20-state,FY2024: 10/01/2023--09/30/2024,library_system,4,4,4
+4865000,S20-state,FY2025,library_system,4,4,4
+4865000,S21,2008,CBSA regional background,6,6,6
+4865000,S21,2009,CBSA regional background,6,6,6
+4865000,S21,2010,CBSA regional background,6,6,6
+4865000,S21,2011,CBSA regional background,6,6,6
+4865000,S21,2012,CBSA regional background,6,6,6
+4865000,S21,2013,CBSA regional background,6,6,6
+4865000,S21,2014,CBSA regional background,6,6,6
+4865000,S21,2015,CBSA regional background,6,6,6
+4865000,S21,2016,CBSA regional background,6,6,6
+4865000,S21,2017,CBSA regional background,6,6,6
+4865000,S21,2018,CBSA regional background,6,6,6
+4865000,S21,2019,CBSA regional background,6,6,6
+4865000,S21,2020,CBSA regional background,6,6,6
+4865000,S21,2021,CBSA regional background,6,6,6
+4865000,S21,2022,CBSA regional background,6,6,6
+4865000,S21,2023,CBSA regional background,6,6,6
+4865000,S21,2024,CBSA regional background,6,6,6
+4865000,S22,FY2024,HUD rent area linked through county / Boston town,15,15,5
+4865000,S22,FY2027,HUD rent area linked through county / Boston town,15,15,5
+4865000,S23,2025,municipality,13,13,13
+4865000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
+5363000,S01,2020,Census place/balance,1,1,1
+5363000,S01,2021,Census place/balance,1,1,1
+5363000,S01,2022,Census place/balance,1,1,1
+5363000,S01,2023,Census place/balance,1,1,1
+5363000,S01,2024,Census place/balance,1,1,1
+5363000,S01,2025,Census place/balance,1,1,1
+5363000,S02,2020-2024,Census place/balance,258,258,258
+5363000,S02,2024,Census place/balance,648,616,648
+5363000,S02,2025,Census place/balance,648,616,648
+5363000,S04,2024-25,school points within Census ACS2025 place,1,1,1
+5363000,S04,2024-25,"schools within Census ACS2025 place, physical supply",4,4,4
+5363000,S05,2021-22,high-school-offering school points within Census ACS2025 place,16,16,16
+5363000,S05,2021-22,school point within Census ACS2025 place,400,233,16
+5363000,S05,2023-24,high-school-offering school points within Census ACS2025 place,16,16,16
+5363000,S05,2023-24,school point within Census ACS2025 place,400,234,16
+5363000,S06,2021-2022,state background only,4,4,4
+5363000,S06,2022-2023,state background only,4,4,4
+5363000,S08,2021,police agency,6,6,6
+5363000,S08,2022,police agency,6,6,6
+5363000,S08,2023,police agency,6,6,6
+5363000,S08,2024,police agency,6,6,6
+5363000,S08,2025,police agency,6,6,6
+5363000,S08-api,2021,police agency,5,5,5
+5363000,S08-api,2022,police agency,5,5,5
+5363000,S08-api,2023,police agency,5,5,5
+5363000,S08-api,2024,police agency,5,5,5
+5363000,S08-api,2025,police agency,5,5,5
+5363000,S09,2021,FARS crash-location city,5,5,5
+5363000,S09,2022,FARS crash-location city,5,5,5
+5363000,S09,2023,FARS crash-location city,5,5,5
+5363000,S09,2024,FARS crash-location city,5,5,5
+5363000,S10,2021,CBSA,15,15,15
+5363000,S10,2021,county,15,15,15
+5363000,S10,2022,CBSA,15,15,15
+5363000,S10,2022,county,15,15,15
+5363000,S10,2023,CBSA,15,15,15
+5363000,S10,2023,county,15,15,15
+5363000,S10,2024,CBSA,15,15,15
+5363000,S10,2024,county,15,15,15
+5363000,S10,2025,CBSA,15,15,15
+5363000,S10,2025,county,15,15,15
+5363000,S11,2022,"participating school district survey, secondary schools",526,510,526
+5363000,S11,2024,"participating school district survey, secondary schools",533,530,533
+5363000,S12,2021,school district,124,71,124
+5363000,S12,2023,school district,72,67,72
+5363000,S12,2025,school district,117,67,117
+5363000,S13,2026-11-10 snapshot,city-containing counties,5,5,5
+5363000,S14,2025 directory (2024 N-SUMHSS),facility postal city,1,1,1
+5363000,S15,2025 release; BRFSS observation year varies by measure,Census place,80,66,80
+5363000,S16,SLD V3 2021 release; mixed inputs,contained BG subset environmental proxy,4,4,4
+5363000,S16,SLD V3 2021 release; mixed inputs,intersecting BG subset environmental proxy,4,4,4
+5363000,S17,2022,transit_agency_mode_service,24,24,3
+5363000,S17,2023,transit_agency_mode_service,24,24,3
+5363000,S17,2024,transit_agency_mode_service,24,24,3
+5363000,S17,2025,transit_agency_mode_service,24,24,3
+5363000,S19,2026 release,TPL reported city,1,1,1
+5363000,S20,FY2023: 01/01/2023--12/31/2023,library_system,9,9,9
+5363000,S20,FY2024: 01/01/2024--12/31/2024,library_system,9,9,9
+5363000,S21,2008,CBSA regional background,6,6,6
+5363000,S21,2009,CBSA regional background,6,6,6
+5363000,S21,2010,CBSA regional background,6,6,6
+5363000,S21,2011,CBSA regional background,6,6,6
+5363000,S21,2012,CBSA regional background,6,6,6
+5363000,S21,2013,CBSA regional background,6,6,6
+5363000,S21,2014,CBSA regional background,6,6,6
+5363000,S21,2015,CBSA regional background,6,6,6
+5363000,S21,2016,CBSA regional background,6,6,6
+5363000,S21,2017,CBSA regional background,6,6,6
+5363000,S21,2018,CBSA regional background,6,6,6
+5363000,S21,2019,CBSA regional background,6,6,6
+5363000,S21,2020,CBSA regional background,6,6,6
+5363000,S21,2021,CBSA regional background,6,6,6
+5363000,S21,2022,CBSA regional background,6,6,6
+5363000,S21,2023,CBSA regional background,6,6,6
+5363000,S21,2024,CBSA regional background,6,6,6
+5363000,S22,FY2024,HUD rent area linked through county / Boston town,5,5,5
+5363000,S22,FY2027,HUD rent area linked through county / Boston town,5,5,5
+5363000,S23,2025,municipality,13,13,13
+5363000,S28,2020-21,whole school district official outcome; geographic proxy,3,3,3
+5363000,S28,2020-21,whole school district; city proxy,1,1,1
+5363000,S28,2023-24,whole school district official outcome; geographic proxy,3,3,3
+5363000,S28,2024-25,whole school district official outcome; geographic proxy,3,3,3
+5363000,S28,accessed 2026-11-11; policy effective dates in note,selected primary transit operator; not complete city operator inventory,1,1,1
