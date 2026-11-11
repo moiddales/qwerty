@@ -1,0 +1,49 @@
+{
+ "robust_under_data_intervals": {
+  "necessary_pairs": 0,
+  "pairs": []
+ },
+ "regret_scale": {
+  "min_regret_linear": "Seattle",
+  "min_regret_squared": "Seattle",
+  "top3_linear": [
+   "Seattle",
+   "Denver",
+   "New York"
+  ],
+  "top3_squared": [
+   "Seattle",
+   "Denver",
+   "New York"
+  ]
+ },
+ "safety_teen_traffic_eb": {
+  "champion": "Seattle",
+  "top5": [
+   "Seattle",
+   "Denver",
+   "Chicago",
+   "New York",
+   "Boston"
+  ],
+  "kendall_tau_vs_M2": 0.947
+ },
+ "lower_tail_alpha": {
+  "spearman_0.1_vs_0.3": 0.885,
+  "max_rank_change_0.1_to_0.3": 9
+ },
+ "error_correlation_p_first": {
+  "independent": {
+   "Seattle": 0.648,
+   "Denver": 0.237,
+   "New York": 0.053,
+   "Chicago": 0.053
+  },
+  "common_within_domain": {
+   "Seattle": 0.607,
+   "Denver": 0.249,
+   "New York": 0.064,
+   "Chicago": 0.062
+  }
+ }
+}

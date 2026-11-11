@@ -11,6 +11,7 @@ cd projects/himcm2026A/analysis/model
 python run_model.py        # 约 25 秒
 python run_extensions.py   # 约 20 秒
 python run_preferences.py  # 约 1 分钟
+python run_robustness.py   # 约 10 秒
 python make_figures.py
 ```
 
@@ -21,6 +22,7 @@ python make_figures.py
 | `analysis/model/run_model.py` | 底线、参考榜、稳健偏好 LP、可能冠军、后悔值、SMAA、ELECTRE III、结构对照、敏感性、Poisson–Gamma、城内分布、外部对照 |
 | `analysis/model/run_extensions.py` | 偏好信息曲线、单条偏好陈述、学生画像、GTFS 与 Chicago 口径对照、数值核验 |
 | `analysis/model/run_preferences.py` | 研究定义偏好陈述下的稳健分析、SMAA、后悔值；抽样权重的 ELECTRE III |
+| `analysis/model/run_robustness.py` | 数据区间下的精确稳健偏好、后悔值尺度、Poisson–Gamma 安全指标、下尾 α、误差相关 |
 | `analysis/model/make_figures.py` | 论文图 `results/figures/fig1—fig8` |
 | `results/summary.json`、`extensions_summary.json`、`preferences_summary.json` | 全部关键数字 |
 
@@ -132,6 +134,18 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 | Austin | 0.21 | 0.09 |
 
 **结论**：在 PLAN 的研究定义下，Seattle 是后悔最小、模拟中最常排第一的城市；Denver 在参考权重下与它并列。Chicago 在不可补偿（否决）结构下最稳。
+
+## 4b. Θ_PLAN 下的其余稳健性（`results/robustness_summary.json`）
+
+| 检验 | 结果 |
+|---|---|
+| 数据取 90% 区间的不利端（连续数据不确定，精确 LP） | 必然成立的城市对 0；Θ_PLAN 的 4 对都依赖点估计 |
+| 效用平方后的最小最大后悔 | 仍为 Seattle；前三 Seattle、Denver、New York 不变 |
+| 安全指标改用 Poisson–Gamma 收缩的 14—18 岁交通死亡率 | 冠军 Seattle；前五 Seattle、Denver、Chicago、New York、Boston；Kendall τ 0.947 |
+| 下尾比例 α=0.1/0.2/0.3（公交可达性） | α=0.1 与 0.3 的 Spearman 0.885，单城最大相差 9 位 |
+| 同领域误差完全相关与独立 | SMAA 第一名 Seattle 0.648 / 0.607，Denver 0.237 / 0.249 |
+
+数据区间的求法：φ 对每项指标单调、θ≥0，所以对任意 θ，A−B 的最坏数据都是 A 取区间不利端、B 取有利端。因此“对所有 θ 和所有区间内数据都成立”可以用一个 LP 精确判定。
 
 ## 5. 画像、公平与辅助模型
 
