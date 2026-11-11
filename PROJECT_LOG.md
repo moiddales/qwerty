@@ -274,3 +274,14 @@
 - MODEL_RESULTS.md 全部重写为最终结果。
 
 验证：run_model.py 与 run_extensions.py 完整运行；六项数值核验全部通过。下一步：队内偏好判断收紧 Θ、出图、论文与新闻文章。
+
+## 2026-11-11 — A-015：偏好陈述模型、抽样 ELECTRE 与论文图（Asia/Shanghai）
+
+承接 U20261111-17（“继续完成完整的全部模型搭建及计算”）。
+
+- core.py 的 Model 支持偏好陈述（领域排序、领域下限、领域内指标份额带、城市整体比较），ELECTRE 函数移入 core.py 复用。
+- STATEMENTS_PLAN：五条依据 PLAN 文本的陈述（P1—P5，逐条注明出处）。θ0 满足全部陈述。
+- run_preferences.py：Θ_PLAN 下 4 对必然关系、19 个可能冠军；后悔最小与 SMAA 第一均为 Seattle（0.154；63.6%）。逐条去掉检验显示必然关系来自 P5。抽样权重 ELECTRE 核心频率 Chicago 0.53/0.50、Seattle 0.31/0.41。
+- make_figures.py 生成 fig1—fig8，逐张渲染检查布局。
+
+验证：三条计算脚本与作图脚本完整运行；抽样参数全部满足陈述。下一步：队内确认偏好陈述后重算，写论文与新闻文章。

@@ -9,7 +9,7 @@ import json
 import numpy as np
 import pandas as pd
 from scipy import stats
-from core import (Model, SPEC_M0, SPEC_M1, SPEC_M2, DOMAINS, FLOORS, REF_INCOME, RES, load, fill_missing, ranks)
+from core import (electre, distill, final_order, Model, SPEC_M0, SPEC_M1, SPEC_M2, DOMAINS, FLOORS, REF_INCOME, RES, load, fill_missing, ranks)
 
 N_SMAA = 10000
 rng = np.random.default_rng(20261111)
@@ -263,55 +263,8 @@ tab(pd.DataFrame(scan).set_index("scan"), "floors_scan")
 val = (PH * M.theta0).reshape(nC, M.m, 3).sum(2) / ind_w
 
 
-def electre(val, q, p, v):
-    d = val[None, :, :] - val[:, None, :]              # d[a,b,j] = g_j(b) - g_j(a)
-    C = (np.clip((p - d) / (p - q), 0, 1) * ind_w).sum(2)
-    dj = np.clip((d - p) / (v - p), 0, 1) if v < 1 else np.zeros_like(d)
-    sig = C.copy()
-    for a in range(nC):
-        for b in range(nC):
-            if a != b and C[a, b] < 1:
-                k = dj[a, b] > C[a, b]
-                sig[a, b] = C[a, b] * np.prod((1 - dj[a, b][k]) / (1 - C[a, b]))
-    np.fill_diagonal(sig, 0)
-    return sig, dj
-
-
-def distill(sig, descending=True):
-    """Standard ELECTRE III distillation with s(lambda) = 0.30 - 0.15 lambda. Returns class index (1 = best)."""
-    s = lambda lam: 0.30 - 0.15 * lam
-    left, classes = list(range(len(sig))), []
-    while left:
-        D = left[:]
-        lam = sig[np.ix_(D, D)].max()
-        while len(D) > 1 and lam > 0:
-            sub = sig[np.ix_(D, D)]
-            below = sub[(sub < lam - s(lam)) & ~np.eye(len(D), dtype=bool)]
-            lam_next = below.max() if below.size else 0.0
-            out = (sub > lam_next) & (sub - sub.T > s(sub))
-            qual = out.sum(1) - out.sum(0)
-            target = qual.max() if descending else qual.min()
-            D = [D[i] for i in range(len(D)) if qual[i] == target]
-            lam = lam_next
-        classes.append(D)
-        left = [x for x in left if x not in D]
-    if not descending:
-        classes = classes[::-1]
-    r = np.zeros(len(sig), int)
-    for k, cl in enumerate(classes):
-        r[cl] = k + 1
-    return r
-
-
-def final_order(r1, r2):
-    """Intersection of the two preorders: a above b if a is at least as good in both and better in one."""
-    above = ((r1[:, None] <= r1[None, :]) & (r2[:, None] <= r2[None, :]) & ((r1[:, None] < r1[None, :]) | (r2[:, None] < r2[None, :])))
-    incomparable = ~above & ~above.T & ~((r1[:, None] == r1[None, :]) & (r2[:, None] == r2[None, :]))
-    return above.sum(0) + 1, incomparable.sum(1)
-
-
 q, p, v = 0.05, 0.20, 0.80
-sig, dj = electre(val, q, p, v)
+sig, dj = electre(val, ind_w, q, p, v)
 r_desc, r_asc = distill(sig, True), distill(sig, False)
 pos, inc = final_order(r_desc, r_asc)
 el = pd.DataFrame({"city": CITY, "rank_additive": ranks(U), "electre_descending": r_desc, "electre_ascending": r_asc,
@@ -324,7 +277,7 @@ champ = int(np.argmax(U))
 ev = {}
 for vv in (0.6, 0.8, 1.0):
     for pp in (0.15, 0.20, 0.30):
-        sg, _ = electre(val, q, pp, vv)
+        sg, _ = electre(val, ind_w, q, pp, vv)
         rd, ra = distill(sg, True), distill(sg, False)
         top = el.city.values[np.flatnonzero(final_order(rd, ra)[0] == 1)].tolist()
         ev[f"p{pp}_v{vv}"] = top

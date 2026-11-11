@@ -46,6 +46,20 @@ SPEC_M1.update({
 SPEC_M2 = {k: v for k, v in SPEC_M1.items() if k != "M1r_transit_hours_pc"}
 SPEC_M2["M5r_transit_access"] = ("Mobility", [10, 60, 200, 600], "thousand jobs reachable within 45 minutes by transit (SLD D5br)")
 
+# Preference statements read from the research definition in PLAN.md; the team replaces or extends this list.
+STATEMENTS_PLAN = [
+    {"id": "P1", "type": "domain_ge", "a": "Education", "b": "Affordability",
+     "basis": "PLAN 3: the budget decides eligibility (floor); remaining economic slack is a soft preference"},
+    {"id": "P2", "type": "domain_ge", "a": "Mobility", "b": "Affordability",
+     "basis": "same as P1, for independent mobility of students without car rides"},
+    {"id": "P3", "type": "domain_min", "a": "Mobility", "value": 1 / 7,
+     "basis": "PLAN 4: target students cannot rely on car rides; mobility at least an equal share"},
+    {"id": "P4", "type": "domain_min", "a": "Education", "value": 1 / 7,
+     "basis": "PLAN 1/3: access to schools and courses is the first purpose of the definition"},
+    {"id": "P5", "type": "indicator_band", "lo": 0.6, "hi": 1.4,
+     "basis": "PLAN 3: each core measure was kept for its own part of the domain concept, so none is negligible or dominant inside its domain"},
+]
+
 REF_INCOME = 80000          # USD per year, reference household scenario
 FLOORS = {"C1_rent_share": 50.0, "S1_violent_crime": 1200.0, "S2_traffic_deaths": 20.0, "H1_bad_air_days": 30.0}
 SEG_SHAPE = np.array([0.5628, 0.2888, 0.1484])   # exponential value function with k = 2 evaluated at z = 1/3, 2/3, 1
@@ -64,8 +78,9 @@ def load(income=REF_INCOME):
 
 
 class Model:
-    def __init__(self, spec):
+    def __init__(self, spec, statements=()):
         self.spec = spec
+        self.statements = list(statements)
         self.inds = list(spec)
         self.m = len(self.inds)
         self.dom = [spec[i][0] for i in self.inds]
@@ -104,6 +119,21 @@ class Model:
             A.append(-dom); b.append(-DOM_LO)
             for j in idx:                          # indicator total >= IND_MIN_FRAC * domain total / n_d
                 r = dom * IND_MIN_FRAC / len(idx); r[3 * j:3 * j + 3] -= 1; A.append(r); b.append(0)
+        n_base = len(A)
+        for st in self.statements:
+            dom = lambda d: np.repeat([x == d for x in self.dom], 3).astype(float)
+            if st["type"] == "domain_ge":          # total of domain a >= total of domain b
+                A.append(dom(st["b"]) - dom(st["a"])); b.append(0)
+            elif st["type"] == "domain_min":       # total of domain a >= value
+                A.append(-dom(st["a"])); b.append(-st["value"])
+            elif st["type"] == "indicator_band":   # each indicator between lo and hi times the equal share of its domain
+                for j in range(self.m):
+                    d = self.dom[j]; nd = self.dom.count(d); r = np.zeros(self.n)
+                    r[3 * j:3 * j + 3] = -1; A.append(r + dom(d) * st["lo"] / nd); b.append(0)
+                    r = np.zeros(self.n); r[3 * j:3 * j + 3] = 1; A.append(r - dom(d) * st["hi"] / nd); b.append(0)
+            elif st["type"] == "city_pref":        # holistic judgement: city a at least as good as city b (needs phi rows)
+                A.append(st["phi_b"] - st["phi_a"]); b.append(0)
+        self.n_statement_rows = len(A) - n_base
         return np.array(A), np.array(b), np.ones((1, self.n)), np.array([1.0])
 
     def lp(self, c, extra_A=None, extra_b=None, nvar_extra=0):
@@ -127,6 +157,8 @@ class Model:
         centre = dict domain->share with concentration conc: Dirichlet centred on that profile."""
         out = []
         nd = len(DOMAINS)
+        band = [s for s in self.statements if s["type"] == "indicator_band"]
+        lo_f, hi_f = (max(band[0]["lo"], IND_MIN_FRAC), band[0]["hi"]) if band else (IND_MIN_FRAC, np.inf)
         alpha = np.ones(nd) if centre is None else conc * np.array([centre[d] for d in DOMAINS])
         got = 0
         while got < n:
@@ -140,7 +172,7 @@ class Model:
                 todo = np.ones(len(w), bool)
                 while todo.any():
                     s = rng.dirichlet(np.ones(len(idx)), size=todo.sum())
-                    ok = s.min(1) >= IND_MIN_FRAC / len(idx)
+                    ok = (s.min(1) >= lo_f / len(idx)) & (s.max(1) <= hi_f / len(idx))
                     rows = np.flatnonzero(todo)[ok]
                     share[rows] = s[ok]; todo[rows] = False
                 for a, j in enumerate(idx):
@@ -152,8 +184,63 @@ class Model:
                         rows = np.flatnonzero(todo)[ok]
                         seg[rows] = g[ok]; todo[rows] = False
                     th[:, 3 * j:3 * j + 3] = seg * (w[:, k] * share[:, a])[:, None]
+            if self.statements:              # rejection on the extra statement rows
+                k = self.n_statement_rows
+                th = th[np.all(th @ self.A_ub[-k:].T <= self.b_ub[-k:] + 1e-12, axis=1)]
+                got -= len(w) - len(th)
             out.append(th)
         return np.vstack(out)[:n]
+
+
+# ---------------------------------------------------------------- ELECTRE III
+def electre(val, w, q, p, v):
+    """ELECTRE III credibility. val: cities x criteria on a 0-1 value scale; w: criterion weights summing to 1."""
+    nC = len(val)
+    d = val[None, :, :] - val[:, None, :]              # d[a,b,j] = g_j(b) - g_j(a)
+    C = (np.clip((p - d) / (p - q), 0, 1) * w).sum(2)
+    dj = np.clip((d - p) / (v - p), 0, 1) if v < 1 else np.zeros_like(d)
+    sig = C.copy()
+    for a in range(nC):
+        for b in range(nC):
+            if a != b and C[a, b] < 1:
+                k = dj[a, b] > C[a, b]
+                sig[a, b] = C[a, b] * np.prod((1 - dj[a, b][k]) / (1 - C[a, b]))
+    np.fill_diagonal(sig, 0)
+    return sig, dj
+
+
+def distill(sig, descending=True):
+    """Standard ELECTRE III distillation with s(lambda) = 0.30 - 0.15 lambda. Returns class index (1 = best)."""
+    s = lambda lam: 0.30 - 0.15 * lam
+    left, classes = list(range(len(sig))), []
+    while left:
+        D = left[:]
+        lam = sig[np.ix_(D, D)].max()
+        while len(D) > 1 and lam > 0:
+            sub = sig[np.ix_(D, D)]
+            below = sub[(sub < lam - s(lam)) & ~np.eye(len(D), dtype=bool)]
+            lam_next = below.max() if below.size else 0.0
+            out = (sub > lam_next) & (sub - sub.T > s(sub))
+            qual = out.sum(1) - out.sum(0)
+            target = qual.max() if descending else qual.min()
+            D = [D[i] for i in range(len(D)) if qual[i] == target]
+            lam = lam_next
+        classes.append(D)
+        left = [x for x in left if x not in D]
+    if not descending:
+        classes = classes[::-1]
+    r = np.zeros(len(sig), int)
+    for k, cl in enumerate(classes):
+        r[cl] = k + 1
+    return r
+
+
+def final_order(r1, r2):
+    """Intersection of the two preorders: a above b if a is at least as good in both and better in one."""
+    above = ((r1[:, None] <= r1[None, :]) & (r2[:, None] <= r2[None, :]) & ((r1[:, None] < r1[None, :]) | (r2[:, None] < r2[None, :])))
+    incomparable = ~above & ~above.T & ~((r1[:, None] == r1[None, :]) & (r2[:, None] == r2[None, :]))
+    return above.sum(0) + 1, incomparable.sum(1)
+
 
 
 def fill_missing(X, how="median"):

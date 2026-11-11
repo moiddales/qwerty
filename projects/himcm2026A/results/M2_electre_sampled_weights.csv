@@ -1,0 +1,26 @@
+city,p_in_kernel_broad,p_in_kernel_plan,mean_cities_above_plus1_broad,mean_cities_above_plus1_plan
+Chicago,0.53,0.4975,1.86,1.74
+Denver,0.34,0.235,2.1925,2.3175
+Seattle,0.31,0.405,2.0075,1.765
+Austin,0.2075,0.09,3.1475,3.0325
+New York,0.0225,0.0,4.42,3.7825
+Boston,0.0175,0.0,5.2225,5.13
+Columbus,0.01,0.0,6.5625,8.0025
+Las Vegas,0.0075,0.0,6.195,6.445
+San Diego,0.0025,0.0,5.88,4.7775
+Fort Worth,0.0,0.0,20.7325,20.4425
+El Paso,0.0,0.0,8.835,9.805
+Dallas,0.0,0.0,21.285,20.8
+Charlotte,0.0,0.0,10.695,11.395
+Jacksonville,0.0,0.0,16.745,16.67
+Los Angeles,0.0,0.0,15.3525,13.9375
+Indianapolis,0.0,0.0,13.355,13.7
+Houston,0.0,0.0,21.6225,21.0425
+Oklahoma City,0.0,0.0,17.6275,19.8125
+Nashville-Davidson,0.0,0.0,23.14,23.6075
+Phoenix,0.0,0.0,19.355,20.2925
+Philadelphia,0.0,0.0,12.18,13.1625
+San Antonio,0.0,0.0,9.4225,9.0275
+San Francisco,0.0,0.0,7.15,5.735
+San Jose,0.0,0.0,10.23,10.095
+Washington,0.0,0.0,9.22,8.69

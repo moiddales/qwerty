@@ -1,6 +1,6 @@
 # 模型计算结果（真实 25 城数据）
 
-日期：2026-11-11（Asia/Shanghai）。状态：全部模型已搭建并在真实数据上计算；数值核验通过（见第 6 节）。最终模型为 **M2**。
+日期：2026-11-11（Asia/Shanghai）。状态：全部模型已搭建并在真实数据上计算，数值核验通过（见第 6 节），论文图已生成。最终模型为 **M2**；推荐在研究定义的偏好陈述下给出（第 4a 节）。
 
 ## 复现
 
@@ -10,6 +10,8 @@ python projects/himcm2026A/analysis/model/build_matrix.py
 cd projects/himcm2026A/analysis/model
 python run_model.py        # 约 25 秒
 python run_extensions.py   # 约 20 秒
+python run_preferences.py  # 约 1 分钟
+python make_figures.py
 ```
 
 | 文件 | 内容 |
@@ -18,7 +20,9 @@ python run_extensions.py   # 约 20 秒
 | `analysis/model/core.py` | 指标与固定参照节点（M0/M1/M2）、θ0、参数集合 Θ、线性规划、抽样 |
 | `analysis/model/run_model.py` | 底线、参考榜、稳健偏好 LP、可能冠军、后悔值、SMAA、ELECTRE III、结构对照、敏感性、Poisson–Gamma、城内分布、外部对照 |
 | `analysis/model/run_extensions.py` | 偏好信息曲线、单条偏好陈述、学生画像、GTFS 与 Chicago 口径对照、数值核验 |
-| `results/summary.json`、`results/extensions_summary.json` | 全部关键数字 |
+| `analysis/model/run_preferences.py` | 研究定义偏好陈述下的稳健分析、SMAA、后悔值；抽样权重的 ELECTRE III |
+| `analysis/model/make_figures.py` | 论文图 `results/figures/fig1—fig8` |
+| `results/summary.json`、`extensions_summary.json`、`preferences_summary.json` | 全部关键数字 |
 
 ## 1. 指标与模型设定
 
@@ -95,6 +99,40 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 
 不确定性主要来自领域内指标之间的分配，其次才是领域权重。“领域 A 不低于领域 B”这类单条排序陈述都不能确定前三名中任何一对的先后（`single_statements_deciding_top_pairs` 为空）。
 
+## 4a. 研究定义下的偏好陈述（Θ_PLAN）
+
+偏好陈述写在 `core.py` 的 `STATEMENTS_PLAN`，每条注明出处，队内可直接修改或追加；也支持“城市 A 至少与 B 一样好”这类整体判断（`city_pref`）。当前五条：
+
+| 编号 | 陈述 | 依据 |
+|---|---|---|
+| P1 | 教育权重 ≥ 可负担权重 | PLAN 3：预算决定资格（底线），达标后的经济余裕是软偏好 |
+| P2 | 出行权重 ≥ 可负担权重 | 同上，针对不能依赖汽车接送的学生 |
+| P3 | 出行权重 ≥ 1/7 | PLAN 4：研究对象不能日常依赖汽车接送 |
+| P4 | 教育权重 ≥ 1/7 | PLAN 1/3：入学与课程机会是定义的第一项 |
+| P5 | 领域内每项指标为均分的 0.6—1.4 倍 | PLAN 3：每项核心测量各自覆盖概念的一部分，不可忽略也不独占 |
+
+θ0 满足全部陈述。结果（`results/M2_plan_preferences_*.csv`）：
+
+| 项目 | 全 Θ | Θ_PLAN |
+|---|---|---|
+| 必然成立的城市对 | 0 | 4（Chicago、Denver ≻ Nashville；Austin ≻ Dallas、Fort Worth） |
+| 可能冠军 | 25 | 19（排除 Philadelphia、Fort Worth、Phoenix、Dallas、Jacksonville、Nashville） |
+| 最小最大后悔 | Seattle 0.302 | Seattle 0.154 |
+| SMAA 第一名占比 | Denver 37%，Seattle 37% | Seattle 63.6%，Denver 23.5%，New York 6.0%，Chicago 5.8% |
+
+逐条去掉检验：只有 P5 产生必然关系（去掉后回到 0 对、25 个可能冠军）。去掉任一条后 Seattle 仍是后悔最小、SMAA 第一。
+
+**抽样权重的 ELECTRE III**（400 组参数，权重和价值形状同时抽样；`results/M2_electre_sampled_weights.csv`）：
+
+| 城市 | 全 Θ 下进入核心的频率 | Θ_PLAN 下 |
+|---|---|---|
+| Chicago | 0.53 | 0.50 |
+| Seattle | 0.31 | 0.41 |
+| Denver | 0.34 | 0.24 |
+| Austin | 0.21 | 0.09 |
+
+**结论**：在 PLAN 的研究定义下，Seattle 是后悔最小、模拟中最常排第一的城市；Denver 在参考权重下与它并列。Chicago 在不可补偿（否决）结构下最稳。
+
 ## 5. 画像、公平与辅助模型
 
 各画像的底线均为参考需求：
@@ -135,8 +173,25 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 | GTFS 2026 周末比与 NTD 周末保留率（23 城） | 0.726 | 一致 |
 | Opportunity Atlas 与总分（历史队列） | 0.32 | — |
 
+## 6a. 图
+
+`results/figures/`：
+
+| 文件 | 内容 |
+|---|---|
+| fig1 | 参考榜与领域贡献、底线状态 |
+| fig2 | SMAA 名次接受度 |
+| fig3 | 单领域权重变化下的冠军 |
+| fig4 | 偏好信息曲线 |
+| fig5 | M0→M1→M2 名次变化 |
+| fig6 | 学生画像 |
+| fig7 | 收入情景下的合格城市 |
+| fig8 | 公交可达性均值与下尾 |
+
+配色为已校验的类别色板，按固定顺序使用。
+
 ## 7. 剩余限制
 
-- **θ0 与 Θ 是中性假设**：补充队内偏好判断后重算第 4 节。
+- **偏好陈述需队内确认**：θ0 与 STATEMENTS_PLAN 是依据 PLAN 文本的解读，队内确认或修改后重跑 `run_preferences.py`。
 - **可达性用的是岗位数**：D5br 以 2017 年岗位为目的地、2020 年时刻计算，学校和活动地点的逐点可达性需要原始 GTFS 与设施坐标。
 - **底线阈值是参考需求**：结论随阈值的变化见 `results/floors_scan.csv`。
