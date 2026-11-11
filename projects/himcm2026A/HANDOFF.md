@@ -1,6 +1,6 @@
 # HiMCM 2026 A：当前交接
 
-更新时间：2026-11-11（Asia/Shanghai）。全25城实际采集、缺口补查与统一提取已完成；当前正在推送完整城市数据归档。未计算城市排名。
+更新时间：2026-11-11（Asia/Shanghai）。全25城约定范围的实际采集、缺口补查、统一提取和GitHub归档已完成；从远端重新取回核验通过。未计算城市排名。
 
 ## 接手顺序
 
@@ -20,15 +20,15 @@
 
 ## 上传与恢复
 
-第一批远端提交d52b6d1b2f65715e5d31399b6647c2f0423412f2已由connector及git ls-remote核对。普通git push缺少认证；GitHub connector 7.46MB blob长期未返回，已停止该路线。128KiB base64分块、每批4块create_tree已验证成功，独立批次可并行建立不可变Git对象，最后一次更新分支。
+完整数据提交：`cddcc57e97e437d0d4f0651d71be63b57108f7de`。659个分块、86,295,630 bytes、1,201个成员文件。GitHub取回校验已通过，证据在`data/metadata/github_archive_verification.json`；SHA256：`08ef430a6018d6ff20c011333b5277b7a57b6eba15d1340cdf5fc033e78db20e`。
 
-完整包的manifest为data/metadata/city_data_archive.json，分块在data/archives/city_data_parts/。恢复命令：
+完整包manifest为`data/metadata/city_data_archive.json`，分块在`data/archives/city_data_parts/`。在仓库根目录恢复：
 
 ```bash
-python analysis/restore_city_archive.py --extract
+python projects/himcm2026A/analysis/restore_city_archive.py --extract
 ```
 
-只有全部part已推送且远端验证通过才可称归档上传完成。若会话中断，先看上传receipt与分支实际head，不能重开下载或声称已全部推送。已上传的不可变blob可以复用。
+不要重新下载已经归档的城市数据。先读当前状态和逐文件发布清单，再选择数据。`.gitignore`排除展开文件、全国原包和缓存；小型可读表与可恢复分块已由Git跟踪。归档中的状态说明是采集时快照，仓库当前状态优先。
 
 ## 下一阶段
 

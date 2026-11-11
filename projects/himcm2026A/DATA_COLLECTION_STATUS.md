@@ -1,6 +1,6 @@
 # 全25城数据收集状态
 
-日期：2026-11-11（Asia/Shanghai）。**全25城实际采集、提取和缺口核查已完成；完整城市字段包正在上传GitHub。** 来源状态与归档状态分开记录，不把仅有入口或仅在本地的文件写成已推送。
+日期：2026-11-11（Asia/Shanghai）。**全25城约定范围内的实际采集、提取和缺口核查已完成；完整城市字段包已推送GitHub，并从远端取回验证通过。** 来源状态与归档状态分开记录，不把仅有入口或仅在本地的文件写成已推送。
 
 ## 实际覆盖
 
@@ -35,7 +35,9 @@
 
 ## GitHub归档
 
-第一批提交`d52b6d1b2f65715e5d31399b6647c2f0423412f2`已验证。完整城市字段包采用可校验base64分块，manifest在`data/metadata/city_data_archive.json`，恢复脚本为`analysis/restore_city_archive.py`。待全部分块推送并验证后更新本段；现阶段不能把本地完整包当成已在远端。
+完整数据提交：`cddcc57e97e437d0d4f0651d71be63b57108f7de`，目标分支：`claude/affectionate-mayer-ihqczh`。全部659个base64分块已进入该提交；随后重新fetch，并用`git cat-file`逐一读取远端提交中的分块，还原结果为**86,295,630 bytes、1,201个成员文件**，SHA256为`08ef430a6018d6ff20c011333b5277b7a57b6eba15d1340cdf5fc033e78db20e`，与上传前逐成员核验的完整包一致。
+
+核验记录：`data/metadata/github_archive_verification.json`；manifest：`data/metadata/city_data_archive.json`；恢复脚本：`analysis/restore_city_archive.py`。字段—期间—地理层级的25城覆盖表为`data/metadata/city_indicator_period_coverage.csv`（3,761行）；单元格记录有效值数/实际记录数，0/0表示无观察，不是城市得分。
 
 每个选中城市/学校/机构/社区的完整相关字段均进入城市归档范围。未收入归档的全国大原包、原始大型代码本等保留下载URL、版本、SHA与提取代码；不把“全国文件已下载到本地”误写成“全国文件已上传GitHub”。SEDA受限原包与子集均不发布。
 

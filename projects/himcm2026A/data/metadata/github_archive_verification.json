@@ -1,0 +1,10 @@
+{
+  "commit": "cddcc57e97e437d0d4f0651d71be63b57108f7de",
+  "verified_parts": 659,
+  "verified_archive_bytes": 86295630,
+  "archive_sha256": "08ef430a6018d6ff20c011333b5277b7a57b6eba15d1340cdf5fc033e78db20e",
+  "method": "Read every part from fetched commit using git cat-file; decoded concatenation matches archive SHA256",
+  "member_checks": "All 1201 archive members were independently verified before upload; same archive SHA256 after remote fetch",
+  "verified_at_utc": "2026-11-11T06:59:46.604225+00:00",
+  "branch": "claude/affectionate-mayer-ihqczh"
+}

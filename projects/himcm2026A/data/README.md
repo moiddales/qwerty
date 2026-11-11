@@ -35,4 +35,4 @@ ACS派生比例附分子分母和组件MOE，未伪造协方差或派生置信�
 
 `analysis/integrate_collection.py`重新整合长表，原域脚本负责提取。下载记录提供原URL、时间、字节数、SHA256。从仓库根目录运行 `python projects/himcm2026A/analysis/restore_city_archive.py --extract` 可恢复完整包。大文本采用gzip；归档分块若存在，先运行项目的恢复脚本，按清单还原后再复算。受限源不会被恢复脚本擅自下载或发布。
 
-归档包内的各域状态和早期上传记录是采集时快照；当前发布范围以仓库顶层 `DATA_COLLECTION_STATUS.md` 与 `metadata/source_file_publication.csv` 为准。大批量全国源文件可以从清单内原始URL重取，城市字段已随包保存。
+归档包内的各域状态和早期上传记录是采集时快照；当前发布范围以项目根目录 `DATA_COLLECTION_STATUS.md` 与 `data/metadata/source_file_publication.csv` 为准。大批量全国源文件可以从清单内原始URL重取，城市字段已随包保存。
