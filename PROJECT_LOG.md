@@ -316,3 +316,7 @@ RISKS.md 全部条目已用真实数据检验并更新状态（无“待检验�
 推荐状态：Seattle 领先，Denver、Chicago 部分偏好下并列领先，San Francisco 在 8 万美元下不推荐。
 
 模型搭建与计算阶段完成。论文、新闻文章属写作阶段；STATEMENTS_PLAN 待队内确认后重跑 run_preferences.py、make_tables.py、make_figures.py。
+
+## 2026-11-11 — A-019：用户确认模型阶段范围与偏好陈述（Asia/Shanghai）
+
+用户回答见 U20261111-18：本目标只含模型搭建与计算；P1—P5 确认采用。MODEL_RESULTS.md 与 HANDOFF.md 已改为“已确认”。模型阶段完成；论文与新闻文章由用户另行安排。

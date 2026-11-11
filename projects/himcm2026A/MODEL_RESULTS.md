@@ -105,7 +105,7 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 
 ## 4a. 研究定义下的偏好陈述（Θ_PLAN）
 
-偏好陈述写在 `core.py` 的 `STATEMENTS_PLAN`，每条注明出处，队内可直接修改或追加；也支持“城市 A 至少与 B 一样好”这类整体判断（`city_pref`）。当前五条：
+偏好陈述写在 `core.py` 的 `STATEMENTS_PLAN`，每条注明出处；用户 2026-11-11 确认采用，可直接修改或追加；也支持“城市 A 至少与 B 一样好”这类整体判断（`city_pref`）。当前五条：
 
 | 编号 | 陈述 | 依据 |
 |---|---|---|
@@ -246,6 +246,6 @@ Denver 与 Seattle 的领域分差（0—1 尺度）：
 
 ## 7. 剩余限制
 
-- **偏好陈述需队内确认**：θ0 与 STATEMENTS_PLAN 是依据 PLAN 文本的解读，队内确认或修改后重跑 `run_preferences.py`。
+- **偏好陈述**：STATEMENTS_PLAN（P1—P5）经用户 2026-11-11 确认采用。需要修改时编辑 `core.py`，并重跑 `run_preferences.py`、`make_tables.py`、`make_figures.py`。
 - **可达性用的是岗位数**：D5br 以 2017 年岗位为目的地、2020 年时刻计算，学校和活动地点的逐点可达性需要原始 GTFS 与设施坐标。
 - **底线阈值是参考需求**：结论随阈值的变化见 `results/floors_scan.csv`。

@@ -1,6 +1,6 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-014（2026-11-11）：全部模型已在真实25城数据上搭建并计算，数值核验通过；最终模型M2，Denver与Seattle并列领先、Chicago第三。结果与复现见 [MODEL_RESULTS.md](MODEL_RESULTS.md)，RISKS.md已按真实计算更新20余条状态。已加入研究定义偏好陈述Θ_PLAN（Seattle后悔最小、SMAA第一63.6%）、抽样权重ELECTRE与8张论文图。下一步：队内确认core.py中的STATEMENTS_PLAN后重跑run_preferences.py，写论文与新闻文章。
+> 最新检查点A-019（2026-11-11）：模型搭建与计算阶段完成，用户确认范围只含模型、确认采用偏好陈述P1—P5。最终模型M2；研究定义偏好下Seattle领先，Denver、Chicago部分偏好下并列领先。全部结果、交付表、一城算例与图见 [MODEL_RESULTS.md](MODEL_RESULTS.md)。下一阶段：论文（≤25页）与新闻文章，由用户另行安排。
 
 > 最新检查点A-012：A-011已通过GitHub连接器同步为acda247并由Git取回验证。A-012包含25城工资/教育局部事实/活动心理样本，GTFS与历史缺口验证，仍在连续补采。读取supplement_20261111/city_task_tracker.csv与各域README；不要把25城有样本/非空表当完整实际机会矩阵。后续重点是未核招生与AP/IB、过期feed替换与必要联程、往返/活动窗口、新毕业率和未解决历史字段。
 
