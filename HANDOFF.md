@@ -1,5 +1,7 @@
 # 交接文档：HiMCM 建模知识库
 
+> 2026-11-11补采更正：此前“全量采集完成”的表述过宽。既有25城基础数据归档已完成，但招生资格/边界、细化公交时刻、活动参与条件、心理服务可用性和青年工资等仍待补采；已恢复采集，当前整体状态为进行中。下方旧完成记录仅对应已归档的基础批次。
+
 ## 当前工作更新：2026-11-11
 
 最新进度（A-006）：已完成全部25城约定范围的数据采集、补缺、提取、整合和GitHub归档，远端取回验证通过。接手先读 [数据状态](projects/himcm2026A/DATA_COLLECTION_STATUS.md)、[缺口结局](projects/himcm2026A/DATA_GAPS.md) 和 [A题交接](projects/himcm2026A/HANDOFF.md)。完整数据提交`cddcc57e97e437d0d4f0651d71be63b57108f7de`，659分块还原为86,295,630字节；校验证据在项目`data/metadata/github_archive_verification.json`。未生成真实城市排名。
