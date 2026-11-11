@@ -1,0 +1,120 @@
+{
+  "data_type": "synthetic examples only",
+  "pareto_vs_possible_winner": {
+    "cities": [
+      "A",
+      "B",
+      "C"
+    ],
+    "values": [
+      [
+        1.0,
+        0.2
+      ],
+      [
+        0.2,
+        1.0
+      ],
+      [
+        0.55,
+        0.55
+      ]
+    ],
+    "max_margin_lp": [
+      {
+        "margin": 0.44999999999999996,
+        "weights": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "margin": 0.44999999999999996,
+        "weights": [
+          -0.0,
+          1.0
+        ]
+      },
+      {
+        "margin": -0.04999999999999996,
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "equal_weight_geometric": [
+      0.4472135954999579,
+      0.4472135954999579,
+      0.55
+    ],
+    "interpretation": "C is nondominated and can beat each rival separately, but cannot win an additive ranking under any single common weight vector; it wins the geometric ranking at equal weights."
+  },
+  "simplex_regret_identity": {
+    "lp_regrets": [
+      0.8,
+      0.8,
+      0.44999999999999996
+    ],
+    "maximum_gap_to_ideal": [
+      0.8,
+      0.8,
+      0.44999999999999996
+    ]
+  },
+  "regret_scale": {
+    "values": [
+      [
+        0.95,
+        0.2
+      ],
+      [
+        0.85,
+        0.35
+      ]
+    ],
+    "regrets_original": [
+      0.14999999999999997,
+      0.09999999999999998
+    ],
+    "regrets_squared": [
+      0.08249999999999998,
+      0.18000000000000005
+    ],
+    "winner_original": "B",
+    "winner_squared": "A"
+  },
+  "geometric_zero": {
+    "X": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Y": [
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+    ],
+    "X_score": 0.0,
+    "Y_score": 0.01
+  },
+  "relative_veto": {
+    "credibility_A_over_B": 0.0,
+    "credibility_B_over_A": 0.2,
+    "cut": 0.65,
+    "relation": "incomparable at the illustrative cut"
+  },
+  "joint_qualification": {
+    "individual_probability": 0.95,
+    "independent_constraints": 7,
+    "joint_probability": 0.6983372960937497
+  }
+}

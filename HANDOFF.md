@@ -2,6 +2,8 @@
 
 ## 当前工作更新：2026-11-11
 
+最新进度（A-002）：已完成 [A 题数学模型分析](projects/himcm2026A/MATH_MODELS.md)和构造例子核验，研究方案与项目交接已同步更新；尚未产生真实城市排名。
+
 当前在本知识库基础上开展 2026 HiMCM A 城市选择研究。接手先读根目录 [AGENTS.md](AGENTS.md)、[项目日志](PROJECT_LOG.md)与 [A 题交接](projects/himcm2026A/HANDOFF.md)，当前方案在 [PLAN.md](projects/himcm2026A/PLAN.md)。
 
 用户新增持续规则：每次重大修订都必须提交并推送到 claude/affectionate-mayer-ihqczh，同时记录用户要求原文、日期、具体改动和待办，假定会话随时丢失。该规则已写入 AGENTS.md。
