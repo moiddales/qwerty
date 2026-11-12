@@ -1,0 +1,64 @@
+Theta_S all cities
+          city    p1  top3    mr
+      Seattle 0.636 0.979 1.483
+       Denver 0.235 0.750 2.718
+     New York 0.060 0.603 3.281
+      Chicago 0.058 0.467 3.643
+San Francisco 0.004 0.069 6.543
+Theta_S excluding floor-fail
+     city    p1  top3    mr
+ Seattle 0.637 0.981 1.474
+  Denver 0.235 0.766 2.619
+New York 0.061 0.625 3.210
+ Chicago 0.058 0.489 3.472
+  Austin 0.006 0.082 6.341
+mean-rank pair reversals over 25 removals: 0 []
+Theta without P1,P2
+     city    p1  top3    mr
+ Seattle 0.557 0.946 1.676
+  Denver 0.292 0.775 2.578
+ Chicago 0.069 0.511 3.497
+New York 0.052 0.508 3.819
+  Austin 0.026 0.144 6.374
+aff weight: mean 0.108, share draws aff<1/7 0.885; Seattle wins when aff<1/7: 0.667, aff>=1/7: 0.394
+         city  allitems  nonhousing
+      Seattle     19.17       20.21
+       Denver     18.24       19.25
+San Francisco     16.96       18.27
+     San Jose     16.71       17.96
+  Los Angeles     16.22       17.46
+    San Diego     15.86       17.10
+      Chicago     16.46       16.41
+     New York     15.10       15.73
+ref top5 alt deflator: [('Denver', np.float64(0.821)), ('Seattle', np.float64(0.8205)), ('Chicago', np.float64(0.8068)), ('New York', np.float64(0.7897)), ('Boston', np.float64(0.775))]
+Theta_S alt deflator
+          city    p1  top3    mr
+      Seattle 0.633 0.972 1.506
+       Denver 0.237 0.742 2.747
+     New York 0.064 0.618 3.250
+      Chicago 0.052 0.454 3.703
+San Francisco 0.004 0.074 6.510
+Theta_S point data: Seattle 0.729; Denver 0.194; Chicago 0.037
+Theta_S + node shifts: Seattle 0.600; Denver 0.270; New York 0.063
+               dropped  leader     p  p_Seattle
+         E1_adv_course Seattle 0.352      0.352
+         E3_counselors Seattle 0.989      0.989
+      S1_violent_crime Seattle 0.676      0.676
+     S2_traffic_deaths Seattle 0.592      0.592
+       H1_bad_air_days Seattle 0.546      0.546
+H2_school_health_staff Seattle 0.830      0.830
+H3_youth_mh_facilities Seattle 0.571      0.571
+        M2_walkability Seattle 0.658      0.658
+         M3_youth_fare Seattle 0.626      0.626
+        A1_park_access Seattle 0.705      0.705
+       A2_library_teen Seattle 0.911      0.911
+      A3_school_sports Seattle 0.431      0.431
+     A4_teen_wage_real Seattle 0.690      0.690
+         C1_rent_share Seattle 0.635      0.635
+  C2_nonhousing_prices Seattle 0.664      0.664
+    I1_equality_policy Seattle 0.782      0.782
+         I2_suspension Seattle 0.616      0.616
+     E2r_grad_district  Denver 0.654      0.188
+ M4r_weekend_retention Seattle 0.819      0.819
+    M5r_transit_access Seattle 0.669      0.669
+{'Seattle': 19, 'Denver': 1}

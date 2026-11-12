@@ -13,15 +13,15 @@
 
 - Under the preferences stated in our definition, Seattle ranks first in **63.6%** of 10,000 simulations and in the top three in **97.9%**.
 - It has the smallest worst-case regret (**0.154** on a 0–1 value scale) and passes all four floors.
-- Denver is a close second: with equal domain weights it scores 0.8210 against Seattle's 0.8205. Chicago is the most stable city when no weak spot may be traded away.
-- The final top five are Seattle, Denver, New York, Chicago and San Francisco. San Francisco fails the rent floor for an $80,000 family (rent takes 50.4% of income).
+- Denver is second (first in 23.5% of simulations) and narrowly leads on equal domain weights (0.8210 against 0.8205). Chicago is the most stable city when no weak spot may be traded away.
+- Among cities that pass the floors, the top five are Seattle, Denver, New York, Chicago and Austin. San Francisco would place fifth but fails the rent floor for an $80,000 family (rent takes 50.4% of income).
 
 **Significant revisions.** Auditing real data changed our model twice.
 
 - M0→M1: a transit-frequency measure was blank for 96% of San Diego's residents, and one adult charter school pulled San Francisco's graduation rate to 56%. Fixing both moved San Francisco from 13th to 8th.
 - M1→M2: we replaced transit service hours with jobs reachable within 45 minutes by scheduled transit, so we measure what a student can actually reach.
 
-**Why it is more than our opinion.** Reference points are fixed, so removing any city reverses **0** pairs of other cities (an entropy-weight ranking reverses 90). The top three survive equal weights, data noise up to four times its size, ±10% node shifts and five alternative aggregation rules. School-age survey outcomes agree with our domain scores: skipping school for fear of being unsafe rises with violent crime (ρ = +0.73), and sadness or hopelessness correlates with our health domain (ρ = −0.76).
+**Why it is more than our opinion.** Reference points are fixed, so removing any city reverses **0** pairs of other cities (an entropy-weight ranking reverses 90). Seattle, Denver and Chicago remain the leaders under equal weights, data noise up to four times its size, ±10% node shifts and five alternative aggregation rules; under our stated preferences Seattle stays first with node shifts (60%) and without the two statements that limit affordability (56%). School-age survey outcomes agree with our domain scores: skipping school for fear of being unsafe rises with violent crime (ρ = +0.73), and sadness or hopelessness correlates with our health domain (ρ = −0.76).
 
 **Caveat.** Seattle's lead belongs to families who can afford its neighborhoods. Only 38.5% of its residents live in census tracts that are affordable on $80,000 and well served by transit. For a $50,000 family the best choices are Chicago and Columbus.
 
@@ -44,9 +44,9 @@
 <div class="toc-row"><span>9. Who Should Choose Which City</span><span class="dots"></span><span>16</span></div>
 <div class="toc-row"><span>10. Strengths and Weaknesses</span><span class="dots"></span><span>18</span></div>
 <div class="toc-row"><span>11. Conclusion</span><span class="dots"></span><span>18</span></div>
-<div class="toc-row"><span>12. News Article: The Best City for a High Schooler</span><span class="dots"></span><span>19</span></div>
-<div class="toc-row"><span>13. References</span><span class="dots"></span><span>21</span></div>
-<div class="toc-row"><span>Report on Use of AI Tools (not counted toward the 25 pages)</span><span class="dots"></span><span>22</span></div>
+<div class="toc-row"><span>12. News Article: The Best City for a High Schooler</span><span class="dots"></span><span>20</span></div>
+<div class="toc-row"><span>13. References</span><span class="dots"></span><span>22</span></div>
+<div class="toc-row"><span>Report on Use of AI Tools (not counted toward the 25 pages)</span><span class="dots"></span><span>23</span></div>
 </div>
 </div>
 </div>
@@ -67,7 +67,7 @@ More than 15 million students attend U.S. public high schools. Most city ranking
 
 **Our definition of "best".** *The best city is the one that, for a family on a fixed budget, clears basic floors on cost and serious risk, and then gives a public-school student who cannot depend on car rides the most real access to education, health support, independent travel, activities and fair treatment — and keeps that lead across reasonable disagreements about what matters most.*
 
-Three features of this definition shape the model. **Floors** come before trade-offs: a low rent should not buy back a dangerous street. **Real access** means measuring what a student can use (seats in advanced courses, jobs reachable by transit in 45 minutes), not how many buildings exist. **Robustness** means the answer must hold over a whole set of reasonable weightings, not a single set we chose.
+Three features of this definition shape the model. **Floors** come before trade-offs: a low rent should not buy back a dangerous street. **Real access** means measuring what a student can use (enrollments in advanced courses, jobs reachable by transit in 45 minutes), not how many buildings exist. **Robustness** means the answer must hold over a whole set of reasonable weightings, not a single set we chose.
 
 ## 1.3 Our approach
 
@@ -88,7 +88,7 @@ The candidate pool is fixed before any score is computed: the 25 most populous U
 3. **The reference family earns $80,000 a year and rents a two-bedroom home.** *Justification:* this is close to the U.S. median household income; we scan $50,000–$120,000 in Section 9.2.
 4. **Recent multi-year averages represent current conditions.** *Justification:* we use 2021–2025 data and average several years where single years are noisy (crime 2022–2025; traffic and air 2021–2024).
 5. **Once floors are met, a better result in one measure can partly make up for a worse one in another.** *Justification:* this is the usual way families trade off. We test it against a non-compensatory method (ELECTRE III) and against low-substitution aggregation (Section 8.2).
-6. **Missing values are not zero.** *Justification:* a missing report is not evidence of no service. Three of 500 cells are missing; we show each city's rank with the missing value set to the worst and to the best case.
+6. **Missing values are not zero.** *Justification:* a missing report is not evidence of no service. Two of 500 cells are missing; we show each city's rank with the missing value set to the worst and to the best case.
 
 # 3. Criteria: What We Measure and What We Leave Out
 
@@ -167,11 +167,10 @@ Policy values (fares, wages, HRC points) are treated as exact.
 
 ## 4.3 Missing data
 
-Three of the 500 cells are missing:
+Two of the 500 cells are missing:
 
 - San Francisco reports no school athletics in schools enrolling 94% of its students, which we treat as a reporting gap.
 - Washington, D.C. is not rated by HRC.
-- San Diego's transit-frequency field (used in M0 only) is blank.
 
 The reference ranking fills a missing cell with the 25-city median and reports the rank range from worst to best fill. San Francisco's rank moves between 6th and 10th; Washington's between 9th and 17th. All other ranks are unaffected.
 
@@ -260,13 +259,13 @@ A city can win only if a **single** vector makes it at least as good as all othe
 
 ## 5.6 Step 5: how often each city wins (SMAA)
 
-The LP says what is possible; SMAA [19] says how common it is. We draw 10,000 preference vectors uniformly from $\Theta$ (or $\Theta_S$). Each draw is paired with a data set in which every value is perturbed by $N(0,s_{ij}^2)$; a missing value is drawn from the observed cities. For each draw we rank all cities. We report
+The LP says what is possible; SMAA [19] says how common it is. We draw 10,000 preference vectors from $\Theta$ (or $\Theta_S$) in three stages, each uniform over its allowed range: the seven domain weights, then each domain's split among its measures, then each measure's three segment values. Each draw is paired with a data set in which every value is perturbed by $N(0,s_{ij}^2)$; a missing value is drawn from the observed cities. For each draw we rank all cities. We report
 
 - the share of draws in which each city ranks first, in the top three, and its mean rank;
 - the central weight vector of each city's winning draws;
 - its *confidence factor*: how often it wins when that central vector is fixed and only the data vary.
 
-With 10,000 independent draws, the simulation error of any share is at most 0.005.
+With 10,000 independent draws, the standard error of any share is at most 0.005.
 
 ## 5.7 Step 6: two cross-checks with different philosophies
 
@@ -285,9 +284,9 @@ It reuses the pairwise LPs; the city with the smallest $R_i$ is the cautious cho
 
 **Floors.** Seattle's two-bedroom rent ($2,645) is 39.7% of $80,000. Violent crime is 777 per 100,000, traffic deaths 5.4 and bad-air days 1.8%. All four 90% intervals lie on the safe side, so Seattle passes with joint probability 1.000.
 
-**One measure in detail.** Seattle enrolls 54.2 advanced-course seats per 100 students. With nodes 10 / 25 / 40 / 55, it covers segments 1 and 2 fully and 14.2/15 = 0.946 of segment 3. With $\theta^0$ (education 1/7 split over three measures, so 0.0476 per measure, divided 0.563 / 0.289 / 0.148), its contribution is
+**One measure in detail.** Seattle has 54.2 advanced-course enrollments per 100 students. With nodes 10 / 25 / 40 / 55, it covers segments 1 and 2 fully and 14.2/15 = 0.946 of segment 3. With $\theta^0$ (education 1/7 split over three measures, so 0.0476 per measure, divided 0.563 / 0.289 / 0.148), its contribution is
 $$0.0476\times(0.563+0.289+0.946\times0.148)=0.0472 .$$
-Denver's 38.6 seats cover segment 2 only to 0.906 and earn 0.0393.
+Denver's 38.6 enrollments cover segment 2 only to 0.906 and earn 0.0393.
 
 **All domains.** Summing the 20 contributions:
 
@@ -320,7 +319,7 @@ Figure 1 shows each city's value under the reference weights $\theta^0$, split b
 At an income of $80,000:
 
 - **21 cities pass all four floors.**
-- **San Francisco fails** the rent floor: two-bedroom rent takes 50.4% of income.
+- **San Francisco fails** the rent floor: two-bedroom rent takes 50.4% of income. HUD Fair Market Rents are published standards, so we treat them as exact; San Francisco passes at incomes above $80,616.
 - **Three cities are pending.** In Los Angeles and Phoenix, the share of bad-air days (27.9% and 27.4%) is within error of the 30% floor (joint pass probability 0.81 and 0.60). In Nashville, violent crime of 1,160 per 100,000 is close to 1,200 (0.72).
 
 Pending cities stay in the ranking but are not recommended until confirmed. The joint pass probability from simulation and the conservative Bonferroni bound differ by at most 0.0006, so the bound is not overly cautious here.
@@ -346,7 +345,7 @@ Table 1 gives the final ranking by mean SMAA rank under $\Theta_S$ with data noi
 
 <div class="small">
 
-**Table 1. Final ranking (stated preferences $\Theta_S$, 10,000 draws with data noise).** "Ref." is the reference scorecard rank; regret is on the 0–1 value scale.
+**Table 1. Final ranking (stated preferences $\Theta_S$, 10,000 draws with data noise).** "Ref." is the reference scorecard rank; regret is on the 0–1 value scale. San Francisco fails a floor and is listed without a rank; the simulation includes all 25 cities, and leaving San Francisco out changes no other city's position.
 
 | Rank | City | Mean rank | First | Top 3 | Max regret | Ref. | Floors ($80k) | Status |
 |---|---|---|---|---|---|---|---|---|
@@ -354,27 +353,27 @@ Table 1 gives the final ranking by mean SMAA rank under $\Theta_S$ with data noi
 | 2 | Denver | 2.72 | 23.5% | 75.0% | 0.210 | 1 | pass | co-leader |
 | 3 | New York | 3.28 | 6.0% | 60.3% | 0.238 | 4 | pass | top-3 contender |
 | 4 | Chicago | 3.64 | 5.8% | 46.7% | 0.206 | 3 | pass | co-leader (no-weak-spot rule) |
-| 5 | San Francisco | 6.54 | 0.4% | 6.9% | 0.259 | 8 | **fail** | not recommended at $80k |
-| 6 | Austin | 6.91 | 0.6% | 8.0% | 0.332 | 6 | pass | |
-| 7 | Boston | 7.09 | 0.1% | 3.0% | 0.273 | 5 | pass | |
-| 8 | San Diego | 8.12 | 0.0% | 0.5% | 0.295 | 7 | pass | |
-| 9 | Washington | 8.74 | 0.1% | 1.6% | 0.319 | 9 | pass | |
-| 10 | Los Angeles | 9.96 | 0.0% | 0.0% | 0.320 | 13 | pending (air) | |
-| 11 | San Jose | 10.52 | 0.0% | 0.0% | 0.328 | 10 | pass | |
-| 12 | Las Vegas | 11.99 | 0.0% | 0.0% | 0.390 | 12 | pass | |
-| 13 | Columbus | 12.85 | 0.0% | 0.0% | 0.426 | 11 | pass | |
-| 14 | San Antonio | 14.17 | 0.0% | 0.0% | 0.415 | 16 | pass | |
-| 15 | Philadelphia | 15.18 | 0.0% | 0.0% | 0.407 | 14 | pass | cannot rank first |
-| 16 | El Paso | 15.71 | 0.0% | 0.0% | 0.436 | 15 | pass | |
-| 17 | Charlotte | 16.65 | 0.0% | 0.0% | 0.446 | 17 | pass | |
-| 18 | Indianapolis | 18.49 | 0.0% | 0.0% | 0.453 | 18 | pass | |
-| 19 | Fort Worth | 19.03 | 0.0% | 0.0% | 0.469 | 19 | pass | cannot rank first |
-| 20 | Phoenix | 20.04 | 0.0% | 0.0% | 0.447 | 20 | pending (air) | cannot rank first |
-| 21 | Dallas | 20.44 | 0.0% | 0.0% | 0.472 | 21 | pass | cannot rank first |
-| 22 | Houston | 21.75 | 0.0% | 0.0% | 0.459 | 24 | pass | |
-| 23 | Jacksonville | 21.93 | 0.0% | 0.0% | 0.501 | 23 | pass | cannot rank first |
-| 24 | Oklahoma City | 22.82 | 0.0% | 0.0% | 0.507 | 22 | pass | |
-| 25 | Nashville | 24.95 | 0.0% | 0.0% | 0.608 | 25 | pending (crime) | cannot rank first |
+| — | San Francisco | 6.54 | 0.4% | 6.9% | 0.259 | 8 | **fail** | fails rent floor, not ranked |
+| 5 | Austin | 6.91 | 0.6% | 8.0% | 0.332 | 6 | pass | |
+| 6 | Boston | 7.09 | 0.1% | 3.0% | 0.273 | 5 | pass | |
+| 7 | San Diego | 8.12 | 0.0% | 0.5% | 0.295 | 7 | pass | |
+| 8 | Washington | 8.74 | 0.1% | 1.6% | 0.319 | 9 | pass | |
+| 9 | Los Angeles | 9.96 | 0.0% | 0.0% | 0.320 | 13 | pending (air) | |
+| 10 | San Jose | 10.52 | 0.0% | 0.0% | 0.328 | 10 | pass | |
+| 11 | Las Vegas | 11.99 | 0.0% | 0.0% | 0.390 | 12 | pass | |
+| 12 | Columbus | 12.85 | 0.0% | 0.0% | 0.426 | 11 | pass | |
+| 13 | San Antonio | 14.17 | 0.0% | 0.0% | 0.415 | 16 | pass | |
+| 14 | Philadelphia | 15.18 | 0.0% | 0.0% | 0.407 | 14 | pass | cannot rank first |
+| 15 | El Paso | 15.71 | 0.0% | 0.0% | 0.436 | 15 | pass | |
+| 16 | Charlotte | 16.65 | 0.0% | 0.0% | 0.446 | 17 | pass | |
+| 17 | Indianapolis | 18.49 | 0.0% | 0.0% | 0.453 | 18 | pass | |
+| 18 | Fort Worth | 19.03 | 0.0% | 0.0% | 0.469 | 19 | pass | cannot rank first |
+| 19 | Phoenix | 20.04 | 0.0% | 0.0% | 0.447 | 20 | pending (air) | cannot rank first |
+| 20 | Dallas | 20.44 | 0.0% | 0.0% | 0.472 | 21 | pass | cannot rank first |
+| 21 | Houston | 21.75 | 0.0% | 0.0% | 0.459 | 24 | pass | |
+| 22 | Jacksonville | 21.93 | 0.0% | 0.0% | 0.501 | 23 | pass | cannot rank first |
+| 23 | Oklahoma City | 22.82 | 0.0% | 0.0% | 0.507 | 22 | pass | |
+| 24 | Nashville | 24.95 | 0.0% | 0.0% | 0.608 | 25 | pending (crime) | cannot rank first |
 
 </div>
 
@@ -386,7 +385,7 @@ Table 1 gives the final ranking by mean SMAA rank under $\Theta_S$ with data noi
 - **New York** offers by far the most transit access (1.8 million jobs) but is expensive (rent 41.3% of income).
 - **Chicago** is cheap for its quality (rent 25.7% of income) but has fewer school health staff.
 
-**Leave-one-statement-out check.** Removing any single statement P1–P5 keeps Seattle first in SMAA (54.5–65.5%) and keeps it the minimum-regret city. The four necessary pairs all come from P5; without it the count returns to 0.
+**Leave-one-statement-out check.** Removing any single statement P1–P5 keeps Seattle first in SMAA (54.5–65.5%) and keeps it the minimum-regret city. P1 and P2 both limit affordability; removing them together still leaves Seattle first (55.7% against Denver's 29.2%). The four necessary pairs all come from P5; without it the count returns to 0.
 
 **ELECTRE III.** With the reference weights, the kernel is Chicago alone, followed by Denver and Seattle. With 400 sampled weight vectors from $\Theta_S$, Chicago is in the kernel 50% of the time, Seattle 41% and Denver 24%. No measure vetoes Seattle against any city. Chicago's strength under this rule is that it has no deep weakness in any measure.
 
@@ -411,14 +410,14 @@ We built a complete first model (M0) with the indicators and methods above, then
 
 **Why these revisions should convince more people.**
 
-- They come from records, not from a preferred winner: both were found by checking raw files, and the champion did not depend on them.
+- They come from records, not from a preferred winner: both were found by checking raw files. The reference top three (Seattle, Denver, Chicago) was the same in M0, M1 and M2; only the order of the first two changed in M2, by 0.0005.
 - Each fix makes a measure describe what a resident student can actually use: the bus schedule, the school she would attend, the destinations she can reach.
 
 # 8. Why the Ranking Is More Than Our Opinion
 
 ## 8.1 Fixed reference points make the ranking stable when the pool changes
 
-Popular objective methods such as entropy weighting derive weights from how much the measures vary among the candidates. Their results therefore depend on who else is in the pool. We tested this directly: removing one city at a time and re-scoring the other 24 reverses **90** pairs under min-max entropy weights. Under our fixed reference points it reverses **0**, because a city's score depends only on its own data. Entropy weighting would also put the largest weight on transit access (0.134) simply because New York is an outlier, and it would crown New York.
+Popular objective methods such as entropy weighting derive weights from how much the measures vary among the candidates. Their results therefore depend on who else is in the pool. We tested this directly: removing one city at a time and re-scoring the other 24 reverses **90** pairs under min-max entropy weights. Under our fixed reference points it reverses **0**, because a city's score depends only on its own data. The final ranking in Table 1, by mean SMAA rank, also reverses 0 pairs when any one city is removed. Entropy weighting would also put the largest weight on transit access (0.134) simply because New York is an outlier, and it would crown New York.
 
 ## 8.2 Different aggregation rules, similar leaders
 
@@ -437,13 +436,16 @@ The same three cities lead under every rule except entropy weighting. Which of t
 ## 8.3 Sensitivity
 
 - **Weights (Figure 4).** Raising any one domain while scaling the others shows where the leader changes. Seattle leads once education reaches 0.148, inclusion 0.163 or mobility 0.238. Denver leads once affordability exceeds 0.143 or health 0.138. Chicago leads once safety exceeds 0.263.
-- **Nodes.** Shifting every reference point randomly by up to ±10% of its range (2,000 runs) keeps the winner among Denver (64.6%), Seattle (32.0%) and Chicago (3.5%).
+The first four tests start from the reference weights $\theta^0$, where Denver and Seattle are tied, and are then repeated under $\Theta_S$.
+
+- **Nodes.** Shifting every reference point randomly by up to ±10% of its range (2,000 runs) keeps the winner among Denver (64.6%), Seattle (32.0%) and Chicago (3.5%). With weights drawn from $\Theta_S$, Seattle wins 60.0% of shifted runs and Denver 27.0%.
 - **Data error.** Multiplying every standard deviation by 0.5, 1, 2 or 4 keeps Denver and Seattle as the two most frequent winners (Seattle 43.1%, 44.5%, 40.8%, 31.8%).
-- **One measure at a time.** Removing any one of the 20 measures leaves the champion Denver 13 times, Seattle 6 times and Chicago once.
+- **One measure at a time.** Removing any one of the 20 measures leaves the champion Denver 13 times, Seattle 6 times and Chicago once. Under $\Theta_S$ (each domain keeps its weight), Seattle stays first for 19 of the 20 removals. Removing the graduation rate makes Denver first (65%): Seattle's lead depends on Denver's low district graduation rate (71.8% against 87.2%).
 - **Data intervals.** Placing every value at the unfavorable end of its 90% interval removes all four necessary pairs of $\Theta_S$. Those orders depend on point estimates, so we do not claim them as certain.
 - **Alternative data choices.** Each of the following keeps Seattle, Denver and Chicago on top:
     - Chicago's 2021 police-department crime definition (960 instead of 516 per 100,000) moves Chicago from 3rd to 4th.
     - Metro-area air monitors put Seattle first.
+    - Deflating the teen wage by non-housing prices, so that housing cost counts only through rent, leaves the reference top two unchanged and Seattle first in 63.3% of $\Theta_S$ draws.
     - A hierarchical Poisson–Gamma estimate of traffic deaths at ages 14–18 shrinks small-city rates toward the 5.96 per 100,000 average (overdispersion χ² = 116.4 on 24 df) and keeps Seattle first (τ = 0.947).
 
 <figure><img src="../results/figures/fig3_champion_by_domain_weight.png" style="width:74%"><figcaption>Figure 4. Leader as one domain's weight changes (others rescaled proportionally). The dashed line is the equal weight 1/7.</figcaption></figure>
@@ -459,7 +461,7 @@ We compared our results with outcomes we did not use to build the model.
 | YRBS 2023: students who felt sad or hopeless (11 cities) | our health domain | −0.76 | − ✓ |
 | YRBS 2023: students bullied at school (11 cities) | our inclusion domain | +0.45 | − ✗ |
 | GTFS 2026 timetables: weekend/weekday trips (23 cities) | NTD weekend retention | 0.73 | + ✓ |
-| Opportunity Atlas: adult income of children from low-income families [21] | total value $U$ | 0.32 | + ✓ |
+| Opportunity Atlas: adult income of children from low-income families [21] | total value $U$ | 0.32 (p = 0.12) | + ✓ (weak) |
 
 Three of four youth outcomes agree with our measures in the expected direction. Bullying does not: city non-discrimination policy measures what a city promises, not what happens in school hallways. We report this as a limit of the inclusion domain.
 
@@ -494,7 +496,7 @@ The rent floor depends on income, so the eligible set does too:
 - At **$70,000** San Jose and San Francisco fail.
 - At **$50,000** eight cities fail: New York, Los Angeles, San Diego, San Jose, San Francisco, Seattle, Denver and Boston. The best remaining cities at reference weights are Chicago, Columbus, Austin, Las Vegas and Washington.
 
-The leader among eligible cities is Seattle at $100,000 and above, Denver at $70,000–$80,000 and Chicago below $70,000.
+At reference weights, the leader among eligible cities is Seattle at $100,000 and above, Denver at $70,000–$80,000 (by less than 0.001 at $80,000) and Chicago below $70,000. Under our stated preferences Seattle leads at $80,000 (Table 1).
 
 ## 9.3 Inside the city: averages hide who is left out
 
@@ -519,7 +521,7 @@ City averages assume that a student lives in a typical neighborhood (Assumption 
 **Strengths**
 
 - **Floors before trade-offs.** No strength can compensate for unaffordable rent or high risk, and borderline cities are flagged as pending instead of being passed or failed silently.
-- **Exact robustness, not just one weighting.** Linear programs test every pair over the whole preference set. SMAA turns that into frequencies with a simulation error of at most 0.005, and minimax regret serves cautious families.
+- **Exact robustness, not just one weighting.** Linear programs test every pair over the whole preference set. SMAA turns that into frequencies with a standard error of at most 0.005, and minimax regret serves cautious families.
 - **Stable when the pool changes.** Fixed reference points mean that adding or removing a city reverses no other pair.
 - **Data-driven revisions.** Two revisions came from errors found in real records, with controlled comparisons.
 - **Reproducible.** Every number in this paper comes from archived public data and our scripts.
@@ -529,14 +531,14 @@ City averages assume that a student lives in a typical neighborhood (Assumption 
 - **Proxy for destinations.** The accessibility measure counts jobs, not schools, parks or teen programs. Point-level routing to actual facilities with current timetables would measure student trips directly.
 - **Inclusion is measured by policy.** HRC points describe what a city promises; school-level climate surveys for all 25 cities would measure students' experience.
 - **School location is not school access.** We use schools located inside each city; attendance-zone and lottery rules would show which schools a student can actually attend.
-- **Some measures are dated.** Graduation rates are for the 2020–21 cohort and accessibility uses 2017 jobs with 2020 schedules. Removing graduation does not change the champion.
+- **Some measures are dated.** Graduation rates are for the 2020–21 cohort and accessibility uses 2017 jobs with 2020 schedules. Seattle's lead over Denver depends on graduation: removing it makes Denver first under $\Theta_S$ (Section 8.3).
 - **Stated preferences are ours.** P1–P5 follow our definition. A family with other priorities can use the profile results or change the statements.
 
 # 11. Conclusion
 
 1. **Criteria.** We measured 20 conditions in seven separate domains that matter to a high schooler who cannot rely on a car, and left out nine criteria with reasons.
 2. **Ranking.** We ranked all 25 of the largest U.S. cities. Under our definition, **Seattle is the Best City for a High Schooler**: first in 63.6% of 10,000 simulations, top three in 97.9%, smallest worst-case regret (0.154). It passes every floor for an $80,000 family.
-3. **Close contenders.** Denver is a near-tie on equal weights (0.8210 vs 0.8205) and leads when affordability or health matter more. Chicago leads whenever no weakness may be traded away, and is the best value for families earning under $70,000.
+3. **Close contenders.** Denver is a near-tie on equal weights (0.8210 vs 0.8205) and leads when affordability or health matter more or when graduation is left out. Chicago leads whenever no weakness may be traded away, and is the best value for families earning under $70,000.
 4. **Merit beyond opinion.** The leaders survive equal weights, data errors, node shifts, five aggregation rules and the removal of any city or measure. Three of four independent youth outcomes agree with our measures.
 5. **Revisions.** Two revisions from real data replaced a broken transit field, removed adult-school distortions from graduation rates, and moved the model from buses supplied to places reachable.
 
@@ -560,9 +562,9 @@ Picture a 15-year-old after the last bell. Practice ends at 5:30. Can she take a
 
 **Everyone weighs things differently.** One family cares most about safety; another about cost. So instead of picking one set of weights, we let a computer try 10,000 different ones that fit our definition, and counted how often each city came out first.
 
-**The result.** Seattle won 64% of the time and finished in the top three 98% of the time. Its students ride transit free, a student can reach about 420,000 jobs by bus and train within 45 minutes, and its high schools have about one school-sport spot and one advanced or college-credit course seat for every two students. Denver came second, cheaper and with more school health staff, but more violent crime. New York and Chicago followed.
+**The result.** Seattle won 64% of the time and finished in the top three 98% of the time. Its students ride transit free, a student can reach about 420,000 jobs by bus and train within 45 minutes, and its high schools have about one school-sport spot and one advanced or college-credit course enrollment for every two students. Denver came second, cheaper and with more school health staff, but more violent crime. New York and Chicago followed.
 
-<div class="news-box"><b>Top 5</b><br>1 Seattle · 2 Denver · 3 New York · 4 Chicago · 5 San Francisco†<br><span>† fails the rent check for an $80,000 family</span></div>
+<div class="news-box"><b>Top 5</b><br>1 Seattle · 2 Denver · 3 New York · 4 Chicago · 5 Austin<br><span>San Francisco would be 5th but fails the rent check for an $80,000 family</span></div>
 
 **We changed our minds twice.** Our first model used a federal "buses per hour" figure. When we checked the raw files, it was blank for almost all of San Diego, wrongly making the city look busless. We also found that one adult-education school was dragging San Francisco's graduation rate down to 56%; the schools local teens actually attend graduate 85%. Fixing both moved San Francisco from 13th to 8th. Then we stopped counting buses and started counting places a student can reach. These fixes came from the data, not from wanting a different winner, and the top three never changed.
 
@@ -592,12 +594,12 @@ Picture a 15-year-old after the last bell. Practice ends at 5:30. Can she take a
 | 2 | Denver | 23% | 75% |
 | 3 | New York | 6% | 60% |
 | 4 | Chicago | 6% | 47% |
-| 5 | San Francisco† | <1% | 7% |
-| 6 | Austin | <1% | 8% |
-| 7 | Boston | <1% | 3% |
-| 8 | San Diego | <1% | <1% |
-| 9 | Washington, D.C. | <1% | 2% |
-| 10 | Los Angeles | 0% | 0% |
+| 5 | Austin | <1% | 8% |
+| 6 | Boston | <1% | 3% |
+| 7 | San Diego | <1% | <1% |
+| 8 | Washington, D.C. | <1% | 2% |
+| 9 | Los Angeles | 0% | 0% |
+| 10 | San Jose | 0% | 0% |
 
 </div>
 <div class="news-side" markdown="1">

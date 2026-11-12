@@ -336,3 +336,18 @@ RISKS.md 全部条目已用真实数据检验并更新状态（无“待检验�
 最终排名采用研究定义偏好集合 Θ_S 下的 SMAA 平均名次：Seattle、Denver、New York、Chicago、San Francisco（$80k 未通过租金底线）……；参考权重得分作为评分卡。所有数字逐项对照 results/ 文件；版面逐页渲染检查。
 
 文件：paper/paper.md、ai_report.md、style.css、build.py、render.js、HiMCM2026A_paper.pdf（22 页 = 21 页正文 + 1 页 AI 报告）。待办：填写队号（python build.py <队号>），团队审阅 AI 使用报告。
+
+## 2026-11-12 — A-022：论文与模型逻辑审计（Asia/Shanghai）
+
+用户原文见 U20261112-02。只核对逻辑，不重新核对数据。新增 analysis/model/run_audit.py，输出 results/logic_audit.txt（种子 42 与 7，可复现）。
+
+发现并修正：
+- 冠军依赖毕业率：Θ_S 下去掉毕业率后 Denver 第一（65%）；原文“去掉毕业率不改变冠军”只在参考权重下成立 → 第 8.3、10 节改写。
+- 第 8.3 节的节点扰动和逐项删指标原来只在参考权重（Denver/Seattle 并列）下做 → 补做 Θ_S 版本：节点扰动 Seattle 60.0%；删单项指标 19/20 次 Seattle 第一。
+- P1、P2 都压低可负担性权重，逐条剔除检验掩盖了二者合力 → 同时去掉 P1+P2 仍 Seattle 第一（55.7% 对 29.2%）。
+- “底线优先”与表 1 把 San Francisco 排第 5 相矛盾 → 表 1、摘要、新闻前五改为通过底线的城市（第 5 名 Austin），San Francisco 不排名；排除 San Francisco 后其余城市位置不变。
+- 平均名次排名的城市池独立性：任删一城 0 对逆转，写入第 8.1 节。
+- 青少年工资用含住房的总 RPP 平减，与“住房只经租金计入”不一致 → 改用非住房价格作敏感性检验：Θ_S 下 Seattle 63.3%，结论不变，写入第 8.3 节。
+- 措辞错误：缺失单元格应为 2/500（San Diego 字段只在 M0）；SMAA 抽样是三级分层均匀而非对 Θ 均匀；0.005 是标准误；“冠军不依赖修订”与 M2 中参考排名第一由 Seattle 换成 Denver 相矛盾；收入扫描的领先城市是参考权重口径；“seats”改为“enrollments”；Opportunity Atlas 相关 ρ=0.32 标注 p=0.12（弱）；San Francisco 租金底线只差 0.4 个百分点，注明 HUD FMR 按精确值处理、收入超过 $80,616 即通过。
+
+PDF 现为 23 页（22 页正文 + 1 页 AI 报告），目录页码已更新。
