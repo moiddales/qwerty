@@ -4,6 +4,8 @@
 
 ## 结论
 
+> 2026-11-12 追加：第二轮全文筛查又发现中等问题 6 处、小问题 11 处、措辞与实际做法不符 1 处，见第六部分。两轮合计：严重 2、中等 10、小问题 18、措辞 1。
+
 1. **5.6 节确实写得太简略。** 论文只用一段话概括了抽样过程，代码里实际有 4 层抽样、3 处拒绝规则、1 处排序处理、缺失值和零误差的处理、排名规则，以及 5 个输出量的计算方法。这些步骤论文都没有写。读者只看论文，无法复现 Table 1。
 2. **全文还有 1 处同等严重的问题：5.7 节的 ELECTRE III。** 论文只写了三个阈值，没有给一致性、否决、可信度的公式，也没写蒸馏规则和抽样版用的是哪 400 组权重。另有 4 处中等问题、7 处小问题，见第三部分。
 3. **按历年 O 奖论文的标准，这两节都需要补写。** O 奖论文写蒙特卡洛时，会用编号步骤或伪代码，并给出每个输出量的公式。2024A-14995 只把 MC-TOPSIS 当作对照模型，也写了 5 个小节和 7 个编号公式。项目里的写作指南（`himcm-modeling/guides/writing/structure-and-sections.md`）也要求："Algorithm: numbered steps, pseudocode or a flowchart for anything computational"。
@@ -251,3 +253,107 @@ The model answers different questions for different students by changing both th
 4. 改完后重新生成 PDF，确认正文不超过 25 页，再同步更新中文讲解版和组员 B/C/D 的讲解文档（5.4、5.6、5.7 都在里面）。
 
 注意：Chicago 暴力犯罪数据是否改用约 960 的问题仍待决定。如果重算，第四部分里不依赖数值的文字不需要改，只需更新 4.5 的比例和 M4 的置信因子。
+
+---
+
+## 六、第二轮全文筛查（2026-11-12 追加）
+
+第一轮集中看了第 5 章。这一轮逐节把全文每个"由计算得到的数字"与代码对照，覆盖摘要页、第 1–4 章（含 `build_matrix.py` 的每个指标）、第 6–11 章和新闻稿。判断标准与前面相同：只看论文，读者能否知道这个数是怎么算出来的。另外记录了一处与实际做法不符的措辞（N17）。
+
+### 6.1 新发现的问题
+
+**中等（影响结论的理解，建议改）**
+
+| # | 位置 | 论文写法 | 代码实际做法 |
+|---|---|---|---|
+| N1 | 3.1 表、4.2 毕业率 | "EDFacts 2020–21，非特许学校" | 23 个城市：EDFacts 学校级数据，按毕业队列人数加权；被遮蔽的学校用区间中点。**Chicago 和 Seattle 例外**：用州政府公布的全学区官方毕业率（Illinois Report Card、Washington OSPI），所以这两个城市的标准差是 0。8.3 和第 10 章都写了"Seattle 领先 Denver 依赖毕业率"，而 Seattle 这一项正好来自另一种口径、而且不带误差，论文应该写明 |
+| N2 | 9.3 节、摘要、新闻稿 | "ACS 小区租金"，"租金不超过收入的 30%" | 用的是 ACS B25064 **全部户型的租金中位数**，乘 12 后不超过收入的 30% 算"可负担"，**不是**主模型用的两居室租金。所有户型的中位数通常低于两居室租金，所以对需要两居室的家庭，"38.5%""86.1%"可能偏高。另外三点没写：2020 年小区通过人口加权换算到 2010 年小区；可达性 60,000 个岗位是按小区人口加权的平均值；用这个比例替换可达性指标时，节点是 0.02 / 0.10 / 0.30 / 0.60 |
+| N3 | 6.4 "What the stated preferences weigh" | "The average vector of $\Theta_S$" | 是另一批 10,000 组分层抽样（种子 21）的平均值，不是 $\Theta_S$ 的几何中心。第一轮已经说明分层抽样在 60 维集合上不均匀，所以这里应写成"抽样平均" |
+| N4 | 6.4、8.3 中各种 $\Theta_S$ 下的百分比 | 都写"Seattle 第一 x%" | 其实分两类，论文没区分。**带数据噪声、10,000 组**：Table 1、逐条去掉陈述、非特许口径（57%/31%）、工资换平减指数（63.3%）、联合指标（47%/38%）。**不带数据噪声（点估计）**：节点平移（60.0%/27.0%，2,000 组）、去掉一个指标（20 次里 19 次、Denver 65%，4,000 组） |
+| N5 | 3.1 表 HRC 指标 | "% of HRC points" | 只用了 MEI 第一部分（非歧视法，30 分）和第三部分（市政服务，12 分），共 42 分。其他部分没用，论文没写 |
+| N6 | 3.1 公交可达性、第 7 章 | 第 7 章批评了 D4c 字段的 −99999 编码 | D5br 字段也有 −99999，代码把它算作 0（步行范围内没有公交）。代码验证过这样处理是对的：每个城市里编码 −99999 的人口比例都**正好等于**步行范围内没有站点的人口比例（最多 41.6%）。但论文没写这条规则，也没写这个验证，读者会拿第 7 章的同一个问题来质疑。数据年份（2020 年时刻表、2017 年就业）只在第 10 章出现 |
+
+**小问题（补一句即可）**
+
+| # | 位置 | 应补充的内容 |
+|---|---|---|
+| N7 | 3.1 青少年工资 | 主模型用 BEA **全部商品**价格平价平减（含住房）；8.3 节的替代口径是非住房价格。3.1 表只写了 "adjusted for local prices" |
+| N8 | 3.1 图书馆 | 分母是图书馆系统的服务区人口，不是城市人口；取 FY2023–24 两年平均；Fort Worth 用的是得州州表 |
+| N9 | 3.1 票价 | Dallas 和 Indianapolis 用的是 3 小时和 2 小时通票价格，不是单程票 |
+| N10 | 3.1 公园 | Charlotte、Nashville 是县级数据；标准差 0.3 只代表四舍五入误差 |
+| N11 | 3.1 其他 | 交通死亡按事故发生地计；心理健康机构按邮政地址所在城市计，不考虑容量 |
+| N12 | 4.3、假设 6 | "最坏、最好填补"指填成最差节点和最好节点，不是填成最差、最好的城市 |
+| N13 | 8.1 | "逆转 90 对"是 25 次删城的总和，不是每次删城的数目 |
+| N14 | 8.3 去掉一个指标 | 参考权重版本：删掉的权重按比例摊给**所有**指标，所以该领域的总权重会变小；$\Theta_S$ 版本在领域内重新分配。论文只说明了后者 |
+| N15 | 8.4 | "健康领域""包容领域"指参考权重下的领域得分；Opportunity Atlas 是县级数据，按城市人口占比加权；GTFS 对比排除了 Indianapolis、San Francisco（参考周无服务） |
+| N16 | 8.5 / 图 5 | 图 5 有两条曲线。一条在收窄领域权重的同时，把领域内最低份额从 1/3 提到 0.6、0.85；另一条把领域内分配和曲线形状都固定为 $\theta^0$。两条都在 $\Theta$ 上计算，不在 $\Theta_S$ 上。正文只提到第二条曲线的 95 和 224，第一条曲线的 0、0、7、56 没提 |
+| N18 | 9.3 | "最差的 20% 居民能到达的岗位不到 500 个"是这 20% 人的**平均值** |
+
+**措辞与实际做法不符**
+
+| # | 位置 | 问题 |
+|---|---|---|
+| N17 | 新闻稿"We changed our minds twice" | 原文说 −99999 让 San Diego "wrongly making the city look busless"。但 M0 实际把这个字段当作缺失值，用中位数填补，并没有当成 0；San Diego 在 M0 和 M1 都排第 7。论文第 7 章本身没有这样写，只有新闻稿写了模型没有发生过的效果 |
+
+### 6.2 已核对、不需要改的部分
+
+- 摘要页和新闻稿里的所有百分比、名次，与 Table 1、6.2、9.1–9.3 节一致；8.4 节 ρ = +0.73 的符号正确（代码对 −犯罪率求相关，得 −0.733）。
+- 4.1、4.2 已写明的规则（学校按城市边界选取、三处警局用 FBI 机构人口、县人口加权、街区组人口加权、两期差值除以 √2、多年均值的标准误、泊松标准差），代码一致。暴力犯罪 25 个城市都有完整 4 年 FBI 数据。
+- 5.2、5.3、5.5 线性规划部分、5.8 算例、6.1、6.2、7 章的对照比较、8.2 的结果表、9.1 的底线条件、9.2 的收入扫描，写法能让读者知道怎么算。
+
+### 6.3 可直接替换的英文文本
+
+**N1（4.2 节 "Graduation rates published as ranges…" 一条后面加一句）**
+
+```markdown
+Chicago and Seattle report no school-level rates for this cohort, so we use their official district rates (Illinois Report Card, Washington OSPI) and treat them as exact. Other cities use cohort-weighted school rates.
+```
+
+**N2（9.3 节第一段替换 "and asked what share…" 那一句）**
+
+```markdown
+and asked what share of residents live in tracts that are **both** affordable on $80,000 (the tract's median gross rent over all unit sizes, ACS table B25064, at most 30% of income) **and** reach at least 60,000 jobs by transit within 45 minutes (population-weighted over the tract's block groups). Median rent over all unit sizes is usually below two-bedroom rent, so these shares are upper bounds for a family that needs two bedrooms.
+```
+
+并在 "Replacing the access measure with this joint share" 后面加：`(nodes 0.02 / 0.10 / 0.30 / 0.60)`。
+
+**N3（6.4 节）**
+
+`The average vector of $\Theta_S$ gives` → `The average of 10,000 vectors drawn from $\Theta_S$ (Step 5) gives`
+
+**N4（8.3 节开头加一句）**
+
+```markdown
+Unless stated otherwise, $\Theta_S$ percentages in this section include data noise (10,000 draws); the node-shift and measure-removal tests use point data (2,000 and 4,000 draws).
+```
+
+**N5（3.1 表）**
+
+`City non-discrimination law and services (% of HRC points)` → `City non-discrimination laws and municipal services (% of HRC MEI parts I and III, 42 points)`
+
+**N6（3.1 表下 "Avoiding double counting" 段后加一段）**
+
+```markdown
+**Transit access data.** The access field is coded −99999 where no transit stop lies within walking distance; we count these residents as reaching 0 jobs. Unlike the frequency field of Revision 1, this code is reliable: in every city the share of residents coded −99999 equals the share with no stop within walking distance. The field uses 2020 timetables and 2017 job locations.
+```
+
+**N17（新闻稿）**（替换句比原句短，试排时新闻稿仍为 2 页；更长的写法会把新闻稿挤到第 3 页）
+
+`it was blank for almost all of San Diego, wrongly making the city look busless.` → `it was blank for almost all of San Diego, though buses do run there.`
+
+**小问题 N7–N16、N18**：在相应位置各加一个短语，内容见 6.1 表格。如果篇幅紧，优先 N7、N12、N13、N14、N16。
+
+### 6.4 试排结果
+
+把第四部分（4.1–4.6）和本部分（N1–N6、N17）的替换文本一起套进论文副本试排：正文 23 页（另加 1 页 AI 报告），新闻稿仍在第 21–22 页共 2 页，公式全部正常渲染。原论文没有改动。小问题 N7–N16、N18 每处只加一个短语，预计不会增加页数，但应用后要再排一次确认。
+
+### 6.5 两轮合计
+
+| 级别 | 第一轮 | 第二轮 | 合计 |
+|---|---|---|---|
+| 严重 | 2（5.6、ELECTRE） | 0 | 2 |
+| 中等 | 4（M1–M4） | 6（N1–N6） | 10 |
+| 小问题 | 7（m1–m7） | 11（N7–N16、N18） | 18 |
+| 措辞与事实不符 | 0 | 1（N17） | 1 |
+
+两轮的修改都只是补充说明，不改变任何结果数字。唯一要改的数字是 Denver 置信因子（68.9% → 66.7%）。

@@ -1,6 +1,6 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-026（2026-11-12）：模型写法细节评估见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：5.6 SMAA 与 5.7 ELECTRE III 写得过简，无法据论文复现；另有中等问题 4 处（含 Denver 置信因子应为 66.7%）。报告附可直接替换的英文文本，试排后正文 23 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
+> 最新检查点A-027（2026-11-12）：模型写法细节评估（两轮）见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：严重 2 处（5.6 SMAA、5.7 ELECTRE III 无法据论文复现）、中等 10 处、小问题 18 处、新闻稿措辞 1 处；唯一需改的数字是 Denver 置信因子 68.9%→66.7%。报告附可直接替换的英文文本，两轮一起试排后正文 23 页、新闻稿 2 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
 
 > 检查点A-024（2026-11-12）：新增论文中文讲解版 [paper_explained/HiMCM2026A_paper_explained_zh.pdf](paper_explained/HiMCM2026A_paper_explained_zh.pdf)（52页，原文逐段后接中文讲解，课程外知识见补充知识卡K1–K20），源文件 paper_explained/paper_explained.md，重建：cd paper_explained && python build.py。它是独立副本，提交用论文仍是 paper/ 下的文件；原论文再改时讲解版需手动同步。
 
