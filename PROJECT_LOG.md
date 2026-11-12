@@ -429,3 +429,4 @@ PDF 23 页（22 页正文 + 1 页 AI 报告）。
 - 新脚本 projects/himcm2026A/paper_explained/make_guides.py：讲解内容全部取自 paper_explained.md，不新写讲解；每个讲解框与原讲解版（git ed9e183，即发给全组的 52 页版）比对，120 个框和知识卡中 69 个标"本版更新"（只高亮改写或新加的句子，其余与原版一字不差），12 个标"本版新增"；英文原文改动的句子和新公式高亮。组员 B 的首页（学习顺序、主线）对照原 member_B.md（git 56b0bf4）标出改动。
 - 输出：HiMCM2026A_guide_all_zh.pdf（总版 62 页：标记说明、分工总览、改动框清单 + 全文）；HiMCM2026A_member_A/B/C/D_zh.pdf（14/16/19/17 页，按分工表切出，5.7、6.4 中别人的段落用灰框注明略去；首页表格页码指总版）。按用户要求不含附一至附四；member_B.md 原有的附录已去掉（见 git 历史）。
 - build.py 允许带附加类名的讲解框（zh upd / zh new / zh skip / chgeq）；style.css 增加标记样式。MathJax 无报错，抽查页面排版正常。
+- 续（U20261112-14）：修改记录在线文档导出为 projects/himcm2026A/docs/HiMCM2026A_change_log_zh.pdf（7 页，A4）。用户反映改动标记影响阅读：去掉底色和下划线，改动句只改用深橙色字，新公式只在左侧加细线，新增框不再换底色；徽标缩小。全部讲解 PDF 重新生成，页数不变。

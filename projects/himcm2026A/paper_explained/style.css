@@ -69,13 +69,12 @@ body { font-family: "Source Serif 4", "Noto Serif SC", "WenQuanYi Zen Hei", Geor
 .zh .eq, .kp .eq { margin: 5pt 0; }
 .cover-zh p { font-size: 15pt; color: var(--accent); text-align: center; margin: 4pt 0 8pt; }
 .summary-page { break-after: page; }
-
 /* ---- study-guide marks ---- */
-.badge { display:inline-block; font-family:"Noto Sans SC",Inter,sans-serif; font-size:7.6pt; font-weight:700; color:#fff; border-radius:2pt; padding:0.5pt 4pt; margin-right:3pt; vertical-align:1pt; }
+.badge { display:inline-block; font-family:"Noto Sans SC",Inter,sans-serif; font-size:7pt; font-weight:700; color:#fff; border-radius:2pt; padding:0 3.5pt; margin-right:3pt; vertical-align:1pt; line-height:1.35; }
 .badge.upd { background:#c2410c; } .badge.new { background:#9f1239; }
-.zh.upd { border-left-color:#c2410c; } .kp.upd { border-left-color:#c2410c; }
-.zh.new { border-left-color:#9f1239; background:#fbf1ee; } .kp.new { border-left-color:#9f1239; }
+.zh.upd, .kp.upd { border-left-color:#c2410c; }
+.zh.new, .kp.new { border-left-color:#9f1239; }
 .zh.skip { background:#f4f4f2; border-left-color:#999; }
-.chg { background:#ffe1cf; border-bottom:1px solid #e8590c; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+.chg { color:#b3410e; }
+.chgeq { border-left:2.5px solid #d9773a; padding-left:4pt; margin:4pt 0; }
 .pb { break-after: page; }
-.chgeq { background:#ffe1cf; border-left:3px solid #e8590c; padding:1pt 0; margin:4pt 0; }

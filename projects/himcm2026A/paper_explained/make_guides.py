@@ -6,8 +6,8 @@ Body text and explanation boxes come from paper_explained.md (current). Each box
 original explained edition (git ed9e183, the 52-page version handed to the team); paper sentences are
 compared with the paper text in that edition. Marks:
   - box badge 「本版新增」: box did not exist in the original edition;
-  - box badge 「本版更新」: box existed but was changed; changed sentences are highlighted;
-  - highlighted English sentences: paper text changed since the original edition.
+  - box badge 「本版更新」: box existed but was changed; changed sentences are set in a dark-orange text color;
+  - dark-orange English sentences: paper text changed since the original edition.
 B's front page is compared with the original member_B.md (git 56b0bf4) the same way.
 """
 import difflib, re, subprocess, sys
@@ -315,9 +315,9 @@ LEGEND = """**标记说明（对照 2026-11-12 发给全组的原讲解版，52 
 
 | 标记 | 含义 |
 |---|---|
-| <span class="badge upd">本版更新</span> | 原讲解版就有这个讲解框，本版按修改后的论文改过；框里<span class="chg">这样高亮的句子</span>是改写或新加的，其余句子与原讲解版一字不差 |
+| <span class="badge upd">本版更新</span> | 原讲解版就有这个讲解框，本版按修改后的论文改过；框里<span class="chg">这种颜色的句子</span>是改写或新加的，其余句子与原讲解版一字不差 |
 | <span class="badge new">本版新增</span> | 原讲解版没有这个讲解框，是本版为新增的论文内容写的 |
-| 英文原文中<span class="chg">高亮的句子</span> | 论文原文本版改过的句子；新增或改过的整行公式用同样的底色框出 |
+| 英文原文中<span class="chg">这种颜色的句子</span> | 论文原文本版改过的句子；新增或改过的整行公式左侧加一条细线 |
 | 无标记 | 与原讲解版完全相同 |
 """
 
@@ -463,14 +463,14 @@ def compute_pages(pdf):
 # ---------------------------------------------------------------- write + build
 CSS_EXTRA = """
 /* ---- study-guide marks ---- */
-.badge { display:inline-block; font-family:"Noto Sans SC",Inter,sans-serif; font-size:7.6pt; font-weight:700; color:#fff; border-radius:2pt; padding:0.5pt 4pt; margin-right:3pt; vertical-align:1pt; }
+.badge { display:inline-block; font-family:"Noto Sans SC",Inter,sans-serif; font-size:7pt; font-weight:700; color:#fff; border-radius:2pt; padding:0 3.5pt; margin-right:3pt; vertical-align:1pt; line-height:1.35; }
 .badge.upd { background:#c2410c; } .badge.new { background:#9f1239; }
-.zh.upd { border-left-color:#c2410c; } .kp.upd { border-left-color:#c2410c; }
-.zh.new { border-left-color:#9f1239; background:#fbf1ee; } .kp.new { border-left-color:#9f1239; }
+.zh.upd, .kp.upd { border-left-color:#c2410c; }
+.zh.new, .kp.new { border-left-color:#9f1239; }
 .zh.skip { background:#f4f4f2; border-left-color:#999; }
-.chg { background:#ffe1cf; border-bottom:1px solid #e8590c; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+.chg { color:#b3410e; }
+.chgeq { border-left:2.5px solid #d9773a; padding-left:4pt; margin:4pt 0; }
 .pb { break-after: page; }
-.chgeq { background:#ffe1cf; border-left:3px solid #e8590c; padding:1pt 0; margin:4pt 0; }
 """
 
 
