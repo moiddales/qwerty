@@ -8,7 +8,7 @@ HERE = Path(__file__).resolve().parent
 LABEL = "HiMCM 2026 A · 中文讲解版（学习用，不提交）"
 SRC, OUT = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ("paper_explained.md", "HiMCM2026A_paper_explained_zh.pdf")
 text = (HERE / SRC).read_text(encoding="utf-8")
-text = re.sub(r"<div class=\"(summary-page|toc-page|toc|small|news|news-cols|refs|ai-report|news-box|news-two|zh|kp|cover-zh)\">", r'<div class="\1" markdown="1">', text)
+text = re.sub(r"<div class=\"((?:summary-page|toc-page|toc|small|news|news-cols|refs|ai-report|news-box|news-two|zh|kp|cover-zh|chgeq)(?: [a-z-]+)*)\">", r'<div class="\1" markdown="1">', text)
 maths = []
 def keep(m, disp):
     maths.append((m.group(1), disp)); return f"@@MATH{len(maths) - 1}@@"
