@@ -1,6 +1,8 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-024（2026-11-12）：新增论文中文讲解版 [paper_explained/HiMCM2026A_paper_explained_zh.pdf](paper_explained/HiMCM2026A_paper_explained_zh.pdf)（52页，原文逐段后接中文讲解，课程外知识见补充知识卡K1–K20），源文件 paper_explained/paper_explained.md，重建：cd paper_explained && python build.py。它是独立副本，提交用论文仍是 paper/ 下的文件；原论文再改时讲解版需手动同步。
+> 最新检查点A-026（2026-11-12）：模型写法细节评估见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：5.6 SMAA 与 5.7 ELECTRE III 写得过简，无法据论文复现；另有中等问题 4 处（含 Denver 置信因子应为 66.7%）。报告附可直接替换的英文文本，试排后正文 23 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
+
+> 检查点A-024（2026-11-12）：新增论文中文讲解版 [paper_explained/HiMCM2026A_paper_explained_zh.pdf](paper_explained/HiMCM2026A_paper_explained_zh.pdf)（52页，原文逐段后接中文讲解，课程外知识见补充知识卡K1–K20），源文件 paper_explained/paper_explained.md，重建：cd paper_explained && python build.py。它是独立副本，提交用论文仍是 paper/ 下的文件；原论文再改时讲解版需手动同步。
 
 > 检查点A-023（2026-11-12）：两轮论文逻辑审计已完成并修正（见 PROJECT_LOG A-022、A-023；Seattle 的领先在统一非特许学校口径（57% 对 31%）和联合可行性口径（47% 对 38%）下缩小但保持；检验脚本 analysis/model/run_audit.py → results/logic_audit.txt）。Seattle 在 Θ_S 下的领先依赖 Denver 的 2020–21 毕业率，已在论文第 8.3、10 节写明。论文见 [paper/HiMCM2026A_paper.pdf](paper/HiMCM2026A_paper.pdf)（正文22页含摘要、目录、两页新闻、参考文献；另附1页AI使用报告不计页数）。源文件 paper/paper.md、ai_report.md；重建：cd paper && python build.py <队号>（需 markdown、Node.js+Playwright、联网字体与MathJax）。提交前填写队号并核对AI使用报告。模型结果见 [MODEL_RESULTS.md](MODEL_RESULTS.md)。
 
