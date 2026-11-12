@@ -1,0 +1,26 @@
+# Minor-fix replacement pairs from docs/model_detail_audit_zh.md section 7 (not yet applied to paper/paper.md).
+# (id, old, new) — minor fixes; old strings occur exactly once in paper/paper.md
+MINOR = [
+("N7", "adjusted for local prices (USD/h)", "divided by BEA all-items price parity (USD/h)"),
+("N8", "Teen library program attendance per 1,000 residents", "Teen library program attendance per 1,000 residents of the library's service area"),
+("N9–N11", "- **Area measures**",
+ "- **Fares** are the price of one local ride for an eligible student; Dallas and Indianapolis sell only 3-hour and 2-hour passes, whose prices we use.\n- **Located measures**: traffic deaths are counted where the crash occurred and mental-health facilities by their postal city (no capacity data). Park access is county-scale for Charlotte and Nashville and rounded to whole percents (standard deviation 0.3).\n- **Area measures**"),
+("N12a", "reports the rank range from worst to best fill", "reports the rank range when the missing value is set to the measure's worst node and to its best node"),
+("N12b", "with the missing value set to the worst and to the best case", "with the missing value set to the worst and to the best node"),
+("N13", "reverses **90** pairs under min-max entropy weights", "reverses **90** pairs in total over the 25 removals under min-max entropy weights"),
+("N14", "Removing any one of the 20 measures leaves", "Removing any one of the 20 measures (its weight spread over all remaining measures) leaves"),
+("N15", "Three of four youth outcomes agree with our measures in the expected direction.",
+ "Domain scores are domain contributions under $\\theta^0$; the Opportunity Atlas value is county-level, weighted by each city's population share; the GTFS check leaves out Indianapolis and San Francisco, which had no service in the reference week. Three of four youth outcomes agree with our measures in the expected direction."),
+("N16", "Figure 5. City pairs whose order is fixed for every preference in the set, as the set is narrowed.",
+ "Figure 5. City pairs whose order is fixed for every preference in $\\Theta$, as the set is narrowed. Upper line: the split inside domains and the value curves are fixed at $\\theta^0$. Lower line: everything varies, and each measure's minimum share of its domain rises from 1/3 to 0.6 and 0.85 of an equal share."),
+("N18", "The 20% of residents with the least transit access reach", "The 20% of residents with the least transit access reach on average"),
+("N19", "Figure 6. Share of 5,000 draws in which each city ranks first among the cities that meet each profile's floors.",
+ "Figure 6. Share of 5,000 draws in which each city ranks first among the cities that meet each profile's floors. Weights are centered on each profile inside $\\Theta$ (not $\\Theta_S$), so the reference-family row differs from Table 1."),
+("m2a", "is estimated by 20,000 simulated data sets", "is estimated as the share of 20,000 simulated data sets in which all four values pass"),
+("m2b", "the conservative Bonferroni bound", "the conservative Bonferroni bound ${}1-\\sum_k(1-p_k)$, where $p_k$ is the chance of passing floor $k$,"),
+("m3", "(with the inequality reversed for \"lower is better\" measures)", "(nodes run from worst to best, so the same formula covers lower-is-better measures)"),
+("m4", "It reuses the pairwise LPs;", "It reuses the pairwise LPs (over $\\Theta_S$ in Table 1);"),
+("m6", "The same three cities lead under every rule except entropy weighting.",
+ "Here $s_D\\in[0,1]$ is domain $D$'s contribution under $\\theta^0$ times 7. CES is $(\\tfrac17\\sum_D s_D^{\\rho})^{1/\\rho}$ (the geometric mean at $\\rho=0$); the Choquet rule is $\\bar s-\\tfrac I2\\,|s_{\\text{Mob}}-s_{\\text{Act}}|$ with $I=0.05$ or ${}0.10$; the linear and exponential rules replace each curve by $z$ or $(1-e^{-kz})/(1-e^{-k})$, where $z$ is the position between the worst and best node; entropy and CRITIC weights use min-max normalized values. The same three cities lead under every rule except entropy weighting."),
+("m7", "Shifting every reference point randomly by up to ±10% of its range", "Shifting every node independently by a uniform amount of up to ±10% of the measure's range, then re-sorting the four nodes"),
+]

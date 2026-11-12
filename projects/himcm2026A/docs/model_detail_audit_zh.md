@@ -4,7 +4,7 @@
 
 ## 结论
 
-> 2026-11-12 追加：第二轮全文筛查又发现中等问题 6 处、小问题 11 处、措辞与实际做法不符 1 处，见第六部分。两轮合计：严重 2、中等 10、小问题 18、措辞 1。
+> 2026-11-12 追加：第二轮全文筛查又发现中等问题 6 处、小问题 11 处、措辞与实际做法不符 1 处，见第六部分。两轮合计：严重 2、中等 10、小问题 18、措辞 1。第七部分给出了全部小问题的逐条替换文本，以及三轮文本一起套用后的试排结果。
 
 1. **5.6 节确实写得太简略。** 论文只用一段话概括了抽样过程，代码里实际有 4 层抽样、3 处拒绝规则、1 处排序处理、缺失值和零误差的处理、排名规则，以及 5 个输出量的计算方法。这些步骤论文都没有写。读者只看论文，无法复现 Table 1。
 2. **全文还有 1 处同等严重的问题：5.7 节的 ELECTRE III。** 论文只写了三个阈值，没有给一致性、否决、可信度的公式，也没写蒸馏规则和抽样版用的是哪 400 组权重。另有 4 处中等问题、7 处小问题，见第三部分。
@@ -129,7 +129,7 @@ $$\theta_{jl}=W_{d(j)}\times v_j\times g_{jl}$$
 
 | # | 位置 | 问题 |
 |---|---|---|
-| m1 | 5.5 | 可能赢家的线性规划只用文字描述，可以写成一行式子：$\max\varepsilon$ s.t. $(\phi_i-\phi_k)^\top\theta\ge\varepsilon\ \forall k\ne i,\ \theta\in\Theta$ |
+| m1 | 5.5 | ~~可能赢家的线性规划只用文字描述~~ **更正：** 原文已经写出 $(\phi_i-\phi_k)^{\top}\theta\ge\varepsilon$ 这个约束，不需要改 |
 | m2 | 5.2 / 6.2 | 联合通过概率怎么模拟（每次抽四个底线值，全部过线才算通过）没写；6.2 节用了 Bonferroni 下界，但全文没给定义 $1-\sum_k(1-p_k)$ |
 | m3 | 5.3 | 括号里"lower is better 时不等式反向"是多余的：节点按从差到好排列，原公式对两种方向都成立，代码也只用了一个公式。建议改为"nodes are listed from worst to best, so the formula also covers lower-is-better measures" |
 | m4 | 5.7 后悔值 | 公式写的是 $\max_{\theta\in\Theta}$，Table 1 的后悔值用的是 $\Theta_S$。应写"$\Theta$ (or $\Theta_S$)" |
@@ -238,7 +238,7 @@ The model answers different questions for different students by changing both th
 
 ### 4.7 小问题的改法
 
-- **m1（5.5）**：把"We test this by maximizing a margin ε…"改为式子 `$\max\varepsilon$ subject to $(\phi_i-\phi_k)^{\top}\theta\ge\varepsilon$ for all $k\ne i$, $\theta\in\Theta$`。
+- **m1（5.5）**：不需要改（见第三部分的更正）。
 - **m2（5.2）**：在"20,000 simulated data sets"后加 "(the share in which all four values pass)"；在 6.2 节 Bonferroni 处加 "${}1-\sum_k(1-p_k)$"。
 - **m3（5.3）**：括号改为 "(nodes run from worst to best, so the same formula covers lower-is-better measures)"。
 - **m6（8.2）**：表格下加一行公式，内容见第三部分 m6。
@@ -353,7 +353,55 @@ Unless stated otherwise, $\Theta_S$ percentages in this section include data noi
 |---|---|---|---|
 | 严重 | 2（5.6、ELECTRE） | 0 | 2 |
 | 中等 | 4（M1–M4） | 6（N1–N6） | 10 |
-| 小问题 | 7（m1–m7） | 11（N7–N16、N18） | 18 |
+| 小问题 | 6（m2–m7，m1 已更正为无需修改） | 12（N7–N16、N18、N19） | 18 |
 | 措辞与事实不符 | 0 | 1（N17） | 1 |
 
 两轮的修改都只是补充说明，不改变任何结果数字。唯一要改的数字是 Denver 置信因子（68.9% → 66.7%）。
+
+---
+
+## 七、补充核对与全部小问题的替换文本（2026-11-12 追加）
+
+### 7.1 补充核对
+
+- **AI 使用报告**：所述做法与代码一致。"用 3,000 组随机权重核对线性规划上下界"对应 `run_extensions.py` 的数值验证部分（抽样全部落在集合内，抽样差值全部落在线性规划上下界之内）。
+- **7 张图**：坐标轴、图例和标注都与正文数字一致。新发现一处：**N19**，图 6 的"reference family"一行（Denver 0.40、Seattle 0.41）是在宽集合 $\Theta$ 中、以等权为中心抽样得到的，和 Table 1（$\Theta_S$，Seattle 63.6%）不是同一种设定，图注应写明，否则读者会以为数字互相矛盾。
+- **更正**：第三部分的 m1 是我看错了，5.5 节原文已经有可能赢家线性规划的约束式，不需要改。
+
+### 7.2 小问题逐条替换
+
+每行左边的原文在 `paper/paper.md` 中只出现一次，用右边整段替换即可。
+
+| # | 原文 | 改为 |
+|---|---|---|
+| N7 | `adjusted for local prices (USD/h)` | `divided by BEA all-items price parity (USD/h)` |
+| N8 | `Teen library program attendance per 1,000 residents` | `Teen library program attendance per 1,000 residents of the library's service area` |
+| N9–N11 | `- **Area measures**` | - **Fares** are the price of one local ride for an eligible student; Dallas and Indianapolis sell only 3-hour and 2-hour passes, whose prices we use.<br>- **Located measures**: traffic deaths are counted where the crash occurred and mental-health facilities by their postal city (no capacity data). Park access is county-scale for Charlotte and Nashville and rounded to whole percents (standard deviation 0.3).<br>- **Area measures** |
+| N12a | `reports the rank range from worst to best fill` | `reports the rank range when the missing value is set to the measure's worst node and to its best node` |
+| N12b | `with the missing value set to the worst and to the best case` | `with the missing value set to the worst and to the best node` |
+| N13 | `reverses **90** pairs under min-max entropy weights` | `reverses **90** pairs in total over the 25 removals under min-max entropy weights` |
+| N14 | `Removing any one of the 20 measures leaves` | `Removing any one of the 20 measures (its weight spread over all remaining measures) leaves` |
+| N15 | `Three of four youth outcomes agree with our measures in the expected direction.` | `Domain scores are domain contributions under $\theta^0$; the Opportunity Atlas value is county-level, weighted by each city's population share; the GTFS check leaves out Indianapolis and San Francisco, which had no service in the reference week. Three of four youth outcomes agree with our measures in the expected direction.` |
+| N16 | `Figure 5. City pairs whose order is fixed for every preference in the set, as the set is narrowed.` | `Figure 5. City pairs whose order is fixed for every preference in $\Theta$, as the set is narrowed. Upper line: the split inside domains and the value curves are fixed at $\theta^0$. Lower line: everything varies, and each measure's minimum share of its domain rises from 1/3 to 0.6 and 0.85 of an equal share.` |
+| N18 | `The 20% of residents with the least transit access reach` | `The 20% of residents with the least transit access reach on average` |
+| N19 | `Figure 6. Share of 5,000 draws in which each city ranks first among the cities that meet each profile's floors.` | `Figure 6. Share of 5,000 draws in which each city ranks first among the cities that meet each profile's floors. Weights are centered on each profile inside $\Theta$ (not $\Theta_S$), so the reference-family row differs from Table 1.` |
+| m2a | `is estimated by 20,000 simulated data sets` | `is estimated as the share of 20,000 simulated data sets in which all four values pass` |
+| m2b | `the conservative Bonferroni bound` | `the conservative Bonferroni bound ${}1-\sum_k(1-p_k)$, where $p_k$ is the chance of passing floor $k$,` |
+| m3 | `(with the inequality reversed for "lower is better" measures)` | `(nodes run from worst to best, so the same formula covers lower-is-better measures)` |
+| m4 | `It reuses the pairwise LPs;` | `It reuses the pairwise LPs (over $\Theta_S$ in Table 1);` |
+| m6 | `The same three cities lead under every rule except entropy weighting.` | `Here $s_D\in[0,1]$ is domain $D$'s contribution under $\theta^0$ times 7. CES is $(\tfrac17\sum_D s_D^{\rho})^{1/\rho}$ (the geometric mean at $\rho=0$); the Choquet rule is $\bar s-\tfrac I2\,\|s_{\text{Mob}}-s_{\text{Act}}\|$ with $I=0.05$ or ${}0.10$; the linear and exponential rules replace each curve by $z$ or $(1-e^{-kz})/(1-e^{-k})$, where $z$ is the position between the worst and best node; entropy and CRITIC weights use min-max normalized values. The same three cities lead under every rule except entropy weighting.` |
+| m7 | `Shifting every reference point randomly by up to ±10% of its range` | `Shifting every node independently by a uniform amount of up to ±10% of the measure's range, then re-sorting the four nodes` |
+
+另外两处小改动已经写在第六部分：N2 的节点说明（在 "Replacing the access measure with this joint share" 后加 "(nodes 0.02 / 0.10 / 0.30 / 0.60)"），以及 N17 的新闻稿句子。
+
+### 7.3 全部替换一起试排
+
+把第四部分（4.1–4.6 和 Denver 置信因子）、第六部分（N1–N6、N17）和本部分的全部替换一起套进论文副本试排，结果如下：
+- 正文 24 页，另加 1 页 AI 报告，没有超过 25 页的上限。
+- 新闻稿在第 22–23 页，仍是 2 页。
+- MathJax 没有报错。
+- 第 16 页（8.2 节公式）逐行看过渲染图。
+
+试排时发现并修正了一个问题：以数字开头的行内公式（例如 `$0.10$`）会被构建脚本当成货币符号，必须写成 `${}0.10$`。上表中已经改好。
+
+至此，全文所有带计算的段落、摘要页、新闻稿、AI 报告和全部图都已核对完，每个问题都有可以直接替换的文本。正式论文仍未修改。
