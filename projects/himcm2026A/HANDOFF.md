@@ -1,6 +1,8 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-029（2026-11-12）：用户清单 10 项审计见 [docs/checklist_audit_zh.md](docs/checklist_audit_zh.md)。待团队决定：交通死亡底线删除或补理由；是否加"安全 ≥ 1/7"（会使 Denver 从第 2 降到第 4）；Chicago 犯罪口径（改后 Chicago 约第 6）。全部替换一起试排正文 25 页、已达上限。提交论文未改动。
+> 最新检查点A-030（2026-11-12）：按用户决定修改模型（删交通死亡底线、加 P6 安全 ≥ 1/7、Chicago 犯罪 960）并重跑全部脚本；三份审计报告的修改已全部写入论文。新结论：Seattle 第一（Θ_S 下 75.0%、前三 99.1%、后悔 0.151），New York 第二，Denver 第三，Chicago 第 7。论文 PDF 正文 25 页（已达上限）+ AI 报告。讲解版（58 页）、组员 B 讲解（19 页）、分工表（md/docx/在线版）已同步。提交前仍需填队号并核对 AI 报告。
+
+> 检查点A-029（2026-11-12）：用户清单 10 项审计见 [docs/checklist_audit_zh.md](docs/checklist_audit_zh.md)。待团队决定：交通死亡底线删除或补理由；是否加"安全 ≥ 1/7"（会使 Denver 从第 2 降到第 4）；Chicago 犯罪口径（改后 Chicago 约第 6）。全部替换一起试排正文 25 页、已达上限。提交论文未改动。
 
 > 检查点A-027（2026-11-12）：模型写法细节评估（两轮）见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：严重 2 处（5.6 SMAA、5.7 ELECTRE III 无法据论文复现）、中等 10 处、小问题 18 处、新闻稿措辞 1 处；唯一需改的数字是 Denver 置信因子 68.9%→66.7%。报告附可直接替换的英文文本，全部替换（含小问题，见报告第七部分与 docs/audit_minor_fixes.py）一起试排后正文 24 页、新闻稿 2 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
 

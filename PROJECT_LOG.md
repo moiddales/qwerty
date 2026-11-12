@@ -413,3 +413,12 @@ PDF 23 页（22 页正文 + 1 页 AI 报告）。
 - 权重：Θ_S 下安全平均 0.127（69.5% 抽样低于 1/7）。加"安全 ≥ 1/7"：Seattle 68.3%，Denver 降至第 4（6.3%）。待团队决定。
 - Chicago 犯罪按约 960 计算时，Θ_S 下 Chicago 平均名次 6.06、第一 0%（遗留问题新数据）。
 - 全部替换（含前两份报告）一起试排：正文 25 页（达上限），摘要 1 页，新闻稿 2 页，MathJax 无报错。提交论文未改动。
+
+## 2026-11-12 — A-030：按用户决定修改模型并应用全部审计（Asia/Shanghai）
+
+用户原文见 U20261112-10。
+- 模型：Chicago 暴力犯罪改用芝加哥警察局 2021 年总数 25,979（960.1/10 万，FBI 序列漏计加重殴打；标准差按 FBI 序列相对误差）；交通死亡从底线中移除（仍为安全领域指标）；新增 P6"安全 ≥ 1/7"。代码：build_matrix.py、core.py（FLOORS、STATEMENTS_PLAN）、run_model.py（底线扫描）、run_preferences.py（中心权重/置信因子/抽样平均改用表 1 同一批抽样，新增抽样通过率、并列与标准误）、run_extensions.py（Chicago 敏感性改为 FBI 口径、画像改名、修 JSON 键 bug）、run_checklist_checks.py；新脚本 run_table1_precision.py。全部脚本重跑。
+- 新结果（Θ_S，表 1）：Seattle 平均名次 1.32、第一 75.0%、前三 99.1%、最大后悔 0.151；New York 第二（14.0%）；Denver 第三（7.8%）；Chicago 第 7。必然对 7 对，6 城不可能第一。三对并列（San Diego–Chicago、San Jose–Los Angeles、Houston–Oklahoma City）。参考权重：Denver 0.8210、Seattle 0.8205、New York 第三；ELECTRE 内核 Austin、Denver；Θ_S 抽样下 Seattle 88%。置信因子 Seattle 98.9%、New York 65.0%、Denver 38.9%。
+- 论文：两份审计报告的全部修改已写入（5.6 分步算法与公式、ELECTRE 公式、Θ 集合式、数据口径、底线依据、NHTS 定义、大学与许可证理由、balance、θ⁰ 只是基准、P6 等），所有数字更新，表 1 由结果文件生成，目录页码重填。PDF 26 页 = 正文 25 页（达上限）+ AI 报告 1 页；摘要 1 页、新闻稿 2 页；MathJax 无报错。
+- 学习材料：讲解版重新对齐 120 个讲解框并改写过时内容，新增 5.6 分步讲解、P6、Θ 式子、NHTS、公交编码等讲解框（58 页）；组员 B 讲解重建（19 页）；分工表 md/docx/Claude Doc 同步（在线版 rev 13，评论线程保留）。
+- MODEL_RESULTS.md 顶部注明其数字为旧结果。

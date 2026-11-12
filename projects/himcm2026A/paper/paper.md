@@ -204,7 +204,7 @@ $$
 F=\{\,i:\ \text{rent}_i\le 50\%\text{ of income},\ \text{violent crime}_i\le 1200,\ \text{bad-air days}_i\le 30\%\,\}.
 $$
 
-The rent floor is HUD's "severe burden" line [12]. The violent-crime floor is about three times the 2023 national rate of 363.8 per 100,000 [5]. The air floor means that air is unhealthy for students with asthma on nearly one day in three. No city's multi-year average crosses the last two floors, and three cities come within measurement error. Traffic deaths stay in the safety domain but are not a floor: between our cities the yearly death rate differs by at most 15 per 100,000 (2.8 in New York, 18.3 in Phoenix), too small a risk to override every other strength. A floor is checked on the raw value, before any weighting, so no other strength can offset it.
+The rent floor is HUD's "severe burden" line [12]. The violent-crime floor is about three times the 2023 national rate of 363.8 per 100,000 [5]. The air floor means that air is unhealthy for students with asthma on nearly one day in three. No city's value crosses the last two floors, and three cities come within measurement error. Traffic deaths stay in the safety domain but are not a floor: between our cities the yearly death rate differs by at most 15 per 100,000 (2.8 in New York, 18.3 in Phoenix), too small a risk to override every other strength. A floor is checked on the raw value, before any weighting, so no other strength can offset it.
 
 Because each value has an error, a city has three states for each floor. It **passes** if its 90% interval $x\pm1.645s$ lies fully on the safe side, **fails** if it lies fully on the wrong side, and is **pending** otherwise. The joint chance of passing all three floors is estimated as the share of 20,000 simulated data sets in which all three values pass. Floors were also scanned over ranges (Section 9.2), because no floor value is universal.
 
@@ -251,7 +251,7 @@ The **reference vector** $\theta^0$ gives each domain 1/7 and splits it equally 
 | P2 | Mobility weight ≥ Affordability weight | Same reason, for independent travel |
 | P3 | Mobility weight ≥ 1/7 | The student cannot rely on car rides |
 | P4 | Education weight ≥ 1/7 | Access to school and courses is the first purpose |
-| P5 | Each measure gets 0.6–1.4 times an equal share inside its domain | Every core measure covers its own part of the domain |
+| P5 | Each measure gets 0.6–1.4 times an equal share inside its domain, ${}0.6\,W_D/n_D\le W_j\le1.4\,W_D/n_D$ | Every core measure covers its own part of the domain |
 | P6 | Safety weight ≥ 1/7 | "Serious risk": the crime floor catches only extreme rates, so safety keeps at least an equal share |
 
 $\theta^0$ satisfies all six. $\theta^0$ is a benchmark, not our decision rule. It gives one transparent scorecard (Figure 1, Section 5.8) and the starting point of single-vector checks; the ranking itself is decided over $\Theta_S$ (Table 1).
