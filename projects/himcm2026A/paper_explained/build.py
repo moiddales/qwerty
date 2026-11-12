@@ -1,12 +1,13 @@
-"""Build the Chinese explained edition: python build.py  (needs: pip install markdown; Node.js + Playwright Chromium; internet for fonts/MathJax).
+"""Build the Chinese explained edition: python build.py [source.md output.pdf]  (needs: pip install markdown; Node.js + Playwright Chromium; internet for fonts/MathJax).
 Source: paper_explained.md in this folder (a standalone copy of the paper with Chinese notes). The submission paper in ../paper is not touched."""
-import html, re, subprocess
+import html, re, subprocess, sys
 from pathlib import Path
 import markdown
 
 HERE = Path(__file__).resolve().parent
 LABEL = "HiMCM 2026 A · 中文讲解版（学习用，不提交）"
-text = (HERE / "paper_explained.md").read_text(encoding="utf-8")
+SRC, OUT = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ("paper_explained.md", "HiMCM2026A_paper_explained_zh.pdf")
+text = (HERE / SRC).read_text(encoding="utf-8")
 text = re.sub(r"<div class=\"(summary-page|toc-page|toc|small|news|news-cols|refs|ai-report|news-box|news-two|zh|kp|cover-zh)\">", r'<div class="\1" markdown="1">', text)
 maths = []
 def keep(m, disp):
@@ -29,5 +30,5 @@ page = f"""<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>HiM
 <script>window.MathJax={{tex:{{inlineMath:[['\\\\(','\\\\)']],displayMath:[['\\\\[','\\\\]']]}},svg:{{fontCache:'global'}},
 startup:{{pageReady:()=>MathJax.startup.defaultPageReady().then(()=>{{document.body.dataset.mathDone='1';}})}}}};</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script></head><body>{body}</body></html>"""
-(HERE / "paper_explained.html").write_text(page, encoding="utf-8")
-subprocess.run(["node", str(HERE / "render.js"), str(HERE / "paper_explained.html"), str(HERE / "HiMCM2026A_paper_explained_zh.pdf"), LABEL], check=True)
+(HERE / (Path(SRC).stem + ".html")).write_text(page, encoding="utf-8")
+subprocess.run(["node", str(HERE / "render.js"), str(HERE / (Path(SRC).stem + ".html")), str(HERE / OUT), LABEL], check=True)

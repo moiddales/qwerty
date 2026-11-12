@@ -378,3 +378,10 @@ PDF 23 页（22 页正文 + 1 页 AI 报告）。
 - 输出 HiMCM2026A_paper_explained_zh.pdf，52 页；MathJax 无报错，抽查封面、K6、K13、表 1、新闻稿页面排版正常。
 
 今后修改讲解直接编辑 paper_explained.md 后 `cd projects/himcm2026A/paper_explained && python build.py`。原论文若再改，讲解版不会自动同步。
+
+## 2026-11-12 — A-025：分工表与组员 B 讲解（Asia/Shanghai）
+
+用户原文见 U20261112-05、U20261112-06。
+- 分工表：paper_explained/team_assignment.md 与 HiMCM2026A_team_assignment.docx（四人 A–D，模型部分每人一块，配套各自用到该方法的章节；另有 Claude Docs 版本）。
+- 组员 B 专用讲解：paper_explained/member_B.md → HiMCM2026A_member_B_zh.pdf（15 页）。内容取自 paper_explained.md 的 5.1（先修）、第 1、3 章、5.4、5.5、6.3、6.4 中 B 认领的段落、8.5，加导读、主线、自测题答案、常见追问、讲解提纲、交接要点。build.py 改为可传入源文件和输出文件名，默认行为不变。
+- 待用户决定：Chicago 暴力犯罪 FBI 口径（516/10 万）漏计加重殴打（加重伤害 ÷ 谋杀 = 7，25 城中位数 51），补齐后约 960；若改主模型需全面重跑。
