@@ -1,6 +1,8 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-027（2026-11-12）：模型写法细节评估（两轮）见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：严重 2 处（5.6 SMAA、5.7 ELECTRE III 无法据论文复现）、中等 10 处、小问题 18 处、新闻稿措辞 1 处；唯一需改的数字是 Denver 置信因子 68.9%→66.7%。报告附可直接替换的英文文本，全部替换（含小问题，见报告第七部分与 docs/audit_minor_fixes.py）一起试排后正文 24 页、新闻稿 2 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
+> 最新检查点A-029（2026-11-12）：用户清单 10 项审计见 [docs/checklist_audit_zh.md](docs/checklist_audit_zh.md)。待团队决定：交通死亡底线删除或补理由；是否加"安全 ≥ 1/7"（会使 Denver 从第 2 降到第 4）；Chicago 犯罪口径（改后 Chicago 约第 6）。全部替换一起试排正文 25 页、已达上限。提交论文未改动。
+
+> 检查点A-027（2026-11-12）：模型写法细节评估（两轮）见 [docs/model_detail_audit_zh.md](docs/model_detail_audit_zh.md)：严重 2 处（5.6 SMAA、5.7 ELECTRE III 无法据论文复现）、中等 10 处、小问题 18 处、新闻稿措辞 1 处；唯一需改的数字是 Denver 置信因子 68.9%→66.7%。报告附可直接替换的英文文本，全部替换（含小问题，见报告第七部分与 docs/audit_minor_fixes.py）一起试排后正文 24 页、新闻稿 2 页。提交论文尚未修改，等待用户决定；Chicago 犯罪口径问题仍待定。
 
 > 检查点A-024（2026-11-12）：新增论文中文讲解版 [paper_explained/HiMCM2026A_paper_explained_zh.pdf](paper_explained/HiMCM2026A_paper_explained_zh.pdf)（52页，原文逐段后接中文讲解，课程外知识见补充知识卡K1–K20），源文件 paper_explained/paper_explained.md，重建：cd paper_explained && python build.py。它是独立副本，提交用论文仍是 paper/ 下的文件；原论文再改时讲解版需手动同步。
 

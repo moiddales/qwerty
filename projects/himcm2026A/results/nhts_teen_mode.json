@@ -1,0 +1,12 @@
+{
+ "trips_n": 1429,
+ "trip_share_private_vehicle_passenger": 0.498,
+ "trip_share_private_vehicle_driver": 0.243,
+ "trip_share_other_modes": 0.26,
+ "driver_share_age14_15": 0.034,
+ "persons_age14_15": 428,
+ "driver_share_age16_17": 0.5,
+ "persons_age16_17": 381,
+ "driver_share_age18_18": 0.782,
+ "persons_age18_18": 170
+}

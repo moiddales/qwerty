@@ -1,0 +1,25 @@
+{
+ "baseline": "Seattle 64.2% (mean rank 1.48); Denver 23.2% (mean rank 2.71); New York 5.7% (mean rank 3.29); Chicago 5.5% (mean rank 3.67)",
+ "sd_x2": "Seattle 51.5% (mean rank 1.84); Denver 25.6% (mean rank 3.10); New York 10.4% (mean rank 3.27); Chicago 8.3% (mean rank 4.00)",
+ "sd_x4": "Seattle 33.7% (mean rank 2.76); New York 17.4% (mean rank 3.47); Denver 24.2% (mean rank 4.04); Chicago 11.2% (mean rank 4.89)",
+ "domain_weight_mean": {
+  "Education": 0.192,
+  "Safety": 0.127,
+  "Health": 0.127,
+  "Mobility": 0.193,
+  "Activities": 0.127,
+  "Affordability": 0.108,
+  "Inclusion": 0.127
+ },
+ "share_safety_below_1_7": 0.695,
+ "share_safety_lowest_domain": 0.189,
+ "chicago_crime_960": "Seattle 67.5% (mean rank 1.39); Denver 24.2% (mean rank 2.45); New York 6.5% (mean rank 2.97); Chicago 0.0% (mean rank 6.06)",
+ "metro_air": "Seattle 73.7% (mean rank 1.35); Denver 15.1% (mean rank 3.02); New York 3.5% (mean rank 3.53); Chicago 5.8% (mean rank 3.58)",
+ "teen_traffic_PG": "Seattle 72.2% (mean rank 1.36); Denver 16.9% (mean rank 2.98); New York 6.6% (mean rank 3.05); Chicago 2.7% (mean rank 3.97)",
+ "safety_ge_1_7": "Seattle 68.3% (mean rank 1.46); New York 11.9% (mean rank 2.92); Chicago 11.2% (mean rank 3.19); Denver 6.3% (mean rank 4.07)",
+ "safety_ge_1_7_mean_safety_w": 0.184,
+ "safety_ge_every_domain": "Seattle 61.3% (mean rank 1.59); New York 14.4% (mean rank 2.79); Chicago 18.3% (mean rank 2.83); Denver 2.7% (mean rank 5.05)",
+ "safety_ge_every_domain_mean_safety_w": 0.222,
+ "ces_rho0_thetaS_point": "Seattle 66.2% (mean rank 1.44); Denver 21.4% (mean rank 2.56); Chicago 11.2% (mean rank 2.75); New York 0.5% (mean rank 4.39)",
+ "ces_rho-1_thetaS_point": "Seattle 54.4% (mean rank 1.69); Chicago 22.5% (mean rank 2.27); Denver 22.2% (mean rank 2.64); Boston 0.5% (mean rank 4.58)"
+}
