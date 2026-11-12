@@ -62,3 +62,37 @@ H3_youth_mh_facilities Seattle 0.571      0.571
  M4r_weekend_retention Seattle 0.819      0.819
     M5r_transit_access Seattle 0.669      0.669
 {'Seattle': 19, 'Denver': 1}
+
+charter share of enrolment: {'Seattle': 0.053, 'Denver': 0.226, 'Chicago': 0.28, 'New York': 0.134} max Oklahoma City 0.502
+non-charter ref top5: [('Denver', 0.8301), ('Seattle', 0.8247), ('Chicago', 0.8057), ('New York', 0.7933), ('Boston', 0.7802)]
+         city    p1  top3    mr
+      Seattle 0.572 0.971 1.574
+       Denver 0.305 0.785 2.532
+     New York 0.045 0.536 3.517
+      Chicago 0.051 0.410 3.949
+San Francisco 0.007 0.126 5.809
+non-charter, non-alternative ref top5: [('Denver', 0.8297), ('Seattle', 0.8184), ('Chicago', 0.8069), ('New York', 0.7932), ('Boston', 0.7811)]
+    city    p1  top3    mr
+ Seattle 0.434 0.927 1.872
+  Denver 0.373 0.792 2.417
+New York 0.080 0.567 3.362
+ Chicago 0.086 0.466 3.687
+  Austin 0.020 0.118 6.219
+
+mean vector of Theta_S, domain weights: {'Education': 0.192, 'Safety': 0.127, 'Health': 0.127, 'Mobility': 0.193, 'Activities': 0.127, 'Affordability': 0.108, 'Inclusion': 0.126}
+U at mean vector: [('Seattle', 0.8116), ('Denver', 0.7958), ('New York', 0.7851), ('Chicago', 0.782), ('San Francisco', 0.7554), ('Boston', 0.7522)]
+Seattle central weights: {'Education': 0.195, 'Safety': 0.129, 'Health': 0.124, 'Mobility': 0.192, 'Activities': 0.128, 'Affordability': 0.104, 'Inclusion': 0.129} confidence factor: 0.975
+Denver central weights: {'Education': 0.184, 'Safety': 0.102, 'Health': 0.143, 'Mobility': 0.195, 'Activities': 0.135, 'Affordability': 0.119, 'Inclusion': 0.122} confidence factor: 0.689
+Chicago central weights: {'Education': 0.187, 'Safety': 0.172, 'Health': 0.105, 'Mobility': 0.19, 'Activities': 0.118, 'Affordability': 0.122, 'Inclusion': 0.106} confidence factor: 0.579
+New York central weights: {'Education': 0.202, 'Safety': 0.155, 'Health': 0.119, 'Mobility': 0.188, 'Activities': 0.11, 'Affordability': 0.091, 'Inclusion': 0.135} confidence factor: 0.562
+joint affordable+accessible share replaces access, Theta_S
+     city    p1  top3    mr
+ Seattle 0.473 0.951 1.752
+  Denver 0.383 0.830 2.289
+New York 0.057 0.544 3.502
+ Chicago 0.053 0.429 3.704
+  Austin 0.031 0.188 5.552
+
+reference-score pair reversals with the median fill recomputed: 0
+Seattle's largest possible losses under Theta_S: [('Austin', 0.1541), ('Denver', 0.1512), ('Columbus', 0.1468)]
+necessary pairs with every domain weight fixed at 1/7 and the split inside domains free: 5

@@ -43,7 +43,7 @@
 <div class="toc-row"><span>8. Why the Ranking Is More Than Our Opinion</span><span class="dots"></span><span>14</span></div>
 <div class="toc-row"><span>9. Who Should Choose Which City</span><span class="dots"></span><span>16</span></div>
 <div class="toc-row"><span>10. Strengths and Weaknesses</span><span class="dots"></span><span>18</span></div>
-<div class="toc-row"><span>11. Conclusion</span><span class="dots"></span><span>18</span></div>
+<div class="toc-row"><span>11. Conclusion</span><span class="dots"></span><span>19</span></div>
 <div class="toc-row"><span>12. News Article: The Best City for a High Schooler</span><span class="dots"></span><span>20</span></div>
 <div class="toc-row"><span>13. References</span><span class="dots"></span><span>22</span></div>
 <div class="toc-row"><span>Report on Use of AI Tools (not counted toward the 25 pages)</span><span class="dots"></span><span>23</span></div>
@@ -159,7 +159,7 @@ We assembled a long table of 157,256 records (121,160 numeric values) from 28 pu
 Every value carries a standard deviation used in the uncertainty analysis:
 
 - **Multi-year measures** (crime, traffic, air): the standard error of the annual mean.
-- **School measures**: half the difference between the two CRDC waves (2021–22 and 2023–24), divided by √2.
+- **School measures**: the difference between the two CRDC waves (2021–22 and 2023–24) divided by √2, the sample standard deviation of two values.
 - **Graduation rates** published as ranges: the range width converted to a 90% interval.
 - **Counts** (youth mental-health facilities): the Poisson standard deviation √n.
 
@@ -269,7 +269,7 @@ With 10,000 independent draws, the standard error of any share is at most 0.005.
 
 ## 5.7 Step 6: two cross-checks with different philosophies
 
-**Minimax regret** answers a cautious family's question: "If I pick city $i$ and my true preferences are the worst case for that choice, how much value do I lose against the best city?"
+**Minimax regret** [25] answers a cautious family's question: "If I pick city $i$ and my true preferences are the worst case for that choice, how much value do I lose against the best city?"
 
 $$
 R_i=\max_{\theta\in\Theta}\Big[\max_k U_k(\theta)-U_i(\theta)\Big]
@@ -341,7 +341,9 @@ Adding statements P1–P5 narrows $\Theta$ to $\Theta_S$:
 - **Fixed pairs:** four pairs now have a necessary order (Chicago and Denver above Nashville; Austin above Dallas and Fort Worth).
 - **Possible winners:** six cities can no longer rank first under any preference in $\Theta_S$: Philadelphia, Fort Worth, Phoenix, Dallas, Jacksonville and Nashville.
 
-Table 1 gives the final ranking by mean SMAA rank under $\Theta_S$ with data noise.
+**What the stated preferences weigh.** The reference vector $\theta^0$ sits on the edge of $\Theta_S$: it gives education, mobility and affordability the same weight, the least that P1–P4 allow. The average vector of $\Theta_S$ gives education and mobility 0.19 each, affordability 0.11 and the other four domains 0.13 each. Under this single vector Seattle scores 0.812, Denver 0.796, New York 0.785 and Chicago 0.782.
+
+Table 1 gives the final ranking by mean SMAA rank under $\Theta_S$ with data noise. With each city's central weight vector fixed and only the data varying, Seattle wins 97.5% of draws (its confidence factor); Denver's is 68.9%.
 
 <div class="small">
 
@@ -399,7 +401,7 @@ We built a complete first model (M0) with the indicators and methods above, then
 
 - *Evidence 1.* M0 used the EPA's transit-frequency field (trips per hour near home). In San Diego, 96% of residents live in block groups where this field is coded −99999, yet only 22% live more than 0.75 mile from a stop. The code marks missing schedule data, not missing buses. Federal NTD data show San Diego's operator runs 1.11 service hours per resident, above the 25-city median of 0.85.
 - *Evidence 2.* M0 averaged graduation rates over all schools in the city. In San Francisco, one charter school for adult re-entry students holds 36% of the city's graduation cohort and graduates 4%, pulling the city to 56%. Oklahoma City (one charter school, 51% of the cohort, 48%) and Las Vegas (21%, 7%) show the same pattern. A resident student enrolls by address in district schools, not in these programs.
-- *Change.* We replaced transit frequency with NTD service hours per resident plus weekend service retention. Graduation now uses non-charter schools only, which places San Francisco at 85.4%.
+- *Change.* We replaced transit frequency with NTD service hours per resident plus weekend service retention. Graduation now uses non-charter schools only, which places San Francisco at 85.4%. The other five school measures keep charter schools, which enroll resident students; Section 8.3 tests applying the same rule to them.
 - *Controlled comparison.* Changing graduation alone moves San Francisco 13 → 9. Changing transit alone moves it 13 → 10; together, 13 → 8. Las Vegas rises 15 → 11 and Philadelphia falls 10 → 15. The top three do not change (Kendall τ between M0 and M1 = 0.893).
 
 **Revision 2 (M1 → M2): from service supplied to places a student can reach.**
@@ -445,14 +447,15 @@ The first four tests start from the reference weights $\theta^0$, where Denver a
 - **Alternative data choices.** Each of the following keeps Seattle, Denver and Chicago on top:
     - Chicago's 2021 police-department crime definition (960 instead of 516 per 100,000) moves Chicago from 3rd to 4th.
     - Metro-area air monitors put Seattle first.
+    - Applying the non-charter rule of Revision 1 to all five school measures (charter schools enroll 5% of Seattle's students, 23% of Denver's and 50% of Oklahoma City's) keeps Seattle first in 57% of $\Theta_S$ draws against Denver's 31%. Also leaving out alternative schools gives 43% against 37%.
     - Deflating the teen wage by non-housing prices, so that housing cost counts only through rent, leaves the reference top two unchanged and Seattle first in 63.3% of $\Theta_S$ draws.
-    - A hierarchical Poisson–Gamma estimate of traffic deaths at ages 14–18 shrinks small-city rates toward the 5.96 per 100,000 average (overdispersion χ² = 116.4 on 24 df) and keeps Seattle first (τ = 0.947).
+    - A hierarchical Poisson–Gamma estimate [24] of traffic deaths at ages 14–18 shrinks small-city rates toward the 5.96 per 100,000 average (overdispersion χ² = 116.4 on 24 df) and keeps Seattle first (τ = 0.947).
 
 <figure><img src="../results/figures/fig3_champion_by_domain_weight.png" style="width:74%"><figcaption>Figure 4. Leader as one domain's weight changes (others rescaled proportionally). The dashed line is the equal weight 1/7.</figcaption></figure>
 
 ## 8.4 External checks
 
-We compared our results with outcomes we did not use to build the model.
+We compared our results with outcomes we did not use to build the model, including the 2023 Youth Risk Behavior Survey (YRBS) [23].
 
 | External outcome (not used in the model) | Compared with | Spearman ρ | Expected sign |
 |---|---|---|---|
@@ -467,7 +470,7 @@ Three of four youth outcomes agree with our measures in the expected direction. 
 
 ## 8.5 How much agreement would settle the ranking?
 
-Figure 5 shows how the number of fixed pairs grows as preferences are narrowed. Most of the disagreement lies **inside** domains (how to split, say, safety between crime and traffic), not between domains. If the split inside domains is fixed at the reference, 95 of 300 pairs are already settled. If, in addition, every domain weight is held within ±25% of 1/7, 224 pairs are settled. Agreeing on how each domain is measured settles more of the ranking than agreeing on how much each domain matters.
+Figure 5 shows how the number of fixed pairs grows as preferences are narrowed. Most of the disagreement lies **inside** domains (how to split, say, safety between crime and traffic), not between domains. If the split inside domains is fixed at the reference, 95 of 300 pairs are already settled. If, in addition, every domain weight is held within ±25% of 1/7, 224 pairs are settled. In the opposite case, with every domain weight fixed at exactly 1/7 and the split inside domains left free, only 5 pairs are settled. Agreeing on how each domain is measured settles more of the ranking than agreeing on how much each domain matters.
 
 <figure><img src="../results/figures/fig4_preference_information.png" style="width:62%"><figcaption>Figure 5. City pairs whose order is fixed for every preference in the set, as the set is narrowed.</figcaption></figure>
 
@@ -511,7 +514,7 @@ City averages assume that a student lives in a typical neighborhood (Assumption 
 | San Francisco | 15.5% | 15.5% | 5.9% |
 
 - **Seattle's averages describe its central neighborhoods.** Fewer than four in ten residents live where an $80,000 family can afford rent and a student can reach the city by transit.
-- **Replacing the access measure with this joint share keeps Denver first** at reference weights (τ = 0.953) but strengthens Chicago's case for middle-income families.
+- **Replacing the access measure with this joint share keeps Denver first** at reference weights (τ = 0.953) and strengthens Chicago's case for middle-income families. Under $\Theta_S$ Seattle stays first, but by less: 47% of draws against Denver's 38%.
 - **Some cities strand their least-served residents.** The 20% of residents with the least transit access reach fewer than 500 jobs by transit in Jacksonville, Fort Worth, Oklahoma City, Nashville, Charlotte, Indianapolis, Las Vegas and San Diego.
 
 <figure><img src="../results/figures/fig8_access_distribution.png" style="width:50%"><figcaption>Figure 7. Mean transit access against the mean for the 20% of residents with the least access (log scales).</figcaption></figure>
