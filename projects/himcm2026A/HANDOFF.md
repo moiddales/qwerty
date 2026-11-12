@@ -1,6 +1,6 @@
 # HiMCM 2026 A：当前交接
 
-> 最新检查点A-019（2026-11-11）：模型搭建与计算阶段完成，用户确认范围只含模型、确认采用偏好陈述P1—P5。最终模型M2；研究定义偏好下Seattle领先，Denver、Chicago部分偏好下并列领先。全部结果、交付表、一城算例与图见 [MODEL_RESULTS.md](MODEL_RESULTS.md)。下一阶段：论文（≤25页）与新闻文章，由用户另行安排。
+> 最新检查点A-021（2026-11-12）：论文与新闻文章已完成，见 [paper/HiMCM2026A_paper.pdf](paper/HiMCM2026A_paper.pdf)（正文21页含摘要、目录、两页新闻、参考文献；另附1页AI使用报告不计页数）。源文件 paper/paper.md、ai_report.md；重建：cd paper && python build.py <队号>（需 markdown、Node.js+Playwright、联网字体与MathJax）。提交前填写队号并核对AI使用报告。模型结果见 [MODEL_RESULTS.md](MODEL_RESULTS.md)。
 
 > 最新检查点A-012：A-011已通过GitHub连接器同步为acda247并由Git取回验证。A-012包含25城工资/教育局部事实/活动心理样本，GTFS与历史缺口验证，仍在连续补采。读取supplement_20261111/city_task_tracker.csv与各域README；不要把25城有样本/非空表当完整实际机会矩阵。后续重点是未核招生与AP/IB、过期feed替换与必要联程、往返/活动窗口、新毕业率和未解决历史字段。
 
