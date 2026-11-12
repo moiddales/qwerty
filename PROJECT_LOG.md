@@ -368,3 +368,13 @@ PDF 现为 23 页（22 页正文 + 1 页 AI 报告），目录页码已更新。
 检验通过、无需修改：SLD D5br 在各城的零值人口比例等于无站点人口比例（San Diego 无 M0 式编码缺口）；重算中位数填补后任删一城仍 0 对逆转；Seattle 后悔值的对手是 Austin；可达性与城市人口 Spearman 0.26；ELECTRE 可信度、蒸馏、CES、Choquet、熵权、泊松–伽马的实现与论文描述一致；题面七项要求齐全。
 
 PDF 23 页（22 页正文 + 1 页 AI 报告）。
+
+## 2026-11-12 — A-024：论文中文讲解版（Asia/Shanghai）
+
+用户原文见 U20261112-04。新建独立副本 projects/himcm2026A/paper_explained/，提交用的 paper/paper.md、ai_report.md、build.py 未改动。
+
+- paper_explained.md：原文（含 AI 使用报告）一字未改，按原顺序逐段后插中文讲解框（120 处），课程外知识写成补充知识卡 K1–K20（向量与转置、集合记号、正态 90% 区间、截断与分段线性、凹性、线性规划、鲁棒序数回归、蒙特卡洛、单纯形均匀抽样与拒绝抽样、标准误、SMAA 输出、极小化最大后悔、ELECTRE III、Bonferroni、泊松分布、斯皮尔曼与 p 值、肯德尔 τ、熵权与 CRITIC、CES 与 Choquet、泊松–伽马收缩）。读者假设为 A-level P1/P3/S1 + AS 进阶 FP1/FS1（按 CIE 课程判断）。讲解中的公式细节按 analysis/model 代码核对（抽样器、ELECTRE 可信度与蒸馏、CES/Choquet、熵权/CRITIC、泊松–伽马、节点扰动、领域权重扫描）。
+- build.py / style.css / render.js：讲解版专用构建（中文字体、讲解框与知识卡样式、页眉“中文讲解版（学习用，不提交）”）。
+- 输出 HiMCM2026A_paper_explained_zh.pdf，52 页；MathJax 无报错，抽查封面、K6、K13、表 1、新闻稿页面排版正常。
+
+今后修改讲解直接编辑 paper_explained.md 后 `cd projects/himcm2026A/paper_explained && python build.py`。原论文若再改，讲解版不会自动同步。

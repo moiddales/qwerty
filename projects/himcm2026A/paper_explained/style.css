@@ -1,0 +1,71 @@
+@page { size: Letter; margin: 0.62in 0.72in 0.6in 0.72in; }
+:root { --ink:#151515; --muted:#555; --line:#d4d4cf; --accent:#1f4e8c; --soft:#f1f3f6; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: "Source Serif 4", Georgia, serif; font-size: 10.8pt; line-height: 1.4; color: var(--ink); margin: 0; }
+h1 { font-family: Inter, sans-serif; font-size: 14pt; color: var(--accent); margin: 10pt 0 4pt; break-after: avoid; }
+h2 { font-family: Inter, sans-serif; font-size: 11pt; margin: 8pt 0 3pt; break-after: avoid; }
+p { margin: 3.5pt 0; text-align: justify; hyphens: auto; }
+ul, ol { margin: 3pt 0; padding-left: 16pt; } li { margin: 1.5pt 0; }
+table { border-collapse: collapse; width: 100%; margin: 5pt 0; font-size: 8.8pt; line-height: 1.25; break-inside: avoid; font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--line); padding: 2.2pt 4pt; text-align: left; vertical-align: top; }
+th { background: var(--soft); font-family: Inter, sans-serif; font-weight: 600; font-size: 8.2pt; }
+.small table { font-size: 8.1pt; } .small td, .small th { padding: 1.6pt 3.5pt; }
+.eq { margin: 4pt 0; text-align: center; break-inside: avoid; }
+mjx-container[display="true"] { margin: 0 !important; }
+figure { margin: 6pt 0; text-align: center; break-inside: avoid; }
+figure img { max-width: 100%; }
+figcaption { font-size: 8.6pt; color: var(--muted); margin-top: 2pt; }
+/* summary sheet */
+.summary-page { break-after: page; font-size: 10.1pt; line-height: 1.37; }
+.summary-page p { margin: 4.5pt 0; }
+.summary-page ul { margin: 1.5pt 0; } .summary-page li { margin: 0.8pt 0; }
+.sheet-head { display: flex; justify-content: space-between; font-family: Inter, sans-serif; font-size: 8.5pt; border-bottom: 2px solid var(--accent); padding-bottom: 3pt; }
+.paper-title { font-size: 14.5pt; text-align: center; margin: 7pt 0 6pt; color: var(--ink); }
+.keywords { font-size: 8.6pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 3pt; }
+/* contents */
+.toc-page { break-after: page; }
+.toc ol { list-style: none; padding-left: 0; font-size: 11pt; line-height: 1.9; }
+.toc li { display: flex; justify-content: space-between; border-bottom: 1px dotted #aaa; }
+/* flow diagram */
+.flow { display: flex; align-items: stretch; gap: 3pt; margin: 6pt 0; font-size: 8.3pt; line-height: 1.25; }
+.flow .box { flex: 1; border: 1.2px solid var(--accent); border-radius: 4pt; padding: 4pt; background: var(--soft); text-align: center; }
+.flow .arrow { align-self: center; color: var(--accent); font-size: 13pt; }
+/* news article */
+.news { break-before: page; }
+.news-masthead { font-family: Inter, sans-serif; font-size: 8.5pt; letter-spacing: 0.5pt; text-transform: uppercase; color: var(--muted); border-bottom: 3px double var(--ink); padding-bottom: 3pt; }
+.news-title { font-family: "Source Serif 4", serif; font-size: 20pt; line-height: 1.12; color: var(--ink); margin: 6pt 0 4pt; }
+.standfirst { font-size: 11pt; font-style: italic; color: #333; margin-bottom: 6pt; }
+.news-cols { column-count: 2; column-gap: 16pt; font-size: 9.9pt; line-height: 1.36; }
+.news-cols p { margin: 0 0 5pt; }
+.news-box { break-inside: avoid; border: 1.5px solid var(--accent); background: var(--soft); padding: 5pt 7pt; margin: 4pt 0 7pt; font-family: Inter, sans-serif; font-size: 9pt; }
+.news-box span { font-size: 7.8pt; color: var(--muted); }
+.news-fig { width: 78%; margin: 6pt auto 0; }
+/* references and AI report */
+.refs-head { break-before: page; }
+.refs ol { font-size: 8.2pt; line-height: 1.3; padding-left: 16pt; } .refs li { margin: 1.2pt 0; word-break: break-word; }
+.ai-report { break-before: page; font-size: 9.4pt; }
+
+.news-sub { break-before: page; font-family: Inter, sans-serif; font-size: 12pt; color: var(--accent); margin: 2pt 0 4pt; }
+.news-flow { font-size: 8.8pt; }
+.news-two { display: flex; gap: 14pt; align-items: flex-start; margin-top: 6pt; }
+.news-table { flex: 1.1; } .news-table table { font-size: 9.4pt; }
+.news-side { flex: 1; font-size: 9.9pt; }
+.news-fig { width: 86%; }
+
+.toc-list { margin-top: 10pt; font-size: 11.5pt; }
+.toc-row { display: flex; align-items: baseline; gap: 4pt; margin: 7pt 0; }
+.toc-row .dots { flex: 1; border-bottom: 1px dotted #888; }
+
+.small { break-inside: avoid; }
+figure.float-right { float: right; width: 44%; margin: 0 0 6pt 12pt; }
+
+/* ---- Chinese explained edition ---- */
+body { font-family: "Source Serif 4", "Noto Serif SC", "WenQuanYi Zen Hei", Georgia, serif; }
+.zh, .kp { font-family: "Noto Sans SC", "WenQuanYi Zen Hei", Inter, sans-serif; font-size: 9.6pt; line-height: 1.62; border-radius: 3pt; padding: 3pt 9pt; margin: 5pt 0 9pt; break-inside: auto; column-span: none; }
+.zh { background: #fbf6e9; border-left: 3.5px solid #c8922e; }
+.kp { background: #edf6f0; border: 1.2px solid #2f7d57; border-left-width: 4px; }
+.zh p, .kp p { text-align: left; margin: 3pt 0; }
+.zh table, .kp table { font-size: 8.8pt; background: #fff; }
+.zh .eq, .kp .eq { margin: 5pt 0; }
+.cover-zh p { font-size: 15pt; color: var(--accent); text-align: center; margin: 4pt 0 8pt; }
+.summary-page { break-after: page; }
