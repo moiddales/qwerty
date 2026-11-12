@@ -3,9 +3,9 @@
   "reference_top10": [
    "Seattle",
    "Denver",
-   "Chicago",
    "New York",
    "Boston",
+   "Chicago",
    "Austin",
    "San Diego",
    "Washington",
@@ -26,6 +26,7 @@
    "San Antonio",
    "San Diego",
    "Dallas",
+   "Fort Worth",
    "Jacksonville",
    "Austin",
    "San Jose",
@@ -46,19 +47,19 @@
   "min_regret": 0.2997,
   "pareto_dominated": {},
   "smaa_broad_p_first_top5": {
-   "Seattle": 0.5394,
-   "Denver": 0.241,
-   "Chicago": 0.0797,
-   "New York": 0.0702,
-   "Austin": 0.0305
+   "Seattle": 0.576,
+   "Denver": 0.2578,
+   "New York": 0.0775,
+   "Austin": 0.0363,
+   "Boston": 0.0272
   }
  },
  "M1": {
   "reference_top10": [
    "Seattle",
    "Denver",
-   "Chicago",
    "New York",
+   "Chicago",
    "Boston",
    "Austin",
    "San Diego",
@@ -102,19 +103,19 @@
   "min_regret": 0.3023,
   "pareto_dominated": {},
   "smaa_broad_p_first_top5": {
-   "Seattle": 0.3517,
-   "Denver": 0.3059,
-   "Chicago": 0.171,
-   "New York": 0.0759,
-   "Austin": 0.0486
+   "Seattle": 0.4125,
+   "Denver": 0.3415,
+   "New York": 0.0955,
+   "Austin": 0.0625,
+   "Boston": 0.0298
   }
  },
  "M2": {
   "reference_top10": [
    "Denver",
    "Seattle",
-   "Chicago",
    "New York",
+   "Chicago",
    "Boston",
    "Austin",
    "San Diego",
@@ -158,15 +159,15 @@
   "min_regret": 0.3022,
   "pareto_dominated": {},
   "smaa_broad_p_first_top5": {
-   "Denver": 0.3694,
-   "Seattle": 0.3629,
-   "Chicago": 0.1304,
-   "New York": 0.0555,
-   "Austin": 0.0387
+   "Seattle": 0.4135,
+   "Denver": 0.4054,
+   "New York": 0.067,
+   "Austin": 0.0505,
+   "Boston": 0.0274
   }
  },
  "revision": {
-  "kendall_tau_M0_M1": 0.893,
+  "kendall_tau_M0_M1": 0.887,
   "kendall_tau_M1_M2": 0.967,
   "moves_M1_to_M2": [
    [
@@ -255,7 +256,6 @@
   "thresholds": {
    "C1_rent_share": 50.0,
    "S1_violent_crime": 1200.0,
-   "S2_traffic_deaths": 20.0,
    "H1_bad_air_days": 30.0
   },
   "fail": [
@@ -266,7 +266,7 @@
    "Phoenix",
    "Nashville-Davidson"
   ],
-  "max_gap_simulation_minus_bonferroni": 0.0006
+  "max_gap_simulation_minus_bonferroni": 0.0032
  },
  "electre": {
   "thresholds_q_p_v": [
@@ -275,45 +275,45 @@
    0.8
   ],
   "kernel_no_city_above": [
-   "Chicago"
+   "Austin",
+   "Denver"
   ],
   "top6_by_mean_position": [
-   "Chicago",
    "Denver",
    "Seattle",
+   "Chicago",
    "Austin",
-   "San Diego",
-   "New York"
+   "New York",
+   "San Diego"
   ],
-  "spearman_vs_additive": 0.937,
+  "spearman_vs_additive": 0.942,
   "additive_champion_vetoed_against": [],
   "kernel_by_threshold": {
    "p0.15_v0.6": [
-    "Chicago",
+    "Austin",
     "Seattle"
    ],
    "p0.2_v0.6": [
-    "Chicago",
     "Denver"
    ],
    "p0.3_v0.6": [
-    "Chicago",
     "Denver"
    ],
    "p0.15_v0.8": [
-    "Chicago"
+    "Austin",
+    "Seattle"
    ],
    "p0.2_v0.8": [
-    "Chicago"
+    "Austin",
+    "Denver"
    ],
    "p0.3_v0.8": [
-    "Chicago"
+    "Denver"
    ],
    "p0.15_v1.0": [
     "Austin"
    ],
    "p0.2_v1.0": [
-    "Chicago",
     "Austin"
    ],
    "p0.3_v1.0": [
@@ -323,18 +323,18 @@
  },
  "structure": {
   "kendall_tau_vs_reference": {
-   "exp_k1": 0.927,
+   "exp_k1": 0.92,
    "exp_k2": 0.933,
    "exp_k4": 0.867,
-   "linear": 0.873,
+   "linear": 0.867,
    "ces_rho0.5": 0.94,
-   "ces_rho0": 0.88,
-   "ces_rho-1": 0.747,
-   "ces_rho-2": 0.707,
-   "ces_rho-5": 0.573,
+   "ces_rho0": 0.873,
+   "ces_rho-1": 0.753,
+   "ces_rho-2": 0.713,
+   "ces_rho-5": 0.567,
    "choquet_MA_0.05": 0.987,
    "choquet_MA_0.1": 0.947,
-   "entropy_minmax": 0.733,
+   "entropy_minmax": 0.74,
    "critic_minmax": 0.807
   },
   "champion_by_column": {
@@ -345,8 +345,8 @@
    "linear": "Seattle",
    "ces_rho0.5": "Denver",
    "ces_rho0": "Denver",
-   "ces_rho-1": "Chicago",
-   "ces_rho-2": "Chicago",
+   "ces_rho-1": "Denver",
+   "ces_rho-2": "Denver",
    "ces_rho-5": "Chicago",
    "choquet_MA_0.05": "Seattle",
    "choquet_MA_0.1": "Seattle",
@@ -359,27 +359,27 @@
     "Denver"
    ],
    [
-    -0.85,
+    -4.75,
     "Chicago"
    ]
   ],
   "entropy_top_weights": {
    "M5r_transit_access": 0.134,
-   "A2_library_teen": 0.109,
-   "H2_school_health_staff": 0.095,
-   "A4_teen_wage_real": 0.095
+   "A2_library_teen": 0.108,
+   "H2_school_health_staff": 0.094,
+   "A4_teen_wage_real": 0.094
   },
   "leave_one_city_out_pair_reversals": {
    "fixed_reference_scale": 0,
-   "entropy_minmax": 90
+   "entropy_minmax": 106
   }
  },
  "sensitivity": {
   "node_shift_10pct_p_first": {
-   "Denver": 0.646,
-   "Seattle": 0.32,
-   "Chicago": 0.035,
-   "New York": 0.0
+   "Denver": 0.665,
+   "Seattle": 0.335,
+   "New York": 0.0,
+   "Los Angeles": 0.0
   },
   "measurement_sd_multiplier_p_first": {
    "0.5": {
@@ -388,25 +388,24 @@
     "New York": 0.0
    },
    "1": {
-    "Denver": 0.525,
-    "Seattle": 0.445,
-    "Chicago": 0.029
+    "Denver": 0.519,
+    "Seattle": 0.481,
+    "New York": 0.0
    },
    "2": {
-    "Denver": 0.448,
-    "Seattle": 0.408,
-    "Chicago": 0.13
+    "Denver": 0.488,
+    "Seattle": 0.481,
+    "New York": 0.013
    },
    "4": {
-    "Denver": 0.362,
-    "Seattle": 0.318,
-    "Chicago": 0.173
+    "Denver": 0.408,
+    "Seattle": 0.362,
+    "New York": 0.09
    }
   },
   "leave_one_indicator_champions": {
    "Denver": 13,
-   "Seattle": 6,
-   "Chicago": 1
+   "Seattle": 7
   }
  },
  "poisson_gamma": {
@@ -481,11 +480,11 @@
  "external_checks": {
   "opportunity_atlas_upward_mobility_vs_U": {
    "n": 25,
-   "spearman": 0.322
+   "spearman": 0.331
   },
   "yrbs2023_felt_unsafe_at_or_to_school_vs_violent_crime(expected -)": {
    "n": 9,
-   "spearman": -0.733
+   "spearman": -0.617
   },
   "yrbs2023_not_on_sports_team_vs_school_sports(expected -)": {
    "n": 7,

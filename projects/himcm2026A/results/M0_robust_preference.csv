@@ -1,26 +1,26 @@
 city_id,city,rank_ref,necessarily_beats,necessarily_beaten_by,possible_winner_margin,max_regret,regret_rank,worst_rival
-5363000,Seattle,1,0,0,0.2446,0.2997,1,Washington
+5363000,Seattle,1,0,0,0.246,0.2997,1,Washington
 0820000,Denver,2,0,0,0.2252,0.3318,2,El Paso
-1714000,Chicago,3,0,0,0.1627,0.3507,3,Denver
-3651000,New York,4,0,0,0.1668,0.3572,4,El Paso
-2507000,Boston,5,0,0,0.1653,0.4216,6,Denver
+3651000,New York,3,0,0,0.1668,0.3572,3,El Paso
+2507000,Boston,4,0,0,0.1735,0.4216,6,Denver
+1714000,Chicago,5,0,0,0.11,0.3654,4,San Francisco
 4805000,Austin,6,0,0,0.1538,0.4688,9,Seattle
-0666000,San Diego,7,0,0,0.0887,0.4161,5,Washington
-1150000,Washington,8,0,0,0.1607,0.4681,8,Seattle
-0668000,San Jose,9,0,0,0.1533,0.4789,10,Washington
-4260000,Philadelphia,10,0,0,0.0865,0.5401,14,Seattle
+0666000,San Diego,7,0,0,0.0891,0.4161,5,Washington
+1150000,Washington,8,0,0,0.1609,0.4681,8,Seattle
+0668000,San Jose,9,0,0,0.1621,0.4789,10,Washington
+4260000,Philadelphia,10,0,0,0.0869,0.5401,14,Seattle
 0644000,Los Angeles,11,0,0,0.0748,0.452,7,Denver
-4824000,El Paso,12,0,0,0.1306,0.5364,12,Denver
+4824000,El Paso,12,0,0,0.1335,0.5364,12,Denver
 0667000,San Francisco,13,0,0,0.1108,0.5381,13,Seattle
-3918000,Columbus,14,0,0,0.1416,0.5775,18,Seattle
-3240000,Las Vegas,15,0,0,0.1109,0.528,11,Seattle
+3918000,Columbus,14,0,0,0.1639,0.5775,18,Seattle
+3240000,Las Vegas,15,0,0,0.1342,0.528,11,Seattle
 4865000,San Antonio,16,0,0,0.0793,0.5772,17,Seattle
-3712000,Charlotte,17,0,0,0.0996,0.5428,15,Seattle
-1836003,Indianapolis,18,0,0,0.0683,0.5686,16,Seattle
-4827000,Fort Worth,19,0,0,-0.0092,0.6238,21,Seattle
-1235000,Jacksonville,20,0,0,0.1163,0.6386,23,Washington
-0455000,Phoenix,21,0,0,0.0091,0.5945,20,New York
-4055000,Oklahoma City,22,0,0,0.0884,0.6263,22,Seattle
-4819000,Dallas,23,0,0,0.0011,0.6529,24,Seattle
-4835000,Houston,24,0,0,-0.003,0.5906,19,Seattle
+3712000,Charlotte,17,0,0,0.1027,0.5428,15,Seattle
+1836003,Indianapolis,18,0,0,0.0695,0.5686,16,Seattle
+4827000,Fort Worth,19,0,0,0.0008,0.6238,21,Seattle
+1235000,Jacksonville,20,0,0,0.1187,0.6386,23,Washington
+0455000,Phoenix,21,0,0,0.0234,0.5945,20,New York
+4055000,Oklahoma City,22,0,0,0.0911,0.6263,22,Seattle
+4819000,Dallas,23,0,0,0.0016,0.6529,24,Seattle
+4835000,Houston,24,0,0,-0.0022,0.5906,19,Seattle
 4752006,Nashville-Davidson,25,0,0,0.0446,0.6972,25,Seattle

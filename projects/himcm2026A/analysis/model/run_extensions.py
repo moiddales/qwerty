@@ -92,7 +92,7 @@ for a, b in itertools.combinations(top3, 2):
                         "decides": a if lo >= 0 else b, "min_diff": round(lo, 4), "max_diff": round(hi, 4)})
 voi = pd.DataFrame(voi)
 tab(voi, "single_statement_decisions")
-OUT["single_statements_deciding_top_pairs"] = voi.groupby(["pair", "decides"]).statement.apply(list).to_dict() if len(voi) else {}
+OUT["single_statements_deciding_top_pairs"] = {f"{k[0]} -> {k[1]}": v for k, v in voi.groupby(["pair", "decides"]).statement.apply(list).to_dict().items()} if len(voi) else {}
 OUT["top3_domain_score_differences"] = delta.round(3).to_dict()
 
 # ---------------------------------------------------------------- 2. student and family profiles
@@ -101,7 +101,7 @@ no_access = bg.assign(z=bg.D5BR0 <= 0).groupby("city_id").apply(lambda g: np.ave
 PROFILES = {
     "reference family ($80k, equal domains)": dict(income=80000, focus=None, extra={}),
     "low-budget family ($50k)": dict(income=50000, focus="Affordability", extra={}),
-    "student without a car (transit-dependent)": dict(income=80000, focus="Mobility", extra={"no_transit_access_share_max": 0.25}),
+    "fully transit-dependent student": dict(income=80000, focus="Mobility", extra={"no_transit_access_share_max": 0.25}),
     "activities and sports focus": dict(income=80000, focus="Activities", extra={}),
     "LGBTQ+ student": dict(income=80000, focus="Inclusion", extra={"I1_equality_policy_min": 75}),
     "student needing mental-health support": dict(income=80000, focus="Health", extra={"H3_youth_mh_facilities_min": 5}),
@@ -163,15 +163,19 @@ tab(eq, "equity_within_city")
 OUT["advanced_course_access"] = {"lowest": share.sort_values().head(4).rename(index=dict(zip(CID, CITY))).round(3).to_dict(),
                                  "spearman_with_E1_enrolment_rate": round(stats.spearmanr(share, X.E1_adv_course, nan_policy="omit")[0], 3)}
 
-# Chicago: FBI NIBRS counts 2022-25 (11-16k/yr) vs CPD 2021 local report (25,979) suggest a definition gap
-pop21 = pd.read_csv(RES.parent / "data/extracted/foundation/population_25cities_2020_2025.csv", dtype=str).set_index("city_id").POPESTIMATE2021.astype(float)
+# Chicago: the model uses the CPD 2021 total (25,979, includes aggravated battery); sensitivity with the FBI 2022-25 series
+popc = pd.read_csv(RES.parent / "data/extracted/foundation/population_25cities_2020_2025.csv", dtype=str).set_index("city_id")
+chc = pd.read_csv(RES.parent / "data/extracted/safety_health/crime_city_year_source_choice.csv", dtype=str)
+chc = chc[(chc.city_id == "1714000") & (chc.indicator_id == "violent_crime") & chc.year.isin(["2022", "2023", "2024", "2025"])]
+fbi_rate = float(np.mean([float(r.value) / float(popc.loc["1714000", f"POPESTIMATE{r.year}"]) * 1e5 for r in chc.itertuples()]))
 Xc = X[M.inds].copy()
-Xc.loc["1714000", "S1_violent_crime"] = 25979 / pop21["1714000"] * 1e5
+Xc.loc["1714000", "S1_violent_crime"] = fbi_rate
 uc = M.phi(fill_missing(Xc).values) @ M.theta0
-OUT["chicago_crime_definition_sensitivity"] = {"rate_fbi_2022_25": round(float(X.loc["1714000", "S1_violent_crime"]), 1),
-                                               "rate_cpd_2021_definition": round(float(Xc.loc["1714000", "S1_violent_crime"]), 1),
-                                               "chicago_rank_reference": int(ranks(U)[IDX["Chicago"]]), "chicago_rank_cpd_definition": int(ranks(uc)[IDX["Chicago"]]),
-                                               "champion_cpd_definition": CITY[int(np.argmax(uc))]}
+OUT["chicago_crime_definition_sensitivity"] = {"rate_cpd_2021_model": round(float(X.loc["1714000", "S1_violent_crime"]), 1),
+                                               "rate_fbi_2022_25_alternative": round(fbi_rate, 1),
+                                               "chicago_rank_reference": int(ranks(U)[IDX["Chicago"]]), "chicago_rank_fbi": int(ranks(uc)[IDX["Chicago"]]),
+                                               "champion_fbi": CITY[int(np.argmax(uc))],
+                                               "fbi_aggravated_assault_2022_25": [3395, 3369, 3386, 3748], "cpd_aggravated_assault_battery_2021": 15606}
 
 # ---------------------------------------------------------------- 4. numerical verification
 ver = {}

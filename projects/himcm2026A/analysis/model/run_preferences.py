@@ -47,13 +47,13 @@ def robust(M, tag):
     t = pd.DataFrame({"city": CITY, "U_ref": U0, "rank_ref": ranks(U0), "necessarily_beats": nec.sum(1), "necessarily_beaten_by": nec.sum(0),
                       "possible_winner_margin": pw, "max_regret": regret, "smaa_p_first": (r == 1).mean(0),
                       "smaa_p_top3": (r <= 3).mean(0), "smaa_mean_rank": r.mean(0)}, index=CID)
-    return t.sort_values("rank_ref"), nec, th
+    return t.sort_values("rank_ref"), nec, th, U
 
 
 # ---------------------------------------------------------------- 1. Theta_PLAN
 MP = Model(SPEC_M2, STATEMENTS_PLAN)
 OUT["theta0_satisfies_statements"] = MP.feasible(MP.theta0)
-tP, necP, thP = robust(MP, "plan")
+tP, necP, thP, UP = robust(MP, "plan")
 tP.round(4).to_csv(RES / "M2_plan_preferences_robust.csv")
 nec_list = [(CITY[a], CITY[b]) for a in range(nC) for b in range(nC) if necP[a, b]]
 pd.DataFrame(nec_list, columns=["necessarily_at_least_as_good", "than"]).to_csv(RES / "M2_plan_preferences_necessary_pairs.csv", index=False)
@@ -63,11 +63,45 @@ OUT["plan"] = {"necessary_pairs": len(nec_list), "possible_winners": tP.city[tP.
                "smaa_p_first": tP.sort_values("smaa_p_first", ascending=False).head(5).set_index("city").smaa_p_first.round(4).to_dict(),
                "never_possible_winners": tP.city[tP.possible_winner_margin < 0].tolist()}
 
+# ---- details of the Theta_S simulation reported in Section 5.6 / 6.4 (same 10,000 draws as Table 1)
+rP = ranks(UP)
+srt = np.sort(UP, 1)
+mr = rP.mean(0); order_mr = np.argsort(mr)
+OUT["plan_simulation"] = {
+    "ties_in_any_draw": int((np.diff(srt, axis=1) == 0).any(1).sum()),
+    "max_se_mean_rank": round(float((rP.std(0) / np.sqrt(len(rP))).max()), 3),
+    "min_gap_neighbouring_mean_ranks": round(float(np.diff(mr[order_mr]).min()), 3),
+    "rank_interval_90": {CITY[i]: [int(np.percentile(rP[:, i], 5)), int(np.percentile(rP[:, i], 95))] for i in order_mr[:6]}}
+def domw(th):
+    w = th.reshape(MP.m, 3).sum(1)
+    return {d: round(float(sum(w[j] for j in range(MP.m) if MP.dom[j] == d)), 3) for d in DOMAINS}
+tm = thP.mean(0); PHm = MP.phi(fill_missing(X[MP.inds]).values); um = PHm @ tm
+OUT["plan_mean_vector"] = {"domain_weights": domw(tm), "U_top6": {CITY[i]: round(float(um[i]), 3) for i in np.argsort(-um)[:6]},
+                           "segment_shares": [round(float(v), 3) for v in (thP.reshape(len(thP), MP.m, 3) / thP.reshape(len(thP), MP.m, 3).sum(2, keepdims=True)).mean((0, 1))]}
+cw = {}
+rng_cf = np.random.default_rng(2026)
+for i in np.flatnonzero((rP == 1).mean(0) > 0.005):
+    c = thP[rP[:, i] == 1].mean(0)
+    rr = ranks(noisy_U(MP, np.repeat(c[None], 5000, 0)))
+    cw[CITY[i]] = {"p_first": round(float((rP[:, i] == 1).mean()), 3), "confidence_factor": round(float((rr[:, i] == 1).mean()), 3), "domain_weights": domw(c)}
+OUT["plan_central_weights"] = cw
+# acceptance rates of the rejection sampler (separate generator so the draws above are unchanged)
+ra = np.random.default_rng(7); n = 400000
+w = ra.dirichlet(np.ones(7), n); box = (w.min(1) >= 1 / 14) & (w.max(1) <= 2 / 7); wb = w[box]; D = {d: k for k, d in enumerate(DOMAINS)}
+st_ok = ((wb[:, D["Education"]] >= wb[:, D["Affordability"]]) & (wb[:, D["Mobility"]] >= wb[:, D["Affordability"]]) & (wb[:, D["Mobility"]] >= 1 / 7)
+         & (wb[:, D["Education"]] >= 1 / 7) & (wb[:, D["Safety"]] >= 1 / 7))
+g = -np.sort(-ra.dirichlet(np.ones(3), n), 1)
+OUT["sampler_acceptance"] = {"domain_box": round(float(box.mean()), 4), "statements_given_box": round(float(st_ok.mean()), 4),
+                             "segment_last_ge_0.1": round(float((g[:, 2] >= 0.1).mean()), 3)}
+for nd in (2, 3, 4):
+    s = ra.dirichlet(np.ones(nd), n)
+    OUT["sampler_acceptance"][f"measure_share_P5_n{nd}"] = round(float(((s.min(1) >= 0.6 / nd) & (s.max(1) <= 1.4 / nd)).mean()), 3)
+
 # leave one statement out (does any single statement drive the conclusion?)
 loo = []
 for st in STATEMENTS_PLAN:
     m = Model(SPEC_M2, [s for s in STATEMENTS_PLAN if s is not st])
-    t, nec, _ = robust(m, st["id"])
+    t, nec, _, _ = robust(m, st["id"])
     top = t.sort_values("smaa_p_first", ascending=False).head(3)
     loo.append({"removed": st["id"], "necessary_pairs": int(nec.sum()), "possible_winners": int((t.possible_winner_margin >= 0).sum()),
                 "min_regret_city": t.city[t.max_regret.idxmin()],

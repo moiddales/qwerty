@@ -1,5 +1,5 @@
-"""Checks for the user checklist of 2026-11-12: reference-only tests repeated under Theta_S, safety-weight statements,
-weighted CES under Theta_S, Chicago crime definition under Theta_S.
+"""Checks for the user checklist of 2026-11-12: reference-only tests repeated under Theta_S (data error, metro air,
+teen traffic estimate, weighted CES), Chicago FBI series under Theta_S, and Theta_S without P6.
 
     cd projects/himcm2026A/analysis/model && python run_checklist_checks.py
 """
@@ -28,10 +28,12 @@ W=th.reshape(len(th),MP.m,3).sum(2); dw={d:W[:,[j for j in range(MP.m) if MP.dom
 OUT['domain_weight_mean']={d:round(float(v.mean()),3) for d,v in dw.items()}
 OUT['share_safety_below_1_7']=round(float((dw['Safety']<1/7).mean()),3)
 OUT['share_safety_lowest_domain']=round(float(np.mean(np.argmin(np.stack([dw[d] for d in DOMAINS],1),1)==DOMAINS.index('Safety'))),3)
-# Chicago crime CPD definition
-pop21=pd.read_csv(RESP/"data/extracted/foundation/population_25cities_2020_2025.csv",dtype=str).set_index("city_id").POPESTIMATE2021.astype(float)
-Xc=X.copy(); Xc.loc["1714000","S1_violent_crime"]=25979/pop21["1714000"]*1e5
-OUT['chicago_crime_960']=top(U(MP,th,Xc,S,np.random.default_rng(1)))
+# Chicago: FBI 2022-25 series instead of the CPD 2021 total used by the model
+popc=pd.read_csv(RESP/"data/extracted/foundation/population_25cities_2020_2025.csv",dtype=str).set_index("city_id")
+chc=pd.read_csv(RESP/"data/extracted/safety_health/crime_city_year_source_choice.csv",dtype=str)
+chc=chc[(chc.city_id=="1714000")&(chc.indicator_id=="violent_crime")&chc.year.isin(["2022","2023","2024","2025"])]
+Xc=X.copy(); Xc.loc["1714000","S1_violent_crime"]=np.mean([float(r.value)/float(popc.loc["1714000",f"POPESTIMATE{r.year}"])*1e5 for r in chc.itertuples()])
+OUT['chicago_crime_fbi']=top(U(MP,th,Xc,S,np.random.default_rng(1)))
 # metro (CBSA) air
 aq=pd.read_csv(RESP/"data/processed/observations_all_levels.csv.gz",dtype=str,low_memory=False,usecols=["source_id","indicator_id","value","observation_period","city_id","geography_type"])
 aq=aq[(aq.source_id=="S10")&(aq.geography_type=="CBSA")]; aq["v"]=pd.to_numeric(aq.value)
@@ -46,13 +48,10 @@ spec={k:v for k,v in SPEC_M2.items() if k!="S2_traffic_deaths"}; spec["S2r_teen_
 Xp=X.copy(); Xp["S2r_teen_traffic_eb"]=pg.eb_per_100k.values
 mp=Model(spec,STATEMENTS_PLAN); thp=mp.sample_theta(10000,np.random.default_rng(42))
 OUT['teen_traffic_PG']=top(U(mp,thp,Xp,S,np.random.default_rng(1)))
-# extra safety statements
-extra={'safety_ge_1_7':[{"id":"P6","type":"domain_min","a":"Safety","value":1/7}],
-       'safety_ge_every_domain':[{"id":f"P6{d}","type":"domain_ge","a":"Safety","b":d} for d in DOMAINS if d!="Safety"]}
-for k,st in extra.items():
-    m=Model(SPEC_M2,STATEMENTS_PLAN+st); t=m.sample_theta(10000,np.random.default_rng(42))
-    OUT[k]=top(U(m,t,X,S,np.random.default_rng(1)))
-    Wk=t.reshape(len(t),m.m,3).sum(2); OUT[k+'_mean_safety_w']=round(float(Wk[:,[j for j in range(m.m) if m.dom[j]=='Safety']].sum(1).mean()),3)
+# stated preferences without P6 (the earlier set) for comparison
+m5=Model(SPEC_M2,[s for s in STATEMENTS_PLAN if s["id"]!="P6"]); t5=m5.sample_theta(10000,np.random.default_rng(42))
+OUT['without_P6']=top(U(m5,t5,X,S,np.random.default_rng(1)))
+W5=t5.reshape(len(t5),m5.m,3).sum(2); OUT['without_P6_mean_safety_w']=round(float(W5[:,[j for j in range(m5.m) if m5.dom[j]=='Safety']].sum(1).mean()),3)
 # weighted CES across domains with Theta_S weights
 PH=MP.phi(fill_missing(X[MP.inds]).values)
 contrib=(PH[None]*th[:,None,:]).reshape(len(th),nC,MP.m,3).sum(3)

@@ -1,21 +1,21 @@
 dropped,champion,kendall_tau,top5
-E1_adv_course,Denver,0.913,Denver;Chicago;Seattle;New York;Boston
-E3_counselors,Seattle,0.913,Seattle;Denver;Chicago;New York;Austin
-S1_violent_crime,Denver,0.887,Denver;Seattle;Chicago;New York;Boston
-S2_traffic_deaths,Denver,0.947,Denver;Seattle;Chicago;New York;Austin
-H1_bad_air_days,Denver,0.92,Denver;Seattle;Chicago;New York;Boston
-H2_school_health_staff,Chicago,0.88,Chicago;Seattle;Denver;New York;Austin
-H3_youth_mh_facilities,Seattle,0.893,Seattle;Denver;Chicago;Boston;New York
-M2_walkability,Denver,0.98,Denver;Seattle;Chicago;New York;Boston
-M3_youth_fare,Denver,0.96,Denver;Seattle;Chicago;New York;Boston
-A1_park_access,Denver,0.933,Denver;Seattle;Chicago;New York;Boston
-A2_library_teen,Seattle,0.933,Seattle;Denver;Chicago;New York;Boston
-A3_school_sports,Denver,0.96,Denver;Seattle;Chicago;New York;Boston
-A4_teen_wage_real,Denver,0.913,Denver;Seattle;Chicago;New York;Austin
-C1_rent_share,Seattle,0.893,Seattle;Denver;New York;San Francisco;Boston
-C2_nonhousing_prices,Seattle,0.907,Seattle;New York;Chicago;Denver;San Francisco
-I1_equality_policy,Denver,0.933,Denver;Seattle;Chicago;New York;Boston
-I2_suspension,Denver,0.867,Denver;Seattle;Chicago;Columbus;Washington
-E2r_grad_district,Denver,0.96,Denver;Seattle;Chicago;New York;Boston
-M4r_weekend_retention,Seattle,0.973,Seattle;Denver;Chicago;New York;Boston
-M5r_transit_access,Denver,0.947,Denver;Seattle;Chicago;New York;Boston
+E1_adv_course,Denver,0.913,Denver;Seattle;New York;Boston;Chicago
+E3_counselors,Seattle,0.907,Seattle;Denver;New York;Austin;Chicago
+S1_violent_crime,Denver,0.88,Denver;Seattle;Chicago;New York;Boston
+S2_traffic_deaths,Denver,0.947,Denver;Seattle;New York;Chicago;Austin
+H1_bad_air_days,Denver,0.92,Denver;Seattle;New York;Chicago;Boston
+H2_school_health_staff,Seattle,0.887,Seattle;Denver;Chicago;New York;Austin
+H3_youth_mh_facilities,Seattle,0.88,Seattle;Denver;Boston;New York;Austin
+M2_walkability,Denver,0.98,Denver;Seattle;New York;Chicago;Boston
+M3_youth_fare,Denver,0.953,Denver;Seattle;New York;Boston;Chicago
+A1_park_access,Denver,0.933,Denver;Seattle;New York;Chicago;Boston
+A2_library_teen,Seattle,0.927,Seattle;Denver;New York;Boston;Chicago
+A3_school_sports,Denver,0.96,Denver;Seattle;New York;Chicago;Boston
+A4_teen_wage_real,Denver,0.893,Denver;Seattle;New York;Austin;Washington
+C1_rent_share,Seattle,0.887,Seattle;Denver;New York;San Francisco;Boston
+C2_nonhousing_prices,Seattle,0.913,Seattle;New York;Denver;San Francisco;Chicago
+I1_equality_policy,Denver,0.933,Denver;Seattle;New York;Chicago;Boston
+I2_suspension,Denver,0.847,Denver;Seattle;Columbus;Washington;Chicago
+E2r_grad_district,Denver,0.953,Denver;Seattle;New York;Boston;Chicago
+M4r_weekend_retention,Seattle,0.967,Seattle;Denver;New York;Boston;Chicago
+M5r_transit_access,Denver,0.947,Denver;Seattle;New York;Chicago;Boston

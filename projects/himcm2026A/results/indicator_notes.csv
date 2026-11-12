@@ -6,7 +6,7 @@ A3_school_sports,"Missing for ['0667000']: under 25% of students are in schools 
 I2_suspension,"Students with one or more out-of-school suspensions per 100 students, CRDC 2023-24 (with and without disabilities)"
 E2r_grad_district,"As E2 but only non-charter schools (CRDC 2021-22 charter flag), i.e. schools a resident enrols in by address"
 E2_grad_rate,"Cohort-weighted four-year ACGR of schools located in the city, EDFacts 2020-21 (range midpoints for masked values, SD from range width); Chicago and Seattle are whole-district official rates"
-S1_violent_crime,"Violent crimes per 100,000, mean of 2022-2025 FBI agency counts; denominator Census city population, except FBI agency population for Charlotte-Mecklenburg, Las Vegas Metropolitan and Metro Nashville; SD = SD of annual rates / sqrt(4)"
+S1_violent_crime,"Violent crimes per 100,000, mean of 2022-2025 FBI agency counts (Chicago: CPD 2021 total 25,979, which includes aggravated battery); denominator Census city population, except FBI agency population for Charlotte-Mecklenburg, Las Vegas Metropolitan and Metro Nashville; SD = SD of annual rates / sqrt(4)"
 S2_traffic_deaths,"Traffic deaths per 100,000 residents by crash location, FARS 2021-2024 mean; SD = SD of annual rates / sqrt(4)"
 H1_bad_air_days,"Percent of monitored days with AQI above 100, county monitors weighted by the city's residents in each county, EPA 2021-2024 mean"
 H3_youth_mh_facilities,"SAMHSA-listed mental-health facilities accepting children/adolescents per 100,000 residents under 18 (facility postal city; no capacity measure); Poisson SD"

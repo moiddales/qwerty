@@ -35,15 +35,22 @@
    "lo": 0.6,
    "hi": 1.4,
    "basis": "PLAN 3: each core measure was kept for its own part of the domain concept, so none is negligible or dominant inside its domain"
+  },
+  {
+   "id": "P6",
+   "type": "domain_min",
+   "a": "Safety",
+   "value": 0.14285714285714285,
+   "basis": "definition: serious risk; the crime floor catches only extreme rates, so safety keeps at least an equal share"
   }
  ],
  "plan": {
-  "necessary_pairs": 4,
+  "necessary_pairs": 7,
   "possible_winners": [
    "Denver",
    "Seattle",
-   "Chicago",
    "New York",
+   "Chicago",
    "Boston",
    "Austin",
    "San Diego",
@@ -53,82 +60,232 @@
    "Columbus",
    "Las Vegas",
    "Los Angeles",
+   "Philadelphia",
    "El Paso",
    "San Antonio",
    "Charlotte",
    "Indianapolis",
-   "Oklahoma City",
-   "Houston"
+   "Oklahoma City"
   ],
   "min_regret_city": "Seattle",
-  "min_regret": 0.1541,
+  "min_regret": 0.1513,
   "smaa_p_first": {
-   "Seattle": 0.6358,
-   "Denver": 0.2348,
-   "New York": 0.06,
-   "Chicago": 0.0575,
-   "Austin": 0.0063
+   "Seattle": 0.75,
+   "New York": 0.1395,
+   "Denver": 0.0778,
+   "Austin": 0.017,
+   "Boston": 0.0071
   },
   "never_possible_winners": [
-   "Philadelphia",
    "Fort Worth",
    "Phoenix",
    "Dallas",
    "Jacksonville",
+   "Houston",
    "Nashville-Davidson"
   ]
+ },
+ "plan_simulation": {
+  "ties_in_any_draw": 0,
+  "max_se_mean_rank": 0.032,
+  "min_gap_neighbouring_mean_ranks": 0.019,
+  "rank_interval_90": {
+   "Seattle": [
+    1,
+    3
+   ],
+   "New York": [
+    1,
+    4
+   ],
+   "Denver": [
+    1,
+    7
+   ],
+   "San Francisco": [
+    3,
+    11
+   ],
+   "Boston": [
+    3,
+    10
+   ],
+   "Austin": [
+    2,
+    11
+   ]
+  }
+ },
+ "plan_mean_vector": {
+  "domain_weights": {
+   "Education": 0.184,
+   "Safety": 0.184,
+   "Health": 0.114,
+   "Mobility": 0.185,
+   "Activities": 0.114,
+   "Affordability": 0.103,
+   "Inclusion": 0.115
+  },
+  "U_top6": {
+   "Seattle": 0.808,
+   "New York": 0.788,
+   "Denver": 0.779,
+   "San Francisco": 0.761,
+   "Boston": 0.76,
+   "Austin": 0.749
+  },
+  "segment_shares": [
+   0.528,
+   0.295,
+   0.178
+  ]
+ },
+ "plan_central_weights": {
+  "New York": {
+   "p_first": 0.14,
+   "confidence_factor": 0.65,
+   "domain_weights": {
+    "Education": 0.189,
+    "Safety": 0.197,
+    "Health": 0.114,
+    "Mobility": 0.182,
+    "Activities": 0.107,
+    "Affordability": 0.093,
+    "Inclusion": 0.117
+   }
+  },
+  "Austin": {
+   "p_first": 0.017,
+   "confidence_factor": 0.509,
+   "domain_weights": {
+    "Education": 0.19,
+    "Safety": 0.192,
+    "Health": 0.094,
+    "Mobility": 0.183,
+    "Activities": 0.088,
+    "Affordability": 0.14,
+    "Inclusion": 0.113
+   }
+  },
+  "San Francisco": {
+   "p_first": 0.007,
+   "confidence_factor": 0.114,
+   "domain_weights": {
+    "Education": 0.173,
+    "Safety": 0.218,
+    "Health": 0.114,
+    "Mobility": 0.199,
+    "Activities": 0.106,
+    "Affordability": 0.084,
+    "Inclusion": 0.106
+   }
+  },
+  "Seattle": {
+   "p_first": 0.75,
+   "confidence_factor": 0.989,
+   "domain_weights": {
+    "Education": 0.184,
+    "Safety": 0.183,
+    "Health": 0.113,
+    "Mobility": 0.185,
+    "Activities": 0.116,
+    "Affordability": 0.103,
+    "Inclusion": 0.116
+   }
+  },
+  "Denver": {
+   "p_first": 0.078,
+   "confidence_factor": 0.389,
+   "domain_weights": {
+    "Education": 0.174,
+    "Safety": 0.165,
+    "Health": 0.129,
+    "Mobility": 0.184,
+    "Activities": 0.121,
+    "Affordability": 0.12,
+    "Inclusion": 0.107
+   }
+  },
+  "Boston": {
+   "p_first": 0.007,
+   "confidence_factor": 0.203,
+   "domain_weights": {
+    "Education": 0.175,
+    "Safety": 0.216,
+    "Health": 0.118,
+    "Mobility": 0.172,
+    "Activities": 0.108,
+    "Affordability": 0.108,
+    "Inclusion": 0.102
+   }
+  }
+ },
+ "sampler_acceptance": {
+  "domain_box": 0.0121,
+  "statements_given_box": 0.038,
+  "segment_last_ge_0.1": 0.49,
+  "measure_share_P5_n2": 0.401,
+  "measure_share_P5_n3": 0.107,
+  "measure_share_P5_n4": 0.032
  },
  "plan_leave_one_statement_out": [
   {
    "removed": "P1",
-   "necessary_pairs": 3,
-   "possible_winners": 20,
+   "necessary_pairs": 5,
+   "possible_winners": 19,
    "min_regret_city": "Seattle",
-   "smaa_top3": "Seattle 0.617; Denver 0.253; New York 0.059"
+   "smaa_top3": "Seattle 0.742; New York 0.133; Denver 0.090"
   },
   {
    "removed": "P2",
-   "necessary_pairs": 2,
-   "possible_winners": 20,
+   "necessary_pairs": 5,
+   "possible_winners": 19,
    "min_regret_city": "Seattle",
-   "smaa_top3": "Seattle 0.619; Denver 0.243; Chicago 0.060"
+   "smaa_top3": "Seattle 0.746; New York 0.131; Denver 0.086"
   },
   {
    "removed": "P3",
-   "necessary_pairs": 4,
+   "necessary_pairs": 6,
    "possible_winners": 19,
    "min_regret_city": "Seattle",
-   "smaa_top3": "Seattle 0.655; Denver 0.205; New York 0.077"
+   "smaa_top3": "Seattle 0.742; New York 0.168; Denver 0.060"
   },
   {
    "removed": "P4",
-   "necessary_pairs": 4,
+   "necessary_pairs": 7,
    "possible_winners": 19,
    "min_regret_city": "Seattle",
-   "smaa_top3": "Seattle 0.622; Denver 0.253; New York 0.058"
+   "smaa_top3": "Seattle 0.742; New York 0.130; Denver 0.092"
   },
   {
    "removed": "P5",
    "necessary_pairs": 0,
-   "possible_winners": 25,
+   "possible_winners": 24,
    "min_regret_city": "Seattle",
-   "smaa_top3": "Seattle 0.545; Denver 0.235; New York 0.097"
+   "smaa_top3": "Seattle 0.622; New York 0.186; Denver 0.097"
+  },
+  {
+   "removed": "P6",
+   "necessary_pairs": 3,
+   "possible_winners": 20,
+   "min_regret_city": "Seattle",
+   "smaa_top3": "Seattle 0.674; Denver 0.243; New York 0.065"
   }
  ],
  "electre_sampled_weights_p_in_kernel": {
   "p_in_kernel_broad": {
-   "Chicago": 0.53,
-   "Denver": 0.34,
-   "Seattle": 0.31,
-   "Austin": 0.208,
-   "New York": 0.022
+   "Seattle": 0.498,
+   "Denver": 0.452,
+   "Austin": 0.282,
+   "Chicago": 0.055,
+   "Columbus": 0.048
   },
   "p_in_kernel_plan": {
-   "Chicago": 0.498,
-   "Denver": 0.235,
-   "Seattle": 0.405,
-   "Austin": 0.09,
-   "New York": 0.0
+   "Seattle": 0.88,
+   "Denver": 0.132,
+   "Austin": 0.35,
+   "Chicago": 0.018,
+   "Columbus": 0.002
   }
  }
 }

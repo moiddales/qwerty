@@ -4,7 +4,7 @@
 
 *This report is not counted toward the 25-page limit.*
 
-Our team used AI assistants throughout the project. All final choices of definition, criteria and the five preference statements P1–P5 were reviewed and confirmed by the team; every number in the paper was produced by code that the team can rerun from archived public data.
+Our team used AI assistants throughout the project. All final choices of definition, criteria and the six preference statements P1–P6 were reviewed and confirmed by the team; every number in the paper was produced by code that the team can rerun from archived public data.
 
 | # | Tool | How we used it | What we did with the output |
 |---|---|---|---|

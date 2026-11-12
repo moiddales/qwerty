@@ -250,7 +250,7 @@ for inc in (50000, 60000, 70000, 80000, 100000, 120000):
     order = [i for i in np.argsort(-u) if ok[i]]
     scan.append({"scan": "income", "value": inc, "n_fail": int((~ok).sum()), "failing": ";".join(CITY[~ok]),
                  "champion_eligible": CITY[order[0]], "top5_eligible": ";".join(CITY[order[:5]])})
-for k, grid in (("S1_violent_crime", [600, 700, 800, 900, 1000, 1100, 1200]), ("S2_traffic_deaths", [8, 10, 12, 14, 16, 18, 20]),
+for k, grid in (("S1_violent_crime", [600, 700, 800, 900, 1000, 1100, 1200]),
                 ("H1_bad_air_days", [5, 10, 15, 20, 25, 30]), ("C1_rent_share", [30, 35, 40, 45, 50])):
     for f in grid:
         ok = eligible_mask(X) & (X[k].values <= f)

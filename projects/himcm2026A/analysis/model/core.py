@@ -58,10 +58,12 @@ STATEMENTS_PLAN = [
      "basis": "PLAN 1/3: access to schools and courses is the first purpose of the definition"},
     {"id": "P5", "type": "indicator_band", "lo": 0.6, "hi": 1.4,
      "basis": "PLAN 3: each core measure was kept for its own part of the domain concept, so none is negligible or dominant inside its domain"},
+    {"id": "P6", "type": "domain_min", "a": "Safety", "value": 1 / 7,
+     "basis": "definition: serious risk; the crime floor catches only extreme rates, so safety keeps at least an equal share"},
 ]
 
 REF_INCOME = 80000          # USD per year, reference household scenario
-FLOORS = {"C1_rent_share": 50.0, "S1_violent_crime": 1200.0, "S2_traffic_deaths": 20.0, "H1_bad_air_days": 30.0}
+FLOORS = {"C1_rent_share": 50.0, "S1_violent_crime": 1200.0, "H1_bad_air_days": 30.0}   # traffic deaths: weighted measure only, not a floor
 SEG_SHAPE = np.array([0.5628, 0.2888, 0.1484])   # exponential value function with k = 2 evaluated at z = 1/3, 2/3, 1
 DOM_LO, DOM_HI = 1 / 14, 2 / 7                    # each domain between half and double the equal share
 IND_MIN_FRAC = 1 / 3                              # an indicator carries at least 1/3 of the equal share within its domain

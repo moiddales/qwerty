@@ -143,7 +143,13 @@ for c in METRO_AGENCY:
     den.loc[c] = apop.loc[c, ["2022", "2023", "2024", "2025"]]
 vr = cnt / den * 1e5
 X["S1_violent_crime"], S["S1_violent_crime"] = vr.mean(axis=1), vr.std(axis=1, ddof=1) / 2
-note("S1_violent_crime", "Violent crimes per 100,000, mean of 2022-2025 FBI agency counts; denominator Census city population, except FBI agency population for Charlotte-Mecklenburg, Las Vegas Metropolitan and Metro Nashville; SD = SD of annual rates / sqrt(4)")
+# Chicago: the FBI series counts about 3,400 aggravated assaults a year, against 15,606 aggravated assaults and batteries in
+# the Chicago Police Department's 2021 report; the FBI series omits aggravated battery. Use the department's 2021 total
+# (25,979) over the 2021 population, and keep the FBI series' relative error.
+chi_cpd = 25979 / POP.loc["1714000", "2021"] * 1e5
+S.loc["1714000", "S1_violent_crime"] *= chi_cpd / X.loc["1714000", "S1_violent_crime"]
+X.loc["1714000", "S1_violent_crime"] = chi_cpd
+note("S1_violent_crime", "Violent crimes per 100,000, mean of 2022-2025 FBI agency counts (Chicago: CPD 2021 total 25,979, which includes aggravated battery); denominator Census city population, except FBI agency population for Charlotte-Mecklenburg, Las Vegas Metropolitan and Metro Nashville; SD = SD of annual rates / sqrt(4)")
 
 # ---------- traffic deaths, 2021-2024 ----------
 f9 = obs[(obs.source_id == "S09")]

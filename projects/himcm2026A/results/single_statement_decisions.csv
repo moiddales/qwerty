@@ -1,1 +1,9 @@
-""
+,pair,statement,decides,min_diff,max_diff
+0,Seattle vs New York,Education >= Safety,Seattle,0.0002,0.0105
+1,Seattle vs New York,Health >= Safety,Seattle,0.0001,0.0105
+2,Seattle vs New York,Mobility >= Safety,Seattle,0.0005,0.0105
+3,Seattle vs New York,Mobility >= Inclusion,Seattle,0.0002,0.0105
+4,Seattle vs New York,Activities >= Safety,Seattle,0.0019,0.0105
+5,Seattle vs New York,Activities >= Inclusion,Seattle,0.0003,0.0105
+6,Seattle vs New York,Affordability >= Safety,Seattle,0.0025,0.0105
+7,Seattle vs New York,Affordability >= Inclusion,Seattle,0.0003,0.0105

@@ -1,6 +1,7 @@
 removed,necessary_pairs,possible_winners,min_regret_city,smaa_top3
-P1,3,20,Seattle,Seattle 0.617; Denver 0.253; New York 0.059
-P2,2,20,Seattle,Seattle 0.619; Denver 0.243; Chicago 0.060
-P3,4,19,Seattle,Seattle 0.655; Denver 0.205; New York 0.077
-P4,4,19,Seattle,Seattle 0.622; Denver 0.253; New York 0.058
-P5,0,25,Seattle,Seattle 0.545; Denver 0.235; New York 0.097
+P1,5,19,Seattle,Seattle 0.742; New York 0.133; Denver 0.090
+P2,5,19,Seattle,Seattle 0.746; New York 0.131; Denver 0.086
+P3,6,19,Seattle,Seattle 0.742; New York 0.168; Denver 0.060
+P4,7,19,Seattle,Seattle 0.742; New York 0.130; Denver 0.092
+P5,0,24,Seattle,Seattle 0.622; New York 0.186; Denver 0.097
+P6,3,20,Seattle,Seattle 0.674; Denver 0.243; New York 0.065

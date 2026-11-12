@@ -1,0 +1,160 @@
+{
+ "neighbours": [
+  {
+   "upper": "Seattle",
+   "lower": "New York",
+   "gap": 1.176,
+   "se": 0.014
+  },
+  {
+   "upper": "New York",
+   "lower": "Denver",
+   "gap": 1.043,
+   "se": 0.024
+  },
+  {
+   "upper": "Denver",
+   "lower": "San Francisco",
+   "gap": 2.294,
+   "se": 0.036
+  },
+  {
+   "upper": "San Francisco",
+   "lower": "Boston",
+   "gap": 0.223,
+   "se": 0.036
+  },
+  {
+   "upper": "Boston",
+   "lower": "Austin",
+   "gap": 0.242,
+   "se": 0.04
+  },
+  {
+   "upper": "Austin",
+   "lower": "San Diego",
+   "gap": 0.872,
+   "se": 0.031
+  },
+  {
+   "upper": "San Diego",
+   "lower": "Chicago",
+   "gap": 0.08,
+   "se": 0.038
+  },
+  {
+   "upper": "Chicago",
+   "lower": "Washington",
+   "gap": 1.731,
+   "se": 0.038
+  },
+  {
+   "upper": "Washington",
+   "lower": "San Jose",
+   "gap": 1.159,
+   "se": 0.047
+  },
+  {
+   "upper": "San Jose",
+   "lower": "Los Angeles",
+   "gap": 0.069,
+   "se": 0.035
+  },
+  {
+   "upper": "Los Angeles",
+   "lower": "Las Vegas",
+   "gap": 0.958,
+   "se": 0.038
+  },
+  {
+   "upper": "Las Vegas",
+   "lower": "Columbus",
+   "gap": 1.288,
+   "se": 0.031
+  },
+  {
+   "upper": "Columbus",
+   "lower": "San Antonio",
+   "gap": 1.956,
+   "se": 0.036
+  },
+  {
+   "upper": "San Antonio",
+   "lower": "El Paso",
+   "gap": 0.438,
+   "se": 0.026
+  },
+  {
+   "upper": "El Paso",
+   "lower": "Philadelphia",
+   "gap": 0.986,
+   "se": 0.038
+  },
+  {
+   "upper": "Philadelphia",
+   "lower": "Charlotte",
+   "gap": 0.646,
+   "se": 0.029
+  },
+  {
+   "upper": "Charlotte",
+   "lower": "Fort Worth",
+   "gap": 1.494,
+   "se": 0.025
+  },
+  {
+   "upper": "Fort Worth",
+   "lower": "Indianapolis",
+   "gap": 1.46,
+   "se": 0.031
+  },
+  {
+   "upper": "Indianapolis",
+   "lower": "Dallas",
+   "gap": 1.189,
+   "se": 0.032
+  },
+  {
+   "upper": "Dallas",
+   "lower": "Phoenix",
+   "gap": 0.573,
+   "se": 0.027
+  },
+  {
+   "upper": "Phoenix",
+   "lower": "Jacksonville",
+   "gap": 0.5,
+   "se": 0.027
+  },
+  {
+   "upper": "Jacksonville",
+   "lower": "Houston",
+   "gap": 0.616,
+   "se": 0.027
+  },
+  {
+   "upper": "Houston",
+   "lower": "Oklahoma City",
+   "gap": 0.019,
+   "se": 0.025
+  },
+  {
+   "upper": "Oklahoma City",
+   "lower": "Nashville-Davidson",
+   "gap": 2.656,
+   "se": 0.017
+  }
+ ],
+ "removals": {
+  "E2r_grad_district": {
+   "Seattle": 0.341,
+   "Denver": 0.335,
+   "New York": 0.302
+  },
+  "E1_adv_course": {
+   "New York": 0.476,
+   "Seattle": 0.385,
+   "Boston": 0.06
+  }
+ }
+}

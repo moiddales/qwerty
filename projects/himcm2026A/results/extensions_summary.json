@@ -22,7 +22,7 @@
    "set": "indicator-level",
    "domain_band": "1/7 +/- 25%",
    "indicator_min_share_of_equal": 0.6,
-   "necessary_pairs_of_300": 7,
+   "necessary_pairs_of_300": 6,
    "cities_never_beaten_necessarily": 20,
    "min_regret_city": "Seattle",
    "min_regret": 0.1816
@@ -31,7 +31,7 @@
    "set": "indicator-level",
    "domain_band": "1/7 +/- 10%",
    "indicator_min_share_of_equal": 0.85,
-   "necessary_pairs_of_300": 56,
+   "necessary_pairs_of_300": 52,
    "cities_never_beaten_necessarily": 15,
    "min_regret_city": "Seattle",
    "min_regret": 0.1098
@@ -40,8 +40,8 @@
    "set": "domain-level (theta0 shapes)",
    "domain_band": "1/14-2/7",
    "indicator_min_share_of_equal": null,
-   "necessary_pairs_of_300": 95,
-   "cities_never_beaten_necessarily": 8,
+   "necessary_pairs_of_300": 88,
+   "cities_never_beaten_necessarily": 9,
    "min_regret_city": "Denver",
    "min_regret": 0.0103
   },
@@ -49,8 +49,8 @@
    "set": "domain-level (theta0 shapes)",
    "domain_band": "1/7 +/- 50%",
    "indicator_min_share_of_equal": null,
-   "necessary_pairs_of_300": 147,
-   "cities_never_beaten_necessarily": 4,
+   "necessary_pairs_of_300": 142,
+   "cities_never_beaten_necessarily": 3,
    "min_regret_city": "Denver",
    "min_regret": 0.0073
   },
@@ -58,8 +58,8 @@
    "set": "domain-level (theta0 shapes)",
    "domain_band": "1/7 +/- 25%",
    "indicator_min_share_of_equal": null,
-   "necessary_pairs_of_300": 224,
-   "cities_never_beaten_necessarily": 3,
+   "necessary_pairs_of_300": 221,
+   "cities_never_beaten_necessarily": 2,
    "min_regret_city": "Denver",
    "min_regret": 0.0036
   },
@@ -67,13 +67,24 @@
    "set": "domain-level (theta0 shapes)",
    "domain_band": "1/7 +/- 10%",
    "indicator_min_share_of_equal": null,
-   "necessary_pairs_of_300": 276,
+   "necessary_pairs_of_300": 275,
    "cities_never_beaten_necessarily": 2,
    "min_regret_city": "Denver",
    "min_regret": 0.0014
   }
  ],
- "single_statements_deciding_top_pairs": {},
+ "single_statements_deciding_top_pairs": {
+  "Seattle vs New York -> Seattle": [
+   "Education >= Safety",
+   "Health >= Safety",
+   "Mobility >= Safety",
+   "Mobility >= Inclusion",
+   "Activities >= Safety",
+   "Activities >= Inclusion",
+   "Affordability >= Safety",
+   "Affordability >= Inclusion"
+  ]
+ },
  "top3_domain_score_differences": {
   "Denver - Seattle": {
    "Education": -0.125,
@@ -84,59 +95,59 @@
    "Affordability": 0.257,
    "Inclusion": -0.025
   },
-  "Denver - Chicago": {
-   "Education": -0.056,
-   "Safety": -0.292,
-   "Health": 0.219,
-   "Mobility": 0.052,
-   "Activities": 0.071,
-   "Affordability": 0.041,
-   "Inclusion": 0.064
+  "Denver - New York": {
+   "Education": -0.113,
+   "Safety": -0.284,
+   "Health": 0.092,
+   "Mobility": 0.018,
+   "Activities": 0.097,
+   "Affordability": 0.447,
+   "Inclusion": -0.032
   },
-  "Seattle - Chicago": {
-   "Education": 0.068,
-   "Safety": -0.085,
-   "Health": 0.138,
-   "Mobility": 0.056,
-   "Activities": 0.046,
-   "Affordability": -0.216,
-   "Inclusion": 0.089
+  "Seattle - New York": {
+   "Education": 0.012,
+   "Safety": -0.078,
+   "Health": 0.011,
+   "Mobility": 0.022,
+   "Activities": 0.072,
+   "Affordability": 0.19,
+   "Inclusion": -0.008
   }
  },
  "profiles": {
   "reference family ($80k, equal domains)": {
    "reference_champion": "Denver",
-   "smaa_p_first": "Seattle 0.41; Denver 0.40; Chicago 0.13",
+   "smaa_p_first": "Seattle 0.47; Denver 0.44; New York 0.03",
    "eligible_cities": 24
   },
   "low-budget family ($50k)": {
    "reference_champion": "Columbus",
-   "smaa_p_first": "Chicago 0.37; Columbus 0.36; El Paso 0.13",
+   "smaa_p_first": "Columbus 0.50; El Paso 0.18; Austin 0.15",
    "eligible_cities": 17
   },
-  "student without a car (transit-dependent)": {
+  "fully transit-dependent student": {
    "reference_champion": "Seattle",
-   "smaa_p_first": "Seattle 0.45; Denver 0.41; Chicago 0.09",
+   "smaa_p_first": "Seattle 0.49; Denver 0.44; New York 0.04",
    "eligible_cities": 18
   },
   "activities and sports focus": {
    "reference_champion": "Denver",
-   "smaa_p_first": "Denver 0.48; Seattle 0.41; Chicago 0.07",
+   "smaa_p_first": "Denver 0.51; Seattle 0.45; New York 0.02",
    "eligible_cities": 24
   },
   "LGBTQ+ student": {
    "reference_champion": "Seattle",
-   "smaa_p_first": "Seattle 0.51; Denver 0.36; Chicago 0.06",
+   "smaa_p_first": "Seattle 0.54; Denver 0.38; New York 0.06",
    "eligible_cities": 19
   },
   "student needing mental-health support": {
    "reference_champion": "Denver",
-   "smaa_p_first": "Denver 0.59; Seattle 0.34; Chicago 0.03",
+   "smaa_p_first": "Denver 0.61; Seattle 0.35; New York 0.03",
    "eligible_cities": 14
   },
   "academic focus": {
    "reference_champion": "Seattle",
-   "smaa_p_first": "Seattle 0.57; Denver 0.18; New York 0.11",
+   "smaa_p_first": "Seattle 0.60; Denver 0.20; New York 0.13",
    "eligible_cities": 24
   }
  },
@@ -158,11 +169,18 @@
   "spearman_with_E1_enrolment_rate": 0.389
  },
  "chicago_crime_definition_sensitivity": {
-  "rate_fbi_2022_25": 516.4,
-  "rate_cpd_2021_definition": 960.1,
-  "chicago_rank_reference": 3,
-  "chicago_rank_cpd_definition": 4,
-  "champion_cpd_definition": "Denver"
+  "rate_cpd_2021_model": 960.1,
+  "rate_fbi_2022_25_alternative": 516.4,
+  "chicago_rank_reference": 4,
+  "chicago_rank_fbi": 3,
+  "champion_fbi": "Denver",
+  "fbi_aggravated_assault_2022_25": [
+   3395,
+   3369,
+   3386,
+   3748
+  ],
+  "cpd_aggravated_assault_battery_2021": 15606
  },
  "verification": {
   "sampled_theta_inside_set": 1.0,
