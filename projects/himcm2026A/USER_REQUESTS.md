@@ -194,3 +194,7 @@
 > 但我5.6的那个模型我在试图理解的时候发现可能会有分布偏差，就是一开始每个领域权重都是均匀抽取的，经过后面的筛选之后，最终留下来的样本也不一定还是均匀分布的，解释一下，简短解释，纯文本
 
 > 暂时不需要改模型或者重跑结果，但最好先让 AI 检查一下 run_preferences.py 和 core.py，看看最终接受的样本是否存在这种分布偏差，以及它会不会影响 Seattle 的 75% 排名概率I want you to independently conduct a complete audit of Section 5.6 (SMAA Model), focusing particularly on the hierarchical weight-sampling procedure and the potential distributional bias introduced by rejection sampling. ……（完整英文要求：检查实现、重建抽样流程、统计诊断 P1–P4 和 P6 前后领域权重边际分布、实现正确则不改、有问题则修复并重跑验证、检查 Seattle 约 75% 是否变化、必要时更新 5.6 节描述；不得为结果好看而改模型，保留可恢复的版本历史。）
+
+## 2026-11-14 — U20261114-02：格式规则核查
+
+> 之后帮我检查知识库历年论文和HiMCM官方要求有没有规定词数，字号，以及有没有规定使用的代码要放在哪里（放在论文里面也会占空间）
