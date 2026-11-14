@@ -58,3 +58,23 @@ figcaption { font-size: 8.6pt; color: var(--muted); margin-top: 2pt; }
 
 .small { break-inside: avoid; }
 figure.float-right { float: right; width: 44%; margin: 0 0 6pt 12pt; }
+
+/* ---- 12-point layout (2026-11-14): COMAP requires "a readable font of at least 12-point type".
+   Times-metric serif, 12 pt for every text element; tighter leading and margins keep the 25-page budget
+   without changing any text. ---- */
+@page { size: Letter; margin: 0.6in 0.65in 0.55in 0.65in; }
+body { font-family: "Tinos", "Times New Roman", serif; font-size: 12pt; line-height: 1.22; }
+h1 { font-size: 15pt; } h2 { font-size: 12.5pt; }
+table, .small table, th, figcaption, .flow, .keywords, .sheet-head, .refs ol, .ai-report, .news-cols, .news-box, .news-box span,
+.news-flow, .news-table table, .news-side, .standfirst, .summary-page, .toc-list, .news-masthead { font-size: 12pt; }
+p { margin: 2.5pt 0; } li { margin: 1pt 0; }
+.summary-page { line-height: 1.2; }
+table { line-height: 1.15; break-inside: auto; } th, td { padding: 1.5pt 3pt; }
+tr { break-inside: avoid; } thead { display: table-header-group; }      /* long tables may split between rows; header repeats */
+.toc-page { break-after: auto; }                                         /* the introduction starts under the contents */
+.toc-list { margin-top: 4pt; } .toc-row { margin: 2.5pt 0; }
+.news-title { font-family: "Tinos", serif; font-size: 18pt; margin: 4pt 0 3pt; }
+.standfirst { margin-bottom: 4pt; }
+.news-cols { line-height: 1.14; } .news-cols p { margin: 0 0 4pt; }
+.news-box { padding: 3pt 6pt; margin: 3pt 0 5pt; }
+.refs ol { line-height: 1.12; } .refs li { margin: 0.5pt 0; }

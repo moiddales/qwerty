@@ -1,8 +1,8 @@
 # HiMCM 2026 A：当前交接
 
-> 待决定（A-033，2026-11-14）：官方规则要求字号至少 12 磅；论文正文现为 10.8 磅，表格和参考文献 8–9 磅。改到 12 磅预计多出约 5 页，需要删减。
+> 最新检查点A-034（2026-11-14）：论文已改为全文 12 磅（Tinos 字体，行距 1.22），正文未改，计入页数仍为 25 页（另有 1 页 AI 报告），结论页后只剩约 0.6 页余量，再加内容需要删减。官方格式要求的核查见 PROJECT_LOG A-033。
 
-> 最新检查点A-032（2026-11-14）：5.6 SMAA 抽样审计通过，模型代码与论文不变（报告 docs/smaa_sampling_audit_zh.md，脚本 analysis/model/run_smaa_sampling_audit.py）。抽样分布与论文描述一致；Seattle 第一 75.0% 可复现，换种子后为 75.2% ± 0.5%；改为在整个 Θ_S 上均匀抽样时为 79.3%。
+> 检查点A-032（2026-11-14）：5.6 SMAA 抽样审计通过，模型代码与论文不变（报告 docs/smaa_sampling_audit_zh.md，脚本 analysis/model/run_smaa_sampling_audit.py）。抽样分布与论文描述一致；Seattle 第一 75.0% 可复现，换种子后为 75.2% ± 0.5%；改为在整个 Θ_S 上均匀抽样时为 79.3%。
 
 > 检查点A-031（2026-11-12）：学习材料改为"总版 + 四人专用讲解"，均由 paper_explained/make_guides.py 从 paper_explained.md 生成，并对照原讲解版（git ed9e183，52 页）标出改动：讲解框标"本版更新"（改动句高亮）或"本版新增"，原文改动句与新公式高亮。输出 HiMCM2026A_guide_all_zh.pdf（62 页）、HiMCM2026A_member_A/B/C/D_zh.pdf（14/16/19/17 页）；按用户要求不含附一至附四；改动句用深橙色字标出（无底色，避免影响阅读）。修改记录 PDF：docs/HiMCM2026A_change_log_zh.pdf。重建：cd paper_explained && python make_guides.py。分工表的页码仍指不带标记的 58 页讲解版。
 

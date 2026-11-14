@@ -299,19 +299,19 @@
 # Contents
 
 <div class="toc-list">
-<div class="toc-row"><span>1. Introduction</span><span class="dots"></span><span>3</span></div>
+<div class="toc-row"><span>1. Introduction</span><span class="dots"></span><span>2</span></div>
 <div class="toc-row"><span>2. Assumptions</span><span class="dots"></span><span>3</span></div>
-<div class="toc-row"><span>3. Criteria: What We Measure and What We Leave Out</span><span class="dots"></span><span>4</span></div>
+<div class="toc-row"><span>3. Criteria: What We Measure and What We Leave Out</span><span class="dots"></span><span>3</span></div>
 <div class="toc-row"><span>4. Data</span><span class="dots"></span><span>6</span></div>
-<div class="toc-row"><span>5. The Model</span><span class="dots"></span><span>8</span></div>
-<div class="toc-row"><span>6. Results: The Ranking</span><span class="dots"></span><span>12</span></div>
-<div class="toc-row"><span>7. Significant Revisions to the Model</span><span class="dots"></span><span>15</span></div>
-<div class="toc-row"><span>8. Why the Ranking Is More Than Our Opinion</span><span class="dots"></span><span>16</span></div>
-<div class="toc-row"><span>9. Who Should Choose Which City</span><span class="dots"></span><span>19</span></div>
-<div class="toc-row"><span>10. Strengths and Weaknesses</span><span class="dots"></span><span>21</span></div>
-<div class="toc-row"><span>11. Conclusion</span><span class="dots"></span><span>22</span></div>
-<div class="toc-row"><span>12. News Article: The Best City for a High Schooler</span><span class="dots"></span><span>23</span></div>
-<div class="toc-row"><span>13. References</span><span class="dots"></span><span>25</span></div>
+<div class="toc-row"><span>5. The Model</span><span class="dots"></span><span>7</span></div>
+<div class="toc-row"><span>6. Results: The Ranking</span><span class="dots"></span><span>11</span></div>
+<div class="toc-row"><span>7. Significant Revisions to the Model</span><span class="dots"></span><span>14</span></div>
+<div class="toc-row"><span>8. Why the Ranking Is More Than Our Opinion</span><span class="dots"></span><span>15</span></div>
+<div class="toc-row"><span>9. Who Should Choose Which City</span><span class="dots"></span><span>18</span></div>
+<div class="toc-row"><span>10. Strengths and Weaknesses</span><span class="dots"></span><span>20</span></div>
+<div class="toc-row"><span>11. Conclusion</span><span class="dots"></span><span>21</span></div>
+<div class="toc-row"><span>12. News Article: The Best City for a High Schooler</span><span class="dots"></span><span>22</span></div>
+<div class="toc-row"><span>13. References</span><span class="dots"></span><span>24</span></div>
 <div class="toc-row"><span>Report on Use of AI Tools (not counted toward the 25 pages)</span><span class="dots"></span><span>26</span></div>
 </div>
 

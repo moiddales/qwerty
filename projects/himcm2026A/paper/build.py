@@ -24,7 +24,7 @@ body = re.sub(r"@@MATH(\d+)@@", restore, body)
 assert "@@" not in body
 css = (HERE / "style.css").read_text(encoding="utf-8")
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>HiMCM 2026 Problem A</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;600;700&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap">
 <style>{css}</style>
 <script>window.MathJax={{tex:{{inlineMath:[['\\\\(','\\\\)']],displayMath:[['\\\\[','\\\\]']]}},svg:{{fontCache:'global'}},
 startup:{{pageReady:()=>MathJax.startup.defaultPageReady().then(()=>{{document.body.dataset.mathDone='1';}})}}}};</script>
