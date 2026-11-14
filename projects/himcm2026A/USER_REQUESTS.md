@@ -220,3 +220,9 @@
 > 第一段能不能写成截至………多少年
 
 （已查 NCES《Digest of Education Statistics 2025》表 203.10：2024 年秋季公立学校 9–12 年级在读 1551.6 万人。论文未改。）
+
+> 快速回答，what a city is worth to her comes down to what she can reach and afford without an adult's car.，这一部分太狭隘了只考虑car这一个点
+
+> 以下是一段同意替换的成功样品，深度分析其到底是如何替换的。替换前：6.4 Under our stated definition: the final ranking … 替换后：6.4 Final ranking …
+
+（第二条附有 6.4 节改写前后的全文，此处从略；只做分析，论文未改。）
