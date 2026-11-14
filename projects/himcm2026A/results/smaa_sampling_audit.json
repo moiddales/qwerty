@@ -1,0 +1,260 @@
+{
+ "A_reproduction": {
+  "max_abs_diff_p_first": 0.0,
+  "max_abs_diff_mean_rank": 0.0,
+  "seattle_p_first": 0.75
+ },
+ "B_all_accepted_feasible": true,
+ "C_final_rejection": {
+  "candidates": 200000,
+  "P5_rows_rejected": 0,
+  "theta_check_equals_domain_weight_check": true,
+  "accept_rate": 0.0376
+ },
+ "D1_domain_weights_vs_hit_and_run": {
+  "Education": {
+   "ks_p": 0.457,
+   "mean_sampler": 0.184,
+   "mean_hit_and_run": 0.1846
+  },
+  "Safety": {
+   "ks_p": 0.78,
+   "mean_sampler": 0.184,
+   "mean_hit_and_run": 0.1836
+  },
+  "Health": {
+   "ks_p": 0.971,
+   "mean_sampler": 0.1145,
+   "mean_hit_and_run": 0.1146
+  },
+  "Mobility": {
+   "ks_p": 0.058,
+   "mean_sampler": 0.1848,
+   "mean_hit_and_run": 0.1839
+  },
+  "Activities": {
+   "ks_p": 0.037,
+   "mean_sampler": 0.1142,
+   "mean_hit_and_run": 0.1149
+  },
+  "Affordability": {
+   "ks_p": 0.211,
+   "mean_sampler": 0.1034,
+   "mean_hit_and_run": 0.1033
+  },
+  "Inclusion": {
+   "ks_p": 0.813,
+   "mean_sampler": 0.1152,
+   "mean_hit_and_run": 0.1151
+  }
+ },
+ "D1b_domain_weights_vs_exact_rejection": {
+  "reference_size": 61346,
+  "seed_42_ks_p": {
+   "Education": 0.583,
+   "Safety": 0.203,
+   "Health": 0.334,
+   "Mobility": 0.345,
+   "Activities": 0.129,
+   "Affordability": 0.727,
+   "Inclusion": 0.418
+  },
+  "seed_1001_ks_p": {
+   "Education": 0.582,
+   "Safety": 0.004,
+   "Health": 0.327,
+   "Mobility": 0.594,
+   "Activities": 0.811,
+   "Affordability": 0.82,
+   "Inclusion": 0.065
+  },
+  "seed_1002_ks_p": {
+   "Education": 0.479,
+   "Safety": 0.431,
+   "Health": 0.624,
+   "Mobility": 0.329,
+   "Activities": 0.888,
+   "Affordability": 0.42,
+   "Inclusion": 0.836
+  }
+ },
+ "D2_mobility_measure_shares_vs_hit_and_run": {
+  "M2_walkability": {
+   "ks_p": 0.984,
+   "mean_sampler": 0.2504,
+   "mean_hit_and_run": 0.2505
+  },
+  "M3_youth_fare": {
+   "ks_p": 0.331,
+   "mean_sampler": 0.2494,
+   "mean_hit_and_run": 0.2503
+  },
+  "M4r_weekend_retention": {
+   "ks_p": 0.468,
+   "mean_sampler": 0.2495,
+   "mean_hit_and_run": 0.2493
+  },
+  "M5r_transit_access": {
+   "ks_p": 0.746,
+   "mean_sampler": 0.2506,
+   "mean_hit_and_run": 0.2498
+  }
+ },
+ "D3_segment_shares_vs_hit_and_run": {
+  "g0": {
+   "ks_p": 0.367,
+   "mean_sampler": 0.5264,
+   "mean_hit_and_run": 0.5283
+  },
+  "g1": {
+   "ks_p": 0.963,
+   "mean_sampler": 0.2952,
+   "mean_hit_and_run": 0.2947
+  },
+  "g2": {
+   "ks_p": 0.119,
+   "mean_sampler": 0.1785,
+   "mean_hit_and_run": 0.1771
+  }
+ },
+ "D_summary": {
+  "tests": 35,
+  "min_p": 0.004,
+  "bonferroni_threshold_5pct": 0.0014,
+  "all_pass_bonferroni": true
+ },
+ "E_level_independence_max_abs_corr": 0.0232,
+ "F_domain_weight_marginals": {
+  "Education": {
+   "Theta_mean": 0.1428,
+   "ThetaS_mean": 0.184,
+   "ThetaS_p05_p95": [
+    0.1455,
+    0.2503
+   ]
+  },
+  "Safety": {
+   "Theta_mean": 0.1414,
+   "ThetaS_mean": 0.184,
+   "ThetaS_p05_p95": [
+    0.1455,
+    0.2517
+   ]
+  },
+  "Health": {
+   "Theta_mean": 0.143,
+   "ThetaS_mean": 0.1145,
+   "ThetaS_p05_p95": [
+    0.0742,
+    0.1865
+   ]
+  },
+  "Mobility": {
+   "Theta_mean": 0.1429,
+   "ThetaS_mean": 0.1848,
+   "ThetaS_p05_p95": [
+    0.1457,
+    0.252
+   ]
+  },
+  "Activities": {
+   "Theta_mean": 0.1429,
+   "ThetaS_mean": 0.1142,
+   "ThetaS_p05_p95": [
+    0.0742,
+    0.1865
+   ]
+  },
+  "Affordability": {
+   "Theta_mean": 0.144,
+   "ThetaS_mean": 0.1034,
+   "ThetaS_p05_p95": [
+    0.0737,
+    0.1477
+   ]
+  },
+  "Inclusion": {
+   "Theta_mean": 0.1429,
+   "ThetaS_mean": 0.1152,
+   "ThetaS_p05_p95": [
+    0.0742,
+    0.1899
+   ]
+  }
+ },
+ "G_seattle_p_first_other_seeds": {
+  "values": [
+   0.7513,
+   0.7577,
+   0.7515,
+   0.7556,
+   0.745
+  ],
+  "mean": 0.7522,
+  "sd": 0.0049
+ },
+ "H_hit_and_run_feasible": true,
+ "H_chain_means_max_spread": 0.012,
+ "H_domain_weight_means_uniform_over_ThetaS": {
+  "Education": 0.1722,
+  "Safety": 0.162,
+  "Health": 0.1236,
+  "Mobility": 0.1823,
+  "Activities": 0.1593,
+  "Affordability": 0.0986,
+  "Inclusion": 0.1019
+ },
+ "H_measures_per_domain": {
+  "Education": 3,
+  "Safety": 2,
+  "Health": 3,
+  "Mobility": 4,
+  "Activities": 4,
+  "Affordability": 2,
+  "Inclusion": 2
+ },
+ "H_smaa_uniform_over_ThetaS": {
+  "Seattle": {
+   "p_first": 0.7925,
+   "p_top3": 0.9949,
+   "mean_rank": 1.253
+  },
+  "Denver": {
+   "p_first": 0.1284,
+   "p_top3": 0.8034,
+   "mean_rank": 2.677
+  },
+  "New York": {
+   "p_first": 0.0682,
+   "p_top3": 0.8353,
+   "mean_rank": 2.74
+  },
+  "San Francisco": {
+   "p_first": 0.0059,
+   "p_top3": 0.1746,
+   "mean_rank": 5.192
+  }
+ },
+ "H_smaa_level_by_level_table1": {
+  "Seattle": {
+   "p_first": 0.75,
+   "p_top3": 0.9907,
+   "mean_rank": 1.319
+  },
+  "New York": {
+   "p_first": 0.1395,
+   "p_top3": 0.8518,
+   "mean_rank": 2.494
+  },
+  "Denver": {
+   "p_first": 0.0778,
+   "p_top3": 0.6033,
+   "mean_rank": 3.537
+  },
+  "San Francisco": {
+   "p_first": 0.0068,
+   "p_top3": 0.1787,
+   "mean_rank": 5.831
+  }
+ }
+}
